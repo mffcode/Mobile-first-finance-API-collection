@@ -1,0 +1,4259 @@
+{
+	"info": {
+		"_postman_id": "18a09024-73fe-4c80-b4f2-ffe0455f891d",
+		"name": "Mobile first finance API",
+		"description": "Mobile First Finance [www.mobilefirstfinance.com](http://www.mobilefirstfinance.com/) is a digital banking technology that empowers an organisation with a flexible and customisable mobility suite, that will transform any inefficient paper-based front office workforce.\n\n**Benefits of Mobile First Finance**\n\n- Build superior banking customer experience along with our fleet of in-house engineers.\n- Build your applications using our API stack\n    \n\n**Contact**\n\n- Developer queries & GIT access - [helpdesk@odedtech.com](mailto:helpdesk@odedtech.com)\n- Schedule a meeting - [https://www.mobilefirstfinance.com/book_an_appointment.html](https://www.mobilefirstfinance.com/book_an_appointment.html)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Defining environment variables",
+			"item": [],
+			"_postman_id": "a1c10a0a-fff1-4395-9055-0e303efa564c",
+			"description": "To create a new environment, select **Environments** on the left and select **+**.\n\n<img src=\"https://content.pstmn.io/8fba3da0-5f06-4f25-9636-055878ef4fce/aW1hZ2UucG5n\" width=\"193\" height=\"154\">\n\nEnter a name for your environment, and initialize it with any variables  \nyou need—you can alternatively specify variables for the environment  \nlater.\n\n### Adding environment variables\n\nTo add a new environment variable, do the following:\n\n1. Select **Add a new variable**, and enter a name for the variable.\n2. Select a **Type** for the new variable.\n3. Add an **Initial Value**, and if you choose, a **Current Value**.\n4. **Save** to confirm your changes.\n    \n\n<img src=\"https://content.pstmn.io/c5b72023-809f-4220-ba59-2a8ea1ece732/ZW52aXJubWVudC5wbmc=\" width=\"535\" height=\"151\">\n\nFor further details check [https://learning.postman.com/docs/sending-requests/managing-environments/](https://learning.postman.com/docs/sending-requests/managing-environments/)"
+		},
+		{
+			"name": "Back office",
+			"item": [
+				{
+					"name": "Authorization",
+					"item": [
+						{
+							"name": "login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = JSON.parse(responseBody);\r",
+											"var jsonValue = jsonData.body;\r",
+											"pm.globals.set(\"useraccessToken\", jsonValue.access_token);"
+										],
+										"type": "text/javascript",
+										"id": "d42f6f77-592a-4b04-8db0-b4667397db98"
+									}
+								}
+							],
+							"_postman_id": "6776c999-0f7e-493c-abc6-634f72c8a900",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"rootUser\": \"rootUser\",\r\n    \"userName\": \"userName\",\r\n    \"password\": \"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{backofficeURL}}:5055/LoginService/login",
+								"description": "Using this API, we can login into the application by providing credentials."
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "17f01589-3053-41de-97c7-0dc82b273e62",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Settings",
+					"item": [
+						{
+							"name": "Branch hierarchy",
+							"item": [
+								{
+									"name": "Create root branch",
+									"_postman_id": "8ea33cd3-dcae-4304-b583-d28a2982828b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"branchName\": \"Cashpor\",\r\n  \"branchCode\": \"CSHPR\",\r\n  \"parentId\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}:5055/BranchService/Branches?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"BranchService",
+												"Branches"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "This service will create a root branch. Mandatory fields which are required is branch name and branch code. Based on parent id you can create a new branch."
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "ee788e15-b1ac-41c6-9058-190d7917d7fd",
+							"description": "In an enterprise setup, an organisation would have specific branches from where operations are carried out. Such branches would then demand access to a specific set of users to access information about the branch and the clientele/customer info within this specific branch.\n\nBranch services enable to link and provide access to such information waterfall within the users of a specific branch.",
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Users",
+							"item": [
+								{
+									"name": "Create user form",
+									"_postman_id": "aa47f386-3922-4d50-bd72-46c608c52afc",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Form Header\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"User form\",\n      \"Label\": \"Form Label\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Identifier\"\n    }\n  ],\n  \"Form Body\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"First name\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Last name\"\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}:5055/UserService/users/forms?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"UserService",
+												"users",
+												"forms"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API and this format payload we can create a new user form"
+									},
+									"response": []
+								},
+								{
+									"name": "Update user  form",
+									"_postman_id": "3d7229e8-067a-4882-bb83-c1e306a25421",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Form Header\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"User form\",\n      \"Label\": \"Form Label\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Identifier\"\n    }\n  ],\n  \"Form Body\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"First name\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Last name\"\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}:5055/UserService/users/forms/1594397?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"UserService",
+												"users",
+												"forms",
+												"1594397"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can update the existing user form by form id."
+									},
+									"response": []
+								},
+								{
+									"name": "Get all user  form",
+									"_postman_id": "4bfa2529-3aa8-4460-b75e-142941fccd76",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/UserService/users/forms?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"UserService",
+												"users",
+												"forms"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can get all the existing user forms in the application."
+									},
+									"response": []
+								},
+								{
+									"name": "Create user",
+									"_postman_id": "a377a298-81a5-43c0-9cb4-033089c87e6f",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"FormID\": \"1028671\",\n  \"User Password\": \"2244\",\n  \"Identifier\": \"Calvin\",\n  \"First Name\": \"Calvin\",\n  \"Last Name\": \"Marko\",\n  \"Gender\": \"Male\",\n  \"Email\": \"calvin@gmail.com\",\n  \"Mobile Number\": \"6002145239\",\n  \"Default start page\": \"Dashboard\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}:5055/UserService/users?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"UserService",
+												"users"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "This service will create a new user. Mandatory fields which are required are Form ID, Identifier, User Password, and mobile number. Form ID is set based on the user template chosen from the User service. Identifier and User Password are the other unique fields provided in the request for creating a new user."
+									},
+									"response": []
+								},
+								{
+									"name": "Update user",
+									"_postman_id": "1fd2b990-2205-42d1-befa-9ac5dfbeb952",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"FormID\": \"1028671\",\n  \"Identifier\": \"Geetha\",\n  \"First Name\": \"Geetha\",\n  \"Last Name\": \"Geetha\",\n  \"Gender\": \"Female\",\n  \"Email\": \"geetha@gmail.com\",\n  \"Mobile Number\": \"8452223023\",\n  \"Default start page\": \"Dashboard\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}:5055/UserService/users/975af2c2-e3c8-43d5-807c-8f97f6a18b37?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"UserService",
+												"users",
+												"975af2c2-e3c8-43d5-807c-8f97f6a18b37"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can update details of a user profile based on the user Id.\n\nEndFragment"
+									},
+									"response": []
+								},
+								{
+									"name": "Get  all the Users",
+									"_postman_id": "8c7f3afc-fcda-49b1-aa1d-274029dda37b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/UserService/users?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"UserService",
+												"users"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can get all the existing users from the application."
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "a72c0e40-dbfe-4ef8-b6d7-4b28c72ec058",
+							"description": "User demographic information such as name, address, email ID etc... are possible to create based on a given use case. Eg : Manager, Administrator, Customer, and auditor are a few user types in an organisation which may have specific information for the organisation's record.\n\nUser service contains APIs to create new users and define their corresponding user access rights",
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "User actions",
+							"item": [
+								{
+									"name": "Get actions",
+									"_postman_id": "e08d9766-d1de-4596-b20d-e2666e110327",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/UserService/actions?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"UserService",
+												"actions"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can get the list of user actions that exist in the application."
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "14031378-615e-421f-ad03-e848a50873b0",
+							"description": "User actions are the list of permissions that used to make a user role.",
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "User roles",
+							"item": [
+								{
+									"name": "Create user role",
+									"_postman_id": "01afce4c-70f5-4a35-a43e-7403c135f846",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"roleName\": \"Bank Teller\",\n  \"userActionID\": [\n    1\n  ],\n  \"menuItemsID\": [\n    1\n  ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}:5055/UserService/users/role?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"UserService",
+												"users",
+												"role"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can created a user role with set of actions attaching in it."
+									},
+									"response": []
+								},
+								{
+									"name": "Get user role by role id",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"id": "15273a7b-874e-45be-a762-4885db442c9d"
+											}
+										}
+									],
+									"_postman_id": "1edd6066-fa09-4c16-afce-9f9c50372f54",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/UserService/roles/{{roleID}}?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"UserService",
+												"roles",
+												"{{roleID}}"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can view a user role by it's user id."
+									},
+									"response": []
+								},
+								{
+									"name": "Get user roles",
+									"_postman_id": "673139fb-6733-431c-a100-bb902caa4134",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/UserService/roles?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"UserService",
+												"roles"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can view all the existing user roles in the application."
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "33edc31e-0bea-461e-87b7-70bb2b276dfa",
+							"description": "User roles are the set of actions that an user is expected to perform.",
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "User menus",
+							"item": [
+								{
+									"name": "Get all user menu",
+									"_postman_id": "df9b8b2b-e6b7-47cd-8c2e-28ca1ce87d49",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/UserService/menu?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"UserService",
+												"menu"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can get all the list of user menus."
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "5615aff3-f96f-412a-a115-0bdd66195936",
+							"description": "User menus are the list of menu options which an user can utilize based on requirement.",
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Workflows",
+							"item": [
+								{
+									"name": "Create workflows",
+									"_postman_id": "e1032212-efcc-4d59-ab48-c45ecbc418ae",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"workFlowName\": \"Machinery loan\",\n  \"templateID\": [\n    9,\n    16,\n    907193,\n    93\n  ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/workflows?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"workflows"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can create a new workflow."
+									},
+									"response": []
+								},
+								{
+									"name": "Get all workflows",
+									"_postman_id": "d0b719d2-aa36-4c8a-8de5-d4ba7ef6c365",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/workflows?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"workflows"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can get all the workflows."
+									},
+									"response": []
+								},
+								{
+									"name": "Get  workflows count",
+									"_postman_id": "9b248aef-1f9f-4c93-9e0e-dfed84f47aa0",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/workflows/count?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"workflows",
+												"count"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "using this API we can get the total count of workflows."
+									},
+									"response": []
+								},
+								{
+									"name": "Edit workflow",
+									"_postman_id": "6d157b7d-71b7-4fc9-8098-63e0df176330",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"workflowName\": \"Student loan\",\r\n  \"description\": \"A digital student loan onboarding workflow that includes single-click social media profile checks.\",\r\n  \"picture\": \"\",\r\n  \"productUUID\": \"135\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/updateworkflowName/907245?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"updateworkflowName",
+												"907245"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Edit workflow order",
+									"_postman_id": "75054d7b-7e89-4a18-95ea-01b55700f287",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"workflowOrder\": [\r\n    93,\r\n    16,\r\n    907193,\r\n    9\r\n  ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/updateWorkfloworder/1594539?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"updateWorkfloworder",
+												"1594539"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "To view a workflow by workflowid",
+									"_postman_id": "7068a089-fa72-4c23-976e-c85f780bf4aa",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/workflows/{{workflowid}}?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"workflows",
+												"{{workflowid}}"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "d7b0c02b-9541-44df-a7c9-3b9405f975d9",
+							"description": "Onboarding a customer usually requires certain procedures to be followed, for instance capturing certain information, and verifying such information provided. Such procedures could also extend to sending such information captured to even 3rd party APIs for validating KYC, performing ID verification checks, AML checks, address verification, credit bureau check etc.\n\nWorkflow services enable an organisation administrator to orchestrate such onboarding stages, which in turn enable customers and organisation users to follow these specific workflow steps to complete an onboarding process.",
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Workflow template",
+							"item": [
+								{
+									"name": "Configure workflow template",
+									"item": [
+										{
+											"name": "Update auto verify flag",
+											"_postman_id": "7d2ada3b-21f6-4bf8-99f3-15198f097dc1",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{backofficeURL}}:5055/WorkflowService/autoVerify/template?access_token={{useraccessToken}}&templateId={{templateid}}&flag=true",
+													"host": [
+														"{{backofficeURL}}"
+													],
+													"port": "5055",
+													"path": [
+														"WorkflowService",
+														"autoVerify",
+														"template"
+													],
+													"query": [
+														{
+															"key": "access_token",
+															"value": "{{useraccessToken}}"
+														},
+														{
+															"key": "templateId",
+															"value": "{{templateid}}"
+														},
+														{
+															"key": "flag",
+															"value": "true"
+														}
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "Update workflow template flag",
+											"_postman_id": "ad14a199-bed2-48b6-ba9e-ce741a0df7d0",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"templateFlag\": true\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{backofficeURL}}:5055/WorkflowService/updateworkflowTemplateflag/{{workflowTemplateID}}?access_token={{useraccessToken}}",
+													"host": [
+														"{{backofficeURL}}"
+													],
+													"port": "5055",
+													"path": [
+														"WorkflowService",
+														"updateworkflowTemplateflag",
+														"{{workflowTemplateID}}"
+													],
+													"query": [
+														{
+															"key": "access_token",
+															"value": "{{useraccessToken}}"
+														}
+													]
+												}
+											},
+											"response": []
+										}
+									],
+									"_postman_id": "2cfafde9-ba04-47d3-af0e-5357106970ef",
+									"description": "It contains the services which are used to enable or disable the rights for auto verify and external access.",
+									"_postman_isSubFolder": true
+								},
+								{
+									"name": "Create workflow template",
+									"_postman_id": "3b020191-58ca-4734-a4e6-6ee9f709cc4e",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Form Header\": [\n    {\n      \"Type\": \"Number\",\n      \"Value\": \"\",\n      \"Label\": \"Bank Account Number\"\n    },\n    {\n      \"Type\": \"List\",\n      \"Value\": [\n        \"HSBC\",\n        \" CitiBank\",\n        \" SBI\"\n      ],\n      \"Label\": \"Bank Name\"\n    }\n  ],\n  \"Form Body\": [\n    {\n      \"Type\": \"List\",\n      \"Value\": [\n        \"Hyderabad\",\n        \"Zurich\",\n        \"North London\"\n      ],\n      \"Label\": \"Bank branch name\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"IFSC Code\"\n    }\n  ],\n  \"Label\": \"Bank Details 222\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowTemplates?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"workflowTemplates"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can create a new workflow template."
+									},
+									"response": []
+								},
+								{
+									"name": "Update workflow template",
+									"_postman_id": "73ef0e7e-fe8f-4626-957c-c1e31523881a",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Form Header\": [\n    {\n      \"Type\": \"Number\",\n      \"Value\": \"\",\n      \"Label\": \"Bank Account Number\"\n    },\n    {\n      \"Type\": \"List\",\n      \"Value\": [\n        \"HSBC\",\n        \" CitiBank\",\n        \" SBI\"\n      ],\n      \"Label\": \"Bank Name\"\n    }\n  ],\n  \"Form Body\": [\n    {\n      \"Type\": \"List\",\n      \"Value\": [\n        \"Hyderabad\",\n        \"Zurich\",\n        \"North London\"\n      ],\n      \"Label\": \"Bank branch name\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"IFSC Code\"\n    }\n  ],\n  \"Label\": \"Bank Details 44\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowTemplates/1594791?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"workflowTemplates",
+												"1594791"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can update an existing workflow template based on workflow template id."
+									},
+									"response": []
+								},
+								{
+									"name": "Get all workflow templates",
+									"_postman_id": "d669898d-fb0d-45ad-b812-10ffbc81b0f5",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowTemplates?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"workflowTemplates"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can get all the existing workflow templates."
+									},
+									"response": []
+								},
+								{
+									"name": "Get workflow template by id",
+									"_postman_id": "8398ed8e-b56f-46db-9b43-2cc19b33ff08",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowTemplates/{{workflowTemplateID}}?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"workflowTemplates",
+												"{{workflowTemplateID}}"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can get workflow template by its workflow template id"
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "be9fb86e-9876-4222-a0ae-294da74ccbf1",
+							"_postman_isSubFolder": true
+						}
+					],
+					"_postman_id": "f1f0c055-2462-4ed8-a329-bd540b23dd65",
+					"description": "This contains a list of API for initial configuration of Mobile First Finance setup",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Profile",
+					"item": [
+						{
+							"name": "Create profile form",
+							"_postman_id": "37db7c54-3882-4229-83a1-3642608a2a9b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"Form Header\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"Test form\",\n      \"Label\": \"Form Label\"\n    }\n  ],\n  \"Form Body\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Name\"\n    },\n    {\n      \"Type\": \"Date\",\n      \"Value\": \"\",\n      \"Label\": \"Date of Birth\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"National ID\"\n    },\n    {\n      \"Type\": \"Branch\",\n      \"Value\": \"L2\",\n      \"Label\": \"Hierarchy\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Latitude\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Longitude\"\n    },\n    {\n      \"Type\": \"List\",\n      \"Value\": [\n        \"Male\",\n        \"Female\"\n      ],\n      \"Label\": \"Gender\"\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{backofficeURL}}:5055/ProfileService/profiles/forms?access_token={{useraccessToken}}",
+									"host": [
+										"{{backofficeURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ProfileService",
+										"profiles",
+										"forms"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{useraccessToken}}"
+										}
+									]
+								},
+								"description": "Using this API we can create a profile form."
+							},
+							"response": []
+						},
+						{
+							"name": "Get profile form",
+							"_postman_id": "2253b02a-c603-43e7-9979-622dc4b49c17",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{backofficeURL}}:5055/ProfileService/profiles/forms?access_token={{useraccessToken}}",
+									"host": [
+										"{{backofficeURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ProfileService",
+										"profiles",
+										"forms"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{useraccessToken}}"
+										}
+									]
+								},
+								"description": "Using this API we can get all the profile forms that exists in the application."
+							},
+							"response": []
+						},
+						{
+							"name": "Update profile form",
+							"_postman_id": "1c48ba33-2e07-496c-abeb-b839ac2c74b1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"Form Header\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"Test form\",\n      \"Label\": \"Form Label\"\n    }\n  ],\n  \"Form Body\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Name\"\n    },\n    {\n      \"Type\": \"Date\",\n      \"Value\": \"\",\n      \"Label\": \"Date of Birth\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"National ID\"\n    },\n    {\n      \"Type\": \"Branch\",\n      \"Value\": \"L2\",\n      \"Label\": \"Hierarchy\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Latitude\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Longitude\"\n    },\n    {\n      \"Type\": \"List\",\n      \"Value\": [\n        \"Male\",\n        \"Female\"\n      ],\n      \"Label\": \"Gender\"\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{backofficeURL}}:5055/ProfileService/profiles/forms/{{formID}}?access_token={{useraccessToken}}",
+									"host": [
+										"{{backofficeURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ProfileService",
+										"profiles",
+										"forms",
+										"{{formID}}"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{useraccessToken}}"
+										}
+									]
+								},
+								"description": "Using this API we can update existing user form by it's user id."
+							},
+							"response": []
+						},
+						{
+							"name": "Create profile",
+							"_postman_id": "524b730c-8982-4420-bf54-fd4ee9a2cea9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"FormID\": \"1\",\n  \"National ID\": 845236510037,\n  \"Name\": \"John kelper\",\n  \"Secondary ID Type\": \"Driving License\",\n  \"Secondary ID\": \"8452AJNB78\",\n  \"Tertiary ID Type\": \"Driving License\",\n  \"Tertiary ID \": \"8452PKMN\",\n  \"Gender\": \"Male\",\n  \"Date of Birth\": \"1994-12-14\",\n  \"Marital Status\": \"Married\",\n  \"Type of relation\": \"Wife\",\n  \"Relation Name\": \"Marie\",\n  \"Nominee Name\": \"Marie\",\n  \"Nominee Age\": 32,\n  \"Nominee Relationship\": \"Wife\",\n  \"Address\": \"\",\n  \"State\": \"\",\n  \"District\": \"\",\n  \"Village/Town/City\": \"\",\n  \"Email\": \"\",\n  \"Residence Accommodation\": \"\",\n  \"Educational Qualifications\": \"\",\n  \"Occupation\": \"\",\n  \"Mobile Number\": \"\",\n  \"Latitude\": \"\",\n  \"Longitude\": \"\",\n  \"Hierarchy\": 1599383,\n  \"branchId\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{backofficeURL}}:5055/ProfileService/profiles?access_token={{useraccessToken}}",
+									"host": [
+										"{{backofficeURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ProfileService",
+										"profiles"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{useraccessToken}}"
+										}
+									]
+								},
+								"description": "Using this API we can create a new profile."
+							},
+							"response": []
+						},
+						{
+							"name": "Update profile",
+							"_postman_id": "4f62c6c5-d1c1-42fd-a27f-9a2db844ceec",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"FormID\": 1,\n  \"National ID\": 512023265874,\n  \"Name\": \"Edwin berg\",\n  \"Secondary ID Type\": \"Driving License\",\n  \"Secondary ID\": \"8452AJNB78\",\n  \"Tertiary ID Type\": \"Driving License\",\n  \"Tertiary ID \": \"8452PKMN\",\n  \"Gender\": \"Male\",\n  \"Date of Birth\": \"1994-12-14\",\n  \"Marital Status\": \"Married\",\n  \"Type of relation\": \"Wife\",\n  \"Relation Name\": \"Marie\",\n  \"Nominee Name\": \"Marie\",\n  \"Nominee Age\": 32,\n  \"Nominee Relationship\": \"Wife\",\n  \"Address\": \"\",\n  \"State\": \"\",\n  \"District\": \"\",\n  \"Village/Town/City\": \"\",\n  \"Email\": \"\",\n  \"Residence Accommodation\": \"\",\n  \"Educational Qualifications\": \"\",\n  \"Occupation\": \"\",\n  \"Mobile Number\": \"\",\n  \"Latitude\": \"\",\n  \"Longitude\": \"\",\n  \"Hierarchy\": 1599383,\n  \"branchId\": 1599383,\n  \"Branch\": \"Cashpor\",\n  \"Group\": \"Cashpor\",\n  \"Identifier\": \"GMF/CSHPR/164711\",\n  \"Age\": 28\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{backofficeURL}}/ProfileService/profiles/{{profileid}}?access_token={{useraccessToken}}",
+									"host": [
+										"{{backofficeURL}}"
+									],
+									"path": [
+										"ProfileService",
+										"profiles",
+										"{{profileid}}"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{useraccessToken}}"
+										}
+									]
+								},
+								"description": "Using this API we can update existing profile details."
+							},
+							"response": []
+						},
+						{
+							"name": "Get profiles",
+							"_postman_id": "a38e0bb9-36e9-4963-a2a1-6593da055abe",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{backofficeURL}}:5055/ProfileService/profiles?pageNumber=0&numberOfRecords=10&access_token={{useraccessToken}}",
+									"host": [
+										"{{backofficeURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ProfileService",
+										"profiles"
+									],
+									"query": [
+										{
+											"key": "pageNumber",
+											"value": "0"
+										},
+										{
+											"key": "numberOfRecords",
+											"value": "10"
+										},
+										{
+											"key": "access_token",
+											"value": "{{useraccessToken}}"
+										}
+									]
+								},
+								"description": "Using this API we can view all the existing profiles in the application."
+							},
+							"response": []
+						},
+						{
+							"name": "Get profile by profileid",
+							"_postman_id": "99e57d92-3a84-408a-97a4-dec94e45aefe",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{backofficeURL}}:5055/ProfileService/profiles/{{profileid}}?access_token={{useraccessToken}}",
+									"host": [
+										"{{backofficeURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ProfileService",
+										"profiles",
+										"{{profileid}}"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{useraccessToken}}"
+										}
+									]
+								},
+								"description": "Using this API we can get profile details by it's profile id."
+							},
+							"response": []
+						},
+						{
+							"name": "Search profile",
+							"_postman_id": "1a412a91-9fb2-49a7-9d0b-8222da4ace7b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{backofficeURL}}:5055/ProfileService/searchProfiles?=&mobileNumber={{mobileNumber}}&access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10",
+									"host": [
+										"{{backofficeURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ProfileService",
+										"searchProfiles"
+									],
+									"query": [
+										{
+											"key": null,
+											"value": ""
+										},
+										{
+											"key": "mobileNumber",
+											"value": "{{mobileNumber}}"
+										},
+										{
+											"key": "access_token",
+											"value": "{{useraccessToken}}"
+										},
+										{
+											"key": "pageNumber",
+											"value": "0"
+										},
+										{
+											"key": "numberOfRecords",
+											"value": "10"
+										}
+									]
+								},
+								"description": "Using this API we can filter/search a profile by its profile id"
+							},
+							"response": []
+						},
+						{
+							"name": "Get profiles count",
+							"_postman_id": "bc0c58b1-d78d-49fe-9102-438a6b5fe10e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{backofficeURL}}:5055/ProfileService/profile/count?access_token={{useraccessToken}}",
+									"host": [
+										"{{backofficeURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ProfileService",
+										"profile",
+										"count"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{useraccessToken}}"
+										}
+									]
+								},
+								"description": "Using this API we can get total count of the profiles that exist in the application."
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "227629b4-cc94-44c3-8a27-e9a31de86a9c",
+					"description": "An organisation may comprise diverse profile types such as customer, business owner, enterprise info etc... Each of such profiles may require typical information to be stored in an organisation's record. Such profile types are termed profile templates that can be further used to create specific profiles.\n\nProfile service contains APIs to define client profile templates and to create profiles in such categories.",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Onboard",
+					"item": [
+						{
+							"name": "View a workflow",
+							"item": [
+								{
+									"name": "Get workflow by workflow id",
+									"_postman_id": "b5b30e5b-31ed-4635-b3cd-47d8d268208a",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/workflows/{{workflowid}}?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"workflows",
+												"{{workflowid}}"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can get a workflow based on it's workflow id."
+									},
+									"response": []
+								},
+								{
+									"name": "Get onboard filter by workflowid",
+									"_postman_id": "c49adb1d-2289-4fcb-8515-719469770ebd",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/onboardFilter?workflowId={{workflowid}}&numberOfRecords=50&pageNumber=0&access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"onboardFilter"
+											],
+											"query": [
+												{
+													"key": "workflowId",
+													"value": "{{workflowid}}"
+												},
+												{
+													"key": "numberOfRecords",
+													"value": "50"
+												},
+												{
+													"key": "pageNumber",
+													"value": "0"
+												},
+												{
+													"key": "Name",
+													"value": "Berlin",
+													"disabled": true
+												},
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can perform filter operation in the onboard section."
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "4cc169f8-7b21-4bee-9881-31c88cfb9c91",
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Link profile to a worflow",
+							"item": [
+								{
+									"name": "Get unlinked profiles to workflow",
+									"_postman_id": "fa48b78a-3fdb-4368-841c-02a99e205111",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/unlinkedProfiles/2224?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"unlinkedProfiles",
+												"2224"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												},
+												{
+													"key": "pageNumber",
+													"value": "0"
+												},
+												{
+													"key": "numberOfRecords",
+													"value": "10"
+												}
+											]
+										},
+										"description": "Using this API we can get all the unlinked profiles."
+									},
+									"response": []
+								},
+								{
+									"name": "Get unlinked profile with identifier",
+									"_postman_id": "f5579d98-6407-49af-9a76-207c2f1a1c04",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/unlinkedProfiles/2224?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&Identifier={{identifier}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"unlinkedProfiles",
+												"2224"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												},
+												{
+													"key": "pageNumber",
+													"value": "0"
+												},
+												{
+													"key": "numberOfRecords",
+													"value": "10"
+												},
+												{
+													"key": "Identifier",
+													"value": "{{identifier}}"
+												}
+											]
+										},
+										"description": "Using this API we can get a specific unlinked profile based on profile identifier."
+									},
+									"response": []
+								},
+								{
+									"name": "Link profile to workflow",
+									"_postman_id": "571c3871-5acd-4ebd-bd20-51ab0f641b44",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"profileDetails\": [\n    {\n      \"profileID\": \"468f3a71-ddf8-4fb2-985c-68cb9843bafb\"\n    }\n  ],\n  \"workFlowID\": \"907195\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowToProfiles?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"workflowToProfiles"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can link a profile to the workflow."
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "a372710b-b64b-4c5f-8006-35ee62f0f28e",
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Update details in workflow",
+							"item": [
+								{
+									"name": "Filter with identifier in workflow template",
+									"_postman_id": "92ecbde0-8e99-458a-928e-d4f747a00ecf",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/onboardFilter?workflowId={{workflowid}}&numberOfRecords=50&pageNumber=0&identifier={{identifier}}&access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"onboardFilter"
+											],
+											"query": [
+												{
+													"key": "workflowId",
+													"value": "{{workflowid}}"
+												},
+												{
+													"key": "numberOfRecords",
+													"value": "50"
+												},
+												{
+													"key": "pageNumber",
+													"value": "0"
+												},
+												{
+													"key": "identifier",
+													"value": "{{identifier}}"
+												},
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can filter a specific linked profile inside a workflow based on the profile identifier."
+									},
+									"response": []
+								},
+								{
+									"name": "Update details in the workflow template",
+									"_postman_id": "e547e475-8072-4118-992f-43176f55e194",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"Bank Account Number\": 85632652,\r\n  \"Bank Name\": \"HSBC\",\r\n  \"Bank branch name\": \"Hyderabad\",\r\n  \"IFSC Code\": \"HSBC000623\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowTemplateDetails/{{workflowtemplatedetailsID}}?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"workflowTemplateDetails",
+												"{{workflowtemplatedetailsID}}"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can update the details in the workflow template."
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "5d3f7383-dad0-4334-8d0c-046f25fe353c",
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Verify a workflow template",
+							"item": [
+								{
+									"name": "Verify a workflow template",
+									"_postman_id": "38a16fbc-08ef-4c5a-ad56-b4de0b0438a7",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"workflowTemplateDetails\": [\r\n    {\r\n      \"templateDetailsID\": 1599781,\r\n      \"templateID\": 16,\r\n      \"workflowProfileID\": 1599776,\r\n      \"workflowTemplateDetails\": {\r\n        \"Bank Account Number\": 85632652,\r\n        \"Bank Name\": \"HSBC\",\r\n        \"Bank branch name\": \"Hyderabad\",\r\n        \"IFSC Code\": \"HSBC000623\"\r\n      }\r\n    }\r\n  ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowTemplateDetails/verify?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"workflowTemplateDetails",
+												"verify"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can verify a workflow template."
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "7044ead0-2b6b-4ae9-915b-0374a8a8e2d6",
+							"_postman_isSubFolder": true
+						}
+					],
+					"_postman_id": "0e29be9b-5869-46cd-a7ce-8437d87b6073",
+					"description": "Onboard module is used for onboarding a new client. This folder consist of different API which are used for the functionality of the module.",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Approve",
+					"item": [
+						{
+							"name": "Filter a non approved profile with identifier",
+							"item": [
+								{
+									"name": "Filter a non approved profile with identifier",
+									"_postman_id": "1afeef7c-04e7-44d5-b4d2-650f76724d76",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/ProfileService/searchprofileWithApproval?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&approved=No&identifier={{identifier}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"ProfileService",
+												"searchprofileWithApproval"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												},
+												{
+													"key": "pageNumber",
+													"value": "0"
+												},
+												{
+													"key": "numberOfRecords",
+													"value": "10"
+												},
+												{
+													"key": "approved",
+													"value": "No"
+												},
+												{
+													"key": "identifier",
+													"value": "{{identifier}}"
+												}
+											]
+										},
+										"description": "Using this API we can filter/search a non approved profile."
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "7c695512-fde7-4570-adfc-4647663f9b97",
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "View non approved profile details",
+							"item": [
+								{
+									"name": "Get workflow template details by workflow profile id",
+									"_postman_id": "4ad76b5d-35e5-43eb-829f-49278211b5df",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/templateDetailsByworkflowProfileId/{{workflowprofileid}}?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"templateDetailsByworkflowProfileId",
+												"{{workflowprofileid}}"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "f1b7f1db-a442-44f2-91c9-9c18598f120a",
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Revert back a profile from approval",
+							"item": [
+								{
+									"name": "Revert back a profile from approval to onboard",
+									"_postman_id": "5a367884-c254-47c0-b5d5-d29594908b34",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"workflowProfileID\": 1599796,\r\n  \"profileID\": \"468f3a71-ddf8-4fb2-985c-68cb9843bafb\",\r\n  \"workflowID\": \"1496367\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowReversal?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"workflowReversal"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can revert a profile from \"Approve client\" module to \"Onboard\"."
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "9f7c3287-9537-4c35-8c8d-5522b9c6bd56",
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Approve a profile",
+							"item": [
+								{
+									"name": "Approve a profile",
+									"_postman_id": "025ab793-cde9-4a07-bfd7-dbb4b6d5acbe",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"ApprovedProfiles\": [\r\n    {\r\n      \"workflowProfileID\": 1599801,\r\n      \"workflowID\": \"1496367\",\r\n      \"profileID\": \"b675bb20-4f29-4682-aab5-9e065823bc13\",\r\n      \"Approved\": \"No\"\r\n    }\r\n  ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}:5055/ProfileService/editApprovalProfiles?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"ProfileService",
+												"editApprovalProfiles"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can approve a profile."
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "b083ddf7-f0b7-4499-a96b-3c92390fbd83",
+							"_postman_isSubFolder": true
+						}
+					],
+					"_postman_id": "233ffe8a-525f-40f0-86c3-8b3be8597e10",
+					"description": "Approve client is a module which allows us to approve a profile after completion of onboard verification.",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Payments",
+					"item": [
+						{
+							"name": "Bulk Deals",
+							"item": [
+								{
+									"name": "Get IED events",
+									"_postman_id": "e6496c2d-3c31-4675-9def-ab8ec81c3a00",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/PortfolioService/bulkReceiveAndDeals?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&eventType=IED&=",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"PortfolioService",
+												"bulkReceiveAndDeals"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												},
+												{
+													"key": "pageNumber",
+													"value": "0"
+												},
+												{
+													"key": "numberOfRecords",
+													"value": "10"
+												},
+												{
+													"key": "Hierarchy",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "eventType",
+													"value": "IED"
+												},
+												{
+													"key": "",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get IED events by identifier",
+									"_postman_id": "f800081b-ffcc-4645-973e-71ff40dd3663",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/PortfolioService/bulkReceiveAndDeals?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&identifier={{identifier2}}&eventType=IED&=",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"PortfolioService",
+												"bulkReceiveAndDeals"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												},
+												{
+													"key": "pageNumber",
+													"value": "0"
+												},
+												{
+													"key": "numberOfRecords",
+													"value": "10"
+												},
+												{
+													"key": "Hierarchy",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "identifier",
+													"value": "{{identifier2}}"
+												},
+												{
+													"key": "eventType",
+													"value": "IED"
+												},
+												{
+													"key": "",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Disburse IED event",
+									"_postman_id": "0f8dd5db-8e65-474e-91ce-4865945bd86e",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "[\r\n  {\r\n    \"ContractUUID\": \"2f9f80cb-5b56-4b65-82a8-12578b21e75b\",\r\n    \"EventID\": \"cddfd22e-82d9-4576-ac1f-9bcb0fea1bde\",\r\n    \"EventTime\": \"2022-07-01T23:59:59\",\r\n    \"EventType\": \"IED\",\r\n    \"Units\": \"INR\",\r\n    \"Value\": -25000,\r\n    \"DebitPaymentChannelID\": \"7deb30c2-8ccf-4e23-b538-c4a8558d96cd\",\r\n    \"CreditPaymentChannelID\": \"5b33e59d-07bf-4bd0-8fcd-5eff59a4f254\",\r\n    \"PaymentMethod\": \"billing\",\r\n    \"RemainingAmount\": -25000,\r\n    \"ProcessTime\": \"2022-07-01T23:59:59\",\r\n    \"Hierarchy\": 1599383\r\n  }\r\n]",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}:5055/PortfolioService/savePortfolioRepayment?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"PortfolioService",
+												"savePortfolioRepayment"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "935cc2ee-621d-4049-ae15-75094c6c0d53",
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Bulk Receive",
+							"item": [
+								{
+									"name": "Get IP/PR events by hierarchy",
+									"_postman_id": "5ddde287-6e0a-431d-8c1d-67bb123f0092",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/PortfolioService/bulkReceiveAndDeals?=&access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=20&Hierarchy={{hierarchy}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"PortfolioService",
+												"bulkReceiveAndDeals"
+											],
+											"query": [
+												{
+													"key": null,
+													"value": ""
+												},
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												},
+												{
+													"key": "pageNumber",
+													"value": "0"
+												},
+												{
+													"key": "numberOfRecords",
+													"value": "20"
+												},
+												{
+													"key": "Hierarchy",
+													"value": "{{hierarchy}}"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get IP/PR events by identifier",
+									"_postman_id": "f44430d6-4f55-4177-96af-3e026c39e6e1",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/PortfolioService/bulkReceiveAndDeals?=&access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=20&Hierarchy={{hierarchy}}&identifier={{identifier2}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"PortfolioService",
+												"bulkReceiveAndDeals"
+											],
+											"query": [
+												{
+													"key": null,
+													"value": ""
+												},
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												},
+												{
+													"key": "pageNumber",
+													"value": "0"
+												},
+												{
+													"key": "numberOfRecords",
+													"value": "20"
+												},
+												{
+													"key": "Hierarchy",
+													"value": "{{hierarchy}}"
+												},
+												{
+													"key": "identifier",
+													"value": "{{identifier2}}"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Repay IP/PR event",
+									"_postman_id": "227f51ae-8828-4b47-af3e-d453b4069878",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "[\r\n  {\r\n    \"ContractUUID\": \"2f9f80cb-5b56-4b65-82a8-12578b21e75b\",\r\n    \"EventID\": \"d471066b-adfe-465f-9d7d-6ba9bd64eb4c\",\r\n    \"EventTime\": \"2022-07-08T23:59:59\",\r\n    \"EventType\": \"IP\",\r\n    \"Units\": \"INR\",\r\n    \"Value\": 101,\r\n    \"Status\": \"pending\",\r\n    \"DebitPaymentChannelID\": \"5b33e59d-07bf-4bd0-8fcd-5eff59a4f254\",\r\n    \"CreditPaymentChannelID\": \"7deb30c2-8ccf-4e23-b538-c4a8558d96cd\",\r\n    \"PaymentMethod\": \"billing\",\r\n    \"RemainingAmount\": 101,\r\n    \"ProcessTime\": \"2022-07-08T23:59:59\",\r\n    \"Hierarchy\": \"1599383\"\r\n  },\r\n  {\r\n    \"ContractUUID\": \"2f9f80cb-5b56-4b65-82a8-12578b21e75b\",\r\n    \"EventID\": \"fa10cf97-98d7-43be-93aa-ff0e75e53431\",\r\n    \"EventTime\": \"2022-07-08T23:59:59\",\r\n    \"EventType\": \"PR\",\r\n    \"Units\": \"INR\",\r\n    \"Value\": 2399,\r\n    \"Status\": \"pending\",\r\n    \"DebitPaymentChannelID\": \"5b33e59d-07bf-4bd0-8fcd-5eff59a4f254\",\r\n    \"CreditPaymentChannelID\": \"7deb30c2-8ccf-4e23-b538-c4a8558d96cd\",\r\n    \"PaymentMethod\": \"billing\",\r\n    \"RemainingAmount\": 2399,\r\n    \"ProcessTime\": \"2022-07-08T23:59:59\",\r\n    \"Hierarchy\": \"1599383\"\r\n  }\r\n]",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}:5055/PortfolioService/savePortfolioRepayment?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"PortfolioService",
+												"savePortfolioRepayment"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "395af17e-558c-4fd6-9cc1-541f457e3878",
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Receipt Approval",
+							"item": [
+								{
+									"name": "Get the payment events yet to be approved",
+									"_postman_id": "36d2bb8f-3414-4904-97d6-2978d90ecab5",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/PortfolioService/receiptApproval?=&numberOfRecords=10&pageNumber=0&access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"PortfolioService",
+												"receiptApproval"
+											],
+											"query": [
+												{
+													"key": null,
+													"value": ""
+												},
+												{
+													"key": "numberOfRecords",
+													"value": "10"
+												},
+												{
+													"key": "pageNumber",
+													"value": "0"
+												},
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get the payment events by identifier",
+									"_postman_id": "f0025da9-68f8-4fd6-bea7-a31675ed2ebd",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/PortfolioService/receiptApproval?=&numberOfRecords=10&pageNumber=0&identifier={{identifier2}}&access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"PortfolioService",
+												"receiptApproval"
+											],
+											"query": [
+												{
+													"key": null,
+													"value": ""
+												},
+												{
+													"key": "numberOfRecords",
+													"value": "10"
+												},
+												{
+													"key": "pageNumber",
+													"value": "0"
+												},
+												{
+													"key": "identifier",
+													"value": "{{identifier2}}"
+												},
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "2b03081d-4a08-4cd0-9b2a-27748da3d927",
+							"_postman_isSubFolder": true
+						}
+					],
+					"_postman_id": "9463df60-4e59-4e73-be19-11dc40167243",
+					"_postman_isSubFolder": true
+				}
+			],
+			"_postman_id": "0160a252-9171-4fbc-92aa-7363fda045e9",
+			"description": "Back-office API enable admin configurations and back-office support."
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Customer signup",
+					"item": [
+						{
+							"name": "Signing up a new client",
+							"_postman_id": "e2f2866e-b23e-454b-8dde-e24573471a97",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"Is your age above 18\": \"Yes\",\r\n  \"FATCA Declaration\": \"Not a US resident\",\r\n  \"Domicile\": \"Switzerland\",\r\n  \"Identifier\": \"Harshith\",\r\n  \"User Password\": \"1234\",\r\n  \"National ID\": \"620231540327\",\r\n  \"First Name\": \"Harshith\",\r\n  \"Last Name\": \"Kumar\",\r\n  \"Date of Birth\": \"1986-08-13\",\r\n  \"Mobile Number\": \"9415202360\",\r\n  \"Email\": \"lesnar22@gmail.com\",\r\n  \"FormID\": 1131982,\r\n  \"Hierarchy\": 1497814\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{customerURL}}:7190/mff/api/createClientUser",
+								"description": "To get signup parameter we have to use signup form API and branch service based on level API to complete the signup. Based on client choice mobile number or email can be passed directly in the payload."
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "543e1c2d-2743-4c5d-a5d1-e48aefe99477",
+					"description": "Consist of a list of API's which are used for the customer sign up",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Authorization",
+					"item": [
+						{
+							"name": "login with customer credentials",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = JSON.parse(responseBody);\r",
+											"var jsonValue = jsonData.body;\r",
+											"pm.globals.set(\"custoken\", jsonValue.access_token);"
+										],
+										"type": "text/javascript",
+										"id": "cd42723b-c160-4cf7-bb41-79b932cc6e96"
+									}
+								}
+							],
+							"_postman_id": "c8d60d5a-0547-4de4-98d2-157a27a979cc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"rootUser\": \"rootUser\",\r\n    \"userName\": \"userName\",\r\n    \"password\": \"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{customerURL}}:5055/LoginService/login"
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "c8609cd7-0735-47fe-a715-d87d095eca66",
+					"description": "Consist of API which is used for the customer login",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Customer Onboarding",
+					"item": [
+						{
+							"name": "View the list of workflows",
+							"_postman_id": "3af073de-7715-4d8e-bfd4-bd98a6cda202",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{customerURL}}:5055/WorkflowService/workflows?access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"WorkflowService",
+										"workflows"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								},
+								"description": "To fetch list of Workflows"
+							},
+							"response": []
+						},
+						{
+							"name": "To link a profile to workflow",
+							"_postman_id": "107290f6-e442-4fab-b4fe-d887efb66676",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"profileDetails\": [\r\n    {\r\n      \"profileID\": \"7423ec5c-1abf-4811-bb5d-de40469eac6b\"\r\n    },\r\n    {\r\n      \"profileID\": \"d3262ae5-bcfc-4e9b-9acb-00e5b8c97184\"\r\n    }\r\n  ],\r\n  \"workFlowID\": \"1503289\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{customerURL}}:5055/WorkflowService/workflowToProfiles?access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"WorkflowService",
+										"workflowToProfiles"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								},
+								"description": "To link a profile to workflow using profile Id (from profile service)and workflow Id(from workflow service)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get workflow templates based on profileID and workflowID",
+							"_postman_id": "c149b27f-8dfd-4a14-b3b9-7f0bcdfbd306",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{customerURL}}:5055/WorkflowService/workflowByprofile/{{profileID}}/{{workflowID}}?access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"WorkflowService",
+										"workflowByprofile",
+										"{{profileID}}",
+										"{{workflowID}}"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								},
+								"description": "To fetch workflow templates based on profileID and workflowID"
+							},
+							"response": []
+						},
+						{
+							"name": "To save the details in workflow template",
+							"_postman_id": "bba6507d-3561-4693-961d-029e7fbfe12d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"Bank Account Number\": 8563254125,\r\n  \"Bank Name\": \"HSBC\",\r\n  \"Bank branch name\": \"Hyderabad\",\r\n  \"IFSC Code\": \"HSBC000965\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{customerURL}}:5055/WorkflowService/workflowTemplateDetails/{{templateDetailsID}}?access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"WorkflowService",
+										"workflowTemplateDetails",
+										"{{templateDetailsID}}"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								},
+								"description": "To update workflow template Details based on templateDetailsID"
+							},
+							"response": []
+						},
+						{
+							"name": "View the workflow template details of a profile",
+							"_postman_id": "7032fbd7-c190-416d-a583-b0372894d256",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{customerURL}}:5055/WorkflowService/mobileApp/workflowProfileID/{{workflowProfileID}}/templateID/{{templateID}}?access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"WorkflowService",
+										"mobileApp",
+										"workflowProfileID",
+										"{{workflowProfileID}}",
+										"templateID",
+										"{{templateID}}"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								},
+								"description": "To fetch workflow template details based on template Id and workflowProfileID."
+							},
+							"response": []
+						},
+						{
+							"name": "To verify workflow template details",
+							"_postman_id": "382fe858-643c-4271-9da4-61444facd579",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"workflowTemplateDetails\": [\r\n    {\r\n      \"templateDetailsID\": 1597103,\r\n      \"templateID\": 16,\r\n      \"workflowProfileID\": 1597100,\r\n      \"workflowTemplateDetails\": {\r\n        \"Bank Account Number\": 8563254125,\r\n        \"Bank Name\": \"HSBC\",\r\n        \"Bank branch name\": \"Hyderabad\",\r\n        \"IFSC Code\": \"HSBC000963\"\r\n      }\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{customerURL}}:5055/WorkflowService/workflowTemplateDetails/verify?access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"WorkflowService",
+										"workflowTemplateDetails",
+										"verify"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								},
+								"description": "To verify workflow template details in a workflow."
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "f069129c-e4de-41bc-9a33-414e67ee51d5",
+					"description": "Consist of a list of API's which are used for the customer onboarding.",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Accounts",
+					"item": [
+						{
+							"name": "View the contracts of a profile",
+							"_postman_id": "ed7d9de3-022b-4450-8145-215b57ff1c64",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{customerURL}}:5055/PortfolioService/Contracts?linkedProfileId={{linkedProfileId}}&access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"PortfolioService",
+										"Contracts"
+									],
+									"query": [
+										{
+											"key": "linkedProfileId",
+											"value": "{{linkedProfileId}}"
+										},
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								},
+								"description": "This API is used to view the contracts of a profile."
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "f78f8d90-2600-4bce-b423-241ffe18950c",
+					"description": "Contains the API which is used to view the list of contracts for a profile.",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Payments",
+					"item": [
+						{
+							"name": "To view the repayment events",
+							"_postman_id": "05ec6604-775b-4127-b667-39915fd65a4e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{customerURL}}:5055/PortfolioService/geteventsBycontractUUID?access_token={{custoken}}&contractUUID=3d50c42e-7597-4f98-97fb-494b92765bd1&eventType=",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"PortfolioService",
+										"geteventsBycontractUUID"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										},
+										{
+											"key": "contractUUID",
+											"value": "3d50c42e-7597-4f98-97fb-494b92765bd1"
+										},
+										{
+											"key": "eventType",
+											"value": ""
+										}
+									]
+								},
+								"description": "This API is used to view the pending repayments of a contract."
+							},
+							"response": []
+						},
+						{
+							"name": "To perform the repayment",
+							"_postman_id": "9c1720bd-fbbd-42e2-a1ce-03bcbea0ddd5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n  {\r\n    \"ContractUUID\": \"3d50c42e-7597-4f98-97fb-494b92765bd1\",\r\n    \"EventID\": \"256d732e-344f-474c-bbde-f45484d44a9c\",\r\n    \"EventTime\": \"2022-05-20T23:59:59\",\r\n    \"EventType\": \"IP\",\r\n    \"Units\": \"INR\",\r\n    \"Value\": 141,\r\n    \"Status\": \"pending\",\r\n    \"DebitPaymentChannelID\": \"bbc39dc8-8dee-4fa4-8f8e-26ceeefceea1\",\r\n    \"CreditPaymentChannelID\": \"7deb30c2-8ccf-4e23-b538-c4a8558d96cd\",\r\n    \"PaymentMethod\": \"billing\",\r\n    \"RemainingAmount\": 141,\r\n    \"ProcessTime\": \"2022-05-20T23:59:59\",\r\n    \"Hierarchy\": \"1497814\"\r\n  },\r\n  {\r\n    \"ContractUUID\": \"3d50c42e-7597-4f98-97fb-494b92765bd1\",\r\n    \"EventID\": \"222febaf-201a-46af-9a1c-b92071907e4d\",\r\n    \"EventTime\": \"2022-05-20T23:59:59\",\r\n    \"EventType\": \"PR\",\r\n    \"Units\": \"INR\",\r\n    \"Value\": 3359,\r\n    \"Status\": \"pending\",\r\n    \"DebitPaymentChannelID\": \"bbc39dc8-8dee-4fa4-8f8e-26ceeefceea1\",\r\n    \"CreditPaymentChannelID\": \"7deb30c2-8ccf-4e23-b538-c4a8558d96cd\",\r\n    \"PaymentMethod\": \"billing\",\r\n    \"RemainingAmount\": 3359,\r\n    \"ProcessTime\": \"2022-05-20T23:59:59\",\r\n    \"Hierarchy\": \"1497814\"\r\n  }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{customerURL}}:5055/PortfolioService/savePortfolioRepayment?access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"PortfolioService",
+										"savePortfolioRepayment"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								},
+								"description": "This API is used to perform the repayment."
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "5ec60a32-c529-42b4-a933-78d38e392b15",
+					"description": "Consist of API's which are used to view and perform the repayments.",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Cards",
+					"item": [
+						{
+							"name": "Apply for a card",
+							"_postman_id": "ee41e136-29d8-4ee1-a314-73f64480a893",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cardDetails\": [\r\n    {\r\n      \"contractID\": \"GMF/TS/164628-2\",\r\n      \"contractUUID\": \"c1f85a3b-c2c4-4ebe-a61f-e4603dbdec4d\",\r\n      \"linkedProfileId\": \"d3262ae5-bcfc-4e9b-9acb-00e5b8c97184\",\r\n      \"productName\": \"Current account INR\",\r\n      \"status\": \"apply\"\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{customerURL}}:5055/ThirdpartyService/applyCard?access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"applyCard"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								},
+								"description": "This API is used to apply for a new card."
+							},
+							"response": []
+						},
+						{
+							"name": "To view the cards associated with profile",
+							"_postman_id": "9a3691a7-2b1d-4b2e-a232-2a8829ef6789",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{customerURL}}:5055/ThirdpartyService/cards?access_token={{custoken}}&status=active",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"cards"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										},
+										{
+											"key": "status",
+											"value": "active"
+										}
+									]
+								},
+								"description": "This API is to view the list of active cards which are associated to a profile."
+							},
+							"response": []
+						},
+						{
+							"name": "Block a card",
+							"_postman_id": "8241df9a-c28a-4fc6-92ac-5ac395fb0afa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cardDetails\": [\r\n    {\r\n      \"contractUUID\": \"8cb6b3c1-942e-4e9f-acd2-4f44c334b852\",\r\n      \"status\": \"block\"\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{customerURL}}:5055/ThirdpartyService/cardStatus?access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"cardStatus"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								},
+								"description": "This API is used to block active cards."
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "c9b7139a-ea7e-458a-b068-36f38760f867",
+					"description": "Consist of API's which are used to\n\ni) Apply for a card\n\nii) To view the cards which are associated to a profile\n\niii) To block an active card",
+					"_postman_isSubFolder": true
+				}
+			],
+			"_postman_id": "68603238-16c6-420d-85d8-095f24172e26",
+			"description": "Customer APIs support customer/external interaction of the banking entity layer."
+		},
+		{
+			"name": "Thirdparty integration",
+			"item": [
+				{
+					"name": "Authorization",
+					"item": [
+						{
+							"name": "login with customer credentials",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = JSON.parse(responseBody);\r",
+											"var jsonValue = jsonData.body;\r",
+											"pm.globals.set(\"custoken\", jsonValue.access_token);"
+										],
+										"type": "text/javascript",
+										"id": "43da47a1-991c-47fa-a8ac-f0bf8d8b5be2"
+									}
+								}
+							],
+							"_postman_id": "34cf3602-9f19-4eb6-a411-65b3f39fef0c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"rootUser\": \"rootUser\",\r\n    \"userName\": \"userName\",\r\n    \"password\": \"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{customerURL}}:5055/LoginService/login"
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "06bcd982-bea3-4f8d-a467-d7e4daff528a",
+					"description": "Consist of API which is used for the customer login",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Payment links",
+					"item": [
+						{
+							"name": "Card, Wallet, Bank",
+							"_postman_id": "52776548-afc8-4a69-990c-da33e801dcdf",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n  {\r\n    \"ContractUUID\": \"d890500d-7189-455f-9a29-ede8e91494b6\",\r\n    \"EventID\": \"24baf7b2-09df-4997-bb6a-7de90ae22ea9\",\r\n    \"EventTime\": \"2022-02-01T23:59:59\",\r\n    \"EventType\": \"IP\",\r\n    \"Units\": \"INR\",\r\n    \"Value\": 167,\r\n    \"Status\": \"pending\",\r\n    \"DebitPaymentChannelID\": \"b5d7deab-19ca-4e6d-b5b8-db321522ee08\",\r\n    \"CreditPaymentChannelID\": \"7deb30c2-8ccf-4e23-b538-c4a8558d96cd\",\r\n    \"PaymentMethod\": \"billing\",\r\n    \"RemainingAmount\": 167,\r\n    \"ProcessTime\": \"2022-02-01T23:59:59\"\r\n  },\r\n  {\r\n    \"ContractUUID\": \"d890500d-7189-455f-9a29-ede8e91494b6\",\r\n    \"EventID\": \"ec2de6d4-9fd6-4756-9fa0-78e3f82df729\",\r\n    \"EventTime\": \"2022-02-01T23:59:59\",\r\n    \"EventType\": \"PR\",\r\n    \"Units\": \"INR\",\r\n    \"Value\": 1833,\r\n    \"Status\": \"pending\",\r\n    \"DebitPaymentChannelID\": \"b5d7deab-19ca-4e6d-b5b8-db321522ee08\",\r\n    \"CreditPaymentChannelID\": \"7deb30c2-8ccf-4e23-b538-c4a8558d96cd\",\r\n    \"PaymentMethod\": \"billing\",\r\n    \"RemainingAmount\": 1833,\r\n    \"ProcessTime\": \"2022-02-01T23:59:59\"\r\n  }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{customerURL}}:5055/ThirdpartyService/stripe/paymentLink?access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"stripe",
+										"paymentLink"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPI",
+							"_postman_id": "2479d880-1c79-4227-90d6-f210d7e1bc8e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n  {\r\n    \"ContractUUID\": \"d890500d-7189-455f-9a29-ede8e91494b6\",\r\n    \"EventID\": \"24baf7b2-09df-4997-bb6a-7de90ae22ea9\",\r\n    \"EventTime\": \"2022-02-01T23:59:59\",\r\n    \"EventType\": \"IP\",\r\n    \"Units\": \"INR\",\r\n    \"Value\": 167,\r\n    \"Status\": \"pending\",\r\n    \"DebitPaymentChannelID\": \"b5d7deab-19ca-4e6d-b5b8-db321522ee08\",\r\n    \"CreditPaymentChannelID\": \"7deb30c2-8ccf-4e23-b538-c4a8558d96cd\",\r\n    \"PaymentMethod\": \"billing\",\r\n    \"RemainingAmount\": 167,\r\n    \"ProcessTime\": \"2022-02-01T23:59:59\"\r\n  },\r\n  {\r\n    \"ContractUUID\": \"d890500d-7189-455f-9a29-ede8e91494b6\",\r\n    \"EventID\": \"ec2de6d4-9fd6-4756-9fa0-78e3f82df729\",\r\n    \"EventTime\": \"2022-02-01T23:59:59\",\r\n    \"EventType\": \"PR\",\r\n    \"Units\": \"INR\",\r\n    \"Value\": 1833,\r\n    \"Status\": \"pending\",\r\n    \"DebitPaymentChannelID\": \"b5d7deab-19ca-4e6d-b5b8-db321522ee08\",\r\n    \"CreditPaymentChannelID\": \"7deb30c2-8ccf-4e23-b538-c4a8558d96cd\",\r\n    \"PaymentMethod\": \"billing\",\r\n    \"RemainingAmount\": 1833,\r\n    \"ProcessTime\": \"2022-02-01T23:59:59\"\r\n  }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{customerURL}}:5055/ThirdpartyService/paymentLink?access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"paymentLink"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "ccdf7e70-9ff7-49ce-92ae-ee092520fc16",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "E sign",
+					"item": [
+						{
+							"name": "Esign initiation",
+							"_postman_id": "bf8fb46d-619e-4390-af5d-21c862d98828",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"recipientName\": \"Stokes\",\r\n  \"recipientEmail\": \"sudhesh.mudra@odedtech.com\",\r\n  \"recipientId\": \"32aa8463-11f2-4e73-820a-cca1b1ec6fc1\",\r\n  \"profileId\": \"547848e5-8cc2-4d9f-bf56-afa30e3d1da8\",\r\n  \"contractId\": \"32aa8463-11f2-4e73-820a-cca1b1ec6fc1\",\r\n  \"fileName\": \"DecliningInterest_Rate__MonthlyEMI_32aa8463-11f2-4e73-820a-cca1b1ec6fc1_draft\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{customerURL}}:5055/ThirdpartyService/esign/envelope?access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"esign",
+										"envelope"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "To check esign status",
+							"_postman_id": "208b690d-5537-4b0f-8497-2afae0ce1ede",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{customerURL}}:5055/ThirdpartyService/esign/envelopeStatus?envelopeId=c6a61c88-92d0-4783-9028-8418e6eba8b9&access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"esign",
+										"envelopeStatus"
+									],
+									"query": [
+										{
+											"key": "envelopeId",
+											"value": "c6a61c88-92d0-4783-9028-8418e6eba8b9"
+										},
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "3cedcdaf-6495-470e-9a2d-9369e73b0229",
+					"description": "E sign is an efficient and legal way to get electronic documents signed quickly.",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Trust and customer validation",
+					"item": [
+						{
+							"name": "Email ID validation",
+							"item": [
+								{
+									"name": "Send OTP",
+									"_postman_id": "b2592251-1dfc-4ce3-a119-3a947e06804d",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"To\": \"sudhesh.mudra@odedtech.com\",\r\n  \"Channel\": \"email\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{customerURL}}:5055/ThirdpartyService/twilio/sendOtp"
+									},
+									"response": []
+								},
+								{
+									"name": "Verify OTP",
+									"_postman_id": "e44fc2e1-3c56-41dd-b82b-d25dddb9afd2",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"To\": \"sudhesh.mudra@odedtech.com\",\r\n  \"Code\": \"442759\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{customerURL}}:5055/ThirdpartyService/twilio/verifyOtp"
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "5484338b-a5a8-4666-aacf-0a5ab481b182",
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Mobile number validation",
+							"item": [
+								{
+									"name": "Send OTP",
+									"_postman_id": "a33b8d72-de13-43f3-97a7-33ace0cc5e99",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"To\": \"+919392256334\",\r\n  \"Channel\": \"sms\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{customerURL}}:5055/ThirdpartyService/twilio/sendOtp"
+									},
+									"response": []
+								},
+								{
+									"name": "Verify OTP",
+									"_postman_id": "16ee37c5-8544-4deb-95a5-a5d97a592367",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"To\": \"+919392256334\",\r\n  \"Code\": \"734413\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{customerURL}}:5055/ThirdpartyService/twilio/verifyOtp"
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "364aa66b-40cd-420c-b2fa-57451a71a810",
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Bank account validation",
+							"item": [
+								{
+									"name": "To verify bank account details",
+									"_postman_id": "0330ff0d-a3de-4d67-b49e-0a5022a185ea",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"accountNumber\": \"111801516523\",\r\n  \"ifsc\": \"ICIC0003334\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{customerURL}}:5055/ThirdpartyService/bankAccountVerification?access_token={{custoken}}",
+											"host": [
+												"{{customerURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"ThirdpartyService",
+												"bankAccountVerification"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{custoken}}"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "6b930878-0cde-4c7b-b677-6b9901bd4da2",
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "PAN card validation",
+							"item": [
+								{
+									"name": "To verify PAN card details",
+									"_postman_id": "f0077fb9-d6c7-4938-9deb-a2a648cece1d",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"pan\": \"BFGPK1861P\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{customerURL}}:5055/ThirdpartyService/panDataFetch?access_token={{custoken}}",
+											"host": [
+												"{{customerURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"ThirdpartyService",
+												"panDataFetch"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{custoken}}"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "8c2479f7-d8f0-4be1-b6c6-31d7913902f2",
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Aadhaar validation",
+							"item": [
+								{
+									"name": "Aadhaar validation",
+									"_postman_id": "72f82bb3-e0bb-46b6-9018-a16c3f4bd93d",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "[\r\n  {\r\n    \"aadhaarNumber\": \"956302114582\"\r\n  }\r\n]",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{customerURL}}:5055/ThirdpartyService/aadhaarVerification?access_token={{custoken}}",
+											"host": [
+												"{{customerURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"ThirdpartyService",
+												"aadhaarVerification"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{custoken}}"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_id": "9c37dc59-4c83-47d0-b150-73a2d9454497",
+							"_postman_isSubFolder": true
+						}
+					],
+					"_postman_id": "1b0f5ef8-df0e-4fdd-9709-d015b723e4eb",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Bank statement analyzer",
+					"item": [
+						{
+							"name": "To perform bank statement analysis",
+							"_postman_id": "7b5c0a88-30a4-4d33-95db-3e1f4d74807d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "ClientId",
+										"value": "f76f016f6396a05b5f32f68ac295cb8a"
+									},
+									{
+										"key": "ClientSecret",
+										"value": "a0375feb79f8642331408ef9f247b8f6ecb2867c0a1e7c029e70171055a8f4d9"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/sudhe/Downloads/my stmnt.pdf"
+										},
+										{
+											"key": "accountDetails",
+											"value": "{\"entityType\":\"Individual\",\n\"bankCode\":\"FI00003\",\n\"accountType\":\"SAVINGS\",\n\"accountNumber\":\"043510100091434\"}",
+											"type": "text"
+										},
+										{
+											"key": "profileId",
+											"value": "7423ec5c-1abf-4811-bb5d-de40469eac6b",
+											"type": "text"
+										},
+										{
+											"key": "workflowProfileId",
+											"value": "1503446",
+											"type": "text"
+										}
+									],
+									"options": {}
+								},
+								"url": {
+									"raw": "{{customerURL}}:5055/ThirdpartyService/upload/bankStatement?access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"upload",
+										"bankStatement"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								},
+								"description": "Upload bank statement"
+							},
+							"response": []
+						},
+						{
+							"name": "To view the report",
+							"_postman_id": "427b5205-1fd3-4246-822e-8ecf8997d68c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{customerURL}}:5055/ThirdpartyService/generateReportUrl?access_token={{custoken}}&referenceId=ac0af51a-0137-4ecd-afe0-9b6b652d0a7a",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"generateReportUrl"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										},
+										{
+											"key": "referenceId",
+											"value": "ac0af51a-0137-4ecd-afe0-9b6b652d0a7a"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "6a161efe-139d-4824-bb83-3f8d458bfdc9",
+					"description": "API that helps us to perform bank statement analyze",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Credit bureau",
+					"item": [
+						{
+							"name": "CRIF highmark report",
+							"_postman_id": "6c20a068-9d55-44b6-aa58-04bc6ea3de49",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{customerURL}}:8686/highmark/getHighmarkVerification/1495806"
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "1f384a82-54ee-4c48-86bb-d64f96014b6c",
+					"description": "API which provides credit score and credit reports.",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Real-time identity verification",
+					"item": [
+						{
+							"name": "KYC - Identity Verification",
+							"_postman_id": "1e5cdb8a-b698-4821-ad78-8eb6b9a9b958",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"reference\": \"3020215498\",\r\n  \"callback_url\": \"https://dev.mobilefirstfinance.com:5055/ThirdpartyService/callback/shufti\",\r\n  \"country\": \"IN\",\r\n  \"language\": \"EN\",\r\n  \"redirect_url\": \"https://customer.mobilefirstfinance.com/#/Pages/Login?verification=document&reference=3020215498\",\r\n  \"document\": {\r\n    \"supported_types\": [\r\n      \"id_card\"\r\n    ],\r\n    \"name\": \"\",\r\n    \"dob\": \"\",\r\n    \"age\": \"\",\r\n    \"issue_date\": \"\",\r\n    \"expiry_date\": \"\",\r\n    \"document_number\": \"\",\r\n    \"gender\": \"\"\r\n  },\r\n  \"face\":{}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{customerURL}}/ThirdpartyService/shufti"
+							},
+							"response": []
+						},
+						{
+							"name": "Facial Biometric Authentication",
+							"_postman_id": "60d5869a-d01c-46fb-9d93-3a087d4ac72f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"reference\": \"845203\",\r\n  \"callback_url\": \"https://dev.mobilefirstfinance.com:5055/ThirdpartyService/callback/shufti\",\r\n  \"country\": \"IN\",\r\n  \"language\": \"EN\",\r\n  \"redirect_url\": \"https://customer.mobilefirstfinance.com/#/Pages/Login?verification=document&reference=3020215498\",\r\n  \"face\": {\r\n\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{customerURL}}/ThirdpartyService/shufti"
+							},
+							"response": []
+						},
+						{
+							"name": "Address check",
+							"_postman_id": "b0a8c222-3261-41b8-aa99-8222aec537e3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"reference\": \"952635\",\r\n  \"callback_url\": \"https://dev.mobilefirstfinance.com:5055/ThirdpartyService/callback/shufti\",\r\n  \"country\": \"IN\",\r\n  \"language\": \"EN\",\r\n  \"redirect_url\": \"https://customer.mobilefirstfinance.com/#/Pages/Login?verification=document&reference=3020215498\",\r\n    \"address\"         : {\r\n        \"proof\"            : \"\",\r\n        \"supported_types\"  : [\"id_card\",\"bank_statement\"],\r\n        \"name\"             : {\r\n             \"first_name\"   : \"John\",\r\n             \"middle_name\"  : \"Middleman\",\r\n             \"last_name\"    : \"Doe\"\r\n        },\r\n        \"full_address\"      : \"3339 Maryland Avenue, Largo, Florida\",\r\n        \"address_fuzzy_match\":\"1\",\r\n        \"issue_date\"        : \"1990-09-07\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{customerURL}}/ThirdpartyService/shufti"
+							},
+							"response": []
+						},
+						{
+							"name": "Background check",
+							"_postman_id": "9f29d158-49ea-4bf4-8662-f65e0911e709",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"reference\": \"9210345\",\r\n  \"callback_url\": \"https://dev.mobilefirstfinance.com:5055/ThirdpartyService/callback/shufti\",\r\n  \"country\": \"IN\",\r\n  \"language\": \"EN\",\r\n  \"redirect_url\": \"https://customer.mobilefirstfinance.com/#/Pages/Login?verification=document&reference=3020215498\",\r\n   \"background_checks\": {\r\n        \"name\"             : {\r\n             \"first_name\"   : \"John\",\r\n             \"middle_name\"  : \"Middleman\",\r\n             \"last_name\"    : \"Doe\"\r\n        },\r\n        \"dob\"             : \"1980-11-12\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{customerURL}}/ThirdpartyService/shufti"
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "bae2038c-1c48-440f-ae8f-693a47f770b9",
+					"description": "Consist of API which is used to perform ID verification using shuftipro.",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Axis UPI",
+					"item": [
+						{
+							"name": "To validate Axis UPI",
+							"_postman_id": "0b5179db-7052-46e6-8efd-7608846b4b0d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{axisURL}}/axis/upi/validateVPA?customerVpa=9966130709@axis",
+									"host": [
+										"{{axisURL}}"
+									],
+									"path": [
+										"axis",
+										"upi",
+										"validateVPA"
+									],
+									"query": [
+										{
+											"key": "customerVpa",
+											"value": "9966130709@axis"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "To disburse the amount",
+							"_postman_id": "e79221e0-029b-4167-9a40-757b932b16ae",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{axisURL}}/axis/upi/disburse?customerVpa=jinal.haran@axis&amount=100&remarks=rent&custMobileNumber=9966130709",
+									"host": [
+										"{{axisURL}}"
+									],
+									"path": [
+										"axis",
+										"upi",
+										"disburse"
+									],
+									"query": [
+										{
+											"key": "customerVpa",
+											"value": "jinal.haran@axis"
+										},
+										{
+											"key": "amount",
+											"value": "100"
+										},
+										{
+											"key": "remarks",
+											"value": "rent"
+										},
+										{
+											"key": "custMobileNumber",
+											"value": "9966130709"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "To check the disbursed amount status",
+							"_postman_id": "5c144d59-f718-4b16-a925-cc2b119d670f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{axisURL}}/axis/upi/disburseStatus?txsId=MF1246d2f2f2b14cf2b5af23e8785d9b3e",
+									"host": [
+										"{{axisURL}}"
+									],
+									"path": [
+										"axis",
+										"upi",
+										"disburseStatus"
+									],
+									"query": [
+										{
+											"key": "txsId",
+											"value": "MF1246d2f2f2b14cf2b5af23e8785d9b3e"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "To receive the payment",
+							"_postman_id": "a80d0572-1d92-4401-beef-2efeb9c3b765",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{axisURL}}/axis/upi/collectRequest?customerVpa=jinal.haran@axis&amount=100&unqcustid=MF123456789&unqtxnid=AXI23254323232&txndtl=test",
+									"host": [
+										"{{axisURL}}"
+									],
+									"path": [
+										"axis",
+										"upi",
+										"collectRequest"
+									],
+									"query": [
+										{
+											"key": "customerVpa",
+											"value": "jinal.haran@axis"
+										},
+										{
+											"key": "amount",
+											"value": "100"
+										},
+										{
+											"key": "unqcustid",
+											"value": "MF123456789"
+										},
+										{
+											"key": "unqtxnid",
+											"value": "AXI23254323232"
+										},
+										{
+											"key": "txndtl",
+											"value": "test"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "To check the repayment amount status",
+							"_postman_id": "b18b0a56-cc93-4520-8dde-102010248414",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{axisURL}}/axis/upi/collectRequestStatus?txsId=AXI23254323232&merchMobileNumber=9966130709",
+									"host": [
+										"{{axisURL}}"
+									],
+									"path": [
+										"axis",
+										"upi",
+										"collectRequestStatus"
+									],
+									"query": [
+										{
+											"key": "txsId",
+											"value": "AXI23254323232"
+										},
+										{
+											"key": "merchMobileNumber",
+											"value": "9966130709"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "c1217e84-c156-4815-8920-d8de17507d62",
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "SolitX corebanking integration",
+					"item": [
+						{
+							"name": "Login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = JSON.parse(responseBody);",
+											"console.log(jsonData.access_token);",
+											"pm.globals.set(\"at\",jsonData.access_token);",
+											"",
+											""
+										],
+										"type": "text/javascript",
+										"id": "60ead33d-2871-421b-a6d8-f8edf100e6ff"
+									}
+								}
+							],
+							"_postman_id": "8219ed29-7415-48ec-a8c9-f906358dd506",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": {
+										"username": "web-app"
+									}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "grant_type",
+										"type": "text",
+										"value": "password"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"rootUser\": \"rootUser\",\n  \"userName\": \"userName\",\n  \"password\": \"password\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{solitxURL}}:6055/login",
+									"host": [
+										"{{solitxURL}}"
+									],
+									"port": "6055",
+									"path": [
+										"login"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create profile",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"id": "19455c44-a804-4c4a-bc1c-f97f13a277ec"
+									}
+								}
+							],
+							"_postman_id": "4ca22635-653b-48d2-97ca-bc56ced7a0eb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"FormID\": \"1\",\n  \"National ID\": 845236510037,\n  \"Identifier\": \"Davis john\",\n  \"Secondary ID Type\": \"Driving License\",\n  \"Secondary ID\": \"8452AJNB78\",\n  \"Tertiary ID Type\": \"Driving License\",\n  \"Tertiary ID \": \"8452PKMN\",\n  \"Gender\": \"Male\",\n  \"Date of Birth\": \"1994-12-14\",\n  \"Marital Status\": \"Married\",\n  \"Type of relation\": \"Wife\",\n  \"Relation Name\": \"Marie\",\n  \"Nominee Name\": \"Marie\",\n  \"Nominee Age\": 32,\n  \"Nominee Relationship\": \"Wife\",\n  \"Address\": \"\",\n  \"State\": \"\",\n  \"District\": \"\",\n  \"Village/Town/City\": \"\",\n  \"Email\": \"\",\n  \"Residence Accommodation\": \"\",\n  \"Educational Qualifications\": \"\",\n  \"Occupation\": \"\",\n  \"Mobile Number\": \"\",\n  \"Latitude\": \"\",\n  \"Longitude\": \"\",\n  \"Hierarchy\": 1599383,\n  \"branchId\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{solitxURL}}:5050/ProfilesService/profiles?access_token={{at}}",
+									"host": [
+										"{{solitxURL}}"
+									],
+									"port": "5050",
+									"path": [
+										"ProfilesService",
+										"profiles"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{at}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get profile with identifier",
+							"_postman_id": "c2729681-9f73-4ecf-9b86-a0e17cbcc561",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{solitxURL}}:5050/ProfilesService/profiles?identifier=Davis john&access_token={{at}}",
+									"host": [
+										"{{solitxURL}}"
+									],
+									"port": "5050",
+									"path": [
+										"ProfilesService",
+										"profiles"
+									],
+									"query": [
+										{
+											"key": "identifier",
+											"value": "Davis john"
+										},
+										{
+											"key": "access_token",
+											"value": "{{at}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create rootuser payment-channel",
+							"_postman_id": "8c7f6f94-4f5e-445d-81aa-fe82caf52ff6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"Identifier\": \"GHMC\",\n    \"Label\": \"GHMC A/C\",\n    \"Units\": \"INR\",\n    \"AccountCharacteristic\": \"isBank\",\n    \"Type\": \"new\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{solitxURL}}:5050/PaymentServices/payments/channel/new?access_token={{at}}",
+									"host": [
+										"{{solitxURL}}"
+									],
+									"port": "5050",
+									"path": [
+										"PaymentServices",
+										"payments",
+										"channel",
+										"new"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{at}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create profile payment-channel",
+							"_postman_id": "660764af-e50e-4d8a-a712-c564687c30be",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"Identifier\": \"Harvey\",\n  \"Label\": \"Indian rupee\",\n  \"Units\": \"INR\",\n  \"Type\": \"new\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{solitxURL}}:5050/PaymentServices/payments/channel/profiles/{{ProfileID}}/new?access_token={{at}}",
+									"host": [
+										"{{solitxURL}}"
+									],
+									"port": "5050",
+									"path": [
+										"PaymentServices",
+										"payments",
+										"channel",
+										"profiles",
+										"{{ProfileID}}",
+										"new"
+									],
+									"query": [
+										{
+											"key": "ProfileID",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "access_token",
+											"value": "{{at}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get profile payment-channel",
+							"_postman_id": "2674dcea-749a-4c16-bf5f-50a2bf347ec5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{solitxURL}}:5050/PaymentServices/payments/channel/profiles/{{ProfileID}}?access_token={{at}}",
+									"host": [
+										"{{solitxURL}}"
+									],
+									"port": "5050",
+									"path": [
+										"PaymentServices",
+										"payments",
+										"channel",
+										"profiles",
+										"{{ProfileID}}"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{at}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Contract",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"id": "e1b08b7f-81c4-43cc-9792-2711275b080e"
+									}
+								}
+							],
+							"_postman_id": "72a7a95a-ae36-4a2b-83da-e67da29bd69f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n    {\n        \"ProductID\": \"119\",\n        \"Terms\": [\n            {\n                \"NextPrincipalRedemptionPayment\": \"3800\",\n                \"InitialExchangeDate\": \"2022-08-01T06:30:00.000Z\",\n                \"NominalInterestRate\": 0.21,\n                \"Tenure\": \"12M\",\n                \"NotionalPrincipal\": \"38000\",\n                \"ContractStatus\": \"PreDeal\",\n                \"LegalEntityIDCounterparty\": \"e6ab9993-6c9b-4d65-af96-130b09160846\"\n            }\n        ],\n        \"PaymentDetails\": {\n            \"CounterpartyPaymentChannelID\": \"74593863-6695-4811-8d0e-49098372cb10\"\n        }\n    }\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{solitxURL}}:5050/ContractService/contracts?access_token={{at}}",
+									"host": [
+										"{{solitxURL}}"
+									],
+									"port": "5050",
+									"path": [
+										"ContractService",
+										"contracts"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{at}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Compute contract",
+							"_postman_id": "2195f7b3-73f5-473b-a542-d8fc39f8b1b3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{solitxURL}}:5050/ContractService/contracts/compute?access_token={{at}}&contractUUID=9dedf1b4-b1ef-4552-b608-2a330d63e164",
+									"host": [
+										"{{solitxURL}}"
+									],
+									"port": "5050",
+									"path": [
+										"ContractService",
+										"contracts",
+										"compute"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{at}}"
+										},
+										{
+											"key": "contractUUID",
+											"value": "9dedf1b4-b1ef-4552-b608-2a330d63e164"
+										}
+									]
+								},
+								"description": "Include \"ContractUUID\" which we got in response from create contract."
+							},
+							"response": []
+						},
+						{
+							"name": "Execute contract",
+							"_postman_id": "e229b0de-e027-4fbc-9b74-71ee14544468",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{solitxURL}}:5050/ContractService/contracts/execute?access_token={{at}}&contractUUID=9dedf1b4-b1ef-4552-b608-2a330d63e164",
+									"host": [
+										"{{solitxURL}}"
+									],
+									"port": "5050",
+									"path": [
+										"ContractService",
+										"contracts",
+										"execute"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{at}}"
+										},
+										{
+											"key": "contractUUID",
+											"value": "9dedf1b4-b1ef-4552-b608-2a330d63e164"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get events of contract",
+							"_postman_id": "c1bbdd85-b55b-48c0-a088-647101ea79ba",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{solitxURL}}:5050/BusinessEventService/events?contractUUID=9dedf1b4-b1ef-4552-b608-2a330d63e164&access_token={{at}}",
+									"host": [
+										"{{solitxURL}}"
+									],
+									"port": "5050",
+									"path": [
+										"BusinessEventService",
+										"events"
+									],
+									"query": [
+										{
+											"key": "contractUUID",
+											"value": "9dedf1b4-b1ef-4552-b608-2a330d63e164"
+										},
+										{
+											"key": "access_token",
+											"value": "{{at}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get contracts",
+							"_postman_id": "d074be59-d354-421e-8d8b-24fc9e83a1dd",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{solitxURL}}:5050/ContractService/profile/contracts/?productUUID=119&access_token={{at}}",
+									"host": [
+										"{{solitxURL}}"
+									],
+									"port": "5050",
+									"path": [
+										"ContractService",
+										"profile",
+										"contracts",
+										""
+									],
+									"query": [
+										{
+											"key": "productUUID",
+											"value": "119"
+										},
+										{
+											"key": "access_token",
+											"value": "{{at}}"
+										},
+										{
+											"key": "contractUUID",
+											"value": "77c9c714-291f-4daf-b1bd-c24f21c29e50",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Process event",
+							"_postman_id": "baeb76d3-4d21-400b-824d-3c18c65fad54",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n    {\n        \"EventID\": \"a29bf034-327c-4844-b2e0-f1ecfdd935b6\",\n        \"Value\": 38000.0,\n        \"ProcessTime\": \"2022-08-01T23:59:59\"\n    }\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{solitxURL}}:5050/TransactionsService/process?access_token={{at}}",
+									"host": [
+										"{{solitxURL}}"
+									],
+									"port": "5050",
+									"path": [
+										"TransactionsService",
+										"process"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{at}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "4eca449c-433f-4116-aa77-3d1bd5aaca3d",
+					"_postman_isSubFolder": true
+				}
+			],
+			"_postman_id": "437f7d30-09df-4e3f-ae64-247883eedab7",
+			"description": "Secure 3rd party API integrations enable communication between the core system and capabilities with external eco-system partners."
+		}
+	]
+}
