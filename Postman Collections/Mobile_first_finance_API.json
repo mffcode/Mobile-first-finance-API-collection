@@ -288,7 +288,7 @@
 												}
 											]
 										},
-										"description": "Using this API we can get all the existing users from the application."
+										"description": "Using this service we can get all the existing users from the application."
 									},
 									"response": []
 								},
