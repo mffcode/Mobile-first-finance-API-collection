@@ -9,8 +9,8 @@
 		{
 			"name": "Defining environment variables",
 			"item": [],
-			"_postman_id": "a1c10a0a-fff1-4395-9055-0e303efa564c",
-			"description": "To create a new environment, select **Environments** on the left and select **+**.\n\n<img src=\"https://content.pstmn.io/8fba3da0-5f06-4f25-9636-055878ef4fce/aW1hZ2UucG5n\" width=\"193\" height=\"154\">\n\nEnter a name for your environment, and initialize it with any variables  \nyou need—you can alternatively specify variables for the environment  \nlater.\n\n### Adding environment variables\n\nTo add a new environment variable, do the following:\n\n1. Select **Add a new variable**, and enter a name for the variable.\n2. Select a **Type** for the new variable.\n3. Add an **Initial Value**, and if you choose, a **Current Value**.\n4. **Save** to confirm your changes.\n    \n\n<img src=\"https://content.pstmn.io/c5b72023-809f-4220-ba59-2a8ea1ece732/ZW52aXJubWVudC5wbmc=\" width=\"535\" height=\"151\">\n\nFor further details check [https://learning.postman.com/docs/sending-requests/managing-environments/](https://learning.postman.com/docs/sending-requests/managing-environments/)"
+			"id": "a1c10a0a-fff1-4395-9055-0e303efa564c",
+			"description": "1. Select **Environments** in the sidebar and click on **New**.\n    \n\n<img src=\"https://content.pstmn.io/79bdd19b-3886-4486-89ca-fbb89cada5e5/aW1hZ2UucG5n\" alt=\"\" height=\"706\" width=\"1360\">\n\n2\\. Choose the **Environment** option\n\n<img src=\"https://content.pstmn.io/0ff76d85-9c0c-4f6e-90df-062e022c4240/aW1hZ2UucG5n\" alt=\"\" height=\"706\" width=\"1360\">\n\n3\\. Provide environment name, variable name, initial value & current value and click on **Save**.\n\n<img src=\"https://content.pstmn.io/43b8a4f0-7e50-45d4-b259-1a6031a3a206/aW1hZ2UucG5n\" alt=\"\" height=\"706\" width=\"1360\">\n\n4\\. To see the environment that was developed, click **Environment quick look**.\n\n<img src=\"https://content.pstmn.io/7492c407-4ca8-4139-8e5d-cd7236272607/aW1hZ2UucG5n\" alt=\"\" height=\"706\" width=\"1360\">\n\n<img src=\"https://content.pstmn.io/80277a77-ad9d-445f-b06e-55fdf52dc267/aW1hZ2UucG5n\" alt=\"\" height=\"322\" width=\"747\">"
 		},
 		{
 			"name": "Back office",
@@ -34,7 +34,7 @@
 									}
 								}
 							],
-							"_postman_id": "6776c999-0f7e-493c-abc6-634f72c8a900",
+							"id": "6776c999-0f7e-493c-abc6-634f72c8a900",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -56,8 +56,7 @@
 							"response": []
 						}
 					],
-					"_postman_id": "17f01589-3053-41de-97c7-0dc82b273e62",
-					"_postman_isSubFolder": true
+					"id": "17f01589-3053-41de-97c7-0dc82b273e62"
 				},
 				{
 					"name": "Settings",
@@ -67,7 +66,7 @@
 							"item": [
 								{
 									"name": "Create root branch",
-									"_postman_id": "8ea33cd3-dcae-4304-b583-d28a2982828b",
+									"id": "8ea33cd3-dcae-4304-b583-d28a2982828b",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -105,16 +104,15 @@
 									"response": []
 								}
 							],
-							"_postman_id": "ee788e15-b1ac-41c6-9058-190d7917d7fd",
-							"description": "In an enterprise setup, an organisation would have specific branches from where operations are carried out. Such branches would then demand access to a specific set of users to access information about the branch and the clientele/customer info within this specific branch.\n\nBranch services enable to link and provide access to such information waterfall within the users of a specific branch.",
-							"_postman_isSubFolder": true
+							"id": "ee788e15-b1ac-41c6-9058-190d7917d7fd",
+							"description": "In an enterprise setup, an organisation would have specific branches from where operations are carried out. Such branches would then demand access to a specific set of users to access information about the branch and the clientele/customer info within this specific branch.\n\nBranch services enable to link and provide access to such information waterfall within the users of a specific branch."
 						},
 						{
 							"name": "Users",
 							"item": [
 								{
 									"name": "Create user form",
-									"_postman_id": "aa47f386-3922-4d50-bd72-46c608c52afc",
+									"id": "aa47f386-3922-4d50-bd72-46c608c52afc",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -154,7 +152,7 @@
 								},
 								{
 									"name": "Update user  form",
-									"_postman_id": "3d7229e8-067a-4882-bb83-c1e306a25421",
+									"id": "3d7229e8-067a-4882-bb83-c1e306a25421",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -195,7 +193,7 @@
 								},
 								{
 									"name": "Get all user  form",
-									"_postman_id": "4bfa2529-3aa8-4460-b75e-142941fccd76",
+									"id": "4bfa2529-3aa8-4460-b75e-142941fccd76",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -226,7 +224,7 @@
 								},
 								{
 									"name": "Create user",
-									"_postman_id": "a377a298-81a5-43c0-9cb4-033089c87e6f",
+									"id": "a377a298-81a5-43c0-9cb4-033089c87e6f",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -265,7 +263,7 @@
 								},
 								{
 									"name": "Update user",
-									"_postman_id": "1fd2b990-2205-42d1-befa-9ac5dfbeb952",
+									"id": "1fd2b990-2205-42d1-befa-9ac5dfbeb952",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -305,7 +303,7 @@
 								},
 								{
 									"name": "Get  all the Users",
-									"_postman_id": "8c7f3afc-fcda-49b1-aa1d-274029dda37b",
+									"id": "8c7f3afc-fcda-49b1-aa1d-274029dda37b",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -334,16 +332,15 @@
 									"response": []
 								}
 							],
-							"_postman_id": "a72c0e40-dbfe-4ef8-b6d7-4b28c72ec058",
-							"description": "User demographic information such as name, address, email ID etc... are possible to create based on a given use case. Eg : Manager, Administrator, Customer, and auditor are a few user types in an organisation which may have specific information for the organisation's record.\n\nUser service contains APIs to create new users and define their corresponding user access rights",
-							"_postman_isSubFolder": true
+							"id": "a72c0e40-dbfe-4ef8-b6d7-4b28c72ec058",
+							"description": "User demographic information such as name, address, email ID etc... are possible to create based on a given use case. Eg : Manager, Administrator, Customer, and auditor are a few user types in an organisation which may have specific information for the organisation's record.\n\nUser service contains APIs to create new users and define their corresponding user access rights"
 						},
 						{
 							"name": "User actions",
 							"item": [
 								{
 									"name": "Get actions",
-									"_postman_id": "e08d9766-d1de-4596-b20d-e2666e110327",
+									"id": "e08d9766-d1de-4596-b20d-e2666e110327",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -372,16 +369,15 @@
 									"response": []
 								}
 							],
-							"_postman_id": "14031378-615e-421f-ad03-e848a50873b0",
-							"description": "User actions are the list of permissions that used to make a user role.",
-							"_postman_isSubFolder": true
+							"id": "14031378-615e-421f-ad03-e848a50873b0",
+							"description": "User actions are the list of permissions that used to make a user role."
 						},
 						{
 							"name": "User roles",
 							"item": [
 								{
 									"name": "Create user role",
-									"_postman_id": "01afce4c-70f5-4a35-a43e-7403c135f846",
+									"id": "01afce4c-70f5-4a35-a43e-7403c135f846",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -433,7 +429,7 @@
 											}
 										}
 									],
-									"_postman_id": "1edd6066-fa09-4c16-afce-9f9c50372f54",
+									"id": "1edd6066-fa09-4c16-afce-9f9c50372f54",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -464,7 +460,7 @@
 								},
 								{
 									"name": "Get user roles",
-									"_postman_id": "673139fb-6733-431c-a100-bb902caa4134",
+									"id": "673139fb-6733-431c-a100-bb902caa4134",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -493,16 +489,15 @@
 									"response": []
 								}
 							],
-							"_postman_id": "33edc31e-0bea-461e-87b7-70bb2b276dfa",
-							"description": "User roles are the set of actions that an user is expected to perform.",
-							"_postman_isSubFolder": true
+							"id": "33edc31e-0bea-461e-87b7-70bb2b276dfa",
+							"description": "User roles are the set of actions that an user is expected to perform."
 						},
 						{
 							"name": "User menus",
 							"item": [
 								{
 									"name": "Get all user menu",
-									"_postman_id": "df9b8b2b-e6b7-47cd-8c2e-28ca1ce87d49",
+									"id": "df9b8b2b-e6b7-47cd-8c2e-28ca1ce87d49",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -531,16 +526,15 @@
 									"response": []
 								}
 							],
-							"_postman_id": "5615aff3-f96f-412a-a115-0bdd66195936",
-							"description": "User menus are the list of menu options which an user can utilize based on requirement.",
-							"_postman_isSubFolder": true
+							"id": "5615aff3-f96f-412a-a115-0bdd66195936",
+							"description": "User menus are the list of menu options which an user can utilize based on requirement."
 						},
 						{
 							"name": "Workflows",
 							"item": [
 								{
 									"name": "Create workflows",
-									"_postman_id": "e1032212-efcc-4d59-ab48-c45ecbc418ae",
+									"id": "e1032212-efcc-4d59-ab48-c45ecbc418ae",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -579,7 +573,7 @@
 								},
 								{
 									"name": "Get all workflows",
-									"_postman_id": "d0b719d2-aa36-4c8a-8de5-d4ba7ef6c365",
+									"id": "d0b719d2-aa36-4c8a-8de5-d4ba7ef6c365",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -609,7 +603,7 @@
 								},
 								{
 									"name": "Get  workflows count",
-									"_postman_id": "9b248aef-1f9f-4c93-9e0e-dfed84f47aa0",
+									"id": "9b248aef-1f9f-4c93-9e0e-dfed84f47aa0",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -640,7 +634,7 @@
 								},
 								{
 									"name": "Edit workflow",
-									"_postman_id": "6d157b7d-71b7-4fc9-8098-63e0df176330",
+									"id": "6d157b7d-71b7-4fc9-8098-63e0df176330",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -679,7 +673,7 @@
 								},
 								{
 									"name": "Edit workflow order",
-									"_postman_id": "75054d7b-7e89-4a18-95ea-01b55700f287",
+									"id": "75054d7b-7e89-4a18-95ea-01b55700f287",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -718,7 +712,7 @@
 								},
 								{
 									"name": "To view a workflow by workflowid",
-									"_postman_id": "7068a089-fa72-4c23-976e-c85f780bf4aa",
+									"id": "7068a089-fa72-4c23-976e-c85f780bf4aa",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -747,9 +741,8 @@
 									"response": []
 								}
 							],
-							"_postman_id": "d7b0c02b-9541-44df-a7c9-3b9405f975d9",
-							"description": "Onboarding a customer usually requires certain procedures to be followed, for instance capturing certain information, and verifying such information provided. Such procedures could also extend to sending such information captured to even 3rd party APIs for validating KYC, performing ID verification checks, AML checks, address verification, credit bureau check etc.\n\nWorkflow services enable an organisation administrator to orchestrate such onboarding stages, which in turn enable customers and organisation users to follow these specific workflow steps to complete an onboarding process.",
-							"_postman_isSubFolder": true
+							"id": "d7b0c02b-9541-44df-a7c9-3b9405f975d9",
+							"description": "Onboarding a customer usually requires certain procedures to be followed, for instance capturing certain information, and verifying such information provided. Such procedures could also extend to sending such information captured to even 3rd party APIs for validating KYC, performing ID verification checks, AML checks, address verification, credit bureau check etc.\n\nWorkflow services enable an organisation administrator to orchestrate such onboarding stages, which in turn enable customers and organisation users to follow these specific workflow steps to complete an onboarding process."
 						},
 						{
 							"name": "Workflow template",
@@ -759,7 +752,7 @@
 									"item": [
 										{
 											"name": "Update auto verify flag",
-											"_postman_id": "7d2ada3b-21f6-4bf8-99f3-15198f097dc1",
+											"id": "7d2ada3b-21f6-4bf8-99f3-15198f097dc1",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -806,7 +799,7 @@
 										},
 										{
 											"name": "Update workflow template flag",
-											"_postman_id": "ad14a199-bed2-48b6-ba9e-ce741a0df7d0",
+											"id": "ad14a199-bed2-48b6-ba9e-ce741a0df7d0",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -844,13 +837,12 @@
 											"response": []
 										}
 									],
-									"_postman_id": "2cfafde9-ba04-47d3-af0e-5357106970ef",
-									"description": "It contains the services which are used to enable or disable the rights for auto verify and external access.",
-									"_postman_isSubFolder": true
+									"id": "2cfafde9-ba04-47d3-af0e-5357106970ef",
+									"description": "It contains the services which are used to enable or disable the rights for auto verify and external access."
 								},
 								{
 									"name": "Create workflow template",
-									"_postman_id": "3b020191-58ca-4734-a4e6-6ee9f709cc4e",
+									"id": "3b020191-58ca-4734-a4e6-6ee9f709cc4e",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -889,7 +881,7 @@
 								},
 								{
 									"name": "Update workflow template",
-									"_postman_id": "73ef0e7e-fe8f-4626-957c-c1e31523881a",
+									"id": "73ef0e7e-fe8f-4626-957c-c1e31523881a",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -929,7 +921,7 @@
 								},
 								{
 									"name": "Get all workflow templates",
-									"_postman_id": "d669898d-fb0d-45ad-b812-10ffbc81b0f5",
+									"id": "d669898d-fb0d-45ad-b812-10ffbc81b0f5",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -959,7 +951,7 @@
 								},
 								{
 									"name": "Get workflow template by id",
-									"_postman_id": "8398ed8e-b56f-46db-9b43-2cc19b33ff08",
+									"id": "8398ed8e-b56f-46db-9b43-2cc19b33ff08",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -989,20 +981,18 @@
 									"response": []
 								}
 							],
-							"_postman_id": "be9fb86e-9876-4222-a0ae-294da74ccbf1",
-							"_postman_isSubFolder": true
+							"id": "be9fb86e-9876-4222-a0ae-294da74ccbf1"
 						}
 					],
-					"_postman_id": "f1f0c055-2462-4ed8-a329-bd540b23dd65",
-					"description": "This contains a list of API for initial configuration of Mobile First Finance setup",
-					"_postman_isSubFolder": true
+					"id": "f1f0c055-2462-4ed8-a329-bd540b23dd65",
+					"description": "This contains a list of API for initial configuration of Mobile First Finance setup"
 				},
 				{
 					"name": "Profile",
 					"item": [
 						{
 							"name": "Create profile form",
-							"_postman_id": "37db7c54-3882-4229-83a1-3642608a2a9b",
+							"id": "37db7c54-3882-4229-83a1-3642608a2a9b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1042,7 +1032,7 @@
 						},
 						{
 							"name": "Get profile form",
-							"_postman_id": "2253b02a-c603-43e7-9979-622dc4b49c17",
+							"id": "2253b02a-c603-43e7-9979-622dc4b49c17",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1073,7 +1063,7 @@
 						},
 						{
 							"name": "Update profile form",
-							"_postman_id": "1c48ba33-2e07-496c-abeb-b839ac2c74b1",
+							"id": "1c48ba33-2e07-496c-abeb-b839ac2c74b1",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1114,7 +1104,7 @@
 						},
 						{
 							"name": "Create profile",
-							"_postman_id": "524b730c-8982-4420-bf54-fd4ee9a2cea9",
+							"id": "524b730c-8982-4420-bf54-fd4ee9a2cea9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1153,7 +1143,7 @@
 						},
 						{
 							"name": "Update profile",
-							"_postman_id": "4f62c6c5-d1c1-42fd-a27f-9a2db844ceec",
+							"id": "4f62c6c5-d1c1-42fd-a27f-9a2db844ceec",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1192,7 +1182,7 @@
 						},
 						{
 							"name": "Get profiles",
-							"_postman_id": "a38e0bb9-36e9-4963-a2a1-6593da055abe",
+							"id": "a38e0bb9-36e9-4963-a2a1-6593da055abe",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1230,7 +1220,7 @@
 						},
 						{
 							"name": "Get profile by profileid",
-							"_postman_id": "99e57d92-3a84-408a-97a4-dec94e45aefe",
+							"id": "99e57d92-3a84-408a-97a4-dec94e45aefe",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1261,7 +1251,7 @@
 						},
 						{
 							"name": "Search profile",
-							"_postman_id": "1a412a91-9fb2-49a7-9d0b-8222da4ace7b",
+							"id": "1a412a91-9fb2-49a7-9d0b-8222da4ace7b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1307,7 +1297,7 @@
 						},
 						{
 							"name": "Get profiles count",
-							"_postman_id": "bc0c58b1-d78d-49fe-9102-438a6b5fe10e",
+							"id": "bc0c58b1-d78d-49fe-9102-438a6b5fe10e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1337,9 +1327,8 @@
 							"response": []
 						}
 					],
-					"_postman_id": "227629b4-cc94-44c3-8a27-e9a31de86a9c",
-					"description": "An organisation may comprise diverse profile types such as customer, business owner, enterprise info etc... Each of such profiles may require typical information to be stored in an organisation's record. Such profile types are termed profile templates that can be further used to create specific profiles.\n\nProfile service contains APIs to define client profile templates and to create profiles in such categories.",
-					"_postman_isSubFolder": true
+					"id": "227629b4-cc94-44c3-8a27-e9a31de86a9c",
+					"description": "An organisation may comprise diverse profile types such as customer, business owner, enterprise info etc... Each of such profiles may require typical information to be stored in an organisation's record. Such profile types are termed profile templates that can be further used to create specific profiles.\n\nProfile service contains APIs to define client profile templates and to create profiles in such categories."
 				},
 				{
 					"name": "Onboard",
@@ -1349,7 +1338,7 @@
 							"item": [
 								{
 									"name": "Get workflow by workflow id",
-									"_postman_id": "b5b30e5b-31ed-4635-b3cd-47d8d268208a",
+									"id": "b5b30e5b-31ed-4635-b3cd-47d8d268208a",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -1380,7 +1369,7 @@
 								},
 								{
 									"name": "Get onboard filter by workflowid",
-									"_postman_id": "c49adb1d-2289-4fcb-8515-719469770ebd",
+									"id": "c49adb1d-2289-4fcb-8515-719469770ebd",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -1426,15 +1415,14 @@
 									"response": []
 								}
 							],
-							"_postman_id": "4cc169f8-7b21-4bee-9881-31c88cfb9c91",
-							"_postman_isSubFolder": true
+							"id": "4cc169f8-7b21-4bee-9881-31c88cfb9c91"
 						},
 						{
 							"name": "Link profile to a worflow",
 							"item": [
 								{
 									"name": "Get unlinked profiles to workflow",
-									"_postman_id": "fa48b78a-3fdb-4368-841c-02a99e205111",
+									"id": "fa48b78a-3fdb-4368-841c-02a99e205111",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -1473,7 +1461,7 @@
 								},
 								{
 									"name": "Get unlinked profile with identifier",
-									"_postman_id": "f5579d98-6407-49af-9a76-207c2f1a1c04",
+									"id": "f5579d98-6407-49af-9a76-207c2f1a1c04",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -1516,7 +1504,7 @@
 								},
 								{
 									"name": "Link profile to workflow",
-									"_postman_id": "571c3871-5acd-4ebd-bd20-51ab0f641b44",
+									"id": "571c3871-5acd-4ebd-bd20-51ab0f641b44",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -1554,15 +1542,14 @@
 									"response": []
 								}
 							],
-							"_postman_id": "a372710b-b64b-4c5f-8006-35ee62f0f28e",
-							"_postman_isSubFolder": true
+							"id": "a372710b-b64b-4c5f-8006-35ee62f0f28e"
 						},
 						{
 							"name": "Update details in workflow",
 							"item": [
 								{
 									"name": "Filter with identifier in workflow template",
-									"_postman_id": "92ecbde0-8e99-458a-928e-d4f747a00ecf",
+									"id": "92ecbde0-8e99-458a-928e-d4f747a00ecf",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -1608,7 +1595,7 @@
 								},
 								{
 									"name": "Update details in the workflow template",
-									"_postman_id": "e547e475-8072-4118-992f-43176f55e194",
+									"id": "e547e475-8072-4118-992f-43176f55e194",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -1647,15 +1634,14 @@
 									"response": []
 								}
 							],
-							"_postman_id": "5d3f7383-dad0-4334-8d0c-046f25fe353c",
-							"_postman_isSubFolder": true
+							"id": "5d3f7383-dad0-4334-8d0c-046f25fe353c"
 						},
 						{
 							"name": "Verify a workflow template",
 							"item": [
 								{
 									"name": "Verify a workflow template",
-									"_postman_id": "38a16fbc-08ef-4c5a-ad56-b4de0b0438a7",
+									"id": "38a16fbc-08ef-4c5a-ad56-b4de0b0438a7",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -1694,13 +1680,11 @@
 									"response": []
 								}
 							],
-							"_postman_id": "7044ead0-2b6b-4ae9-915b-0374a8a8e2d6",
-							"_postman_isSubFolder": true
+							"id": "7044ead0-2b6b-4ae9-915b-0374a8a8e2d6"
 						}
 					],
-					"_postman_id": "0e29be9b-5869-46cd-a7ce-8437d87b6073",
-					"description": "Onboard module is used for onboarding a new client. This folder consist of different API which are used for the functionality of the module.",
-					"_postman_isSubFolder": true
+					"id": "0e29be9b-5869-46cd-a7ce-8437d87b6073",
+					"description": "Onboard module is used for onboarding a new client. This folder consist of different API which are used for the functionality of the module."
 				},
 				{
 					"name": "Approve",
@@ -1710,7 +1694,7 @@
 							"item": [
 								{
 									"name": "Filter a non approved profile with identifier",
-									"_postman_id": "1afeef7c-04e7-44d5-b4d2-650f76724d76",
+									"id": "1afeef7c-04e7-44d5-b4d2-650f76724d76",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -1755,15 +1739,14 @@
 									"response": []
 								}
 							],
-							"_postman_id": "7c695512-fde7-4570-adfc-4647663f9b97",
-							"_postman_isSubFolder": true
+							"id": "7c695512-fde7-4570-adfc-4647663f9b97"
 						},
 						{
 							"name": "View non approved profile details",
 							"item": [
 								{
 									"name": "Get workflow template details by workflow profile id",
-									"_postman_id": "4ad76b5d-35e5-43eb-829f-49278211b5df",
+									"id": "4ad76b5d-35e5-43eb-829f-49278211b5df",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -1792,15 +1775,14 @@
 									"response": []
 								}
 							],
-							"_postman_id": "f1b7f1db-a442-44f2-91c9-9c18598f120a",
-							"_postman_isSubFolder": true
+							"id": "f1b7f1db-a442-44f2-91c9-9c18598f120a"
 						},
 						{
 							"name": "Revert back a profile from approval",
 							"item": [
 								{
 									"name": "Revert back a profile from approval to onboard",
-									"_postman_id": "5a367884-c254-47c0-b5d5-d29594908b34",
+									"id": "5a367884-c254-47c0-b5d5-d29594908b34",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -1838,15 +1820,14 @@
 									"response": []
 								}
 							],
-							"_postman_id": "9f7c3287-9537-4c35-8c8d-5522b9c6bd56",
-							"_postman_isSubFolder": true
+							"id": "9f7c3287-9537-4c35-8c8d-5522b9c6bd56"
 						},
 						{
 							"name": "Approve a profile",
 							"item": [
 								{
 									"name": "Approve a profile",
-									"_postman_id": "025ab793-cde9-4a07-bfd7-dbb4b6d5acbe",
+									"id": "025ab793-cde9-4a07-bfd7-dbb4b6d5acbe",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -1884,13 +1865,11 @@
 									"response": []
 								}
 							],
-							"_postman_id": "b083ddf7-f0b7-4499-a96b-3c92390fbd83",
-							"_postman_isSubFolder": true
+							"id": "b083ddf7-f0b7-4499-a96b-3c92390fbd83"
 						}
 					],
-					"_postman_id": "233ffe8a-525f-40f0-86c3-8b3be8597e10",
-					"description": "Approve client is a module which allows us to approve a profile after completion of onboard verification.",
-					"_postman_isSubFolder": true
+					"id": "233ffe8a-525f-40f0-86c3-8b3be8597e10",
+					"description": "Approve client is a module which allows us to approve a profile after completion of onboard verification."
 				},
 				{
 					"name": "Payments",
@@ -1900,7 +1879,7 @@
 							"item": [
 								{
 									"name": "Get IED events",
-									"_postman_id": "e6496c2d-3c31-4675-9def-ab8ec81c3a00",
+									"id": "e6496c2d-3c31-4675-9def-ab8ec81c3a00",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -1950,7 +1929,7 @@
 								},
 								{
 									"name": "Get IED events by identifier",
-									"_postman_id": "f800081b-ffcc-4645-973e-71ff40dd3663",
+									"id": "f800081b-ffcc-4645-973e-71ff40dd3663",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -2004,7 +1983,7 @@
 								},
 								{
 									"name": "Disburse IED event",
-									"_postman_id": "0f8dd5db-8e65-474e-91ce-4865945bd86e",
+									"id": "0f8dd5db-8e65-474e-91ce-4865945bd86e",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -2041,15 +2020,14 @@
 									"response": []
 								}
 							],
-							"_postman_id": "935cc2ee-621d-4049-ae15-75094c6c0d53",
-							"_postman_isSubFolder": true
+							"id": "935cc2ee-621d-4049-ae15-75094c6c0d53"
 						},
 						{
 							"name": "Bulk Receive",
 							"item": [
 								{
 									"name": "Get IP/PR events by hierarchy",
-									"_postman_id": "5ddde287-6e0a-431d-8c1d-67bb123f0092",
+									"id": "5ddde287-6e0a-431d-8c1d-67bb123f0092",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -2094,7 +2072,7 @@
 								},
 								{
 									"name": "Get IP/PR events by identifier",
-									"_postman_id": "f44430d6-4f55-4177-96af-3e026c39e6e1",
+									"id": "f44430d6-4f55-4177-96af-3e026c39e6e1",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -2143,7 +2121,7 @@
 								},
 								{
 									"name": "Repay IP/PR event",
-									"_postman_id": "227f51ae-8828-4b47-af3e-d453b4069878",
+									"id": "227f51ae-8828-4b47-af3e-d453b4069878",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -2180,15 +2158,14 @@
 									"response": []
 								}
 							],
-							"_postman_id": "395af17e-558c-4fd6-9cc1-541f457e3878",
-							"_postman_isSubFolder": true
+							"id": "395af17e-558c-4fd6-9cc1-541f457e3878"
 						},
 						{
 							"name": "Receipt Approval",
 							"item": [
 								{
 									"name": "Get the payment events yet to be approved",
-									"_postman_id": "36d2bb8f-3414-4904-97d6-2978d90ecab5",
+									"id": "36d2bb8f-3414-4904-97d6-2978d90ecab5",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -2229,7 +2206,7 @@
 								},
 								{
 									"name": "Get the payment events by identifier",
-									"_postman_id": "f0025da9-68f8-4fd6-bea7-a31675ed2ebd",
+									"id": "f0025da9-68f8-4fd6-bea7-a31675ed2ebd",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -2273,15 +2250,13 @@
 									"response": []
 								}
 							],
-							"_postman_id": "2b03081d-4a08-4cd0-9b2a-27748da3d927",
-							"_postman_isSubFolder": true
+							"id": "2b03081d-4a08-4cd0-9b2a-27748da3d927"
 						}
 					],
-					"_postman_id": "9463df60-4e59-4e73-be19-11dc40167243",
-					"_postman_isSubFolder": true
+					"id": "9463df60-4e59-4e73-be19-11dc40167243"
 				}
 			],
-			"_postman_id": "0160a252-9171-4fbc-92aa-7363fda045e9",
+			"id": "0160a252-9171-4fbc-92aa-7363fda045e9",
 			"description": "Back-office API enable admin configurations and back-office support."
 		},
 		{
@@ -2292,7 +2267,7 @@
 					"item": [
 						{
 							"name": "Signing up a new client",
-							"_postman_id": "e2f2866e-b23e-454b-8dde-e24573471a97",
+							"id": "e2f2866e-b23e-454b-8dde-e24573471a97",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2314,9 +2289,8 @@
 							"response": []
 						}
 					],
-					"_postman_id": "543e1c2d-2743-4c5d-a5d1-e48aefe99477",
-					"description": "Consist of a list of API's which are used for the customer sign up",
-					"_postman_isSubFolder": true
+					"id": "543e1c2d-2743-4c5d-a5d1-e48aefe99477",
+					"description": "Consist of a list of API's which are used for the customer sign up"
 				},
 				{
 					"name": "Authorization",
@@ -2337,7 +2311,7 @@
 									}
 								}
 							],
-							"_postman_id": "c8d60d5a-0547-4de4-98d2-157a27a979cc",
+							"id": "c8d60d5a-0547-4de4-98d2-157a27a979cc",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2358,16 +2332,15 @@
 							"response": []
 						}
 					],
-					"_postman_id": "c8609cd7-0735-47fe-a715-d87d095eca66",
-					"description": "Consist of API which is used for the customer login",
-					"_postman_isSubFolder": true
+					"id": "c8609cd7-0735-47fe-a715-d87d095eca66",
+					"description": "Consist of API which is used for the customer login"
 				},
 				{
 					"name": "Customer Onboarding",
 					"item": [
 						{
 							"name": "View the list of workflows",
-							"_postman_id": "3af073de-7715-4d8e-bfd4-bd98a6cda202",
+							"id": "3af073de-7715-4d8e-bfd4-bd98a6cda202",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2397,7 +2370,7 @@
 						},
 						{
 							"name": "To link a profile to workflow",
-							"_postman_id": "107290f6-e442-4fab-b4fe-d887efb66676",
+							"id": "107290f6-e442-4fab-b4fe-d887efb66676",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2436,7 +2409,7 @@
 						},
 						{
 							"name": "Get workflow templates based on profileID and workflowID",
-							"_postman_id": "c149b27f-8dfd-4a14-b3b9-7f0bcdfbd306",
+							"id": "c149b27f-8dfd-4a14-b3b9-7f0bcdfbd306",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2468,7 +2441,7 @@
 						},
 						{
 							"name": "To save the details in workflow template",
-							"_postman_id": "bba6507d-3561-4693-961d-029e7fbfe12d",
+							"id": "bba6507d-3561-4693-961d-029e7fbfe12d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2508,7 +2481,7 @@
 						},
 						{
 							"name": "View the workflow template details of a profile",
-							"_postman_id": "7032fbd7-c190-416d-a583-b0372894d256",
+							"id": "7032fbd7-c190-416d-a583-b0372894d256",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2542,7 +2515,7 @@
 						},
 						{
 							"name": "To verify workflow template details",
-							"_postman_id": "382fe858-643c-4271-9da4-61444facd579",
+							"id": "382fe858-643c-4271-9da4-61444facd579",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2581,16 +2554,15 @@
 							"response": []
 						}
 					],
-					"_postman_id": "f069129c-e4de-41bc-9a33-414e67ee51d5",
-					"description": "Consist of a list of API's which are used for the customer onboarding.",
-					"_postman_isSubFolder": true
+					"id": "f069129c-e4de-41bc-9a33-414e67ee51d5",
+					"description": "Consist of a list of API's which are used for the customer onboarding."
 				},
 				{
 					"name": "Accounts",
 					"item": [
 						{
 							"name": "View the contracts of a profile",
-							"_postman_id": "ed7d9de3-022b-4450-8145-215b57ff1c64",
+							"id": "ed7d9de3-022b-4450-8145-215b57ff1c64",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2623,16 +2595,15 @@
 							"response": []
 						}
 					],
-					"_postman_id": "f78f8d90-2600-4bce-b423-241ffe18950c",
-					"description": "Contains the API which is used to view the list of contracts for a profile.",
-					"_postman_isSubFolder": true
+					"id": "f78f8d90-2600-4bce-b423-241ffe18950c",
+					"description": "Contains the API which is used to view the list of contracts for a profile."
 				},
 				{
 					"name": "Payments",
 					"item": [
 						{
 							"name": "To view the repayment events",
-							"_postman_id": "05ec6604-775b-4127-b667-39915fd65a4e",
+							"id": "05ec6604-775b-4127-b667-39915fd65a4e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2670,7 +2641,7 @@
 						},
 						{
 							"name": "To perform the repayment",
-							"_postman_id": "9c1720bd-fbbd-42e2-a1ce-03bcbea0ddd5",
+							"id": "9c1720bd-fbbd-42e2-a1ce-03bcbea0ddd5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2708,16 +2679,15 @@
 							"response": []
 						}
 					],
-					"_postman_id": "5ec60a32-c529-42b4-a933-78d38e392b15",
-					"description": "Consist of API's which are used to view and perform the repayments.",
-					"_postman_isSubFolder": true
+					"id": "5ec60a32-c529-42b4-a933-78d38e392b15",
+					"description": "Consist of API's which are used to view and perform the repayments."
 				},
 				{
 					"name": "Cards",
 					"item": [
 						{
 							"name": "Apply for a card",
-							"_postman_id": "ee41e136-29d8-4ee1-a314-73f64480a893",
+							"id": "ee41e136-29d8-4ee1-a314-73f64480a893",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2756,7 +2726,7 @@
 						},
 						{
 							"name": "To view the cards associated with profile",
-							"_postman_id": "9a3691a7-2b1d-4b2e-a232-2a8829ef6789",
+							"id": "9a3691a7-2b1d-4b2e-a232-2a8829ef6789",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2790,7 +2760,7 @@
 						},
 						{
 							"name": "Block a card",
-							"_postman_id": "8241df9a-c28a-4fc6-92ac-5ac395fb0afa",
+							"id": "8241df9a-c28a-4fc6-92ac-5ac395fb0afa",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2828,12 +2798,11 @@
 							"response": []
 						}
 					],
-					"_postman_id": "c9b7139a-ea7e-458a-b068-36f38760f867",
-					"description": "Consist of API's which are used to\n\ni) Apply for a card\n\nii) To view the cards which are associated to a profile\n\niii) To block an active card",
-					"_postman_isSubFolder": true
+					"id": "c9b7139a-ea7e-458a-b068-36f38760f867",
+					"description": "Consist of API's which are used to\n\ni) Apply for a card\n\nii) To view the cards which are associated to a profile\n\niii) To block an active card"
 				}
 			],
-			"_postman_id": "68603238-16c6-420d-85d8-095f24172e26",
+			"id": "68603238-16c6-420d-85d8-095f24172e26",
 			"description": "Customer APIs support customer/external interaction of the banking entity layer."
 		},
 		{
@@ -2858,7 +2827,7 @@
 									}
 								}
 							],
-							"_postman_id": "34cf3602-9f19-4eb6-a411-65b3f39fef0c",
+							"id": "34cf3602-9f19-4eb6-a411-65b3f39fef0c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2879,16 +2848,15 @@
 							"response": []
 						}
 					],
-					"_postman_id": "06bcd982-bea3-4f8d-a467-d7e4daff528a",
-					"description": "Consist of API which is used for the customer login",
-					"_postman_isSubFolder": true
+					"id": "06bcd982-bea3-4f8d-a467-d7e4daff528a",
+					"description": "Consist of API which is used for the customer login"
 				},
 				{
 					"name": "Payment links",
 					"item": [
 						{
 							"name": "Card, Wallet, Bank",
-							"_postman_id": "52776548-afc8-4a69-990c-da33e801dcdf",
+							"id": "52776548-afc8-4a69-990c-da33e801dcdf",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2927,7 +2895,7 @@
 						},
 						{
 							"name": "UPI",
-							"_postman_id": "2479d880-1c79-4227-90d6-f210d7e1bc8e",
+							"id": "2479d880-1c79-4227-90d6-f210d7e1bc8e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2964,15 +2932,14 @@
 							"response": []
 						}
 					],
-					"_postman_id": "ccdf7e70-9ff7-49ce-92ae-ee092520fc16",
-					"_postman_isSubFolder": true
+					"id": "ccdf7e70-9ff7-49ce-92ae-ee092520fc16"
 				},
 				{
 					"name": "E sign",
 					"item": [
 						{
 							"name": "Esign initiation",
-							"_postman_id": "bf8fb46d-619e-4390-af5d-21c862d98828",
+							"id": "bf8fb46d-619e-4390-af5d-21c862d98828",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3011,7 +2978,7 @@
 						},
 						{
 							"name": "To check esign status",
-							"_postman_id": "208b690d-5537-4b0f-8497-2afae0ce1ede",
+							"id": "208b690d-5537-4b0f-8497-2afae0ce1ede",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3044,9 +3011,8 @@
 							"response": []
 						}
 					],
-					"_postman_id": "3cedcdaf-6495-470e-9a2d-9369e73b0229",
-					"description": "E sign is an efficient and legal way to get electronic documents signed quickly.",
-					"_postman_isSubFolder": true
+					"id": "3cedcdaf-6495-470e-9a2d-9369e73b0229",
+					"description": "E sign is an efficient and legal way to get electronic documents signed quickly."
 				},
 				{
 					"name": "Trust and customer validation",
@@ -3056,7 +3022,7 @@
 							"item": [
 								{
 									"name": "Send OTP",
-									"_postman_id": "b2592251-1dfc-4ce3-a119-3a947e06804d",
+									"id": "b2592251-1dfc-4ce3-a119-3a947e06804d",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -3078,7 +3044,7 @@
 								},
 								{
 									"name": "Verify OTP",
-									"_postman_id": "e44fc2e1-3c56-41dd-b82b-d25dddb9afd2",
+									"id": "e44fc2e1-3c56-41dd-b82b-d25dddb9afd2",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -3099,15 +3065,14 @@
 									"response": []
 								}
 							],
-							"_postman_id": "5484338b-a5a8-4666-aacf-0a5ab481b182",
-							"_postman_isSubFolder": true
+							"id": "5484338b-a5a8-4666-aacf-0a5ab481b182"
 						},
 						{
 							"name": "Mobile number validation",
 							"item": [
 								{
 									"name": "Send OTP",
-									"_postman_id": "a33b8d72-de13-43f3-97a7-33ace0cc5e99",
+									"id": "a33b8d72-de13-43f3-97a7-33ace0cc5e99",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -3129,7 +3094,7 @@
 								},
 								{
 									"name": "Verify OTP",
-									"_postman_id": "16ee37c5-8544-4deb-95a5-a5d97a592367",
+									"id": "16ee37c5-8544-4deb-95a5-a5d97a592367",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -3150,15 +3115,14 @@
 									"response": []
 								}
 							],
-							"_postman_id": "364aa66b-40cd-420c-b2fa-57451a71a810",
-							"_postman_isSubFolder": true
+							"id": "364aa66b-40cd-420c-b2fa-57451a71a810"
 						},
 						{
 							"name": "Bank account validation",
 							"item": [
 								{
 									"name": "To verify bank account details",
-									"_postman_id": "0330ff0d-a3de-4d67-b49e-0a5022a185ea",
+									"id": "0330ff0d-a3de-4d67-b49e-0a5022a185ea",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -3195,15 +3159,14 @@
 									"response": []
 								}
 							],
-							"_postman_id": "6b930878-0cde-4c7b-b677-6b9901bd4da2",
-							"_postman_isSubFolder": true
+							"id": "6b930878-0cde-4c7b-b677-6b9901bd4da2"
 						},
 						{
 							"name": "PAN card validation",
 							"item": [
 								{
 									"name": "To verify PAN card details",
-									"_postman_id": "f0077fb9-d6c7-4938-9deb-a2a648cece1d",
+									"id": "f0077fb9-d6c7-4938-9deb-a2a648cece1d",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -3240,15 +3203,14 @@
 									"response": []
 								}
 							],
-							"_postman_id": "8c2479f7-d8f0-4be1-b6c6-31d7913902f2",
-							"_postman_isSubFolder": true
+							"id": "8c2479f7-d8f0-4be1-b6c6-31d7913902f2"
 						},
 						{
 							"name": "Aadhaar validation",
 							"item": [
 								{
 									"name": "Aadhaar validation",
-									"_postman_id": "72f82bb3-e0bb-46b6-9018-a16c3f4bd93d",
+									"id": "72f82bb3-e0bb-46b6-9018-a16c3f4bd93d",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -3285,19 +3247,17 @@
 									"response": []
 								}
 							],
-							"_postman_id": "9c37dc59-4c83-47d0-b150-73a2d9454497",
-							"_postman_isSubFolder": true
+							"id": "9c37dc59-4c83-47d0-b150-73a2d9454497"
 						}
 					],
-					"_postman_id": "1b0f5ef8-df0e-4fdd-9709-d015b723e4eb",
-					"_postman_isSubFolder": true
+					"id": "1b0f5ef8-df0e-4fdd-9709-d015b723e4eb"
 				},
 				{
 					"name": "Bank statement analyzer",
 					"item": [
 						{
 							"name": "To perform bank statement analysis",
-							"_postman_id": "7b5c0a88-30a4-4d33-95db-3e1f4d74807d",
+							"id": "7b5c0a88-30a4-4d33-95db-3e1f4d74807d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3340,8 +3300,7 @@
 											"value": "1503446",
 											"type": "text"
 										}
-									],
-									"options": {}
+									]
 								},
 								"url": {
 									"raw": "{{customerURL}}:5055/ThirdpartyService/upload/bankStatement?access_token={{custoken}}",
@@ -3367,7 +3326,7 @@
 						},
 						{
 							"name": "To view the report",
-							"_postman_id": "427b5205-1fd3-4246-822e-8ecf8997d68c",
+							"id": "427b5205-1fd3-4246-822e-8ecf8997d68c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3399,16 +3358,15 @@
 							"response": []
 						}
 					],
-					"_postman_id": "6a161efe-139d-4824-bb83-3f8d458bfdc9",
-					"description": "API that helps us to perform bank statement analyze",
-					"_postman_isSubFolder": true
+					"id": "6a161efe-139d-4824-bb83-3f8d458bfdc9",
+					"description": "API that helps us to perform bank statement analyze"
 				},
 				{
 					"name": "Credit bureau",
 					"item": [
 						{
 							"name": "CRIF highmark report",
-							"_postman_id": "6c20a068-9d55-44b6-aa58-04bc6ea3de49",
+							"id": "6c20a068-9d55-44b6-aa58-04bc6ea3de49",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3420,16 +3378,15 @@
 							"response": []
 						}
 					],
-					"_postman_id": "1f384a82-54ee-4c48-86bb-d64f96014b6c",
-					"description": "API which provides credit score and credit reports.",
-					"_postman_isSubFolder": true
+					"id": "1f384a82-54ee-4c48-86bb-d64f96014b6c",
+					"description": "API which provides credit score and credit reports."
 				},
 				{
 					"name": "Real-time identity verification",
 					"item": [
 						{
 							"name": "KYC - Identity Verification",
-							"_postman_id": "1e5cdb8a-b698-4821-ad78-8eb6b9a9b958",
+							"id": "1e5cdb8a-b698-4821-ad78-8eb6b9a9b958",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3451,7 +3408,7 @@
 						},
 						{
 							"name": "Facial Biometric Authentication",
-							"_postman_id": "60d5869a-d01c-46fb-9d93-3a087d4ac72f",
+							"id": "60d5869a-d01c-46fb-9d93-3a087d4ac72f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3473,7 +3430,7 @@
 						},
 						{
 							"name": "Address check",
-							"_postman_id": "b0a8c222-3261-41b8-aa99-8222aec537e3",
+							"id": "b0a8c222-3261-41b8-aa99-8222aec537e3",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3495,7 +3452,7 @@
 						},
 						{
 							"name": "Background check",
-							"_postman_id": "9f29d158-49ea-4bf4-8662-f65e0911e709",
+							"id": "9f29d158-49ea-4bf4-8662-f65e0911e709",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3516,16 +3473,15 @@
 							"response": []
 						}
 					],
-					"_postman_id": "bae2038c-1c48-440f-ae8f-693a47f770b9",
-					"description": "Consist of API which is used to perform ID verification using shuftipro.",
-					"_postman_isSubFolder": true
+					"id": "bae2038c-1c48-440f-ae8f-693a47f770b9",
+					"description": "Consist of API which is used to perform ID verification using shuftipro."
 				},
 				{
 					"name": "Axis UPI",
 					"item": [
 						{
 							"name": "To validate Axis UPI",
-							"_postman_id": "0b5179db-7052-46e6-8efd-7608846b4b0d",
+							"id": "0b5179db-7052-46e6-8efd-7608846b4b0d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3554,7 +3510,7 @@
 						},
 						{
 							"name": "To disburse the amount",
-							"_postman_id": "e79221e0-029b-4167-9a40-757b932b16ae",
+							"id": "e79221e0-029b-4167-9a40-757b932b16ae",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3595,7 +3551,7 @@
 						},
 						{
 							"name": "To check the disbursed amount status",
-							"_postman_id": "5c144d59-f718-4b16-a925-cc2b119d670f",
+							"id": "5c144d59-f718-4b16-a925-cc2b119d670f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3633,7 +3589,7 @@
 						},
 						{
 							"name": "To receive the payment",
-							"_postman_id": "a80d0572-1d92-4401-beef-2efeb9c3b765",
+							"id": "a80d0572-1d92-4401-beef-2efeb9c3b765",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3678,7 +3634,7 @@
 						},
 						{
 							"name": "To check the repayment amount status",
-							"_postman_id": "b18b0a56-cc93-4520-8dde-102010248414",
+							"id": "b18b0a56-cc93-4520-8dde-102010248414",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3710,8 +3666,7 @@
 							"response": []
 						}
 					],
-					"_postman_id": "c1217e84-c156-4815-8920-d8de17507d62",
-					"_postman_isSubFolder": true
+					"id": "c1217e84-c156-4815-8920-d8de17507d62"
 				},
 				{
 					"name": "SolitX corebanking integration",
@@ -3734,7 +3689,7 @@
 									}
 								}
 							],
-							"_postman_id": "8219ed29-7415-48ec-a8c9-f906358dd506",
+							"id": "8219ed29-7415-48ec-a8c9-f906358dd506",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3802,7 +3757,7 @@
 									}
 								}
 							],
-							"_postman_id": "4ca22635-653b-48d2-97ca-bc56ced7a0eb",
+							"id": "4ca22635-653b-48d2-97ca-bc56ced7a0eb",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3840,7 +3795,7 @@
 						},
 						{
 							"name": "Get profile with identifier",
-							"_postman_id": "c2729681-9f73-4ecf-9b86-a0e17cbcc561",
+							"id": "c2729681-9f73-4ecf-9b86-a0e17cbcc561",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3873,7 +3828,7 @@
 						},
 						{
 							"name": "Create rootuser payment-channel",
-							"_postman_id": "8c7f6f94-4f5e-445d-81aa-fe82caf52ff6",
+							"id": "8c7f6f94-4f5e-445d-81aa-fe82caf52ff6",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3913,7 +3868,7 @@
 						},
 						{
 							"name": "Create profile payment-channel",
-							"_postman_id": "660764af-e50e-4d8a-a712-c564687c30be",
+							"id": "660764af-e50e-4d8a-a712-c564687c30be",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3960,7 +3915,7 @@
 						},
 						{
 							"name": "Get profile payment-channel",
-							"_postman_id": "2674dcea-749a-4c16-bf5f-50a2bf347ec5",
+							"id": "2674dcea-749a-4c16-bf5f-50a2bf347ec5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4004,7 +3959,7 @@
 									}
 								}
 							],
-							"_postman_id": "72a7a95a-ae36-4a2b-83da-e67da29bd69f",
+							"id": "72a7a95a-ae36-4a2b-83da-e67da29bd69f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4042,7 +3997,7 @@
 						},
 						{
 							"name": "Compute contract",
-							"_postman_id": "2195f7b3-73f5-473b-a542-d8fc39f8b1b3",
+							"id": "2195f7b3-73f5-473b-a542-d8fc39f8b1b3",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4086,7 +4041,7 @@
 						},
 						{
 							"name": "Execute contract",
-							"_postman_id": "e229b0de-e027-4fbc-9b74-71ee14544468",
+							"id": "e229b0de-e027-4fbc-9b74-71ee14544468",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4129,7 +4084,7 @@
 						},
 						{
 							"name": "Get events of contract",
-							"_postman_id": "c1bbdd85-b55b-48c0-a088-647101ea79ba",
+							"id": "c1bbdd85-b55b-48c0-a088-647101ea79ba",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4162,7 +4117,7 @@
 						},
 						{
 							"name": "Get contracts",
-							"_postman_id": "d074be59-d354-421e-8d8b-24fc9e83a1dd",
+							"id": "d074be59-d354-421e-8d8b-24fc9e83a1dd",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4211,7 +4166,7 @@
 						},
 						{
 							"name": "Process event",
-							"_postman_id": "baeb76d3-4d21-400b-824d-3c18c65fad54",
+							"id": "baeb76d3-4d21-400b-824d-3c18c65fad54",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4248,11 +4203,10 @@
 							"response": []
 						}
 					],
-					"_postman_id": "4eca449c-433f-4116-aa77-3d1bd5aaca3d",
-					"_postman_isSubFolder": true
+					"id": "4eca449c-433f-4116-aa77-3d1bd5aaca3d"
 				}
 			],
-			"_postman_id": "437f7d30-09df-4e3f-ae64-247883eedab7",
+			"id": "437f7d30-09df-4e3f-ae64-247883eedab7",
 			"description": "Secure 3rd party API integrations enable communication between the core system and capabilities with external eco-system partners."
 		}
 	]
