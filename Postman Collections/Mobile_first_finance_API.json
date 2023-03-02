@@ -147,7 +147,38 @@
 												}
 											]
 										},
-										"description": "We can create a new user form using the service like the one listed below and its payload format.\n\n[**{{backofficeURL}}/UserService/users/forms?access_token={{useraccessToken}}**](https://dev.mobilefirstfinance.com:5055/UserService/users/forms?access_token={{useraccessToken}})\n\n{  \n\"Form Header\": \\[  \n{  \n\"Type\": \"Varchar\",  \n\"Value\": \"\",  \n\"Label\": \"User form\"  \n},  \n{  \n\"Type\": \"Varchar\",  \n\"Value\": \"\",  \n\"Label\": \"Identifier\"  \n}  \n\\],  \n\"Form Body\": \\[  \n{  \n\"Type\": \"Varchar\",  \n\"Value\": \"\",  \n\"Label\": \"First name\"  \n},  \n{  \n\"Type\": \"Varchar\",  \n\"Value\": \"\",  \n\"Label\": \"Last name\"  \n}  \n\\]  \n}\n\n**To create a userform, follow the steps below.**\n\n- Set the request as **POST**.\n- Set the service and the payload.\n- Using the designated global variable for access token in the end of the service call. Then click on **Send.**\n    \n\n<img src=\"https://content.pstmn.io/3347280f-d189-48fc-9cde-a65101cc33c8/aW1hZ2UucG5n\" width=\"1447\" height=\"848\">"
+										"description": "We can create a new user form using the service like the one listed below and its payload format.\n\n[**{{backofficeURL}}/UserService/users/forms?access_token={{useraccessToken}}**](https://dev.mobilefirstfinance.com:5055/UserService/users/forms?access_token={{useraccessToken}})\n\n{  \n\"Form Header\": \\[  \n{  \n\"Type\": \"Varchar\",  \n\"Value\": \"\",  \n\"Label\": \"User form\"  \n},  \n{  \n\"Type\": \"Varchar\",  \n\"Value\": \"\",  \n\"Label\": \"Identifier\"  \n}  \n\\],  \n\"Form Body\": \\[  \n{  \n\"Type\": \"Varchar\",  \n\"Value\": \"\",  \n\"Label\": \"First name\"  \n},  \n{  \n\"Type\": \"Varchar\",  \n\"Value\": \"\",  \n\"Label\": \"Last name\"  \n}  \n\\]  \n}\n\n**To create a userform, follow the steps below.**\n\n- Set the request as **POST**.\n- Set the service and the payload.\n- Use the designated global variable for access token in the end of the service call. Then click on **Send.**\n    \n\n<img src=\"https://content.pstmn.io/3347280f-d189-48fc-9cde-a65101cc33c8/aW1hZ2UucG5n\" width=\"1447\" height=\"848\">"
+									},
+									"response": []
+								},
+								{
+									"name": "Get all user  form",
+									"id": "4bfa2529-3aa8-4460-b75e-142941fccd76",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/UserService/users/forms?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"UserService",
+												"users",
+												"forms"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can get all the existing user forms in the application."
 									},
 									"response": []
 								},
@@ -193,37 +224,6 @@
 									"response": []
 								},
 								{
-									"name": "Get all user  form",
-									"id": "4bfa2529-3aa8-4460-b75e-142941fccd76",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{backofficeURL}}:5055/UserService/users/forms?access_token={{useraccessToken}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"port": "5055",
-											"path": [
-												"UserService",
-												"users",
-												"forms"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												}
-											]
-										},
-										"description": "Using this API we can get all the existing user forms in the application."
-									},
-									"response": []
-								},
-								{
 									"name": "Create user",
 									"id": "a377a298-81a5-43c0-9cb4-033089c87e6f",
 									"protocolProfileBehavior": {
@@ -259,6 +259,36 @@
 											]
 										},
 										"description": "This service will create a new user. Mandatory fields which are required are Form ID, Identifier, User Password, and mobile number. Form ID is set based on the user template chosen from the User service. Identifier and User Password are the other unique fields provided in the request for creating a new user."
+									},
+									"response": []
+								},
+								{
+									"name": "Get  all the Users",
+									"id": "8c7f3afc-fcda-49b1-aa1d-274029dda37b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}:5055/UserService/users?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"UserService",
+												"users"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can get all the existing users from the application."
 									},
 									"response": []
 								},
@@ -299,36 +329,6 @@
 											]
 										},
 										"description": "Using this API we can update details of a user profile based on the user Id.\n\nEndFragment"
-									},
-									"response": []
-								},
-								{
-									"name": "Get  all the Users",
-									"id": "8c7f3afc-fcda-49b1-aa1d-274029dda37b",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{backofficeURL}}:5055/UserService/users?access_token={{useraccessToken}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"port": "5055",
-											"path": [
-												"UserService",
-												"users"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												}
-											]
-										},
-										"description": "Using this API we can get all the existing users from the application."
 									},
 									"response": []
 								}
