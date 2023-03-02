@@ -100,7 +100,7 @@
 												}
 											]
 										},
-										"description": "- This service will create a root branch. Mandatory fields which are required is branch name and branch code. Based on parent id you can create a new branch. Using the designated global variable, use the produced access token in the service call.\n    \n\nUsing this service we can create a new branch.\n\nFor a branch creation example, see the json below.\n\n**Payload** : {  \n\"branchName\": \"Organization\",  \n\"branchCode\": \"Org\",  \n\"parentId\": 1  \n}"
+										"description": "- This service will create a root branch. Mandatory fields which are required is branch name and branch code.\n- You can create another new branch based on the parent id and build the branch hierarchy like a tree in structure.\n- Using the designated global variable, use the produced access token in the service call.\n    \n\n**Payload** : {  \n\"branchName\": \"Organization\",  \n\"branchCode\": \"Org\",  \n\"parentId\": 1  \n}"
 									},
 									"response": []
 								}
