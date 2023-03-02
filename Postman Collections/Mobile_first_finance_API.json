@@ -334,7 +334,7 @@
 								}
 							],
 							"id": "a72c0e40-dbfe-4ef8-b6d7-4b28c72ec058",
-							"description": "User demographic information such as name, address, email ID etc... are possible to create based on a given use case. Eg : Manager, Administrator, Customer, and auditor are a few user types in an organisation which may have specific information for the organisation's record.\n\nUser service contains APIs to create new users and define their corresponding user access rights"
+							"description": "User demographic information such as name, address, email ID etc... are possible to create based on a given use case. Eg : Manager, Administrator, Customer, and auditor are a few user types in an organisation which may have specific information for the organisation's record.\n\nUser service contains services to create new users and define their corresponding user access rights"
 						},
 						{
 							"name": "User actions",
