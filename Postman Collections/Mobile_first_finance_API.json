@@ -288,7 +288,7 @@
 												}
 											]
 										},
-										"description": "Using this service we can get all the existing users from the application.\n\n**Service : {{backofficeURL}}:5055/UserService/users?access_token={{useraccessToken}}**\n\n**To view the existing users, follow the steps below.**\n\n- Set the request as **GET.**\n- Set the service.\n- Use the designated global variable for access token in the end of the service call. Then click on **Send**.\n- In the response, you will find the **userID**, which is required when updating an existing use details. See the image below to find the **userID** in the response.\n    \n\n<img src=\"https://content.pstmn.io/6af13772-1bc5-4036-9987-767e435cf1c7/aW1hZ2UucG5n\" width=\"980\" height=\"512\">"
+										"description": "Using this service we can get all the existing users from the application.\n\n**Service : {{backofficeURL}}:5055/UserService/users?access_token={{useraccessToken}}**\n\n**To view the existing users, follow the steps below.**\n\n- Set the request as **GET.**\n- Set the service.\n- Use the designated global variable for access token in the end of the service call. Then click on **Send**.\n- In the response, you will find the **userID**, which is required when updating an existing user details. See the image below to find the **userID** in the response.\n    \n\n<img src=\"https://content.pstmn.io/6af13772-1bc5-4036-9987-767e435cf1c7/aW1hZ2UucG5n\" width=\"980\" height=\"512\">"
 									},
 									"response": []
 								},
