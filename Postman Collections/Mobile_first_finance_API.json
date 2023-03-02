@@ -76,7 +76,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"branchName\": \"Cashpor\",\r\n  \"branchCode\": \"CSHPR\",\r\n  \"parentId\": 1\r\n}",
+											"raw": "{\r\n  \"branchName\": \"Branchone\",\r\n  \"branchCode\": \"Brnch\",\r\n  \"parentId\": 1\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
