@@ -258,7 +258,7 @@
 												}
 											]
 										},
-										"description": "This service will create a new user. Mandatory fields which are required are Form ID, Identifier, User Password, and mobile number. Form ID is set based on the user template chosen from the User service. Identifier and User Password are the other unique fields provided in the request for creating a new user."
+										"description": "This service will create a new user. Mandatory fields which are required are **Form ID**, **Identifier**, **User Password**, and **Mobile Number**. **Form ID** is set based on the user template chosen, it is defined as **userFormTemplateID** which we get in the **Get all user form** response ."
 									},
 									"response": []
 								},
