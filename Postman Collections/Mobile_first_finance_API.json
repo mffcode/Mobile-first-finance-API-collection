@@ -100,7 +100,7 @@
 												}
 											]
 										},
-										"description": "- This service will create a root branch. Mandatory fields which are required is branch name and branch code. Based on parent id you can create a new branch. Using the designated global variable, use the produced access token in the service call.\n    \n\nUsing this service and this format payload we can create a new user form.\n\n[https://abc.mobilefirstfinance.com:5055/BranchService/Branches?access_token={{useraccessToken}}](https://dev.mobilefirstfinance.com:5055/BranchService/Branches?access_token={{useraccessToken}})\n\nFor a branch creation example, see the json below.\n\n{  \n\"branchName\": \"Organization\",  \n\"branchCode\": \"Org\",  \n\"parentId\": 1  \n}"
+										"description": "- This service will create a root branch. Mandatory fields which are required is branch name and branch code. Based on parent id you can create a new branch. Using the designated global variable, use the produced access token in the service call.\n    \n\nAn example service like mentioned below and its format payload we can create a new user form.\n\n[https://abc.mobilefirstfinance.com:4400/BranchService/Branches?access_token={{useraccessToken}}](https://dev.mobilefirstfinance.com:5055/BranchService/Branches?access_token={{useraccessToken}})\n\nFor a branch creation example, see the json below.\n\n{  \n\"branchName\": \"Organization\",  \n\"branchCode\": \"Org\",  \n\"parentId\": 1  \n}"
 									},
 									"response": []
 								}
