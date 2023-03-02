@@ -188,7 +188,7 @@
 												}
 											]
 										},
-										"description": "Using this API we can update the existing user form by form id."
+										"description": "We can update the existing user form using the service like the one listed below and its payload format.\n\n{{backofficeURL}}/UserService/users/forms/1594397?access_token={{useraccessToken}}"
 									},
 									"response": []
 								},
