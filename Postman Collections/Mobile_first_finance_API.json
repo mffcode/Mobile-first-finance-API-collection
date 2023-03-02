@@ -986,7 +986,7 @@
 						}
 					],
 					"id": "f1f0c055-2462-4ed8-a329-bd540b23dd65",
-					"description": "This contains a list of API for initial configuration of Mobile First Finance setup"
+					"description": "This contains a list of services for initial configuration of Mobile First Finance setup"
 				},
 				{
 					"name": "Profile",
