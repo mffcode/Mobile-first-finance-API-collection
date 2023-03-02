@@ -147,7 +147,7 @@
 												}
 											]
 										},
-										"description": "Using this API and this format payload we can create a new user form"
+										"description": "We can create a new user form using an example service like the one listed below and its payload format."
 									},
 									"response": []
 								},
