@@ -1469,6 +1469,36 @@
 								"description": "Using this API we can get total count of the profiles that exist in the application."
 							},
 							"response": []
+						},
+						{
+							"name": "Get a profile by profile id",
+							"id": "9d9c64e6-b2a6-44fc-82a0-479a25661fef",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{backofficeURL}}/ProfileService/profiles/forms/{{profileFormID}}?access_token={{useraccessToken}}",
+									"host": [
+										"{{backofficeURL}}"
+									],
+									"path": [
+										"ProfileService",
+										"profiles",
+										"forms",
+										"{{profileFormID}}"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{useraccessToken}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "227629b4-cc94-44c3-8a27-e9a31de86a9c",
