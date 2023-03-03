@@ -791,7 +791,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"workflowName\": \"Microfinance loans\",\r\n  \"description\": \"Microfinance is a form of financial service which provides small loans and other financial services to poor and low-income households.\",\r\n  \"picture\": \"\",\r\n  \"productUUID\": \"\",\r\n  \"autoApproval\": \"No\",\r\n  \"autoDisburse\": \"Yes\"\r\n}",
+											"raw": "{\r\n  \"workflowName\": \"Microfinance loans\",\r\n  \"description\": \"Microfinance is a form of financial service which provides small loans and other financial services to poor and low-income households.\",\r\n  \"picture\": \"\",\r\n  \"productUUID\": \"\",\r\n  \"autoApproval\": \"No\",\r\n  \"autoDisburse\": \"No\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
