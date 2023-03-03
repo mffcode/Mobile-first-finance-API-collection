@@ -1159,6 +1159,24 @@
 						},
 						{
 							"name": "Get all the profile forms",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "181f7a29-3530-4798-8a6e-81dd88ff8dcd",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);",
+											"console.log(\"jsonResponse...\"+jsonResponse)",
+											"var jsonData = jsonResponse.data;",
+											"console.log(\"jsonData...\"+jsonData.profileForms)",
+											"var profileForms=jsonData.profileForms",
+											"console.log(\"users...\"+profileForms[0].profileFormID)",
+											"pm.environment.set(\"profileFormID\", profileForms[0].profileFormID);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "2253b02a-c603-43e7-9979-622dc4b49c17",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
