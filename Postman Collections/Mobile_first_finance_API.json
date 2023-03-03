@@ -885,11 +885,10 @@
 													}
 												},
 												"url": {
-													"raw": "{{backofficeURL}}:5055/WorkflowService/autoVerify/template?access_token={{useraccessToken}}&templateId={{templateid}}&flag=true",
+													"raw": "{{backofficeURL}}/WorkflowService/autoVerify/template?access_token={{useraccessToken}}&templateId={{workflowTemplateID}}&flag=true",
 													"host": [
 														"{{backofficeURL}}"
 													],
-													"port": "5055",
 													"path": [
 														"WorkflowService",
 														"autoVerify",
@@ -902,7 +901,7 @@
 														},
 														{
 															"key": "templateId",
-															"value": "{{templateid}}"
+															"value": "{{workflowTemplateID}}"
 														},
 														{
 															"key": "flag",
