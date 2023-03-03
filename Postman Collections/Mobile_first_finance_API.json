@@ -347,6 +347,36 @@
 										"description": "We can update the existing user using the service like the one listed below and its payload format.\n\n**Service** : {{backofficeURL}}:5055/UserService/users/975af2c2-e3c8-43d5-807c-8f97f6a18b37?access_token={{useraccessToken}}\n\n**Payload** : {  \n\"FormID\": \"1028671\",  \n\"User Password\": \"2244\",  \n\"Identifier\": \"Calvin\",  \n\"First Name\": \"Calvin\",  \n\"Last Name\": \"Marko\",  \n\"Gender\": \"Male\",  \n\"Email\": \"calvin@gmail.com\",  \n\"Mobile Number\": \"6002145239\",  \n\"Default start page\": \"Dashboard\"  \n}\n\n**To update an existing user, follow the steps below.**\n\n- Set the request as **PUT**.\n- Edit the user details with the essential information that needs to be altered and add it to the payload.\n- Because the **userID** is required in the service to update the user, retrieve it from the data returned by the **Get all users** request.\n- Include the **userID** in the service call.\n- Use the designated global variable for access token in the end of the service call. Then click on **Send**.\n    \n\n<img src=\"https://content.pstmn.io/8d4ed0b1-5967-46d8-a5d5-fde12aa4a5e9/aW1hZ2UucG5n\" alt=\"\" height=\"527\" width=\"981\">"
 									},
 									"response": []
+								},
+								{
+									"name": "Get user form by user form template id",
+									"id": "ca74f0d1-65bc-4b8b-939c-645d8eab7462",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}/UserService/users/forms/{{userFormTemplateID}}?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"path": [
+												"UserService",
+												"users",
+												"forms",
+												"{{userFormTemplateID}}"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "a72c0e40-dbfe-4ef8-b6d7-4b28c72ec058",
