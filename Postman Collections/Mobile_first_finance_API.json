@@ -885,7 +885,7 @@
 													}
 												},
 												"url": {
-													"raw": "{{backofficeURL}}/WorkflowService/autoVerify/template?access_token={{useraccessToken}}&templateId={{workflowTemplateID}}&flag=true",
+													"raw": "{{backofficeURL}}/WorkflowService/autoVerify/template?access_token={{useraccessToken}}&templateId={{workflowTemplateID}}&flag=false",
 													"host": [
 														"{{backofficeURL}}"
 													],
@@ -905,7 +905,7 @@
 														},
 														{
 															"key": "flag",
-															"value": "true"
+															"value": "false"
 														}
 													]
 												}
