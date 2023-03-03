@@ -1471,7 +1471,7 @@
 							"response": []
 						},
 						{
-							"name": "Get a profile by profile id",
+							"name": "Get a profile form by profile form id",
 							"id": "9d9c64e6-b2a6-44fc-82a0-479a25661fef",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
