@@ -308,6 +308,24 @@
 								},
 								{
 									"name": "Get  all the Users",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "e446de15-9e99-460c-b731-5d48e227483d",
+												"exec": [
+													"var jsonResponse = JSON.parse(responseBody);",
+													"console.log(\"jsonResponse...\"+jsonResponse)",
+													"var jsonData = jsonResponse.data;",
+													"console.log(\"jsonData...\"+jsonData.users)",
+													"var users=jsonData.users",
+													"console.log(\"users...\"+users[0].userID)",
+													"pm.environment.set(\"userID\", users[0].userID);"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
 									"id": "8c7f3afc-fcda-49b1-aa1d-274029dda37b",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
