@@ -505,6 +505,25 @@
 								},
 								{
 									"name": "Get user roles",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "50591836-355d-4da1-ad3f-4a172b78a3fa",
+												"exec": [
+													"var jsonResponse = JSON.parse(responseBody);",
+													"console.log(\"jsonResponse...\"+jsonResponse)",
+													"var jsonData = jsonResponse.data;",
+													"console.log(\"jsonData...\"+jsonData.users)",
+													"var users=jsonData.users",
+													"console.log(\"users...\" + users[0].roleID)",
+													"pm.globals.set(\"roleID\", users[0].roleID);",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
 									"id": "673139fb-6733-431c-a100-bb902caa4134",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
