@@ -1315,6 +1315,24 @@
 						},
 						{
 							"name": "Get all the profiles",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "72610622-0e4a-42c4-a994-d81a2760fdba",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);",
+											"console.log(\"jsonResponse...\"+jsonResponse)",
+											"var jsonData = jsonResponse.data;",
+											"console.log(\"jsonData...\"+jsonData.profiles)",
+											"var profiles=jsonData.profiles",
+											"console.log(\"users...\"+profiles[0].profileID)",
+											"pm.environment.set(\"profileID\", profiles[0].profileID);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "a38e0bb9-36e9-4963-a2a1-6593da055abe",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -1323,11 +1341,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{backofficeURL}}:5055/ProfileService/profiles?pageNumber=0&numberOfRecords=10&access_token={{useraccessToken}}",
+									"raw": "{{backofficeURL}}/ProfileService/profiles?pageNumber=0&numberOfRecords=10&access_token={{useraccessToken}}",
 									"host": [
 										"{{backofficeURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ProfileService",
 										"profiles"
