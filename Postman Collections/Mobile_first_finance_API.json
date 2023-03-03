@@ -178,7 +178,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can view all of the application's existing and newly created user forms.\n\n**To view the user forms, follow the steps below.**\n\n- Set the request as **GET.**\n- Set the service.\n- Use the designated global variable for access token in the end of the service call. Then click on **Send.**\n- In the response, you will find the userFormTemplateID, which is required when updating an existing use form. See the image below to find the userFormTemplateID in the response."
+										"description": "Using this service, we can view all of the application's existing and newly created user forms.\n\n**To view the user forms, follow the steps below.**\n\n- Set the request as **GET.**\n- Set the service.\n- Use the designated global variable for access token in the end of the service call. Then click on **Send.**\n- In the response, you will find the **userFormTemplateID**, which is required when updating an existing use form. See the image below to find the **userFormTemplateID** in the response."
 									},
 									"response": []
 								},
