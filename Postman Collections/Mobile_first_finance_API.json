@@ -76,7 +76,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"branchName\": \"Branchone\",\r\n  \"branchCode\": \"EU\",\r\n  \"parentId\": 1\r\n}",
+											"raw": "{\r\n  \"branchName\": \"Europe\",\r\n  \"branchCode\": \"EU\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
