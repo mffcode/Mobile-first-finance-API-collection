@@ -84,11 +84,10 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}:5055/BranchService/Branches?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/BranchService/Branches?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"BranchService",
 												"Branches"
