@@ -722,6 +722,35 @@
 									"response": []
 								},
 								{
+									"name": "Get a workflow by workflow id",
+									"id": "1f16b2ad-063d-4cbc-bd2f-9a942760843b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}/WorkflowService/workflows/{{workFlowID}}?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"path": [
+												"WorkflowService",
+												"workflows",
+												"{{workFlowID}}"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
 									"name": "Get  workflows count",
 									"id": "9b248aef-1f9f-4c93-9e0e-dfed84f47aa0",
 									"protocolProfileBehavior": {
@@ -762,7 +791,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"workflowName\": \"Student loan\",\r\n  \"description\": \"A digital student loan onboarding workflow that includes single-click social media profile checks.\",\r\n  \"picture\": \"\",\r\n  \"productUUID\": \"135\"\r\n}",
+											"raw": "{\r\n  \"workflowName\": \"Microfinance loans\",\r\n  \"description\": \"Microfinance is a form of financial service which provides small loans and other financial services to poor and low-income households.\",\r\n  \"picture\": \"\",\r\n  \"productUUID\": \"\",\r\n  \"autoApproval\": \"No\",\r\n  \"autoDisburse\": \"No\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -770,15 +799,14 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/updateworkflowName/907245?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/WorkflowService/updateworkflowName/{{workFlowID}}?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"updateworkflowName",
-												"907245"
+												"{{workFlowID}}"
 											],
 											"query": [
 												{
@@ -848,35 +876,6 @@
 												"WorkflowService",
 												"workflows",
 												"{{workflowid}}"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												}
-											]
-										}
-									},
-									"response": []
-								},
-								{
-									"name": "Get a workflow by workflow id",
-									"id": "1f16b2ad-063d-4cbc-bd2f-9a942760843b",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/workflows/{{workFlowID}}?access_token={{useraccessToken}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"path": [
-												"WorkflowService",
-												"workflows",
-												"{{workFlowID}}"
 											],
 											"query": [
 												{
