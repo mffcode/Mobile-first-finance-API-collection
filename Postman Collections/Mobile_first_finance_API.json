@@ -858,6 +858,35 @@
 										}
 									},
 									"response": []
+								},
+								{
+									"name": "Get a workflow by workflow id",
+									"id": "1f16b2ad-063d-4cbc-bd2f-9a942760843b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}/WorkflowService/workflows/{{workFlowID}}?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"path": [
+												"WorkflowService",
+												"workflows",
+												"{{workFlowID}}"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "d7b0c02b-9541-44df-a7c9-3b9405f975d9",
