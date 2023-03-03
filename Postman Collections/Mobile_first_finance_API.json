@@ -1409,7 +1409,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"FormID\": 1,\n  \"National ID\": 512023265874,\n  \"Name\": \"Edwin berg\",\n  \"Secondary ID Type\": \"Driving License\",\n  \"Secondary ID\": \"8452AJNB78\",\n  \"Tertiary ID Type\": \"Driving License\",\n  \"Tertiary ID \": \"8452PKMN\",\n  \"Gender\": \"Male\",\n  \"Date of Birth\": \"1994-12-14\",\n  \"Marital Status\": \"Married\",\n  \"Type of relation\": \"Wife\",\n  \"Relation Name\": \"Marie\",\n  \"Nominee Name\": \"Marie\",\n  \"Nominee Age\": 32,\n  \"Nominee Relationship\": \"Wife\",\n  \"Address\": \"\",\n  \"State\": \"\",\n  \"District\": \"\",\n  \"Village/Town/City\": \"\",\n  \"Email\": \"\",\n  \"Residence Accommodation\": \"\",\n  \"Educational Qualifications\": \"\",\n  \"Occupation\": \"\",\n  \"Mobile Number\": \"\",\n  \"Latitude\": \"\",\n  \"Longitude\": \"\",\n  \"Hierarchy\": 1599383,\n  \"branchId\": 1599383,\n  \"Branch\": \"Cashpor\",\n  \"Group\": \"Cashpor\",\n  \"Identifier\": \"GMF/CSHPR/164711\",\n  \"Age\": 28\n}",
+									"raw": "{\"FormID\":1,\"National ID\":511455151152,\"Name\":\"Dwane Martin\",\"Secondary ID Type\":\"PAN Card\",\"Secondary ID\":\"9789\",\"Tertiary ID Type\":\"PAN Card\",\"Tertiary ID \":\"6541jghj\",\"Gender\":\"Male\",\"Date of Birth\":\"2013-03-01\",\"Marital Status\":\"Single\",\"Type of relation\":\"Brother\",\"Relation Name\":\"brother\",\"Nominee Name\":\"sai\",\"Nominee Age\":89,\"Nominee Relationship\":\"Brother\",\"Address\":\"hyderabad\",\"State\":\"Madhya Pradesh\",\"District\":\"Perambalur\",\"Village/Town/City\":\"chada\",\"Pincode\":500039,\"Email\":\"sai@gmail.com\",\"Residence Accommodation\":\"Owned\",\"Educational Qualifications\":\"Under Graduate\",\"Occupation\":\"work\",\"Mobile Number\":9701234789,\"Latitude\":\"980.09\",\"Longitude\":\"890.89\",\"Hierarchy\":1601834,\"branchId\":1,\"Branch\":\"GMF\",\"Group\":\"Hyderabad\",\"Identifier\":\"GMF/165037\",\"Age\":10}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1417,14 +1417,14 @@
 									}
 								},
 								"url": {
-									"raw": "{{backofficeURL}}/ProfileService/profiles/{{profileid}}?access_token={{useraccessToken}}",
+									"raw": "{{backofficeURL}}/ProfileService/profiles/{{profileID}}?access_token={{useraccessToken}}",
 									"host": [
 										"{{backofficeURL}}"
 									],
 									"path": [
 										"ProfileService",
 										"profiles",
-										"{{profileid}}"
+										"{{profileID}}"
 									],
 									"query": [
 										{
