@@ -1314,6 +1314,44 @@
 							"response": []
 						},
 						{
+							"name": "Get all the profiles",
+							"id": "a38e0bb9-36e9-4963-a2a1-6593da055abe",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{backofficeURL}}:5055/ProfileService/profiles?pageNumber=0&numberOfRecords=10&access_token={{useraccessToken}}",
+									"host": [
+										"{{backofficeURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ProfileService",
+										"profiles"
+									],
+									"query": [
+										{
+											"key": "pageNumber",
+											"value": "0"
+										},
+										{
+											"key": "numberOfRecords",
+											"value": "10"
+										},
+										{
+											"key": "access_token",
+											"value": "{{useraccessToken}}"
+										}
+									]
+								},
+								"description": "Using this API we can view all the existing profiles in the application."
+							},
+							"response": []
+						},
+						{
 							"name": "Update profile",
 							"id": "4f62c6c5-d1c1-42fd-a27f-9a2db844ceec",
 							"protocolProfileBehavior": {
@@ -1349,44 +1387,6 @@
 									]
 								},
 								"description": "Using this API we can update existing profile details."
-							},
-							"response": []
-						},
-						{
-							"name": "Get profiles",
-							"id": "a38e0bb9-36e9-4963-a2a1-6593da055abe",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{backofficeURL}}:5055/ProfileService/profiles?pageNumber=0&numberOfRecords=10&access_token={{useraccessToken}}",
-									"host": [
-										"{{backofficeURL}}"
-									],
-									"port": "5055",
-									"path": [
-										"ProfileService",
-										"profiles"
-									],
-									"query": [
-										{
-											"key": "pageNumber",
-											"value": "0"
-										},
-										{
-											"key": "numberOfRecords",
-											"value": "10"
-										},
-										{
-											"key": "access_token",
-											"value": "{{useraccessToken}}"
-										}
-									]
-								},
-								"description": "Using this API we can view all the existing profiles in the application."
 							},
 							"response": []
 						},
