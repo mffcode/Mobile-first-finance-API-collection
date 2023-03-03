@@ -855,36 +855,6 @@
 										}
 									},
 									"response": []
-								},
-								{
-									"name": "To view a workflow by workflowid",
-									"id": "7068a089-fa72-4c23-976e-c85f780bf4aa",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/workflows/{{workflowid}}?access_token={{useraccessToken}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"port": "5055",
-											"path": [
-												"WorkflowService",
-												"workflows",
-												"{{workflowid}}"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												}
-											]
-										}
-									},
-									"response": []
 								}
 							],
 							"id": "d7b0c02b-9541-44df-a7c9-3b9405f975d9",
