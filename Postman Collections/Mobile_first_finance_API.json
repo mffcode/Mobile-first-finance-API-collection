@@ -1082,7 +1082,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"Form Header\": [\n    {\n      \"Type\": \"Number\",\n      \"Value\": \"\",\n      \"Label\": \"Bank Account Number\"\n    },\n    {\n      \"Type\": \"List\",\n      \"Value\": [\n        \"HSBC\",\n        \" CitiBank\",\n        \" SBI\"\n      ],\n      \"Label\": \"Bank Name\"\n    }\n  ],\n  \"Form Body\": [\n    {\n      \"Type\": \"List\",\n      \"Value\": [\n        \"Hyderabad\",\n        \"Zurich\",\n        \"North London\"\n      ],\n      \"Label\": \"Bank branch name\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"IFSC Code\"\n    }\n  ],\n  \"Label\": \"Bank Details 44\"\n}",
+											"raw": "{\n  \"Form Header\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Company Name\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Main Contact Person\"\n    },\n    {\n      \"Type\": \"Phone\",\n      \"Value\": \"\",\n      \"Label\": \"Phone Number\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Web Page\"\n    },\n    {\n      \"Type\": \"Email\",\n      \"Value\": \"\",\n      \"Label\": \"Contact Mail\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Office Address\"\n    }\n  ],\n  \"Label\": \"Company Details\",\n  \"Form Body\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Industry\"\n    },\n    {\n      \"Type\": \"Number\",\n      \"Value\": \"\",\n      \"Label\": \"Number of Employees\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Ownership\"\n    },\n    {\n      \"Type\": \"Number\",\n      \"Value\": \"\",\n      \"Label\": \"Year of Establishment\"\n    }\n  ],\n  \"Description\": \"\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -1090,15 +1090,14 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowTemplates/1594791?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/WorkflowService/workflowTemplates/{{workflowTemplateID}}?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"workflowTemplates",
-												"1594791"
+												"{{workflowTemplateID}}"
 											],
 											"query": [
 												{
