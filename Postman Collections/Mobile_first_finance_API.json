@@ -24,13 +24,13 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "d42f6f77-592a-4b04-8db0-b4667397db98",
 										"exec": [
 											"var jsonData = JSON.parse(responseBody);\r",
 											"var jsonValue = jsonData.body;\r",
 											"pm.globals.set(\"useraccessToken\", jsonValue.access_token);"
 										],
-										"type": "text/javascript",
-										"id": "d42f6f77-592a-4b04-8db0-b4667397db98"
+										"type": "text/javascript"
 									}
 								}
 							],
@@ -43,7 +43,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"rootUser\": \"rootUser\",\r\n    \"userName\": \"userName\",\r\n    \"password\": \"password\"\r\n}",
+									"raw": "{\r\n    \"rootUser\": \"DEV\",\r\n    \"userName\": \"DEV\",\r\n    \"password\": \"rootpassword@dev\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
