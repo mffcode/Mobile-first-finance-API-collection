@@ -1369,6 +1369,36 @@
 							"response": []
 						},
 						{
+							"name": "Get profile by profileid",
+							"id": "99e57d92-3a84-408a-97a4-dec94e45aefe",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{backofficeURL}}/ProfileService/profiles/{{profileID}}?access_token={{useraccessToken}}",
+									"host": [
+										"{{backofficeURL}}"
+									],
+									"path": [
+										"ProfileService",
+										"profiles",
+										"{{profileID}}"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{useraccessToken}}"
+										}
+									]
+								},
+								"description": "Using this API we can get profile details by it's profile id."
+							},
+							"response": []
+						},
+						{
 							"name": "Update profile",
 							"id": "4f62c6c5-d1c1-42fd-a27f-9a2db844ceec",
 							"protocolProfileBehavior": {
@@ -1404,37 +1434,6 @@
 									]
 								},
 								"description": "Using this API we can update existing profile details."
-							},
-							"response": []
-						},
-						{
-							"name": "Get profile by profileid",
-							"id": "99e57d92-3a84-408a-97a4-dec94e45aefe",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{backofficeURL}}:5055/ProfileService/profiles/{{profileid}}?access_token={{useraccessToken}}",
-									"host": [
-										"{{backofficeURL}}"
-									],
-									"port": "5055",
-									"path": [
-										"ProfileService",
-										"profiles",
-										"{{profileid}}"
-									],
-									"query": [
-										{
-											"key": "access_token",
-											"value": "{{useraccessToken}}"
-										}
-									]
-								},
-								"description": "Using this API we can get profile details by it's profile id."
 							},
 							"response": []
 						},
