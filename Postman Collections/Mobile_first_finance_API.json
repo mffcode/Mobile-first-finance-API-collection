@@ -557,11 +557,11 @@
 										{
 											"listen": "test",
 											"script": {
+												"id": "15273a7b-874e-45be-a762-4885db442c9d",
 												"exec": [
 													""
 												],
-												"type": "text/javascript",
-												"id": "15273a7b-874e-45be-a762-4885db442c9d"
+												"type": "text/javascript"
 											}
 										}
 									],
@@ -573,11 +573,10 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}:5055/UserService/roles/{{roleID}}?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/UserService/roles/{{roleID}}?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"UserService",
 												"roles",
