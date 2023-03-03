@@ -287,11 +287,10 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}:5055/UserService/users?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/UserService/users?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"UserService",
 												"users"
