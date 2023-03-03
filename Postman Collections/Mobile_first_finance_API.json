@@ -995,47 +995,25 @@
 									"response": []
 								},
 								{
-									"name": "Update workflow template",
-									"id": "73ef0e7e-fe8f-4626-957c-c1e31523881a",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "PUT",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n  \"Form Header\": [\n    {\n      \"Type\": \"Number\",\n      \"Value\": \"\",\n      \"Label\": \"Bank Account Number\"\n    },\n    {\n      \"Type\": \"List\",\n      \"Value\": [\n        \"HSBC\",\n        \" CitiBank\",\n        \" SBI\"\n      ],\n      \"Label\": \"Bank Name\"\n    }\n  ],\n  \"Form Body\": [\n    {\n      \"Type\": \"List\",\n      \"Value\": [\n        \"Hyderabad\",\n        \"Zurich\",\n        \"North London\"\n      ],\n      \"Label\": \"Bank branch name\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"IFSC Code\"\n    }\n  ],\n  \"Label\": \"Bank Details 44\"\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowTemplates/1594791?access_token={{useraccessToken}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"port": "5055",
-											"path": [
-												"WorkflowService",
-												"workflowTemplates",
-												"1594791"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												}
-											]
-										},
-										"description": "Using this API we can update an existing workflow template based on workflow template id."
-									},
-									"response": []
-								},
-								{
 									"name": "Get all workflow templates",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "7cf9def0-66be-4074-b8e1-13a17d6426af",
+												"exec": [
+													"var jsonResponse = JSON.parse(responseBody);",
+													"console.log(\"jsonResponse...\"+jsonResponse)",
+													"var jsonData = jsonResponse.data;",
+													"console.log(\"jsonData...\"+jsonData.workflow)",
+													"var workflow=jsonData.workflow",
+													"console.log(\"workflow...\"+workflow[0].templateID)",
+													"pm.environment.set(\"workflowTemplateID\", workflow[0].templateID);"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
 									"id": "d669898d-fb0d-45ad-b812-10ffbc81b0f5",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -1044,11 +1022,10 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowTemplates?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/WorkflowService/workflowTemplates?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"workflowTemplates"
@@ -1092,6 +1069,46 @@
 											]
 										},
 										"description": "Using this API we can get workflow template by its workflow template id"
+									},
+									"response": []
+								},
+								{
+									"name": "Update workflow template",
+									"id": "73ef0e7e-fe8f-4626-957c-c1e31523881a",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Form Header\": [\n    {\n      \"Type\": \"Number\",\n      \"Value\": \"\",\n      \"Label\": \"Bank Account Number\"\n    },\n    {\n      \"Type\": \"List\",\n      \"Value\": [\n        \"HSBC\",\n        \" CitiBank\",\n        \" SBI\"\n      ],\n      \"Label\": \"Bank Name\"\n    }\n  ],\n  \"Form Body\": [\n    {\n      \"Type\": \"List\",\n      \"Value\": [\n        \"Hyderabad\",\n        \"Zurich\",\n        \"North London\"\n      ],\n      \"Label\": \"Bank branch name\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"IFSC Code\"\n    }\n  ],\n  \"Label\": \"Bank Details 44\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowTemplates/1594791?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"workflowTemplates",
+												"1594791"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can update an existing workflow template based on workflow template id."
 									},
 									"response": []
 								}
