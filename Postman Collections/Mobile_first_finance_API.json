@@ -676,6 +676,24 @@
 								},
 								{
 									"name": "Get all workflows",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "5d06d595-08d8-4a6a-ad7a-e6f57ba01b08",
+												"exec": [
+													"var jsonResponse = JSON.parse(responseBody);",
+													"console.log(\"jsonResponse...\"+jsonResponse)",
+													"var jsonData = jsonResponse.data;",
+													"console.log(\"jsonData...\"+jsonData.workflow)",
+													"var workflow=jsonData.workflow",
+													"console.log(\"workflow...\"+workflow[0].workFlowID)",
+													"pm.environment.set(\"workFlowID\", workflow[0].workFlowID);"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
 									"id": "d0b719d2-aa36-4c8a-8de5-d4ba7ef6c365",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
