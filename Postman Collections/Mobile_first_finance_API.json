@@ -931,11 +931,10 @@
 													}
 												},
 												"url": {
-													"raw": "{{backofficeURL}}:5055/WorkflowService/updateworkflowTemplateflag/{{workflowTemplateID}}?access_token={{useraccessToken}}",
+													"raw": "{{backofficeURL}}/WorkflowService/updateworkflowTemplateflag/{{workflowTemplateID}}?access_token={{useraccessToken}}",
 													"host": [
 														"{{backofficeURL}}"
 													],
-													"port": "5055",
 													"path": [
 														"WorkflowService",
 														"updateworkflowTemplateflag",
