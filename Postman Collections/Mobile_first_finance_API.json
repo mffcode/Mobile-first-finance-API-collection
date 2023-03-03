@@ -504,6 +504,35 @@
 									"response": []
 								},
 								{
+									"name": "Get user roles",
+									"id": "673139fb-6733-431c-a100-bb902caa4134",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}/UserService/roles?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"path": [
+												"UserService",
+												"roles"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this API we can view all the existing user roles in the application."
+									},
+									"response": []
+								},
+								{
 									"name": "Get user role by role id",
 									"event": [
 										{
@@ -543,36 +572,6 @@
 											]
 										},
 										"description": "Using this API we can view a user role by it's user id."
-									},
-									"response": []
-								},
-								{
-									"name": "Get user roles",
-									"id": "673139fb-6733-431c-a100-bb902caa4134",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{backofficeURL}}:5055/UserService/roles?access_token={{useraccessToken}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"port": "5055",
-											"path": [
-												"UserService",
-												"roles"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												}
-											]
-										},
-										"description": "Using this API we can view all the existing user roles in the application."
 									},
 									"response": []
 								}
