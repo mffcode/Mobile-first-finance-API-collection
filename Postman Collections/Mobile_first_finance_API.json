@@ -967,7 +967,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"Form Header\": [\n    {\n      \"Type\": \"Number\",\n      \"Value\": \"\",\n      \"Label\": \"Bank Account Number\"\n    },\n    {\n      \"Type\": \"List\",\n      \"Value\": [\n        \"HSBC\",\n        \" CitiBank\",\n        \" SBI\"\n      ],\n      \"Label\": \"Bank Name\"\n    }\n  ],\n  \"Form Body\": [\n    {\n      \"Type\": \"List\",\n      \"Value\": [\n        \"Hyderabad\",\n        \"Zurich\",\n        \"North London\"\n      ],\n      \"Label\": \"Bank branch name\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"IFSC Code\"\n    }\n  ],\n  \"Label\": \"Bank Details 222\"\n}",
+											"raw": "{\n  \"Form Header\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Nominee Name\"\n    },\n    {\n      \"Type\": \"Date\",\n      \"Value\": \"\",\n      \"Label\": \"Nominee DOB\"\n    },\n    {\n      \"Type\": \"Number\",\n      \"Value\": \"\",\n      \"Label\": \"Nominee Aadhaar \"\n    }\n  ],\n  \"Form Body\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Nominee Address\"\n    },\n    {\n      \"Type\": \"Phone\",\n      \"Value\": \"\",\n      \"Label\": \"Nominee Phone number \"\n    }\n  ],\n  \"Label\": \"Nominee Details-tst\",\n  \"Description\": \"\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -975,11 +975,10 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowTemplates?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/WorkflowService/workflowTemplates?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"workflowTemplates"
