@@ -1622,20 +1622,15 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/onboardFilter?workflowId={{workflowid}}&numberOfRecords=50&pageNumber=0&access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/WorkflowService/onboardFilter?numberOfRecords=50&pageNumber=0&access_token={{useraccessToken}}&workflowId={{workFlowID}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"onboardFilter"
 											],
 											"query": [
-												{
-													"key": "workflowId",
-													"value": "{{workflowid}}"
-												},
 												{
 													"key": "numberOfRecords",
 													"value": "50"
@@ -1652,6 +1647,10 @@
 												{
 													"key": "access_token",
 													"value": "{{useraccessToken}}"
+												},
+												{
+													"key": "workflowId",
+													"value": "{{workFlowID}}"
 												}
 											]
 										},
