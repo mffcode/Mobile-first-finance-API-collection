@@ -1631,6 +1631,18 @@
 								},
 								{
 									"name": "Get onboard filter by workflowid",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "e19f0e7c-1da1-468a-bed9-ee369ba85601",
+												"exec": [
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
 									"id": "c49adb1d-2289-4fcb-8515-719469770ebd",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
