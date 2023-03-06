@@ -2176,11 +2176,10 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}:5055/ProfileService/editApprovalProfiles?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/ProfileService/editApprovalProfiles?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"ProfileService",
 												"editApprovalProfiles"
