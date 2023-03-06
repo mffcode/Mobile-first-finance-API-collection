@@ -2267,11 +2267,10 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}:5055/PortfolioService/bulkReceiveAndDeals?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&identifier={{identifier2}}&eventType=IED&=",
+											"raw": "{{backofficeURL}}/PortfolioService/bulkReceiveAndDeals?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&identifier={{Identifier}}&eventType=IED&=",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"PortfolioService",
 												"bulkReceiveAndDeals"
@@ -2296,7 +2295,7 @@
 												},
 												{
 													"key": "identifier",
-													"value": "{{identifier2}}"
+													"value": "{{Identifier}}"
 												},
 												{
 													"key": "eventType",
