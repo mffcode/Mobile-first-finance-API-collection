@@ -1525,6 +1525,40 @@
 					"name": "Onboard",
 					"item": [
 						{
+							"name": "View all the workflows",
+							"item": [
+								{
+									"name": "Get all the workflows",
+									"id": "8fc7172c-d962-451d-b457-e0af65a917eb",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}/WorkflowService/workflows?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzgwODgxNTAsInVzZXJfbmFtZSI6IjYwZjQyYmU1LWI3MWYtNGYyYS05MzY3LTM4OTk5MTIzYjc2YyxST09UVVNFUiw2MGY0MmJlNS1iNzFmLTRmMmEtOTM2Ny0zODk5OTEyM2I3NmMsNTA1NSxkZXYubW9iaWxlZmlyc3RmaW5hbmNlLmNvbSIsImF1dGhvcml0aWVzIjpbIkFMTCIsImRlZmF1bHQiXSwianRpIjoiY2VjNWQwYzAtOWM1Mi00NjY5LTkwMTAtNDM0N2ExYzBlY2UyIiwiY2xpZW50X2lkIjoid2ViLWFwcCIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.WaQYxlNE0S5fuTfiZ38sWM362ANDPWXaxqS2sekll89-QDd0YRl1lyjWp0LUSozvTlG6L_z1Ed5N9zBHKeKIHDV8HfrR94UHpsm-FgSGvJoAzA4sujCJY168oUG-tTRt2iJFTf6bc5_S2yqQrb6ThrYznFp6jCDCUZ6Y1QzlZa0Kdl2wn1iRof7H45hda8N7atE5bWuSGzlsmg7kYFpm1Wo3Bn4g1hCXz3Gchp5v88_TlqMSF4YswV_ovOmdfh5KYWT21za2HeArJybuMYgI1rVxtdqnNR6p5vMlbxN1ineIw72bchGqEHy__6aEnuurn4jjYkgUyHJ-PlxMlubfZ09H36jEMpmgZOG_xk1oTJjcLbTZ1z6p-onH_tDy1boFtKu2QmIxniCZW66Lg0RUvvTg07-V4THJyRAOuki1C7_J7kElG1CoR3VqIR8uKG_E29PJ8IZWyUbysVDTytkCEpCZ9nBPWF6Mk4hEiRXlhmeOVcr0hemZXe41tUq8PId8iSDeRloPudY6miJYy-vOpxyGILPakHtkID4uKfksvhAZeOEL-lfzf3qBThg2IV-9MuYah8ltThrvKx1beBNtszmqwnjXRicAfYwuClhDnNcntopOO7k8BPlgdVwQhKtEnaDs3yyT1b2cq7IFm33S1lQ5eXeW8bt5xRLsikH36es",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"path": [
+												"WorkflowService",
+												"workflows"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzgwODgxNTAsInVzZXJfbmFtZSI6IjYwZjQyYmU1LWI3MWYtNGYyYS05MzY3LTM4OTk5MTIzYjc2YyxST09UVVNFUiw2MGY0MmJlNS1iNzFmLTRmMmEtOTM2Ny0zODk5OTEyM2I3NmMsNTA1NSxkZXYubW9iaWxlZmlyc3RmaW5hbmNlLmNvbSIsImF1dGhvcml0aWVzIjpbIkFMTCIsImRlZmF1bHQiXSwianRpIjoiY2VjNWQwYzAtOWM1Mi00NjY5LTkwMTAtNDM0N2ExYzBlY2UyIiwiY2xpZW50X2lkIjoid2ViLWFwcCIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.WaQYxlNE0S5fuTfiZ38sWM362ANDPWXaxqS2sekll89-QDd0YRl1lyjWp0LUSozvTlG6L_z1Ed5N9zBHKeKIHDV8HfrR94UHpsm-FgSGvJoAzA4sujCJY168oUG-tTRt2iJFTf6bc5_S2yqQrb6ThrYznFp6jCDCUZ6Y1QzlZa0Kdl2wn1iRof7H45hda8N7atE5bWuSGzlsmg7kYFpm1Wo3Bn4g1hCXz3Gchp5v88_TlqMSF4YswV_ovOmdfh5KYWT21za2HeArJybuMYgI1rVxtdqnNR6p5vMlbxN1ineIw72bchGqEHy__6aEnuurn4jjYkgUyHJ-PlxMlubfZ09H36jEMpmgZOG_xk1oTJjcLbTZ1z6p-onH_tDy1boFtKu2QmIxniCZW66Lg0RUvvTg07-V4THJyRAOuki1C7_J7kElG1CoR3VqIR8uKG_E29PJ8IZWyUbysVDTytkCEpCZ9nBPWF6Mk4hEiRXlhmeOVcr0hemZXe41tUq8PId8iSDeRloPudY6miJYy-vOpxyGILPakHtkID4uKfksvhAZeOEL-lfzf3qBThg2IV-9MuYah8ltThrvKx1beBNtszmqwnjXRicAfYwuClhDnNcntopOO7k8BPlgdVwQhKtEnaDs3yyT1b2cq7IFm33S1lQ5eXeW8bt5xRLsikH36es"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"id": "f76840a0-f3be-4400-a8ed-b68a61f3d0d2"
+						},
+						{
 							"name": "View a workflow",
 							"item": [
 								{
@@ -1872,43 +1906,6 @@
 								}
 							],
 							"id": "7044ead0-2b6b-4ae9-915b-0374a8a8e2d6"
-						},
-						{
-							"name": "View all the workflows",
-							"item": [],
-							"id": "f76840a0-f3be-4400-a8ed-b68a61f3d0d2"
-						},
-						{
-							"name": "Get all the workflows",
-							"id": "8fc7172c-d962-451d-b457-e0af65a917eb",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "https://dev.mobilefirstfinance.com:5055/WorkflowService/workflows?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzgwODgxNTAsInVzZXJfbmFtZSI6IjYwZjQyYmU1LWI3MWYtNGYyYS05MzY3LTM4OTk5MTIzYjc2YyxST09UVVNFUiw2MGY0MmJlNS1iNzFmLTRmMmEtOTM2Ny0zODk5OTEyM2I3NmMsNTA1NSxkZXYubW9iaWxlZmlyc3RmaW5hbmNlLmNvbSIsImF1dGhvcml0aWVzIjpbIkFMTCIsImRlZmF1bHQiXSwianRpIjoiY2VjNWQwYzAtOWM1Mi00NjY5LTkwMTAtNDM0N2ExYzBlY2UyIiwiY2xpZW50X2lkIjoid2ViLWFwcCIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.WaQYxlNE0S5fuTfiZ38sWM362ANDPWXaxqS2sekll89-QDd0YRl1lyjWp0LUSozvTlG6L_z1Ed5N9zBHKeKIHDV8HfrR94UHpsm-FgSGvJoAzA4sujCJY168oUG-tTRt2iJFTf6bc5_S2yqQrb6ThrYznFp6jCDCUZ6Y1QzlZa0Kdl2wn1iRof7H45hda8N7atE5bWuSGzlsmg7kYFpm1Wo3Bn4g1hCXz3Gchp5v88_TlqMSF4YswV_ovOmdfh5KYWT21za2HeArJybuMYgI1rVxtdqnNR6p5vMlbxN1ineIw72bchGqEHy__6aEnuurn4jjYkgUyHJ-PlxMlubfZ09H36jEMpmgZOG_xk1oTJjcLbTZ1z6p-onH_tDy1boFtKu2QmIxniCZW66Lg0RUvvTg07-V4THJyRAOuki1C7_J7kElG1CoR3VqIR8uKG_E29PJ8IZWyUbysVDTytkCEpCZ9nBPWF6Mk4hEiRXlhmeOVcr0hemZXe41tUq8PId8iSDeRloPudY6miJYy-vOpxyGILPakHtkID4uKfksvhAZeOEL-lfzf3qBThg2IV-9MuYah8ltThrvKx1beBNtszmqwnjXRicAfYwuClhDnNcntopOO7k8BPlgdVwQhKtEnaDs3yyT1b2cq7IFm33S1lQ5eXeW8bt5xRLsikH36es",
-									"protocol": "https",
-									"host": [
-										"dev",
-										"mobilefirstfinance",
-										"com"
-									],
-									"port": "5055",
-									"path": [
-										"WorkflowService",
-										"workflows"
-									],
-									"query": [
-										{
-											"key": "access_token",
-											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzgwODgxNTAsInVzZXJfbmFtZSI6IjYwZjQyYmU1LWI3MWYtNGYyYS05MzY3LTM4OTk5MTIzYjc2YyxST09UVVNFUiw2MGY0MmJlNS1iNzFmLTRmMmEtOTM2Ny0zODk5OTEyM2I3NmMsNTA1NSxkZXYubW9iaWxlZmlyc3RmaW5hbmNlLmNvbSIsImF1dGhvcml0aWVzIjpbIkFMTCIsImRlZmF1bHQiXSwianRpIjoiY2VjNWQwYzAtOWM1Mi00NjY5LTkwMTAtNDM0N2ExYzBlY2UyIiwiY2xpZW50X2lkIjoid2ViLWFwcCIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdfQ.WaQYxlNE0S5fuTfiZ38sWM362ANDPWXaxqS2sekll89-QDd0YRl1lyjWp0LUSozvTlG6L_z1Ed5N9zBHKeKIHDV8HfrR94UHpsm-FgSGvJoAzA4sujCJY168oUG-tTRt2iJFTf6bc5_S2yqQrb6ThrYznFp6jCDCUZ6Y1QzlZa0Kdl2wn1iRof7H45hda8N7atE5bWuSGzlsmg7kYFpm1Wo3Bn4g1hCXz3Gchp5v88_TlqMSF4YswV_ovOmdfh5KYWT21za2HeArJybuMYgI1rVxtdqnNR6p5vMlbxN1ineIw72bchGqEHy__6aEnuurn4jjYkgUyHJ-PlxMlubfZ09H36jEMpmgZOG_xk1oTJjcLbTZ1z6p-onH_tDy1boFtKu2QmIxniCZW66Lg0RUvvTg07-V4THJyRAOuki1C7_J7kElG1CoR3VqIR8uKG_E29PJ8IZWyUbysVDTytkCEpCZ9nBPWF6Mk4hEiRXlhmeOVcr0hemZXe41tUq8PId8iSDeRloPudY6miJYy-vOpxyGILPakHtkID4uKfksvhAZeOEL-lfzf3qBThg2IV-9MuYah8ltThrvKx1beBNtszmqwnjXRicAfYwuClhDnNcntopOO7k8BPlgdVwQhKtEnaDs3yyT1b2cq7IFm33S1lQ5eXeW8bt5xRLsikH36es"
-										}
-									]
-								}
-							},
-							"response": []
 						}
 					],
 					"id": "0e29be9b-5869-46cd-a7ce-8437d87b6073",
