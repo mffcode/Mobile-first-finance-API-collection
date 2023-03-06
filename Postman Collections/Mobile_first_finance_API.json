@@ -1537,9 +1537,7 @@
 													"console.log(\"jsonResponse...\"+jsonResponse)",
 													"var jsonData = jsonResponse.data;",
 													"console.log(\"jsonData...\"+jsonData.profiles)",
-													"var profiles=jsonData.profiles",
-													"console.log(\"users...\"+profiles[0].profileID)",
-													"pm.environment.set(\"profileID\", profiles[0].profileID);",
+													"",
 													"",
 													""
 												],
