@@ -1642,8 +1642,10 @@
 													"var jsonData = jsonResponse.data;",
 													"var workflow=jsonData.workflow",
 													"console.log(\"workflow...\"+Object.keys(workflow))",
-													"var jsonWorkflowData= Object.keys(workflow);",
-													"console.log(\"jsonWorkflowData...\"+jsonWorkflowData[1])",
+													"// var jsonWorkflowData= Object.keys(workflow);",
+													"// console.log(\"jsonWorkflowData...\"+jsonWorkflowData[1])",
+													"var jsonWorkflowData= Object.keys(workflow)[1];",
+													"console.log(\"workflowTemplateDetailsID...\"+workflow[jsonWorkflowData][0].detailsID)",
 													"",
 													"",
 													""
