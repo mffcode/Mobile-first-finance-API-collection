@@ -1637,6 +1637,15 @@
 											"script": {
 												"id": "e19f0e7c-1da1-468a-bed9-ee369ba85601",
 												"exec": [
+													"var jsonResponse = JSON.parse(responseBody);",
+													"console.log(\"jsonResponse...\"+jsonResponse)",
+													"var jsonData = jsonResponse.data;",
+													"var workflow=jsonData.workflow",
+													"console.log(\"workflow...\"+Object.keys(workflow))",
+													"var jsonWorkflowData= Object.keys(workflow);",
+													"console.log(\"jsonWorkflowData...\"+jsonWorkflowData[1])",
+													"",
+													"",
 													""
 												],
 												"type": "text/javascript"
