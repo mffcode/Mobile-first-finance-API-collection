@@ -1823,6 +1823,59 @@
 										"description": "Using this API we can link a profile to the workflow."
 									},
 									"response": []
+								},
+								{
+									"name": "Get workflow profile id",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "5ddcbdc6-0549-4580-b377-9a08e641ce76",
+												"exec": [
+													"var jsonResponse = JSON.parse(responseBody);",
+													"console.log(\"jsonResponse...\"+jsonResponse)",
+													"",
+													"var jsonData = jsonResponse.data;",
+													"console.log(\"jsonData...\"+jsonData.workflow)",
+													"",
+													"var workflow=jsonData.workflow",
+													"console.log(\"workflowProfileID...\"+workflow.workflowProfileID)",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"id": "28c76d03-4cfa-40e1-b986-2b526553715e",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://dev.mobilefirstfinance.com:5055/WorkflowService/mobileApp/{{profileID}}?access_token={{useraccessToken}}",
+											"protocol": "https",
+											"host": [
+												"dev",
+												"mobilefirstfinance",
+												"com"
+											],
+											"port": "5055",
+											"path": [
+												"WorkflowService",
+												"mobileApp",
+												"{{profileID}}"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "a372710b-b64b-4c5f-8006-35ee62f0f28e"
