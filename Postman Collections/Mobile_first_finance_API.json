@@ -1978,7 +1978,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}/ProfileService/searchprofileWithApproval?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&approved=No&identifier={{Identifier}}",
+											"raw": "{{backofficeURL}}/ProfileService/searchprofileWithApproval?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&approved=No",
 											"host": [
 												"{{backofficeURL}}"
 											],
@@ -2005,7 +2005,8 @@
 												},
 												{
 													"key": "identifier",
-													"value": "{{Identifier}}"
+													"value": "{{Identifier}}",
+													"disabled": true
 												}
 											]
 										},
