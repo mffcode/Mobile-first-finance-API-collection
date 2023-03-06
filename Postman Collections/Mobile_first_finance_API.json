@@ -1717,7 +1717,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/unlinkedProfiles/{{workFlowID}}?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&Identifier={{identifier}}",
+											"raw": "{{backofficeURL}}/WorkflowService/unlinkedProfiles/{{workFlowID}}?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&Identifier={{Identifier}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
@@ -1741,7 +1741,7 @@
 												},
 												{
 													"key": "Identifier",
-													"value": "{{identifier}}"
+													"value": "{{Identifier}}"
 												}
 											]
 										},
