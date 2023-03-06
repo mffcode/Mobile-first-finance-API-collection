@@ -1529,6 +1529,26 @@
 							"item": [
 								{
 									"name": "Get all the workflows",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "965ca55d-fc30-4fa3-bfd9-d712cbdd5ae0",
+												"exec": [
+													"var jsonResponse = JSON.parse(responseBody);",
+													"console.log(\"jsonResponse...\"+jsonResponse)",
+													"var jsonData = jsonResponse.data;",
+													"console.log(\"jsonData...\"+jsonData.profiles)",
+													"var profiles=jsonData.profiles",
+													"console.log(\"users...\"+profiles[0].profileID)",
+													"pm.environment.set(\"profileID\", profiles[0].profileID);",
+													"",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
 									"id": "8fc7172c-d962-451d-b457-e0af65a917eb",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
