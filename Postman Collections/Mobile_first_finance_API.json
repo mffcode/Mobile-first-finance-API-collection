@@ -1926,11 +1926,10 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowTemplateDetails/verify?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/WorkflowService/workflowTemplateDetails/verify?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"workflowTemplateDetails",
