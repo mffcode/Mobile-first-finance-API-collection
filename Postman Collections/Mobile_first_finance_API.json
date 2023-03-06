@@ -1674,15 +1674,14 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/unlinkedProfiles/2224?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10",
+											"raw": "{{backofficeURL}}/WorkflowService/unlinkedProfiles/{{workFlowID}}?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"unlinkedProfiles",
-												"2224"
+												"{{workFlowID}}"
 											],
 											"query": [
 												{
