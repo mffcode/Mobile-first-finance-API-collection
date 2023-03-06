@@ -1327,7 +1327,11 @@
 											"console.log(\"jsonData...\"+jsonData.profiles)",
 											"var profiles=jsonData.profiles",
 											"console.log(\"users...\"+profiles[0].profileID)",
-											"pm.environment.set(\"profileID\", profiles[0].profileID);"
+											"pm.environment.set(\"profileID\", profiles[0].profileID);",
+											"var profileDetails=jsonData.profileDetails",
+											"console.log(\"users...\"+profileDetails[0].Mobile Number)",
+											"pm.environment.set(\"Mobile Number\", profileDetails[0].Mobile Number);",
+											""
 										],
 										"type": "text/javascript"
 									}
