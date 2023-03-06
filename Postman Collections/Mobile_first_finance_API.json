@@ -1840,6 +1840,7 @@
 													"",
 													"var workflow=jsonData.workflow",
 													"console.log(\"workflowProfileID...\"+workflow.workflowProfileID)",
+													"pm.environment.set(\"workflowProfileID\", workflow.workflowProfileID);",
 													""
 												],
 												"type": "text/javascript"
