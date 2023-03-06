@@ -1330,7 +1330,12 @@
 											"pm.environment.set(\"profileID\", profiles[0].profileID);",
 											"var profileDetails=profiles[0].profileDetails",
 											"console.log(\"profileDetails...\"+profileDetails[\"Mobile Number\"])",
-											"pm.environment.set(\"MobileNumber\", profileDetails[\"Mobile Number\"]);"
+											"pm.environment.set(\"MobileNumber\", profileDetails[\"Mobile Number\"]);",
+											"",
+											"var profileDetails=profiles[0].profileDetails",
+											"console.log(\"profileDetails...\"+profileDetails[\"Identifier\"])",
+											"pm.environment.set(\"Identifier\", profileDetails[\"Identifier\"]);",
+											""
 										],
 										"type": "text/javascript"
 									}
