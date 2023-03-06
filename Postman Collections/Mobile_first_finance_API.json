@@ -1894,14 +1894,14 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/workflowTemplateDetails/{{workflowtemplatedetailsID}}?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/WorkflowService/workflowTemplateDetails/{{workflowTemplateDetailsID}}?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
 											"path": [
 												"WorkflowService",
 												"workflowTemplateDetails",
-												"{{workflowtemplatedetailsID}}"
+												"{{workflowTemplateDetailsID}}"
 											],
 											"query": [
 												{
