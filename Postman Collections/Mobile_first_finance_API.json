@@ -1450,7 +1450,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{backofficeURL}}/ProfileService/searchProfiles?=&mobileNumber={{MobileNumber}}&access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10",
+									"raw": "{{backofficeURL}}/ProfileService/searchProfiles?&mobileNumber={{MobileNumber}}&access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10",
 									"host": [
 										"{{backofficeURL}}"
 									],
@@ -1460,8 +1460,8 @@
 									],
 									"query": [
 										{
-											"key": "",
-											"value": ""
+											"key": null,
+											"value": null
 										},
 										{
 											"key": "mobileNumber",
