@@ -1589,6 +1589,18 @@
 							"item": [
 								{
 									"name": "Get workflow by workflow id",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "06eb9086-ab05-43ca-91d4-0fd79491eb9e",
+												"exec": [
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
 									"id": "b5b30e5b-31ed-4635-b3cd-47d8d268208a",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
