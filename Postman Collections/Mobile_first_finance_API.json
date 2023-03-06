@@ -1978,11 +1978,10 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}:5055/ProfileService/searchprofileWithApproval?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&approved=No&identifier={{identifier}}",
+											"raw": "{{backofficeURL}}/ProfileService/searchprofileWithApproval?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&approved=No&identifier={{Identifier}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"ProfileService",
 												"searchprofileWithApproval"
@@ -2006,7 +2005,7 @@
 												},
 												{
 													"key": "identifier",
-													"value": "{{identifier}}"
+													"value": "{{Identifier}}"
 												}
 											]
 										},
