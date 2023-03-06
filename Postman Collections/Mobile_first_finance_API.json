@@ -2088,15 +2088,14 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/templateDetailsByworkflowProfileId/{{workflowprofileid}}?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/WorkflowService/templateDetailsByworkflowProfileId/{{workflowProfileID}}?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"templateDetailsByworkflowProfileId",
-												"{{workflowprofileid}}"
+												"{{workflowProfileID}}"
 											],
 											"query": [
 												{
