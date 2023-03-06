@@ -1323,19 +1323,14 @@
 										"exec": [
 											"var jsonResponse = JSON.parse(responseBody);",
 											"console.log(\"jsonResponse...\"+jsonResponse)",
-											"",
 											"var jsonData = jsonResponse.data;",
 											"console.log(\"jsonData...\"+jsonData.profiles)",
-											"",
 											"var profiles=jsonData.profiles",
-											"console.log(\"users...\"+profiles[0].profileID)",
+											"console.log(\"profiles...\"+profiles[0].profileID)",
 											"pm.environment.set(\"profileID\", profiles[0].profileID);",
-											"",
-											"",
-											"",
-											"",
-											"",
-											""
+											"var profileDetails=profiles[0].profileDetails",
+											"console.log(\"profileDetails...\"+profileDetails[\"Mobile Number\"])",
+											"pm.environment.set(\"MobileNumber\", profileDetails[\"Mobile Number\"]);"
 										],
 										"type": "text/javascript"
 									}
