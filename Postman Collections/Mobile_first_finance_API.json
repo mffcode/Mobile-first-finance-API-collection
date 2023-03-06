@@ -2132,11 +2132,10 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowReversal?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/WorkflowService/workflowReversal?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"workflowReversal"
