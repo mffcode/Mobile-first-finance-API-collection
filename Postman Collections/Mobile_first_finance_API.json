@@ -1536,7 +1536,12 @@
 													"var jsonResponse = JSON.parse(responseBody);",
 													"console.log(\"jsonResponse...\"+jsonResponse)",
 													"var jsonData = jsonResponse.data;",
-													"console.log(\"jsonData...\"+jsonData.profiles)",
+													"console.log(\"jsonData...\"+jsonData.workflow)",
+													"var workflow=jsonData.workflow",
+													"console.log(\"users...\"+workflow[0].workFlowID)",
+													"pm.environment.set(\"workFlowID\", workflow[0].workFlowID);",
+													"",
+													"",
 													"",
 													"",
 													""
