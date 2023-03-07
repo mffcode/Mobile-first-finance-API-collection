@@ -2363,18 +2363,17 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}:5055/PortfolioService/bulkReceiveAndDeals?=&access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=20&Hierarchy={{hierarchy}}",
+											"raw": "{{backofficeURL}}/PortfolioService/bulkReceiveAndDeals?=&access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=20&Hierarchy={{hierarchy}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"PortfolioService",
 												"bulkReceiveAndDeals"
 											],
 											"query": [
 												{
-													"key": null,
+													"key": "",
 													"value": ""
 												},
 												{
