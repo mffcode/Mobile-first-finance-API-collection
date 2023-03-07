@@ -145,7 +145,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can create a new user form.\n\n**Example Payload** : {  \n\"Form Header\": \\[  \n{  \n\"Type\": \"Varchar\",  \n\"Value\": \"Org user form\",  \n\"Label\": \"Form Label\"  \n},  \n{  \n\"Type\": \"Varchar\",  \n\"Value\": \"\",  \n\"Label\": \"Identifier\"  \n}  \n\\],  \n\"Form Body\": \\[  \n{  \n\"Type\": \"Varchar\",  \n\"Value\": \"\",  \n\"Label\": \"First name\"  \n},  \n{  \n\"Type\": \"Varchar\",  \n\"Value\": \"\",  \n\"Label\": \"Last name\"  \n}  \n\\]  \n}\n\n**To create a user form, follow the steps below.**\n\n- Set the request as **POST**.\n- Set the service and the payload.\n- Use the designated global variable for access token in the end of the service call. Then click on **Send.**"
+										"description": "Using this service, we can create a new user form.\n\n**To create a user form, follow the steps below.**\n\n- Set the request as **POST**.\n- Set the service and the payload.\n- Use the designated global variable for access token in the end of the service call. Then click on **Send.**"
 									},
 									"response": []
 								},
