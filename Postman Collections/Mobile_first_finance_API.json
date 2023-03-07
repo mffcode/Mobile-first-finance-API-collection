@@ -43,7 +43,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"rootUser\": \"DEV\",\r\n    \"userName\": \"DEV\",\r\n    \"password\": \"rootpassword@dev\"\r\n}",
+									"raw": "{\r\n    \"rootUser\": \"ABC\",\r\n    \"userName\": \"ABC\",\r\n    \"password\": \"rootpassword@abc\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
