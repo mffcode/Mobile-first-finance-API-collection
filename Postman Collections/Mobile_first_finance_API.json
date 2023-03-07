@@ -1335,6 +1335,10 @@
 											"var profileDetails=profiles[0].profileDetails",
 											"console.log(\"profileDetails...\"+profileDetails[\"Identifier\"])",
 											"pm.environment.set(\"Identifier\", profileDetails[\"Identifier\"]);",
+											"",
+											"var profileDetails=profiles[0].profileDetails",
+											"console.log(\"Hierarchy...\"+profileDetails[\"Hierarchy\"])",
+											"pm.environment.set(\"Hierarchy\", profileDetails[\"Hierarchy\"]);",
 											""
 										],
 										"type": "text/javascript"
