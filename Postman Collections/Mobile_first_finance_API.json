@@ -2542,18 +2542,17 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}:5055/PortfolioService/receiptApproval?=&numberOfRecords=10&pageNumber=0&identifier={{identifier2}}&access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/PortfolioService/receiptApproval?=&numberOfRecords=10&pageNumber=0&identifier={{Identifier}}&access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"PortfolioService",
 												"receiptApproval"
 											],
 											"query": [
 												{
-													"key": null,
+													"key": "",
 													"value": ""
 												},
 												{
@@ -2566,7 +2565,7 @@
 												},
 												{
 													"key": "identifier",
-													"value": "{{identifier2}}"
+													"value": "{{Identifier}}"
 												},
 												{
 													"key": "access_token",
