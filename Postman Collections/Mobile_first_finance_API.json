@@ -378,7 +378,8 @@
 													"value": "{{useraccessToken}}"
 												}
 											]
-										}
+										},
+										"description": "Using this service we can get a specific user by its user id."
 									},
 									"response": []
 								},
