@@ -454,7 +454,7 @@
 												}
 											]
 										},
-										"description": "Using this API we can get the list of user actions that exist in the application."
+										"description": "Using this service we can get the list of user actions that exist in the application."
 									},
 									"response": []
 								}
