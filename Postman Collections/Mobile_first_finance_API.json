@@ -590,7 +590,7 @@
 												}
 											]
 										},
-										"description": "Using this API we can view a user role by it's user id."
+										"description": "Using this service we can view a user role by it's role id."
 									},
 									"response": []
 								}
