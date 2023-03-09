@@ -3172,7 +3172,7 @@
 										}
 									}
 								},
-								"url": "{{customerURL}}:5055/LoginService/login"
+								"url": "{{customerURL}}/LoginService/login"
 							},
 							"response": []
 						}
