@@ -4529,7 +4529,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "[\n    {\n        \"EventID\": \"a29bf034-327c-4844-b2e0-f1ecfdd935b6\",\n        \"Value\": 38000.0,\n        \"ProcessTime\": \"2022-08-01T23:59:59\"\n    }\n]",
+									"raw": "[\n    {\n        \"EventID\": \"e36ce214-62df-4f11-8b3e-5c41f57aecea\",\n        \"Value\": -38000.0,\n        \"ProcessTime\": \"2022-08-01T23:59:59\"\n    }\n]",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4537,7 +4537,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{solitxURL}}:5050/TransactionsService/process?access_token={{at}}",
+									"raw": "{{solitxURL}}:5050/TransactionsService/process?access_token={{solitxaccessToken}}",
 									"host": [
 										"{{solitxURL}}"
 									],
@@ -4549,7 +4549,7 @@
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{at}}"
+											"value": "{{solitxaccessToken}}"
 										}
 									]
 								}
