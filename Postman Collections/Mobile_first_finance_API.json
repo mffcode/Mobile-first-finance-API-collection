@@ -3329,11 +3329,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{customerURL}}:5055/ThirdpartyService/esign/envelopeStatus?envelopeId=c6a61c88-92d0-4783-9028-8418e6eba8b9&access_token={{custoken}}",
+									"raw": "{{customerURL}}/ThirdpartyService/esign/envelopeStatus?envelopeId={{envelopeID}}&access_token={{customerToken}}",
 									"host": [
 										"{{customerURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ThirdpartyService",
 										"esign",
@@ -3342,11 +3341,11 @@
 									"query": [
 										{
 											"key": "envelopeId",
-											"value": "c6a61c88-92d0-4783-9028-8418e6eba8b9"
+											"value": "{{envelopeID}}"
 										},
 										{
 											"key": "access_token",
-											"value": "{{custoken}}"
+											"value": "{{customerToken}}"
 										}
 									]
 								}
