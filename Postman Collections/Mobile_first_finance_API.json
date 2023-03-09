@@ -3821,7 +3821,7 @@
 						}
 					],
 					"id": "bae2038c-1c48-440f-ae8f-693a47f770b9",
-					"description": "Consist of API which is used to perform ID verification using shuftipro."
+					"description": "Consist of services which is used to perform ID verification."
 				},
 				{
 					"name": "Axis UPI",
