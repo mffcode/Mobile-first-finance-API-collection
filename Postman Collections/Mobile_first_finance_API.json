@@ -3349,7 +3349,8 @@
 											"value": "{{customerToken}}"
 										}
 									]
-								}
+								},
+								"description": "- This API allows us to check the status of the initiated esign.\n- To verify the initiated esign status, you need **envelopeID**. So, after starting the esign, store the **envelopeID** and make it a global variable."
 							},
 							"response": []
 						}
