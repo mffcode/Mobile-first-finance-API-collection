@@ -145,7 +145,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can create a new user form.\n\n**To create a user form, follow the steps below.**\n\n- Set the request as **POST**.\n- Set the service and the payload.\n- Use the designated global variable for access token in the end of the service call. Then click on **Send.**"
+										"description": "Using this service, we can create a new user form."
 									},
 									"response": []
 								},
