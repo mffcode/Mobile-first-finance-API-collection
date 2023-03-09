@@ -4061,10 +4061,11 @@
 									}
 								},
 								"url": {
-									"raw": "{{solitxURL}}/login",
+									"raw": "{{solitxURL}}:6055/login",
 									"host": [
 										"{{solitxURL}}"
 									],
+									"port": "6055",
 									"path": [
 										"login"
 									],
