@@ -4488,7 +4488,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{solitxURL}}:5050/ContractService/profile/contracts/?productUUID=119&access_token={{at}}",
+									"raw": "{{solitxURL}}:5050/ContractService/profile/contracts/?productUUID=119&access_token={{solitxaccessToken}}",
 									"host": [
 										"{{solitxURL}}"
 									],
@@ -4506,7 +4506,7 @@
 										},
 										{
 											"key": "access_token",
-											"value": "{{at}}"
+											"value": "{{solitxaccessToken}}"
 										},
 										{
 											"key": "contractUUID",
