@@ -3179,7 +3179,7 @@
 						}
 					],
 					"id": "06bcd982-bea3-4f8d-a467-d7e4daff528a",
-					"description": "Consist of service which is used for the customer login"
+					"description": "With this service we can login into the customer application."
 				},
 				{
 					"name": "Payment links",
