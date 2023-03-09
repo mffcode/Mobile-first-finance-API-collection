@@ -3622,7 +3622,7 @@
 										{
 											"key": "file",
 											"type": "file",
-											"src": "/C:/Users/sudhe/Downloads/my stmnt.pdf"
+											"value": null
 										},
 										{
 											"key": "accountDetails",
@@ -3642,11 +3642,10 @@
 									]
 								},
 								"url": {
-									"raw": "{{customerURL}}:5055/ThirdpartyService/upload/bankStatement?access_token={{custoken}}",
+									"raw": "{{customerURL}}/ThirdpartyService/upload/bankStatement?access_token={{customerToken}}",
 									"host": [
 										"{{customerURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ThirdpartyService",
 										"upload",
@@ -3655,7 +3654,7 @@
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{custoken}}"
+											"value": "{{customerToken}}"
 										}
 									]
 								},
@@ -3673,11 +3672,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{customerURL}}:5055/ThirdpartyService/generateReportUrl?access_token={{custoken}}&referenceId=ac0af51a-0137-4ecd-afe0-9b6b652d0a7a",
+									"raw": "{{customerURL}}/ThirdpartyService/generateReportUrl?access_token={{customerToken}}&referenceId=ac0af51a-0137-4ecd-afe0-9b6b652d0a7a",
 									"host": [
 										"{{customerURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ThirdpartyService",
 										"generateReportUrl"
@@ -3685,7 +3683,7 @@
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{custoken}}"
+											"value": "{{customerToken}}"
 										},
 										{
 											"key": "referenceId",
