@@ -4134,6 +4134,18 @@
 						},
 						{
 							"name": "Get profile with identifier",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "8a266368-0f64-441e-9489-cc07792ff49a",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "c2729681-9f73-4ecf-9b86-a0e17cbcc561",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
