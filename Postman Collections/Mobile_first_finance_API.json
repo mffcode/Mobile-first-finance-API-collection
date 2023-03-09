@@ -632,7 +632,7 @@
 								}
 							],
 							"id": "5615aff3-f96f-412a-a115-0bdd66195936",
-							"description": "User menus are the list of menu options which an user can utilize based on requirement."
+							"description": "User menus are the list of menu options which an user can utilize based on requirement. Using this service we can view all the existing user menus in the application."
 						},
 						{
 							"name": "Workflows",
