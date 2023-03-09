@@ -671,7 +671,7 @@
 												}
 											]
 										},
-										"description": "Using this API we can create a new workflow."
+										"description": "Using this service we can create a new workflow."
 									},
 									"response": []
 								},
