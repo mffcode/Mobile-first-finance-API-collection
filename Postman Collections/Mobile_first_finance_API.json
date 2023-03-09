@@ -3501,7 +3501,8 @@
 													"value": "{{customerToken}}"
 												}
 											]
-										}
+										},
+										"description": "- In the json body, a valid account number and IFSC code should be mentioned."
 									},
 									"response": []
 								}
