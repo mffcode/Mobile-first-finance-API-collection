@@ -3260,7 +3260,8 @@
 							"response": []
 						}
 					],
-					"id": "ccdf7e70-9ff7-49ce-92ae-ee092520fc16"
+					"id": "ccdf7e70-9ff7-49ce-92ae-ee092520fc16",
+					"description": "Consist of APIs which helps to activate checkout link or scannable code that allows a customer to complete a transaction."
 				},
 				{
 					"name": "E sign",
