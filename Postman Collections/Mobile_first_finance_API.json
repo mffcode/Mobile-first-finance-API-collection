@@ -3672,11 +3672,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{customerURL}}:5055/ThirdpartyService/generateReportUrl?access_token={{custoken}}&referenceId=ac0af51a-0137-4ecd-afe0-9b6b652d0a7a",
+									"raw": "{{customerURL}}/ThirdpartyService/generateReportUrl?access_token={{customerToken}}&referenceId=ac0af51a-0137-4ecd-afe0-9b6b652d0a7a",
 									"host": [
 										"{{customerURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ThirdpartyService",
 										"generateReportUrl"
@@ -3684,7 +3683,7 @@
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{custoken}}"
+											"value": "{{customerToken}}"
 										},
 										{
 											"key": "referenceId",
@@ -4015,6 +4014,7 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "60ead33d-2871-421b-a6d8-f8edf100e6ff",
 										"exec": [
 											"var jsonData = JSON.parse(responseBody);",
 											"console.log(jsonData.access_token);",
@@ -4022,8 +4022,7 @@
 											"",
 											""
 										],
-										"type": "text/javascript",
-										"id": "60ead33d-2871-421b-a6d8-f8edf100e6ff"
+										"type": "text/javascript"
 									}
 								}
 							],
@@ -4054,7 +4053,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"rootUser\": \"rootUser\",\n  \"userName\": \"userName\",\n  \"password\": \"password\"\n}",
+									"raw": "{\n  \"rootUser\": \"mff\",\n  \"userName\": \"mff\",\n  \"password\": \"mff\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
