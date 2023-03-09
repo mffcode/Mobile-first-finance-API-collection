@@ -3284,11 +3284,10 @@
 									}
 								},
 								"url": {
-									"raw": "{{customerURL}}:5055/ThirdpartyService/esign/envelope?access_token={{custoken}}",
+									"raw": "{{customerURL}}/ThirdpartyService/esign/envelope?access_token={{customerToken}}",
 									"host": [
 										"{{customerURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ThirdpartyService",
 										"esign",
@@ -3297,7 +3296,7 @@
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{custoken}}"
+											"value": "{{customerToken}}"
 										}
 									]
 								}
