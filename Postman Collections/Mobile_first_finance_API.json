@@ -4304,7 +4304,10 @@
 									"script": {
 										"id": "e1b08b7f-81c4-43cc-9792-2711275b080e",
 										"exec": [
-											""
+											"var jsonData = JSON.parse(responseBody);",
+											"var jsonData =jsonData[0];",
+											"console.log(jsonData.contractUUID);",
+											"pm.globals.set(\"contractUUID\",jsonData.contractUUID);"
 										],
 										"type": "text/javascript"
 									}
