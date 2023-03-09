@@ -3203,11 +3203,10 @@
 									}
 								},
 								"url": {
-									"raw": "{{customerURL}}:5055/ThirdpartyService/stripe/paymentLink?access_token={{custoken}}",
+									"raw": "{{customerURL}}/ThirdpartyService/stripe/paymentLink?access_token={{customerToken}}",
 									"host": [
 										"{{customerURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ThirdpartyService",
 										"stripe",
@@ -3216,7 +3215,7 @@
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{custoken}}"
+											"value": "{{customerToken}}"
 										}
 									]
 								}
