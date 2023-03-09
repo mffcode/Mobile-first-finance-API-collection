@@ -4302,11 +4302,11 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "e1b08b7f-81c4-43cc-9792-2711275b080e",
 										"exec": [
 											""
 										],
-										"type": "text/javascript",
-										"id": "e1b08b7f-81c4-43cc-9792-2711275b080e"
+										"type": "text/javascript"
 									}
 								}
 							],
@@ -4327,7 +4327,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{solitxURL}}:5050/ContractService/contracts?access_token={{at}}",
+									"raw": "{{solitxURL}}:5050/ContractService/contracts?access_token={{solitxaccessToken}}",
 									"host": [
 										"{{solitxURL}}"
 									],
@@ -4339,7 +4339,7 @@
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{at}}"
+											"value": "{{solitxaccessToken}}"
 										}
 									]
 								}
