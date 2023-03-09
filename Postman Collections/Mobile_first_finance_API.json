@@ -57,7 +57,7 @@
 						}
 					],
 					"id": "17f01589-3053-41de-97c7-0dc82b273e62",
-					"description": "The login service and its payload are located in this folder. It explains how we can access the application.\n\n###"
+					"description": "The login service and its payload are located in this folder. It explains how we can access the application."
 				},
 				{
 					"name": "Settings",
