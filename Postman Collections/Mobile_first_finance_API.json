@@ -3524,11 +3524,10 @@
 											}
 										},
 										"url": {
-											"raw": "{{customerURL}}:5055/ThirdpartyService/panDataFetch?access_token={{custoken}}",
+											"raw": "{{customerURL}}/ThirdpartyService/panDataFetch?access_token={{customerToken}}",
 											"host": [
 												"{{customerURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"ThirdpartyService",
 												"panDataFetch"
@@ -3536,7 +3535,7 @@
 											"query": [
 												{
 													"key": "access_token",
-													"value": "{{custoken}}"
+													"value": "{{customerToken}}"
 												}
 											]
 										}
