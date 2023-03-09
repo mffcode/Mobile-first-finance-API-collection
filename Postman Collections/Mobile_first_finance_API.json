@@ -3179,7 +3179,7 @@
 						}
 					],
 					"id": "06bcd982-bea3-4f8d-a467-d7e4daff528a",
-					"description": "Consist of API which is used for the customer login"
+					"description": "Consist of service which is used for the customer login"
 				},
 				{
 					"name": "Payment links",
