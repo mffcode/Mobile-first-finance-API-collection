@@ -3405,7 +3405,8 @@
 												}
 											}
 										},
-										"url": "{{customerURL}}/ThirdpartyService/twilio/verifyOtp"
+										"url": "{{customerURL}}/ThirdpartyService/twilio/verifyOtp",
+										"description": "- The OTP that we receive via email should be included in the **Code** value."
 									},
 									"response": []
 								}
