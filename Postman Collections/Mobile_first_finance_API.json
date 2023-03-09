@@ -4018,7 +4018,7 @@
 										"exec": [
 											"var jsonData = JSON.parse(responseBody);",
 											"console.log(jsonData.access_token);",
-											"pm.globals.set(\"at\",jsonData.access_token);",
+											"pm.globals.set(\"solitxaccessToken\",jsonData.access_token);",
 											"",
 											""
 										],
