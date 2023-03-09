@@ -4086,11 +4086,11 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "19455c44-a804-4c4a-bc1c-f97f13a277ec",
 										"exec": [
 											""
 										],
-										"type": "text/javascript",
-										"id": "19455c44-a804-4c4a-bc1c-f97f13a277ec"
+										"type": "text/javascript"
 									}
 								}
 							],
@@ -4103,7 +4103,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"FormID\": \"1\",\n  \"National ID\": 845236510037,\n  \"Identifier\": \"Davis john\",\n  \"Secondary ID Type\": \"Driving License\",\n  \"Secondary ID\": \"8452AJNB78\",\n  \"Tertiary ID Type\": \"Driving License\",\n  \"Tertiary ID \": \"8452PKMN\",\n  \"Gender\": \"Male\",\n  \"Date of Birth\": \"1994-12-14\",\n  \"Marital Status\": \"Married\",\n  \"Type of relation\": \"Wife\",\n  \"Relation Name\": \"Marie\",\n  \"Nominee Name\": \"Marie\",\n  \"Nominee Age\": 32,\n  \"Nominee Relationship\": \"Wife\",\n  \"Address\": \"\",\n  \"State\": \"\",\n  \"District\": \"\",\n  \"Village/Town/City\": \"\",\n  \"Email\": \"\",\n  \"Residence Accommodation\": \"\",\n  \"Educational Qualifications\": \"\",\n  \"Occupation\": \"\",\n  \"Mobile Number\": \"\",\n  \"Latitude\": \"\",\n  \"Longitude\": \"\",\n  \"Hierarchy\": 1599383,\n  \"branchId\": \"\"\n}",
+									"raw": "{\n  \"FormID\": \"1\",\n  \"National ID\": 845236510037,\n  \"Identifier\": \"Henry Feather\",\n  \"Secondary ID Type\": \"Driving License\",\n  \"Secondary ID\": \"8452AJNB78\",\n  \"Tertiary ID Type\": \"Driving License\",\n  \"Tertiary ID \": \"8452PKMN\",\n  \"Gender\": \"Male\",\n  \"Date of Birth\": \"1994-12-14\",\n  \"Marital Status\": \"Married\",\n  \"Type of relation\": \"Wife\",\n  \"Relation Name\": \"Marie\",\n  \"Nominee Name\": \"Marie\",\n  \"Nominee Age\": 32,\n  \"Nominee Relationship\": \"Wife\",\n  \"Address\": \"\",\n  \"State\": \"\",\n  \"District\": \"\",\n  \"Village/Town/City\": \"\",\n  \"Email\": \"\",\n  \"Residence Accommodation\": \"\",\n  \"Educational Qualifications\": \"\",\n  \"Occupation\": \"\",\n  \"Mobile Number\": \"\",\n  \"Latitude\": \"\",\n  \"Longitude\": \"\",\n  \"Hierarchy\": 1599383,\n  \"branchId\": \"\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4111,7 +4111,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{solitxURL}}:5050/ProfilesService/profiles?access_token={{at}}",
+									"raw": "{{solitxURL}}:5050/ProfilesService/profiles?access_token={{solitxaccessToken}}",
 									"host": [
 										"{{solitxURL}}"
 									],
@@ -4123,7 +4123,7 @@
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{at}}"
+											"value": "{{solitxaccessToken}}"
 										}
 									]
 								}
