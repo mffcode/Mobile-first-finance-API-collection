@@ -4182,7 +4182,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{solitxURL}}:5050/PaymentServices/payments/channel/new?access_token={{at}}",
+									"raw": "{{solitxURL}}:5050/PaymentServices/payments/channel/new?access_token={{solitxaccessToken}}",
 									"host": [
 										"{{solitxURL}}"
 									],
@@ -4196,7 +4196,7 @@
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{at}}"
+											"value": "{{solitxaccessToken}}"
 										}
 									]
 								}
