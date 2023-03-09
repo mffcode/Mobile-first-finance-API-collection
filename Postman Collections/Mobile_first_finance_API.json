@@ -718,7 +718,7 @@
 												}
 											]
 										},
-										"description": "Using this API we can get all the workflows."
+										"description": "Using this service we can get all the workflows."
 									},
 									"response": []
 								},
