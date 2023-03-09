@@ -3380,7 +3380,7 @@
 												}
 											}
 										},
-										"url": "{{customerURL}}:5055/ThirdpartyService/twilio/sendOtp"
+										"url": "{{customerURL}}/ThirdpartyService/twilio/sendOtp"
 									},
 									"response": []
 								},
