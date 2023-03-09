@@ -3255,8 +3255,7 @@
 											"value": "{{customerToken}}"
 										}
 									]
-								},
-								"description": "This API allows us to create UPI links."
+								}
 							},
 							"response": []
 						}
