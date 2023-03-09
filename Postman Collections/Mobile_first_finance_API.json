@@ -3594,7 +3594,8 @@
 									"response": []
 								}
 							],
-							"id": "9c37dc59-4c83-47d0-b150-73a2d9454497"
+							"id": "9c37dc59-4c83-47d0-b150-73a2d9454497",
+							"description": "- In the json body, a valid Aadhaar number should be mentioned."
 						}
 					],
 					"id": "1b0f5ef8-df0e-4fdd-9709-d015b723e4eb",
