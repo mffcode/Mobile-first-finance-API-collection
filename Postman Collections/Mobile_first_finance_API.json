@@ -4140,7 +4140,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{solitxURL}}:5050/ProfilesService/profiles?identifier=Davis john&access_token={{at}}",
+									"raw": "{{solitxURL}}:5050/ProfilesService/profiles?identifier=Davis john&access_token={{solitxaccessToken}}",
 									"host": [
 										"{{solitxURL}}"
 									],
@@ -4156,7 +4156,7 @@
 										},
 										{
 											"key": "access_token",
-											"value": "{{at}}"
+											"value": "{{solitxaccessToken}}"
 										}
 									]
 								}
