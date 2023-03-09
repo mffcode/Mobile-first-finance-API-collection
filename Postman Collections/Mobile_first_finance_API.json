@@ -4412,7 +4412,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{solitxURL}}:5050/ContractService/contracts/execute?access_token={{at}}&contractUUID=9dedf1b4-b1ef-4552-b608-2a330d63e164",
+									"raw": "{{solitxURL}}:5050/ContractService/contracts/execute?access_token={{solitxaccessToken}}&contractUUID={{contractUUID}}",
 									"host": [
 										"{{solitxURL}}"
 									],
@@ -4425,11 +4425,11 @@
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{at}}"
+											"value": "{{solitxaccessToken}}"
 										},
 										{
 											"key": "contractUUID",
-											"value": "9dedf1b4-b1ef-4552-b608-2a330d63e164"
+											"value": "{{contractUUID}}"
 										}
 									]
 								}
