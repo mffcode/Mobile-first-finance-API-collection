@@ -500,7 +500,7 @@
 												}
 											]
 										},
-										"description": "Using this API we can created a user role with set of actions attaching in it."
+										"description": "Using this service we can create a user role with set of actions attaching in it."
 									},
 									"response": []
 								},
