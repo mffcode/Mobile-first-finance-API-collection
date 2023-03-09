@@ -3146,13 +3146,13 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "43da47a1-991c-47fa-a8ac-f0bf8d8b5be2",
 										"exec": [
-											"var jsonData = JSON.parse(responseBody);\r",
-											"var jsonValue = jsonData.body;\r",
-											"pm.globals.set(\"custoken\", jsonValue.access_token);"
+											"// var jsonData = JSON.parse(responseBody);\r",
+											"// var jsonValue = jsonData.body;\r",
+											"// pm.globals.set(\"customerToken\", jsonValue.access_token);"
 										],
-										"type": "text/javascript",
-										"id": "43da47a1-991c-47fa-a8ac-f0bf8d8b5be2"
+										"type": "text/javascript"
 									}
 								}
 							],
@@ -3165,7 +3165,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"rootUser\": \"rootUser\",\r\n    \"userName\": \"userName\",\r\n    \"password\": \"password\"\r\n}",
+									"raw": "{\r\n    \"rootUser\": \"DEV\",\r\n    \"userName\": \"Kelwen\",\r\n    \"password\": \"000000\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
