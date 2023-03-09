@@ -4018,7 +4018,7 @@
 						}
 					],
 					"id": "c1217e84-c156-4815-8920-d8de17507d62",
-					"description": "This folder consist of Axis UPI's that are used to disburse and the receive the payments."
+					"description": "This folder contains Axis UPIs that are used to send and receive payments."
 				},
 				{
 					"name": "SolitX corebanking integration",
