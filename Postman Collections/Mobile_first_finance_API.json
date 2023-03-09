@@ -4446,7 +4446,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{solitxURL}}:5050/BusinessEventService/events?contractUUID=9dedf1b4-b1ef-4552-b608-2a330d63e164&access_token={{at}}",
+									"raw": "{{solitxURL}}:5050/BusinessEventService/events?contractUUID={{contractUUID}}&access_token={{solitxaccessToken}}",
 									"host": [
 										"{{solitxURL}}"
 									],
@@ -4458,11 +4458,11 @@
 									"query": [
 										{
 											"key": "contractUUID",
-											"value": "9dedf1b4-b1ef-4552-b608-2a330d63e164"
+											"value": "{{contractUUID}}"
 										},
 										{
 											"key": "access_token",
-											"value": "{{at}}"
+											"value": "{{solitxaccessToken}}"
 										}
 									]
 								}
