@@ -3445,14 +3445,14 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"To\": \"+919392256334\",\r\n  \"Code\": \"734413\"\r\n}",
+											"raw": "{\r\n  \"To\": \"+919392256334\",\r\n  \"Code\": \"718817\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
 												}
 											}
 										},
-										"url": "{{customerURL}}:5055/ThirdpartyService/twilio/verifyOtp"
+										"url": "{{customerURL}}/ThirdpartyService/twilio/verifyOtp"
 									},
 									"response": []
 								}
