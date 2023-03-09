@@ -4174,7 +4174,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"Identifier\": \"GHMC\",\n    \"Label\": \"GHMC A/C\",\n    \"Units\": \"INR\",\n    \"AccountCharacteristic\": \"isBank\",\n    \"Type\": \"new\"\n}",
+									"raw": "{\n    \"Identifier\": \"Organization A\",\n    \"Label\": \"Org A/C\",\n    \"Units\": \"INR\",\n    \"AccountCharacteristic\": \"isBank\",\n    \"Type\": \"new\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
