@@ -3461,7 +3461,8 @@
 									"response": []
 								}
 							],
-							"id": "364aa66b-40cd-420c-b2fa-57451a71a810"
+							"id": "364aa66b-40cd-420c-b2fa-57451a71a810",
+							"description": "In the json body, include a valid mobile number."
 						},
 						{
 							"name": "Bank account validation",
