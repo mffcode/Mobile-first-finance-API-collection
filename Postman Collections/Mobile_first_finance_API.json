@@ -3706,7 +3706,7 @@
 						}
 					],
 					"id": "6a161efe-139d-4824-bb83-3f8d458bfdc9",
-					"description": "API that helps us to perform bank statement analyze"
+					"description": "Service that helps us to perform bank statement analyze"
 				},
 				{
 					"name": "Credit bureau",
