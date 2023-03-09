@@ -4088,7 +4088,9 @@
 									"script": {
 										"id": "19455c44-a804-4c4a-bc1c-f97f13a277ec",
 										"exec": [
-											""
+											"var jsonData = JSON.parse(responseBody);",
+											"console.log(jsonData.profileID);",
+											"//pm.globals.set(\"ProfileID\",jsonData.profileID);"
 										],
 										"type": "text/javascript"
 									}
