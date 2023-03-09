@@ -3267,6 +3267,21 @@
 					"item": [
 						{
 							"name": "Esign initiation",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "c494a843-630f-466b-b01e-c1bfc665e183",
+										"exec": [
+											"",
+											"var jsonData = JSON.parse(responseBody);",
+											"var jsonValue = jsonData;",
+											"console.log(\"envelopeID...\"+jsonValue.envelopeId)"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "bf8fb46d-619e-4390-af5d-21c862d98828",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
