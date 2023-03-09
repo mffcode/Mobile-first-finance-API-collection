@@ -689,7 +689,7 @@
 													"console.log(\"jsonData...\"+jsonData.workflow)",
 													"var workflow=jsonData.workflow",
 													"console.log(\"workflow...\"+workflow[0].workFlowID)",
-													"pm.environment.set(\"workFlowID\", workflow[0].workFlowID);"
+													"pm.globals.set(\"workFlowID\", workflow[0].workFlowID);"
 												],
 												"type": "text/javascript"
 											}
