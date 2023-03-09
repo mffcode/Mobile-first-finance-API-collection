@@ -3395,14 +3395,14 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"To\": \"sudhesh.mudra@odedtech.com\",\r\n  \"Code\": \"442759\"\r\n}",
+											"raw": "{\r\n  \"To\": \"sudhesh.mudra@odedtech.com\",\r\n  \"Code\": \"322137\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
 												}
 											}
 										},
-										"url": "{{customerURL}}:5055/ThirdpartyService/twilio/verifyOtp"
+										"url": "{{customerURL}}/ThirdpartyService/twilio/verifyOtp"
 									},
 									"response": []
 								}
