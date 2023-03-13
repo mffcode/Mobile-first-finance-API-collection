@@ -3671,7 +3671,7 @@
 										}
 									]
 								},
-								"description": "- The request body should be mentioned in a form-data.\n- Upload a valid bank statement.\n- The bank statement should be uploaded in the form of a pdf file."
+								"description": "- The request body should be mentioned in a form-data. Mention the keys as shown in the example below.\n- Upload a valid bank statement. The bank statement should be uploaded in the form of a pdf file.\n- The account details should be mentioned in a json format.\n- Mention the profileId and the workflowProfileId \\[Note: Check out the **Customer** collection for how to fetch a **profileId** and **workflowId**\\]"
 							},
 							"response": []
 						},
