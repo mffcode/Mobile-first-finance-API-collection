@@ -911,7 +911,7 @@
 												}
 											]
 										},
-										"description": "Using this API we can update an existing workflow template based on workflow template id."
+										"description": "Using this service we can update an existing workflow template based on workflow template id."
 									},
 									"response": []
 								}
