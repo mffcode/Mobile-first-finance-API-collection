@@ -2984,7 +2984,7 @@
 										}
 									]
 								},
-								"description": "To update workflow template Details based on templateDetailsID"
+								"description": "- To update workflow template Details based on workflow template details id.\n- Check out the service **Get onboard filter by workflow id** to fetch the **workflow template details id**."
 							},
 							"response": []
 						},
