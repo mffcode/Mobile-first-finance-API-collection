@@ -2765,7 +2765,7 @@
 										}
 									]
 								},
-								"description": "To link a profile to workflow using profile Id (from profile service)and workflow Id(from workflow service)"
+								"description": "- Using this service we can link a profile to the workflow."
 							},
 							"response": []
 						},
