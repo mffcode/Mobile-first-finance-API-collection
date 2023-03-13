@@ -3965,10 +3965,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{axisURL}}/axis/upi/collectRequest?customerVpa=jinal.haran@axis&amount=100&unqcustid=MF123456789&unqtxnid=AXI23254323232&txndtl=test",
+									"raw": "{{axisURL}}:5055/axis/upi/collectRequest?customerVpa=jinal.haran@axis&amount=100&unqcustid=MF123456789&unqtxnid=AXI23254323232&txndtl=test",
 									"host": [
 										"{{axisURL}}"
 									],
+									"port": "5055",
 									"path": [
 										"axis",
 										"upi",
