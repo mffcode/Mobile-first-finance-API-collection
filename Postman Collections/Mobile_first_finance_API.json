@@ -500,7 +500,7 @@
 												}
 											]
 										},
-										"description": "Using this service we can create a user role with set of actions attaching in it."
+										"description": "- Using this service we can create a user role with set of actions attaching in it.\n- Check out the user role example json in the body below."
 									},
 									"response": []
 								},
