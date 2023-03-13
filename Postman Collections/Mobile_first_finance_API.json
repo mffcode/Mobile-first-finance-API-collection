@@ -3703,7 +3703,8 @@
 											"value": "ac0af51a-0137-4ecd-afe0-9b6b652d0a7a"
 										}
 									]
-								}
+								},
+								"description": "- Mention the **referenceId** from which we obtain it when performing bank statement analysis."
 							},
 							"response": []
 						}
