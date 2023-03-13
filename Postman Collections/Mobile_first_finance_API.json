@@ -795,7 +795,7 @@
 												}
 											]
 										},
-										"description": "Using this API we can create a new workflow template."
+										"description": "Using this service we can create a new workflow template."
 									},
 									"response": []
 								},
