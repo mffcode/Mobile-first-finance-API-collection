@@ -2932,6 +2932,46 @@
 								"description": "To verify workflow template details in a workflow."
 							},
 							"response": []
+						},
+						{
+							"name": "Fetch the profile details",
+							"id": "b55128b7-b4d4-435e-9c3b-34d63dfeb4c2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://dev.mobilefirstfinance.com:5055/ProfileService/profiles?pageNumber=0&numberOfRecords=10&access_token={{custoken}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"mobilefirstfinance",
+										"com"
+									],
+									"port": "5055",
+									"path": [
+										"ProfileService",
+										"profiles"
+									],
+									"query": [
+										{
+											"key": "pageNumber",
+											"value": "0"
+										},
+										{
+											"key": "numberOfRecords",
+											"value": "10"
+										},
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "f069129c-e4de-41bc-9a33-414e67ee51d5",
