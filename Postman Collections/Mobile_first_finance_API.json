@@ -3854,10 +3854,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{axisURL}}/axis/upi/validateVPA?customerVpa=9966130709@axis",
+									"raw": "{{axisURL}}:5055/axis/upi/validateVPA?customerVpa=9966130709@axis",
 									"host": [
 										"{{axisURL}}"
 									],
+									"port": "5055",
 									"path": [
 										"axis",
 										"upi",
