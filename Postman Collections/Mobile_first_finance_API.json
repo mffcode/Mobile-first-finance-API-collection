@@ -2656,7 +2656,7 @@
 										}
 									}
 								},
-								"url": "{{customerURL}}/LoginService/login"
+								"url": "{{customerURL}}:5055/LoginService/login"
 							},
 							"response": []
 						}
