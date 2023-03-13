@@ -2702,6 +2702,24 @@
 					"item": [
 						{
 							"name": "View the list of workflows",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "683816cc-f383-4c8e-8695-cf987132c74d",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);",
+											"console.log(\"jsonResponse...\"+jsonResponse)",
+											"var jsonData = jsonResponse.data;",
+											"console.log(\"jsonData...\"+jsonData.workflow)",
+											"var workflow=jsonData.workflow",
+											"console.log(\"workflowID...\"+workflow[0].workFlowID)",
+											"pm.environment.set(\"workFlowID\", workflow[0].workFlowID);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "3af073de-7715-4d8e-bfd4-bd98a6cda202",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
