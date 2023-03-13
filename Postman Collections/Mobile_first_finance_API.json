@@ -2646,7 +2646,7 @@
 									}
 								},
 								"url": "{{customerURL}}:7190/mff/api/createClientUser",
-								"description": "- To complete the customer sign-up process, use the example form below..\n- All of the keys mentioned are required, and most of them are unique.\n- FormID and Hierarchy ID should be mentioned based on our choice.\n- To get the **FormID** use the **Get all user form service** under the **Users** section in the **Back office collection.**\n- To get the **Hierarchy** ID use the **Get all the branches** under the **Branch hierarchy section** in the **Back office collection.**"
+								"description": "- To complete the customer sign-up process, use the example form below..\n- All of the keys mentioned are required, and most of them are unique.\n- FormID and Hierarchy ID should be mentioned based on our choice.\n- To get the **FormID** use the **Get all user form** service under the **Users** section in the **Back office collection.**\n- To get the **Hierarchy** ID use the **Get all the branches** under the **Branch hierarchy** section in the **Back office** collection**.**"
 							},
 							"response": []
 						}
