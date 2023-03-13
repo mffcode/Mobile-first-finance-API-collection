@@ -2695,7 +2695,7 @@
 						}
 					],
 					"id": "c8609cd7-0735-47fe-a715-d87d095eca66",
-					"description": "Consist of service which is used for the customer login"
+					"description": "This service is used to perform customer authentication."
 				},
 				{
 					"name": "Customer Onboarding",
