@@ -43,7 +43,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"rootUser\": \"ABC\",\r\n    \"userName\": \"ABC\",\r\n    \"password\": \"rootpassword@abc\"\r\n}",
+									"raw": "{\r\n    \"rootUser\": \"enter sandbox rootuser\",\r\n    \"userName\": \"enter sandbox username\",\r\n    \"password\": \"enter sandbox password\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
