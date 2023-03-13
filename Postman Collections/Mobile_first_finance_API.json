@@ -3726,7 +3726,7 @@
 						}
 					],
 					"id": "1f384a82-54ee-4c48-86bb-d64f96014b6c",
-					"description": "API which provides credit score and credit reports."
+					"description": "Service which provides credit score and credit reports."
 				},
 				{
 					"name": "Real-time identity verification",
