@@ -635,234 +635,6 @@
 							"description": "User menus are the list of menu options which an user can utilize based on requirement. Using this service we can view all the existing user menus in the application."
 						},
 						{
-							"name": "Workflows",
-							"item": [
-								{
-									"name": "Create workflows",
-									"id": "e1032212-efcc-4d59-ab48-c45ecbc418ae",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n  \"workFlowName\": \"Machinery loan\",\n  \"templateID\": [\n    9,\n    16,\n    907193,\n    93\n  ]\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/workflows?access_token={{useraccessToken}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"path": [
-												"WorkflowService",
-												"workflows"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												}
-											]
-										},
-										"description": "Using this service we can create a new workflow."
-									},
-									"response": []
-								},
-								{
-									"name": "Get all workflows",
-									"event": [
-										{
-											"listen": "test",
-											"script": {
-												"id": "5d06d595-08d8-4a6a-ad7a-e6f57ba01b08",
-												"exec": [
-													"var jsonResponse = JSON.parse(responseBody);",
-													"console.log(\"jsonResponse...\"+jsonResponse)",
-													"var jsonData = jsonResponse.data;",
-													"console.log(\"jsonData...\"+jsonData.workflow)",
-													"var workflow=jsonData.workflow",
-													"console.log(\"workflowID...\"+workflow[0].workFlowID)",
-													"pm.globals.set(\"workFlowID\", workflow[0].workFlowID);"
-												],
-												"type": "text/javascript"
-											}
-										}
-									],
-									"id": "d0b719d2-aa36-4c8a-8de5-d4ba7ef6c365",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/workflows?access_token={{useraccessToken}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"path": [
-												"WorkflowService",
-												"workflows"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												}
-											]
-										},
-										"description": "Using this service we can get all the workflows."
-									},
-									"response": []
-								},
-								{
-									"name": "Get a workflow by workflow id",
-									"id": "1f16b2ad-063d-4cbc-bd2f-9a942760843b",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/workflows/{{workFlowID}}?access_token={{useraccessToken}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"path": [
-												"WorkflowService",
-												"workflows",
-												"{{workFlowID}}"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												}
-											]
-										},
-										"description": "- Using this service we can get a specific workflow based on it's workflow id.\n- The **workflowID** is required to update an existing workflow, retrieve it from the data returned by the **Get all workflows**."
-									},
-									"response": []
-								},
-								{
-									"name": "Get  workflows count",
-									"id": "9b248aef-1f9f-4c93-9e0e-dfed84f47aa0",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/workflows/count?access_token={{useraccessToken}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"path": [
-												"WorkflowService",
-												"workflows",
-												"count"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												}
-											]
-										},
-										"description": "using this service we can get the total count of workflows."
-									},
-									"response": []
-								},
-								{
-									"name": "Edit workflow",
-									"id": "6d157b7d-71b7-4fc9-8098-63e0df176330",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "PUT",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n  \"workflowName\": \"Microfinance loans\",\r\n  \"description\": \"Microfinance is a form of financial service which provides small loans and other financial services to poor and low-income households.\",\r\n  \"picture\": \"\",\r\n  \"productUUID\": \"\",\r\n  \"autoApproval\": \"No\",\r\n  \"autoDisburse\": \"No\"\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/updateworkflowName/{{workFlowID}}?access_token={{useraccessToken}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"path": [
-												"WorkflowService",
-												"updateworkflowName",
-												"{{workFlowID}}"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												}
-											]
-										}
-									},
-									"response": []
-								},
-								{
-									"name": "Edit workflow order",
-									"id": "75054d7b-7e89-4a18-95ea-01b55700f287",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "PUT",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n  \"workflowOrder\": [\r\n    9,\r\n    16,\r\n    93,\r\n    2223,\r\n    912680\r\n  ]\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/updateWorkfloworder/{{workFlowID}}?access_token={{useraccessToken}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"path": [
-												"WorkflowService",
-												"updateWorkfloworder",
-												"{{workFlowID}}"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												}
-											]
-										}
-									},
-									"response": []
-								}
-							],
-							"id": "d7b0c02b-9541-44df-a7c9-3b9405f975d9",
-							"description": "Onboarding a customer usually requires certain procedures to be followed, for instance capturing certain information, and verifying such information provided. Such procedures could also extend to sending such information captured to even 3rd party APIs for validating KYC, performing ID verification checks, AML checks, address verification, credit bureau check etc.\n\nWorkflow services enable an organisation administrator to orchestrate such onboarding stages, which in turn enable customers and organisation users to follow these specific workflow steps to complete an onboarding process."
-						},
-						{
 							"name": "Workflow template",
 							"item": [
 								{
@@ -1112,6 +884,234 @@
 								}
 							],
 							"id": "be9fb86e-9876-4222-a0ae-294da74ccbf1"
+						},
+						{
+							"name": "Workflows",
+							"item": [
+								{
+									"name": "Create workflows",
+									"id": "e1032212-efcc-4d59-ab48-c45ecbc418ae",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"workFlowName\": \"Machinery loan\",\n  \"templateID\": [\n    9,\n    16,\n    907193,\n    93\n  ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}/WorkflowService/workflows?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"path": [
+												"WorkflowService",
+												"workflows"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this service we can create a new workflow."
+									},
+									"response": []
+								},
+								{
+									"name": "Get all workflows",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "5d06d595-08d8-4a6a-ad7a-e6f57ba01b08",
+												"exec": [
+													"var jsonResponse = JSON.parse(responseBody);",
+													"console.log(\"jsonResponse...\"+jsonResponse)",
+													"var jsonData = jsonResponse.data;",
+													"console.log(\"jsonData...\"+jsonData.workflow)",
+													"var workflow=jsonData.workflow",
+													"console.log(\"workflowID...\"+workflow[0].workFlowID)",
+													"pm.globals.set(\"workFlowID\", workflow[0].workFlowID);"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"id": "d0b719d2-aa36-4c8a-8de5-d4ba7ef6c365",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}/WorkflowService/workflows?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"path": [
+												"WorkflowService",
+												"workflows"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "Using this service we can get all the workflows."
+									},
+									"response": []
+								},
+								{
+									"name": "Get a workflow by workflow id",
+									"id": "1f16b2ad-063d-4cbc-bd2f-9a942760843b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}/WorkflowService/workflows/{{workFlowID}}?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"path": [
+												"WorkflowService",
+												"workflows",
+												"{{workFlowID}}"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "- Using this service we can get a specific workflow based on it's workflow id.\n- The **workflowID** is required to update an existing workflow, retrieve it from the data returned by the **Get all workflows**."
+									},
+									"response": []
+								},
+								{
+									"name": "Get  workflows count",
+									"id": "9b248aef-1f9f-4c93-9e0e-dfed84f47aa0",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}/WorkflowService/workflows/count?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"path": [
+												"WorkflowService",
+												"workflows",
+												"count"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "using this service we can get the total count of workflows."
+									},
+									"response": []
+								},
+								{
+									"name": "Edit workflow",
+									"id": "6d157b7d-71b7-4fc9-8098-63e0df176330",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"workflowName\": \"Microfinance loans\",\r\n  \"description\": \"Microfinance is a form of financial service which provides small loans and other financial services to poor and low-income households.\",\r\n  \"picture\": \"\",\r\n  \"productUUID\": \"\",\r\n  \"autoApproval\": \"No\",\r\n  \"autoDisburse\": \"No\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}/WorkflowService/updateworkflowName/{{workFlowID}}?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"path": [
+												"WorkflowService",
+												"updateworkflowName",
+												"{{workFlowID}}"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Edit workflow order",
+									"id": "75054d7b-7e89-4a18-95ea-01b55700f287",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"workflowOrder\": [\r\n    9,\r\n    16,\r\n    93,\r\n    2223,\r\n    912680\r\n  ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}/WorkflowService/updateWorkfloworder/{{workFlowID}}?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"path": [
+												"WorkflowService",
+												"updateWorkfloworder",
+												"{{workFlowID}}"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"id": "d7b0c02b-9541-44df-a7c9-3b9405f975d9",
+							"description": "Onboarding a customer usually requires certain procedures to be followed, for instance capturing certain information, and verifying such information provided. Such procedures could also extend to sending such information captured to even 3rd party APIs for validating KYC, performing ID verification checks, AML checks, address verification, credit bureau check etc.\n\nWorkflow services enable an organisation administrator to orchestrate such onboarding stages, which in turn enable customers and organisation users to follow these specific workflow steps to complete an onboarding process."
 						}
 					],
 					"id": "f1f0c055-2462-4ed8-a329-bd540b23dd65",
@@ -3179,7 +3179,7 @@
 						}
 					],
 					"id": "06bcd982-bea3-4f8d-a467-d7e4daff528a",
-					"description": "- We can access the customer application using this service.\n- Firstly define a new environment variable for the customer URL and make it active.\n- Set the environment to the customer URL, and then proceed to the login step using the customer credentials."
+					"description": "- We can access the customer application using this service.\n- Firstly define a new environment variable for the customer URL and make it active.\n- To define a new environment, go to the section on **Defining environment variables**.\n- Set the environment to the customer URL, and then proceed to the login step using the customer credentials."
 				},
 				{
 					"name": "Payment links",
