@@ -2966,7 +2966,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{customerURL}}:5055/WorkflowService/workflowTemplateDetails/{{templateDetailsID}}?access_token={{custoken}}",
+									"raw": "{{customerURL}}:5055/WorkflowService/workflowTemplateDetails/{{workflowTemplateDetailsID}}?access_token={{custoken}}",
 									"host": [
 										"{{customerURL}}"
 									],
@@ -2974,7 +2974,7 @@
 									"path": [
 										"WorkflowService",
 										"workflowTemplateDetails",
-										"{{templateDetailsID}}"
+										"{{workflowTemplateDetailsID}}"
 									],
 									"query": [
 										{
