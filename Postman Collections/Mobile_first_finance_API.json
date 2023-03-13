@@ -3166,14 +3166,14 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"rootUser\": \"ABC\",\r\n    \"userName\": \"Kelwen\",\r\n    \"password\": \"000000\"\r\n}",
+									"raw": "{\r\n    \"rootUser\": \"DEV\",\r\n    \"userName\": \"Kelwen\",\r\n    \"password\": \"000000\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{customerURL}}/LoginService/login"
+								"url": "{{customerURL}}:5055/LoginService/login"
 							},
 							"response": []
 						}
