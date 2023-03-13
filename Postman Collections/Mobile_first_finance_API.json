@@ -3549,7 +3549,7 @@
 												}
 											]
 										},
-										"description": "In the json body, a valid PAN number should be mentioned."
+										"description": "- In the json body, a valid PAN number should be mentioned."
 									},
 									"response": []
 								}
