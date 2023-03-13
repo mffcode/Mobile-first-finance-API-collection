@@ -659,7 +659,7 @@
 												}
 											]
 										},
-										"description": "Using this API we can get all the list of user menus."
+										"description": "Using this service we can get all the list of user menus."
 									},
 									"response": []
 								}
