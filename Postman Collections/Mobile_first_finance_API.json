@@ -3375,7 +3375,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"To\": \"sudhesh.mudra@odedtech.com\",\r\n  \"Channel\": \"email\"\r\n}",
+											"raw": "{\r\n  \"To\": \"abc123@gmail.com\",\r\n  \"Channel\": \"email\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
