@@ -2682,7 +2682,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"rootUser\": \"DEV\",\r\n    \"userName\": \"Kelwen\",\r\n    \"password\": \"000000\"\r\n}",
+									"raw": "{\r\n    \"rootUser\": \"enter sandbox rootuser\",\r\n    \"userName\": \"enter sandbox username\",\r\n    \"password\": \"enter sandbox password\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
