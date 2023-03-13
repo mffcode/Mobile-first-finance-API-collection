@@ -2797,7 +2797,7 @@
 										}
 									]
 								},
-								"description": "To fetch workflow templates based on profileID and workflowID"
+								"description": "- After linking a profile to the workflow we can check the workflow templates based on **profileID** and **workflowID**.\n- We must provide the exact **profileID** of a profile that has been linked to a workflow, as well as the **workflowID**.\n- Check out **Get all the profiles** under the **Profile** section in the **Back office** collection to obtain the **profileID.**\n- To obtain the workflowID use the **Get all workflows** under the **Workflows section** in the **Back office collection.**"
 							},
 							"response": []
 						},
