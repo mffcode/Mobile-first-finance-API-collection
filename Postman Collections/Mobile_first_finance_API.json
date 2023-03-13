@@ -1188,7 +1188,7 @@
 										}
 									]
 								},
-								"description": "Using this API we can create a profile form."
+								"description": "Using this service we can create a profile form."
 							},
 							"response": []
 						},
