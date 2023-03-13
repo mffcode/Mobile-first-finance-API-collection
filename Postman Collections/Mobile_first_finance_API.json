@@ -3464,7 +3464,7 @@
 												}
 											}
 										},
-										"url": "{{customerURL}}/ThirdpartyService/twilio/verifyOtp",
+										"url": "{{customerURL}}:5055/ThirdpartyService/twilio/verifyOtp",
 										"description": "- The OTP that we receive via mobile number should be included in the Code value."
 									},
 									"response": []
