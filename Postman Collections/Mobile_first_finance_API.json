@@ -2630,13 +2630,13 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "cd42723b-c160-4cf7-bb41-79b932cc6e96",
 										"exec": [
 											"var jsonData = JSON.parse(responseBody);\r",
 											"var jsonValue = jsonData.body;\r",
 											"pm.globals.set(\"custoken\", jsonValue.access_token);"
 										],
-										"type": "text/javascript",
-										"id": "cd42723b-c160-4cf7-bb41-79b932cc6e96"
+										"type": "text/javascript"
 									}
 								}
 							],
@@ -2649,14 +2649,14 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"rootUser\": \"rootUser\",\r\n    \"userName\": \"userName\",\r\n    \"password\": \"password\"\r\n}",
+									"raw": "{\r\n    \"rootUser\": \"DEV\",\r\n    \"userName\": \"Kelwen\",\r\n    \"password\": \"000000\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{customerURL}}:5055/LoginService/login"
+								"url": "{{customerURL}}/LoginService/login"
 							},
 							"response": []
 						}
