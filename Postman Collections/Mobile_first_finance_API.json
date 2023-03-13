@@ -2917,7 +2917,7 @@
 						}
 					],
 					"id": "f069129c-e4de-41bc-9a33-414e67ee51d5",
-					"description": "Consist of a list of API's which are used for the customer onboarding."
+					"description": "Consist of a list of services which are used for the customer onboarding."
 				},
 				{
 					"name": "Accounts",
