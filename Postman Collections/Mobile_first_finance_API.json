@@ -2802,7 +2802,8 @@
 											"value": "{{custoken}}"
 										}
 									]
-								}
+								},
+								"description": "Using this service we can fetch the profile details."
 							},
 							"response": []
 						},
