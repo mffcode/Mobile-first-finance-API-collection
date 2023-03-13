@@ -3693,11 +3693,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{customerURL}}:5055/ThirdpartyService/generateReportUrl?access_token={{customerToken}}&referenceId=ac0af51a-0137-4ecd-afe0-9b6b652d0a7a",
+									"raw": "{{customerURL}}/ThirdpartyService/generateReportUrl?access_token={{customerToken}}&referenceId=ac0af51a-0137-4ecd-afe0-9b6b652d0a7a",
 									"host": [
 										"{{customerURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ThirdpartyService",
 										"generateReportUrl"
