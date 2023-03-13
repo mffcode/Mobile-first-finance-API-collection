@@ -102,6 +102,39 @@
 										"description": "- This service will create a root branch. Mandatory fields which are required is branch name and branch code.\n- Based on the parent id, you can add a new branch under the existing one, creating a branch hierarchy that resembles a tree.\n- Using the designated global variable, use the produced access token in the service call."
 									},
 									"response": []
+								},
+								{
+									"name": "Get all the branches",
+									"id": "da1d7f38-6466-43ff-896c-d5d7ae955d14",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://dev.mobilefirstfinance.com:5055/BranchService/branches/treeLevel?access_token={{useraccessToken}}",
+											"protocol": "https",
+											"host": [
+												"dev",
+												"mobilefirstfinance",
+												"com"
+											],
+											"port": "5055",
+											"path": [
+												"BranchService",
+												"branches",
+												"treeLevel"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "ee788e15-b1ac-41c6-9058-190d7917d7fd",
