@@ -3693,10 +3693,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{customerURL}}/ThirdpartyService/generateReportUrl?access_token={{customerToken}}&referenceId=ac0af51a-0137-4ecd-afe0-9b6b652d0a7a",
+									"raw": "{{customerURL}}:5055/ThirdpartyService/generateReportUrl?access_token={{customerToken}}&referenceId=ac0af51a-0137-4ecd-afe0-9b6b652d0a7a",
 									"host": [
 										"{{customerURL}}"
 									],
+									"port": "5055",
 									"path": [
 										"ThirdpartyService",
 										"generateReportUrl"
@@ -3762,7 +3763,7 @@
 										}
 									}
 								},
-								"url": "{{customerURL}}/ThirdpartyService/shufti",
+								"url": "{{customerURL}}:5055/ThirdpartyService/shufti",
 								"description": "- The json body structure need to like that which is described in the payload.\n- The reference id is a unique value that should be updated before the request is sent."
 							},
 							"response": []
