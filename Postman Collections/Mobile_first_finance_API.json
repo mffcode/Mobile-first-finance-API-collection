@@ -3724,7 +3724,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{customerURL}}:8686/highmark/getHighmarkVerification/1495806",
+								"url": "{{highmarkURL}}/highmark/getHighmarkVerification/1495806",
 								"description": "- Mention the **detailsID** at the end of the service.\n- To get a specific **detailsID** of a profile, use the **Get onboard filter by workflowid** service in the **Back office** collection's **Onboard** section."
 							},
 							"response": []
