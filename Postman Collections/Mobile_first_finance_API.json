@@ -2943,7 +2943,8 @@
 											"value": "{{custoken}}"
 										}
 									]
-								}
+								},
+								"description": "- Using this service we can fetch the workflow template details id."
 							},
 							"response": []
 						},
