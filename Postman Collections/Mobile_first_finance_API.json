@@ -1561,7 +1561,7 @@
 						}
 					],
 					"id": "227629b4-cc94-44c3-8a27-e9a31de86a9c",
-					"description": "An organisation may comprise diverse profile types such as customer, business owner, enterprise info etc... Each of such profiles may require typical information to be stored in an organisation's record. Such profile types are termed profile templates that can be further used to create specific profiles.\n\nProfile service contains APIs to define client profile templates and to create profiles in such categories."
+					"description": "An organisation may comprise diverse profile types such as customer, business owner, enterprise info etc... Each of such profiles may require typical information to be stored in an organisation's record. Such profile types are termed profile templates that can be further used to create specific profiles.\n\nProfile service contains services to define client profile templates and to create profiles in such categories."
 				},
 				{
 					"name": "Onboard",
