@@ -3256,7 +3256,8 @@
 											"value": "{{customerToken}}"
 										}
 									]
-								}
+								},
+								"description": "- The payload should be specified in json format.\n- All of the keys and values mentioned in the json are required, and the structure should look like the one shown in the json payload below."
 							},
 							"response": []
 						}
