@@ -1236,7 +1236,7 @@
 										}
 									]
 								},
-								"description": "Using this API we can get all the profile forms that exists in the application."
+								"description": "Using this service we can get all the profile forms that exists in the application."
 							},
 							"response": []
 						},
