@@ -3884,10 +3884,11 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{axisURL}}/axis/upi/disburse?customerVpa=jinal.haran@axis&amount=100&remarks=rent&custMobileNumber=9966130709",
+									"raw": "{{axisURL}}:5055/axis/upi/disburse?customerVpa=jinal.haran@axis&amount=100&remarks=rent&custMobileNumber=9966130709",
 									"host": [
 										"{{axisURL}}"
 									],
+									"port": "5055",
 									"path": [
 										"axis",
 										"upi",
