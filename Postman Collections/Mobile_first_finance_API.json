@@ -3336,10 +3336,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{customerURL}}/ThirdpartyService/esign/envelopeStatus?envelopeId={{envelopeID}}&access_token={{customerToken}}",
+									"raw": "{{customerURL}}:5055/ThirdpartyService/esign/envelopeStatus?envelopeId={{envelopeID}}&access_token={{customerToken}}",
 									"host": [
 										"{{customerURL}}"
 									],
+									"port": "5055",
 									"path": [
 										"ThirdpartyService",
 										"esign",
