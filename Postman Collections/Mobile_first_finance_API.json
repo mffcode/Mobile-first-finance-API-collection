@@ -2613,7 +2613,7 @@
 									}
 								},
 								"url": "{{customerURL}}:7190/mff/api/createClientUser",
-								"description": "To get signup parameter we have to use signup form API and branch service based on level API to complete the signup. Based on client choice mobile number or email can be passed directly in the payload."
+								"description": "- To complete the customer sign-up process, use the example form below..\n- All of the keys mentioned are required, and most of them are unique.."
 							},
 							"response": []
 						}
