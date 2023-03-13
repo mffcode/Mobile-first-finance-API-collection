@@ -3810,7 +3810,7 @@
 									}
 								},
 								"url": "{{customerURL}}:5055/ThirdpartyService/shufti",
-								"description": "- The json body structure need to like that which is described in the payload.\n- The reference id is a unique value that should be updated before the request is sent."
+								"description": "- The json body structure need to like that which is described in the payload.\n- The reference id is a unique value that should be updated in the payload before the request is sent."
 							},
 							"response": []
 						},
