@@ -4011,10 +4011,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{axisURL}}/axis/upi/collectRequestStatus?txsId=AXI23254323232&merchMobileNumber=9966130709",
+									"raw": "{{axisURL}}:5055/axis/upi/collectRequestStatus?txsId=AXI23254323232&merchMobileNumber=9966130709",
 									"host": [
 										"{{axisURL}}"
 									],
+									"port": "5055",
 									"path": [
 										"axis",
 										"upi",
