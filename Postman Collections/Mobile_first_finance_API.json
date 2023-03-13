@@ -1306,7 +1306,7 @@
 										}
 									]
 								},
-								"description": "Using this API we can update existing user form by it's user id."
+								"description": "Using this service we can update existing user form by it's user id."
 							},
 							"response": []
 						},
