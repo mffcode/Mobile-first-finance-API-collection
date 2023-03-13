@@ -2874,7 +2874,7 @@
 										}
 									]
 								},
-								"description": "- After linking a profile to the workflow we can check the workflow templates based on **profileID** and **workflowID**.\n- We must provide the exact **profileID** of a profile that has been linked to a workflow, as well as the **workflowID** in the service.\n- Fetch the **profileID** from Fetch the profile details and **workflowID** from View the list of workflows."
+								"description": "- After linking a profile to the workflow we can check the workflow templates based on **profileID** and **workflowID**.\n- We must provide the exact **profileID** of a profile that has been linked to a workflow, as well as the **workflowID** in the service.\n- Fetch the **profileID** from **Fetch the profile details** and **workflowID** from **View the list of workflows**."
 							},
 							"response": []
 						},
