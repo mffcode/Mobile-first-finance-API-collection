@@ -3671,7 +3671,7 @@
 										}
 									]
 								},
-								"description": "Upload bank statement"
+								"description": "- The request body should be mentioned in a form-data.\n- Upload a valid bank statement.\n- The bank statement should be uploaded in the form of a pdf file."
 							},
 							"response": []
 						},
