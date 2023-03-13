@@ -3704,7 +3704,7 @@
 										}
 									]
 								},
-								"description": "- Mention the **referenceId** from which we obtain it when performing bank statement analysis."
+								"description": "- In the service, mention the **referenceId** from which we obtain it when performing bank statement analysis."
 							},
 							"response": []
 						}
