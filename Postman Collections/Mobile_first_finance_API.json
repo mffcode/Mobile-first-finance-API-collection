@@ -2895,7 +2895,7 @@
 											"// console.log(\"jsonWorkflowData...\"+jsonWorkflowData[1])",
 											"var jsonWorkflowData= Object.keys(workflow)[1];",
 											"console.log(\"workflowTemplateDetailsID...\"+workflow[jsonWorkflowData][0].detailsID)",
-											"pm.environment.set(\"workflowTemplateDetailsID\", workflow[jsonWorkflowData][0].detailsID);",
+											"pm.globals.set(\"workflowTemplateDetailsID\", workflow[jsonWorkflowData][0].detailsID);",
 											"",
 											"",
 											"",
