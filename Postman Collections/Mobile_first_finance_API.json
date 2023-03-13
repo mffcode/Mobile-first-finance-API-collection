@@ -759,7 +759,7 @@
 										}
 									],
 									"id": "2cfafde9-ba04-47d3-af0e-5357106970ef",
-									"description": "It contains the services which are used to enable or disable the rights for auto verify and external access."
+									"description": "Using this service we can enable or disable the rights for auto verify and external access."
 								},
 								{
 									"name": "Create workflow template",
