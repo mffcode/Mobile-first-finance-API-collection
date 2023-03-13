@@ -3935,10 +3935,11 @@
 									}
 								},
 								"url": {
-									"raw": "{{axisURL}}/axis/upi/disburseStatus?txsId=MF1246d2f2f2b14cf2b5af23e8785d9b3e",
+									"raw": "{{axisURL}}:5055/axis/upi/disburseStatus?txsId=MF1246d2f2f2b14cf2b5af23e8785d9b3e",
 									"host": [
 										"{{axisURL}}"
 									],
+									"port": "5055",
 									"path": [
 										"axis",
 										"upi",
