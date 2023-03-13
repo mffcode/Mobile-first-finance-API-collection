@@ -3389,7 +3389,7 @@
 												}
 											}
 										},
-										"url": "{{customerURL}}/ThirdpartyService/twilio/sendOtp",
+										"url": "{{customerURL}}:5055/ThirdpartyService/twilio/sendOtp",
 										"description": "- In the json body, include a valid email address."
 									},
 									"response": []
