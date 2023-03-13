@@ -2762,7 +2762,7 @@
 											"console.log(\"jsonData...\"+jsonData.profiles)",
 											"var profiles=jsonData.profiles",
 											"console.log(\"profiles...\"+profiles[0].profileID)",
-											"pm.environment.set(\"profileid\", profiles[0].profileID);"
+											"pm.globals.set(\"profileid\", profiles[0].profileID);"
 										],
 										"type": "text/javascript"
 									}
