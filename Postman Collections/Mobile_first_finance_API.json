@@ -3437,7 +3437,8 @@
 												}
 											}
 										},
-										"url": "{{customerURL}}/ThirdpartyService/twilio/sendOtp"
+										"url": "{{customerURL}}/ThirdpartyService/twilio/sendOtp",
+										"description": "- In the json body, include a valid mobile number."
 									},
 									"response": []
 								},
