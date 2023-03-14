@@ -3859,7 +3859,7 @@
 										}
 									]
 								},
-								"description": "- The request body should be mentioned in a form-data. Mention the keys as shown in the example below.\n- Upload a valid bank statement. The bank statement should be uploaded in the form of a pdf file.\n- The account details should be mentioned in a json format as shown below.\n- Mention the profileId and the workflowProfileId\n- **Note**: Check out the **Back office** collection for how to fetch a **profileId** and **workflowProfileID**. To fetch the **profileID** use **Get all the profiles** under the **Profile** section and to fetch the **workflowProfileID** use **Get onboard filter by workflowid** under the **Onboard section.**"
+								"description": "- The request body should be mentioned in a form-data. All the mentioned keys as shown in the example below are mandatory.\n- Upload a valid bank statement. The bank statement should be uploaded in the form of a pdf file.\n- The account details should be mentioned in a json format as shown below.\n- Mention the **profileId** and the **workflowProfileId** in the form data as **text.**\n- **Note**: (i) Check out the **Back office** collection for how to fetch a **profileId** and **workflowProfileID**. To fetch the **profileID** use **Get all the profiles** under the **Profile** section and to fetch the **workflowProfileID** use **Get onboard filter by workflowid** under the **Onboard section.**\n- Instead of using the browser to check this service, please use the postman application. Because the working directory cannot be configured while using the browser and uploading a pdf file would be difficult."
 							},
 							"response": []
 						},
