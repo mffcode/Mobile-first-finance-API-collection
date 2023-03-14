@@ -3796,6 +3796,24 @@
 					"item": [
 						{
 							"name": "To perform bank statement analysis",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "866a1329-ce14-4af9-8395-6c5625dba498",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);",
+											"console.log(\"jsonResponse...\"+jsonResponse)",
+											"var jsonData = jsonResponse.data;",
+											"console.log(\"jsonData...\"+jsonData.referenceId)",
+											"var referenceId=jsonData.referenceId",
+											"console.log(\"referenceId...\"+jsonData.referenceId)",
+											"pm.globals.set(\"referenceId\", jsonData.referenceId);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "7b5c0a88-30a4-4d33-95db-3e1f4d74807d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
