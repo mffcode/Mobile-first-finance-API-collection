@@ -3221,7 +3221,7 @@
 						}
 					],
 					"id": "f78f8d90-2600-4bce-b423-241ffe18950c",
-					"description": "Contains the API which is used to view the list of contracts for a profile."
+					"description": "Using this service we can fetch the list of contracts of a profile."
 				},
 				{
 					"name": "Payments",
