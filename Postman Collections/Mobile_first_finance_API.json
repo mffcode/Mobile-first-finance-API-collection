@@ -3687,7 +3687,7 @@
 						}
 					],
 					"id": "3cedcdaf-6495-470e-9a2d-9369e73b0229",
-					"description": "E sign is an efficient and legal way to get electronic documents signed quickly.\n\n- The payload should be specified in json format.\n- All of the keys and values mentioned in the json are required, and the structure should look like the one shown in the json payload below."
+					"description": "E sign is an efficient and legal way to get electronic documents signed quickly."
 				},
 				{
 					"name": "Trust and customer validation",
