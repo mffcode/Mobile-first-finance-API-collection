@@ -3220,7 +3220,8 @@
 							"response": []
 						}
 					],
-					"id": "f78f8d90-2600-4bce-b423-241ffe18950c"
+					"id": "f78f8d90-2600-4bce-b423-241ffe18950c",
+					"description": "Consist of service which is used to view the contracts for a profile."
 				},
 				{
 					"name": "Payments",
