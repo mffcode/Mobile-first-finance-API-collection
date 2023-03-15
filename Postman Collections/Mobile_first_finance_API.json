@@ -3327,7 +3327,7 @@
 										}
 									]
 								},
-								"description": "This API is used to perform the repayment."
+								"description": "This service is used to perform the repayment."
 							},
 							"response": []
 						}
