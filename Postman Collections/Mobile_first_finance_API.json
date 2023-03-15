@@ -3187,6 +3187,34 @@
 					"item": [
 						{
 							"name": "View the contracts of a profile",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "650ad289-61e5-45a6-878e-d62cc718bfbe",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);",
+											"console.log(\"jsonResponse...\"+jsonResponse)",
+											"var jsonData = jsonResponse.data;",
+											"var portfolio=jsonData.portfolio",
+											"console.log(\"portfolio...\"+jsonData.portfolio)",
+											"var contractuuid=portfolio[1].contractUUID",
+											"console.log(\"contractuuid...\"+portfolio[1].contractUUID)",
+											"pm.globals.set(\"contractuuid\", portfolio[1].contractUUID);",
+											"",
+											"",
+											"",
+											"",
+											"",
+											"",
+											"",
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "ed7d9de3-022b-4450-8145-215b57ff1c64",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
