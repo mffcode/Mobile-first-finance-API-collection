@@ -3446,7 +3446,7 @@
 										}
 									]
 								},
-								"description": "This service is used to block active cards."
+								"description": "This service is used to block the active cards."
 							},
 							"response": []
 						}
