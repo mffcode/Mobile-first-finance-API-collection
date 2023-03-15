@@ -3288,7 +3288,7 @@
 										}
 									]
 								},
-								"description": "- This service is used to view the pending repayments of a contract.\n- The **contractuuid** value, which is mentioned in the service, is mandatory.\n- To fetch the **contractuuid**, use the **View the contracts of a profile** which is in the **Accounts** under the **Customer** collection."
+								"description": "- This service is used to view the pending repayments of a specific contract.\n- The **contractuuid** value, which is mentioned in the service, is mandatory.\n- To fetch the **contractuuid**, use the **View the contracts of a profile** which is in the **Accounts** under the **Customer** collection."
 							},
 							"response": []
 						},
