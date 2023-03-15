@@ -3589,7 +3589,7 @@
 						}
 					],
 					"id": "ccdf7e70-9ff7-49ce-92ae-ee092520fc16",
-					"description": "Consist of services which helps to activate checkout link or scannable code that allows a customer to complete a transaction.\n\n- The payload should be specified in json format.\n- All of the keys and values mentioned in the json are required, and the structure should look like the one shown in the json payload below."
+					"description": "Consist of services which helps to activate checkout link or scannable code that allows a customer to complete a transaction."
 				},
 				{
 					"name": "E sign",
