@@ -3446,7 +3446,7 @@
 										}
 									]
 								},
-								"description": "- This service is used to block the active cards.\n- The payload should be mentioned in a json format.\n- In the payload, mention the **contractUUID** of a contract for which the active card is associated and mention the status as **block.**\n- Use **View the contracts of a profile** which is in the **Accounts** under the **Customer** collection for fetching the **contractUUID.**\n- Note : The contract should contains an active card in order to use this service."
+								"description": "- This service is used to block the active cards.\n- The payload should be mentioned in a json format.\n- In the payload, mention the **contractUUID** of a contract for which the active card is associated and mention the status as **block.**\n- Use **View the contracts of a profile** which is in the **Accounts** under the **Customer** collection for fetching the **contractUUID.**\n- Note : The contract should consist an active card in order to use this service."
 							},
 							"response": []
 						}
