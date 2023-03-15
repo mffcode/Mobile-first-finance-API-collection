@@ -3264,7 +3264,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{customerURL}}:5055/PortfolioService/geteventsBycontractUUID?access_token={{custoken}}&contractUUID=3d50c42e-7597-4f98-97fb-494b92765bd1&eventType=",
+									"raw": "{{customerURL}}:5055/PortfolioService/geteventsBycontractUUID?access_token={{custoken}}&contractUUID={{contractuuid}}&eventType=",
 									"host": [
 										"{{customerURL}}"
 									],
@@ -3280,7 +3280,7 @@
 										},
 										{
 											"key": "contractUUID",
-											"value": "3d50c42e-7597-4f98-97fb-494b92765bd1"
+											"value": "{{contractuuid}}"
 										},
 										{
 											"key": "eventType",
