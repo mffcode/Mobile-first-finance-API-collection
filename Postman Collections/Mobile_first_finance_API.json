@@ -3407,7 +3407,7 @@
 										}
 									]
 								},
-								"description": "This API is to view the list of active cards which are associated to a profile."
+								"description": "- This service is to view the list of active cards which are associated to a profile."
 							},
 							"response": []
 						},
