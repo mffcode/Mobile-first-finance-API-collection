@@ -3288,7 +3288,7 @@
 										}
 									]
 								},
-								"description": "This API is used to view the pending repayments of a contract."
+								"description": "This service is used to view the pending repayments of a contract."
 							},
 							"response": []
 						},
