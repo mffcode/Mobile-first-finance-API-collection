@@ -3043,80 +3043,6 @@
 							"response": []
 						},
 						{
-							"name": "View the workflow template details of a profile",
-							"id": "7032fbd7-c190-416d-a583-b0372894d256",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{customerURL}}:5055/WorkflowService/mobileApp/workflowProfileID/{{workflowProfileID}}/templateID/{{templateID}}?access_token={{custoken}}",
-									"host": [
-										"{{customerURL}}"
-									],
-									"port": "5055",
-									"path": [
-										"WorkflowService",
-										"mobileApp",
-										"workflowProfileID",
-										"{{workflowProfileID}}",
-										"templateID",
-										"{{templateID}}"
-									],
-									"query": [
-										{
-											"key": "access_token",
-											"value": "{{custoken}}"
-										}
-									]
-								},
-								"description": "To fetch workflow template details based on template Id and workflowProfileID."
-							},
-							"response": []
-						},
-						{
-							"name": "To verify workflow template details",
-							"id": "382fe858-643c-4271-9da4-61444facd579",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n  \"workflowTemplateDetails\": [\r\n    {\r\n      \"templateDetailsID\": 1597103,\r\n      \"templateID\": 16,\r\n      \"workflowProfileID\": 1597100,\r\n      \"workflowTemplateDetails\": {\r\n        \"Bank Account Number\": 8563254125,\r\n        \"Bank Name\": \"HSBC\",\r\n        \"Bank branch name\": \"Hyderabad\",\r\n        \"IFSC Code\": \"HSBC000963\"\r\n      }\r\n    }\r\n  ]\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{customerURL}}:5055/WorkflowService/workflowTemplateDetails/verify?access_token={{custoken}}",
-									"host": [
-										"{{customerURL}}"
-									],
-									"port": "5055",
-									"path": [
-										"WorkflowService",
-										"workflowTemplateDetails",
-										"verify"
-									],
-									"query": [
-										{
-											"key": "access_token",
-											"value": "{{custoken}}"
-										}
-									]
-								},
-								"description": "To verify workflow template details in a workflow."
-							},
-							"response": []
-						},
-						{
 							"name": "Fetch all the workflow templates",
 							"event": [
 								{
@@ -3172,6 +3098,80 @@
 										}
 									]
 								}
+							},
+							"response": []
+						},
+						{
+							"name": "To verify workflow template details",
+							"id": "382fe858-643c-4271-9da4-61444facd579",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"workflowTemplateDetails\": [\r\n    {\r\n      \"templateDetailsID\": 1597103,\r\n      \"templateID\": 16,\r\n      \"workflowProfileID\": 1597100,\r\n      \"workflowTemplateDetails\": {\r\n        \"Bank Account Number\": 8563254125,\r\n        \"Bank Name\": \"HSBC\",\r\n        \"Bank branch name\": \"Hyderabad\",\r\n        \"IFSC Code\": \"HSBC000963\"\r\n      }\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{customerURL}}:5055/WorkflowService/workflowTemplateDetails/verify?access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"WorkflowService",
+										"workflowTemplateDetails",
+										"verify"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								},
+								"description": "To verify workflow template details in a workflow."
+							},
+							"response": []
+						},
+						{
+							"name": "View the workflow template details of a profile",
+							"id": "7032fbd7-c190-416d-a583-b0372894d256",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{customerURL}}:5055/WorkflowService/mobileApp/workflowProfileID/{{workflowprofileid}}/templateID/{{templateid}}?access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"WorkflowService",
+										"mobileApp",
+										"workflowProfileID",
+										"{{workflowprofileid}}",
+										"templateID",
+										"{{templateid}}"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								},
+								"description": "To fetch workflow template details based on template Id and workflowProfileID."
 							},
 							"response": []
 						}
