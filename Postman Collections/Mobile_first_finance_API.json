@@ -2749,6 +2749,65 @@
 							"response": []
 						},
 						{
+							"name": "Fetch all the workflow templates",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "7d7bbc6d-2785-4171-8a1d-ceda1f606daa",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);",
+											"console.log(\"jsonResponse...\"+jsonResponse)",
+											"var jsonData = jsonResponse.data;",
+											"var workflow=jsonData.workflow",
+											"console.log(\"workflow...\"+jsonData.workflow)",
+											"var templateid=workflow[40].templateID",
+											"console.log(\"templateid...\"+workflow[40].templateID)",
+											"pm.globals.set(\"templateid\",workflow[40].templateID );",
+											"",
+											"",
+											"",
+											"",
+											"",
+											"",
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "2fb89982-3bf2-4c49-af28-d22598e68713",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://dev.mobilefirstfinance.com:5055/WorkflowService/workflowTemplates?access_token={{custoken}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"mobilefirstfinance",
+										"com"
+									],
+									"port": "5055",
+									"path": [
+										"WorkflowService",
+										"workflowTemplates"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Fetch the profile details",
 							"event": [
 								{
@@ -2857,7 +2916,8 @@
 											"value": "{{custoken}}"
 										}
 									]
-								}
+								},
+								"description": "Using this service we can fetch the workflow profile id."
 							},
 							"response": []
 						},
@@ -3039,65 +3099,6 @@
 									]
 								},
 								"description": "- To update workflow template Details based on workflow template details id.\n- Check out the service **Get onboard filter by workflow id** to fetch the **workflow template details id**."
-							},
-							"response": []
-						},
-						{
-							"name": "Fetch all the workflow templates",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "7d7bbc6d-2785-4171-8a1d-ceda1f606daa",
-										"exec": [
-											"var jsonResponse = JSON.parse(responseBody);",
-											"console.log(\"jsonResponse...\"+jsonResponse)",
-											"var jsonData = jsonResponse.data;",
-											"var workflow=jsonData.workflow",
-											"console.log(\"workflow...\"+jsonData.workflow)",
-											"var templateid=workflow[40].templateID",
-											"console.log(\"templateid...\"+workflow[40].templateID)",
-											"pm.globals.set(\"templateid\",workflow[40].templateID );",
-											"",
-											"",
-											"",
-											"",
-											"",
-											"",
-											"",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "2fb89982-3bf2-4c49-af28-d22598e68713",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "https://dev.mobilefirstfinance.com:5055/WorkflowService/workflowTemplates?access_token={{custoken}}",
-									"protocol": "https",
-									"host": [
-										"dev",
-										"mobilefirstfinance",
-										"com"
-									],
-									"port": "5055",
-									"path": [
-										"WorkflowService",
-										"workflowTemplates"
-									],
-									"query": [
-										{
-											"key": "access_token",
-											"value": "{{custoken}}"
-										}
-									]
-								}
 							},
 							"response": []
 						},
