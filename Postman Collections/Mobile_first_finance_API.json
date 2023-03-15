@@ -3021,7 +3021,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{customerURL}}:5055/WorkflowService/workflowTemplateDetails/{{workflowTemplateDetailsID}}?access_token={{custoken}}",
+									"raw": "{{customerURL}}:5055/WorkflowService/workflowTemplateDetails/{{workflowtemplatedetailsid}}?access_token={{custoken}}",
 									"host": [
 										"{{customerURL}}"
 									],
@@ -3029,7 +3029,7 @@
 									"path": [
 										"WorkflowService",
 										"workflowTemplateDetails",
-										"{{workflowTemplateDetailsID}}"
+										"{{workflowtemplatedetailsid}}"
 									],
 									"query": [
 										{
