@@ -2808,7 +2808,7 @@
 							"response": []
 						},
 						{
-							"name": "To fetch workflow profile id",
+							"name": "Fetch workflow profile id",
 							"id": "f93a8e60-b8bc-43fe-a381-535de37466a7",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
