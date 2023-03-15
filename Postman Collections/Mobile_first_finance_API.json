@@ -3058,7 +3058,7 @@
 										}
 									]
 								},
-								"description": "- Using this service we can fetch the workflow template details id."
+								"description": "- Using this service we can fetch the workflow template details id which is required for the further services."
 							},
 							"response": []
 						},
