@@ -3138,7 +3138,7 @@
 										}
 									]
 								},
-								"description": "To verify workflow template details in a workflow."
+								"description": "Using this service we can verify the workflow template details."
 							},
 							"response": []
 						},
