@@ -3195,7 +3195,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{customerURL}}:5055/PortfolioService/Contracts?linkedProfileId={{linkedProfileId}}&access_token={{custoken}}",
+									"raw": "{{customerURL}}:5055/PortfolioService/Contracts?linkedProfileId={{linkedprofileid}}&access_token={{custoken}}",
 									"host": [
 										"{{customerURL}}"
 									],
@@ -3207,7 +3207,7 @@
 									"query": [
 										{
 											"key": "linkedProfileId",
-											"value": "{{linkedProfileId}}"
+											"value": "{{linkedprofileid}}"
 										},
 										{
 											"key": "access_token",
