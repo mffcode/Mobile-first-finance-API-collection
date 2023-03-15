@@ -3373,7 +3373,7 @@
 										}
 									]
 								},
-								"description": "This API is used to apply for a new card."
+								"description": "This service is used to apply for a new card."
 							},
 							"response": []
 						},
