@@ -3373,7 +3373,7 @@
 										}
 									]
 								},
-								"description": "This service is used to apply for a new card."
+								"description": "- This service is used to apply for a new card.\n- The payload should be mentioned in a json format.\n- All the keys mentioned in the json are mandatory.\n- To find the **contractID**, **contractUUID** and **productName** use the service **View the contracts of a profile** in the **Accounts** under the **Customer** collection**.**\n- To find the **linkedProfileId** use the service **Fetch the profile details** in the **Customer Onboarding** section under the **Customer collection.**\n- Mention the **status** key as **apply.**"
 							},
 							"response": []
 						},
