@@ -2682,7 +2682,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"rootUser\": \"enter sandbox rootuser\",\r\n    \"userName\": \"enter sandbox username\",\r\n    \"password\": \"enter sandbox password\"\r\n}",
+									"raw": "{\r\n  \"rootUser\": \"enter sandbox rootuser\",\r\n  \"userName\": \"enter sandbox username\",\r\n  \"password\": \"enter sandbox password\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2804,6 +2804,39 @@
 									]
 								},
 								"description": "Using this service we can fetch the profile details."
+							},
+							"response": []
+						},
+						{
+							"name": "To fetch workflow profile id",
+							"id": "f93a8e60-b8bc-43fe-a381-535de37466a7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://dev.mobilefirstfinance.com:5055/WorkflowService/mobileApp/{{profileid}}?access_token={{custoken}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"mobilefirstfinance",
+										"com"
+									],
+									"port": "5055",
+									"path": [
+										"WorkflowService",
+										"mobileApp",
+										"{{profileid}}"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								}
 							},
 							"response": []
 						},
@@ -3059,39 +3092,6 @@
 									]
 								},
 								"description": "To verify workflow template details in a workflow."
-							},
-							"response": []
-						},
-						{
-							"name": "To fetch workflow profile id",
-							"id": "f93a8e60-b8bc-43fe-a381-535de37466a7",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "https://dev.mobilefirstfinance.com:5055/WorkflowService/mobileApp/{{profileid}}?access_token={{custoken}}",
-									"protocol": "https",
-									"host": [
-										"dev",
-										"mobilefirstfinance",
-										"com"
-									],
-									"port": "5055",
-									"path": [
-										"WorkflowService",
-										"mobileApp",
-										"{{profileid}}"
-									],
-									"query": [
-										{
-											"key": "access_token",
-											"value": "{{custoken}}"
-										}
-									]
-								}
 							},
 							"response": []
 						}
