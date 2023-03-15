@@ -3327,7 +3327,7 @@
 										}
 									]
 								},
-								"description": "This service is used to perform the repayment."
+								"description": "- This service is used to perform the repayment.\n- The payload should be specified in the following json format. It should consist of upcoming repayment events."
 							},
 							"response": []
 						}
