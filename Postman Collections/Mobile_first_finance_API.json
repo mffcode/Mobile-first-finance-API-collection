@@ -2948,8 +2948,8 @@
 											"// var jsonWorkflowData= Object.keys(workflow);",
 											"// console.log(\"jsonWorkflowData...\"+jsonWorkflowData[1])",
 											"var jsonWorkflowData= Object.keys(workflow)[1];",
-											"console.log(\"workflowTemplateDetailsID...\"+workflow[jsonWorkflowData][0].detailsID)",
-											"pm.globals.set(\"workflowTemplateDetailsID\", workflow[jsonWorkflowData][0].detailsID);",
+											"console.log(\"workflowtemplatedetailsid...\"+workflow[jsonWorkflowData][0].detailsID)",
+											"pm.globals.set(\"workflowtemplatedetailsid\", workflow[jsonWorkflowData][0].detailsID);",
 											"",
 											"",
 											"",
@@ -2967,7 +2967,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://dev.mobilefirstfinance.com:5055/WorkflowService/onboardFilter?workflowId={{workFlowID}}&numberOfRecords=50&pageNumber=0&access_token={{custoken}}",
+									"raw": "https://dev.mobilefirstfinance.com:5055/WorkflowService/onboardFilter?workflowId={{workflowid}}&numberOfRecords=50&pageNumber=0&access_token={{custoken}}",
 									"protocol": "https",
 									"host": [
 										"dev",
@@ -2982,7 +2982,7 @@
 									"query": [
 										{
 											"key": "workflowId",
-											"value": "{{workFlowID}}"
+											"value": "{{workflowid}}"
 										},
 										{
 											"key": "numberOfRecords",
