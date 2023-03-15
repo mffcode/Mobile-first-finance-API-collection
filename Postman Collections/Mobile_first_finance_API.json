@@ -2910,7 +2910,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{customerURL}}:5055/WorkflowService/workflowByprofile/{{profileid}}/{{workFlowID}}?access_token={{custoken}}",
+									"raw": "{{customerURL}}:5055/WorkflowService/workflowByprofile/{{profileid}}/{{workflowid}}?access_token={{custoken}}",
 									"host": [
 										"{{customerURL}}"
 									],
@@ -2919,7 +2919,7 @@
 										"WorkflowService",
 										"workflowByprofile",
 										"{{profileid}}",
-										"{{workFlowID}}"
+										"{{workflowid}}"
 									],
 									"query": [
 										{
