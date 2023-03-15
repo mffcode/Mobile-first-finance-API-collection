@@ -2809,6 +2809,27 @@
 						},
 						{
 							"name": "Fetch workflow profile id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "242a1fdd-6d39-4c1f-8451-14c72901e49d",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);",
+											"console.log(\"jsonResponse...\"+jsonResponse)",
+											"",
+											"var jsonData = jsonResponse.data;",
+											"console.log(\"jsonData...\"+jsonData.workflow)",
+											"",
+											"var workflow=jsonData.workflow",
+											"console.log(\"workflowprofileid...\"+workflow.workflowProfileID)",
+											"pm.globals.set(\"workflowprofileid\", workflow.workflowProfileID);",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "f93a8e60-b8bc-43fe-a381-535de37466a7",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
