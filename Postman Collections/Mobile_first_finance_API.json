@@ -4429,7 +4429,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"rootUser\": \"abc\",\n  \"userName\": \"abc\",\n  \"password\": \"abc\"\n}",
+									"raw": "{\n    \"rootUser\": \"enter sandbox rootuser\",\n    \"userName\": \"enter sandbox username\",\n    \"password\": \"enter sandbox password\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
