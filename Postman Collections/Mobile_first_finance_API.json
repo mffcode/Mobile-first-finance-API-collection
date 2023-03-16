@@ -673,98 +673,6 @@
 							"name": "Workflow template",
 							"item": [
 								{
-									"name": "Configure workflow template",
-									"item": [
-										{
-											"name": "Update auto verify flag",
-											"id": "7d2ada3b-21f6-4bf8-99f3-15198f097dc1",
-											"protocolProfileBehavior": {
-												"disableBodyPruning": true
-											},
-											"request": {
-												"method": "PUT",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{backofficeURL}}/WorkflowService/autoVerify/template?access_token={{useraccessToken}}&templateId={{workflowTemplateID}}&flag=true",
-													"host": [
-														"{{backofficeURL}}"
-													],
-													"path": [
-														"WorkflowService",
-														"autoVerify",
-														"template"
-													],
-													"query": [
-														{
-															"key": "access_token",
-															"value": "{{useraccessToken}}"
-														},
-														{
-															"key": "templateId",
-															"value": "{{workflowTemplateID}}"
-														},
-														{
-															"key": "flag",
-															"value": "true"
-														}
-													]
-												},
-												"description": "- This service is used to set the auto verify flag for a specific workflow template to true or false.\n- By setting the flag to true or false, you can enable or disable auto-verification for a specific workflow template."
-											},
-											"response": []
-										},
-										{
-											"name": "Update workflow template flag",
-											"id": "ad14a199-bed2-48b6-ba9e-ce741a0df7d0",
-											"protocolProfileBehavior": {
-												"disableBodyPruning": true
-											},
-											"request": {
-												"method": "PUT",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"templateFlag\": true\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{backofficeURL}}/WorkflowService/updateworkflowTemplateflag/{{workflowTemplateID}}?access_token={{useraccessToken}}",
-													"host": [
-														"{{backofficeURL}}"
-													],
-													"path": [
-														"WorkflowService",
-														"updateworkflowTemplateflag",
-														"{{workflowTemplateID}}"
-													],
-													"query": [
-														{
-															"key": "access_token",
-															"value": "{{useraccessToken}}"
-														}
-													]
-												}
-											},
-											"response": []
-										}
-									],
-									"id": "2cfafde9-ba04-47d3-af0e-5357106970ef",
-									"description": "Using the below services we can enable or disable the rights for auto verify and external access."
-								},
-								{
 									"name": "Create workflow template",
 									"id": "3b020191-58ca-4734-a4e6-6ee9f709cc4e",
 									"protocolProfileBehavior": {
@@ -968,6 +876,44 @@
 											]
 										},
 										"description": "- This service is used to set the auto verify flag for a specific workflow template to true or false.\n- By setting the flag to true or false, you can enable or disable auto-verification for a specific workflow template."
+									},
+									"response": []
+								},
+								{
+									"name": "Update workflow template flag Copy",
+									"id": "e5a719e3-49e0-4ed0-8708-0a9c06b36ffc",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"templateFlag\": true\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}/WorkflowService/updateworkflowTemplateflag/{{workflowTemplateID}}?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"path": [
+												"WorkflowService",
+												"updateworkflowTemplateflag",
+												"{{workflowTemplateID}}"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										}
 									},
 									"response": []
 								}
