@@ -783,7 +783,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can get workflow template by its workflow template id"
+										"description": "- Using this service, we can get workflow template by its workflow template id\n- Since the workflow template id is required in the service to fetch a specific workflow template, retrieve it from the data returned by the **Get all workflow templates** service."
 									},
 									"response": []
 								},
