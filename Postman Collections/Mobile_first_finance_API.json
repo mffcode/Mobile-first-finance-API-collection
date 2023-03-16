@@ -132,7 +132,8 @@
 													"value": "{{useraccessToken}}"
 												}
 											]
-										}
+										},
+										"description": "Using this service we can fetch all the existing branches from the application."
 									},
 									"response": []
 								}
