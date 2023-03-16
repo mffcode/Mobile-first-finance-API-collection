@@ -683,7 +683,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"Form Header\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Nominee Name\"\n    },\n    {\n      \"Type\": \"Date\",\n      \"Value\": \"\",\n      \"Label\": \"Nominee DOB\"\n    },\n    {\n      \"Type\": \"Number\",\n      \"Value\": \"\",\n      \"Label\": \"Nominee Aadhaar \"\n    }\n  ],\n  \"Form Body\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Nominee Address\"\n    },\n    {\n      \"Type\": \"Phone\",\n      \"Value\": \"\",\n      \"Label\": \"Nominee Phone number \"\n    }\n  ],\n  \"Label\": \"Nominee Details\",\n  \"Description\": \"Consist details of the nominee\"\n}",
+											"raw": "{\n  \"Form Header\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Nominee Name\"\n    },\n    {\n      \"Type\": \"Date\",\n      \"Value\": \"\",\n      \"Label\": \"Nominee DOB\"\n    },\n    {\n      \"Type\": \"Number\",\n      \"Value\": \"\",\n      \"Label\": \"Nominee Aadhaar \"\n    }\n  ],\n  \"Form Body\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Nominee Address\"\n    },\n    {\n      \"Type\": \"Phone\",\n      \"Value\": \"\",\n      \"Label\": \"Nominee Phone number \"\n    }\n  ],\n  \"Label\": \"Nominee Details\",\n  \"Description\": \" Person who can receive the account's proceeds in the event of an unexpected emergency\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
