@@ -465,7 +465,7 @@
 							"name": "User actions",
 							"item": [
 								{
-									"name": "Get actions",
+									"name": "Get all the user actions",
 									"id": "e08d9766-d1de-4596-b20d-e2666e110327",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
