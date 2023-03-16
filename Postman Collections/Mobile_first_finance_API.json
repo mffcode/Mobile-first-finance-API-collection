@@ -337,7 +337,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can create a new user.\n- Check out the user example json in the body below.\n    \n\n**To create a new user, follow the steps below.**\n\n- Set the request as **POST.**\n- From the **Get all user form** response, select any user form and set the payload according to the form.\n- The **FormID** must be mentioned in the payload.\n- Use the designated global variable for access token in the end of the service call. Then click on **Send**."
+										"description": "- Using this service, we can create a new user.\n- Check out the user example json in the body below.\n    \n\n**To create a new user, follow the steps below.**\n\n- Set the request as **POST.**\n- From the **Get all user form** response, select any user form and set the payload according to the form.\n- The **FormID** must be mentioned in the payload and click on **Send**."
 									},
 									"response": []
 								},
