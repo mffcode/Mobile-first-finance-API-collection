@@ -822,7 +822,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can update an existing workflow template based on workflow template id."
+										"description": "- Using this service, we can update an existing workflow template based on workflow template id.\n- Edit the workflow template details with the essential information that needs to be altered and add it to the payload.\n- Since the workflow template id is required in the service to update the workflow template details, retrieve it from the data returned by the **Get all workflow templates** service."
 									},
 									"response": []
 								}
