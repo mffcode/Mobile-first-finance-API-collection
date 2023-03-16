@@ -724,7 +724,7 @@
 													"console.log(\"jsonData...\"+jsonData.workflow)",
 													"var workflow=jsonData.workflow",
 													"console.log(\"workflow...\"+workflow[0].templateID)",
-													"pm.environment.set(\"workflowTemplateID\", workflow[0].templateID);"
+													"pm.globals.set(\"workflowTemplateID\", workflow[0].templateID);"
 												],
 												"type": "text/javascript"
 											}
