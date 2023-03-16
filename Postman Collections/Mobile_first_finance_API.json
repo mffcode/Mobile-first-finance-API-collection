@@ -524,7 +524,8 @@
 													"value": "{{useraccessToken}}"
 												}
 											]
-										}
+										},
+										"description": "Using this service, we can fetch the list of user menus available."
 									},
 									"response": []
 								}
