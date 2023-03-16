@@ -670,42 +670,6 @@
 							"description": "User roles are the set of actions that an user is expected to perform."
 						},
 						{
-							"name": "User menus",
-							"item": [
-								{
-									"name": "Get all user menu",
-									"id": "df9b8b2b-e6b7-47cd-8c2e-28ca1ce87d49",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{backofficeURL}}/UserService/menu?access_token={{useraccessToken}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"path": [
-												"UserService",
-												"menu"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												}
-											]
-										},
-										"description": "Using this service we can get all the list of user menus."
-									},
-									"response": []
-								}
-							],
-							"id": "5615aff3-f96f-412a-a115-0bdd66195936",
-							"description": "User menus are the list of menu options which an user can utilize based on requirement. Using this service we can view all the existing user menus in the application."
-						},
-						{
 							"name": "Workflow template",
 							"item": [
 								{
