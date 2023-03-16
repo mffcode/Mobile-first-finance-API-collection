@@ -753,7 +753,7 @@
 												}
 											]
 										},
-										"description": "Using this service we can get all the existing workflow templates."
+										"description": "Using this service, we can get all the existing workflow templates."
 									},
 									"response": []
 								},
