@@ -717,7 +717,8 @@
 															"value": "true"
 														}
 													]
-												}
+												},
+												"description": "- This service is used to set the auto verify flag for a specific workflow template to true or false.\n- By setting the flag to true or false, you can enable or disable auto-verification for a specific workflow template."
 											},
 											"response": []
 										},
