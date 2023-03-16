@@ -959,7 +959,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can create a new workflow.\n- In order to create a workflow, it requires a workflow template ID. Use the service **Get all workflow templates** to fetch the workflow template id.\n- Set the workflow template id or multiple template id's in the payload based on the preference.\n- Provide a workflow name and click on **Send**."
+										"description": "Using this service we can create a new workflow."
 									},
 									"response": []
 								},
