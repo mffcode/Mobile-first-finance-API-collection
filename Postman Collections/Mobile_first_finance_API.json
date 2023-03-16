@@ -2840,7 +2840,8 @@
 											"value": "{{custoken}}"
 										}
 									]
-								}
+								},
+								"description": "Using this service, we can fetch the list of available workflow templates."
 							},
 							"response": []
 						},
