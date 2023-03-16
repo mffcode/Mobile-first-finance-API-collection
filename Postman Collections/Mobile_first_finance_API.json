@@ -913,7 +913,8 @@
 													"value": "{{useraccessToken}}"
 												}
 											]
-										}
+										},
+										"description": "- This service is used to set the workflow template flag for a specific workflow template to true or false.\n- By setting the flag to true or false, you can enable or disable workflow template flag for a specific workflow template.\n- Since the workflow template id is required in the service to update the workflow template flag, retrieve it from the data returned by the **Get all workflow templates** service."
 									},
 									"response": []
 								}
