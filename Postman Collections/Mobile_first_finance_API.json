@@ -179,7 +179,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can create a new user form.\n- Check out the user form example json in the body below.\n- The first label in the header section needs to be defined as **Form Label**, and the value can be any name you want it to be."
+										"description": "- Using this service, we can create a new user form.\n- Check out the user form example json in the body below.\n- The first label in the header section needs to be defined as **Form Label**, and the value can be any name you want it to be.\n- The **Form Label** should ideally be in the **Form Header**, and the remaining fields can be in the **Form Body**."
 									},
 									"response": []
 								},
