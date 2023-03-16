@@ -1150,7 +1150,7 @@
 							"description": "Onboarding a customer usually requires certain procedures to be followed, for instance capturing certain information, and verifying such information provided. Such procedures could also extend to sending such information captured to even 3rd party APIs for validating KYC, performing ID verification checks, AML checks, address verification, credit bureau check etc.\n\nWorkflow services enable an organisation administrator to orchestrate such onboarding stages, which in turn enable customers and organisation users to follow these specific workflow steps to complete an onboarding process."
 						},
 						{
-							"name": "New Folder",
+							"name": "Configure workflow template",
 							"item": [],
 							"id": "a1c75df5-d7a2-4377-8fd8-dd5f4eafeb5b"
 						}
