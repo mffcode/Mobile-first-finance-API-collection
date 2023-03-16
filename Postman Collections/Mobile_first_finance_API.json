@@ -619,7 +619,7 @@
 												}
 											]
 										},
-										"description": "Using this service we can view all the existing user roles in the application."
+										"description": "Using this service, we can view all the existing user roles available."
 									},
 									"response": []
 								},
