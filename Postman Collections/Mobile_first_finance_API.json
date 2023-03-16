@@ -783,7 +783,7 @@
 												}
 											]
 										},
-										"description": "Using this service we can get workflow template by its workflow template id"
+										"description": "Using this service, we can get workflow template by its workflow template id"
 									},
 									"response": []
 								},
