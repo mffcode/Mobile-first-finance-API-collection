@@ -2694,7 +2694,7 @@
 									}
 								},
 								"url": "{{customerURL}}:5055/LoginService/login",
-								"description": "- We can access the customer application using this service.\n- Firstly define a new environment variable for the customer URL and make it active.\n- Check out the **Defining environment variables** section for how to define a new environment.\n- Set the environment to the customer URL, and then proceed to the login step using the customer credentials."
+								"description": "- Using this service, we can gain access to the customer application. Include in the payload the freshly created customer credentials.\n- Note : The **Identifier** that we provide in the signup form will act as the **userName** in the login form."
 							},
 							"response": []
 						}
