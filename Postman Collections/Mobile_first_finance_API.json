@@ -3146,7 +3146,7 @@
 										}
 									]
 								},
-								"description": "Using this service we can verify the workflow template details."
+								"description": "Using this service, we can verify the workflow template details."
 							},
 							"response": []
 						},
