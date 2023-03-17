@@ -2656,7 +2656,7 @@
 						}
 					],
 					"id": "543e1c2d-2743-4c5d-a5d1-e48aefe99477",
-					"description": "This service is used to register a new customer."
+					"description": "- This service is used to register a new customer.\n- Firstly define a new environment variable for the customer URL and make it active.\n- Check out the **Defining environment variables** section for how to define a new environment.\n- Set the environment to the customer URL, and then proceed to the signup step."
 				},
 				{
 					"name": "Authorization",
