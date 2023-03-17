@@ -3106,7 +3106,7 @@
 										}
 									]
 								},
-								"description": "Using this service we can fetch the workflow profile id."
+								"description": "- Using this service, we can fetch the **workflow profile id** that is used to access the **workflow template details** of the logged-in user's profile and also it is used to **verify the workflow template details**."
 							},
 							"response": []
 						},
