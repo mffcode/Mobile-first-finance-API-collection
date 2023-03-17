@@ -3146,7 +3146,7 @@
 										}
 									]
 								},
-								"description": "Using this service, we can verify the workflow template details."
+								"description": "- Using this service, we can verify the workflow template details.\n- To verify the workflow template details, it is necessary to include the **templateDetailsID**, **templateID**, and **workflowProfileID** in the payload along with the workflow template details json.\n- Use the service **Get onboard filter by workflow id** to fetch the **templateDetailsID** and **Fetch all the workflow templates** to fetch the **templateID**."
 							},
 							"response": []
 						},
