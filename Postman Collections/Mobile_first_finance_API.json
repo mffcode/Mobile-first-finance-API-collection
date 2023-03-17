@@ -3180,7 +3180,7 @@
 										}
 									]
 								},
-								"description": "- Using this service we can fetch the workflow template details based on template id and workflow profile id."
+								"description": "- Using this service we can fetch the **workflow template details** based on **template id** and **workflow profile id**."
 							},
 							"response": []
 						}
