@@ -3011,7 +3011,7 @@
 										}
 									]
 								},
-								"description": "- Using this service we can fetch the workflow template details id which is required for the further services."
+								"description": "- Using this service we can fetch the **workflow template details id** which is required for **To save the details in workflow template**.\n- Run this service just once since it has a test script defined to turn the **workflow template details id** into a global variable so that other necessary services can utilize it.\n- Using this service we can fetch the **template details id** which is required for **To verify workflow template details**. Copy it from the response and mention it in the payload while verifying the workflow template details."
 							},
 							"response": []
 						},
