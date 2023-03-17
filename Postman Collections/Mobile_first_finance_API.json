@@ -2875,61 +2875,6 @@
 							"response": []
 						},
 						{
-							"name": "Fetch workflow profile id",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "242a1fdd-6d39-4c1f-8451-14c72901e49d",
-										"exec": [
-											"var jsonResponse = JSON.parse(responseBody);",
-											"console.log(\"jsonResponse...\"+jsonResponse)",
-											"",
-											"var jsonData = jsonResponse.data;",
-											"console.log(\"jsonData...\"+jsonData.workflow)",
-											"",
-											"var workflow=jsonData.workflow",
-											"console.log(\"workflowprofileid...\"+workflow.workflowProfileID)",
-											"pm.globals.set(\"workflowprofileid\", workflow.workflowProfileID);",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "f93a8e60-b8bc-43fe-a381-535de37466a7",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "https://dev.mobilefirstfinance.com:5055/WorkflowService/mobileApp/{{profileid}}?access_token={{custoken}}",
-									"protocol": "https",
-									"host": [
-										"dev",
-										"mobilefirstfinance",
-										"com"
-									],
-									"port": "5055",
-									"path": [
-										"WorkflowService",
-										"mobileApp",
-										"{{profileid}}"
-									],
-									"query": [
-										{
-											"key": "access_token",
-											"value": "{{custoken}}"
-										}
-									]
-								},
-								"description": "Using this service we can fetch the workflow profile id."
-							},
-							"response": []
-						},
-						{
 							"name": "To link a profile to workflow",
 							"id": "107290f6-e442-4fab-b4fe-d887efb66676",
 							"protocolProfileBehavior": {
@@ -2964,7 +2909,7 @@
 										}
 									]
 								},
-								"description": "- Using this service we can link a profile to the workflow."
+								"description": "- Using this service we can link a profile to the workflow.\n- For linking the profile to a specific workflow we have to mention both the **profileID** and the **workFlowID** in the payload. Check the below json payload for detail.\n- To fetch the **profile id**, check the service **Fetch the profile details** and to fetch the **workflow id**, check the service **View the list of workflows**."
 							},
 							"response": []
 						},
@@ -3107,6 +3052,61 @@
 									]
 								},
 								"description": "- To update workflow template Details based on workflow template details id.\n- Check out the service **Get onboard filter by workflow id** to fetch the **workflow template details id**."
+							},
+							"response": []
+						},
+						{
+							"name": "Fetch workflow profile id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "242a1fdd-6d39-4c1f-8451-14c72901e49d",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);",
+											"console.log(\"jsonResponse...\"+jsonResponse)",
+											"",
+											"var jsonData = jsonResponse.data;",
+											"console.log(\"jsonData...\"+jsonData.workflow)",
+											"",
+											"var workflow=jsonData.workflow",
+											"console.log(\"workflowprofileid...\"+workflow.workflowProfileID)",
+											"pm.globals.set(\"workflowprofileid\", workflow.workflowProfileID);",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "f93a8e60-b8bc-43fe-a381-535de37466a7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://dev.mobilefirstfinance.com:5055/WorkflowService/mobileApp/{{profileid}}?access_token={{custoken}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"mobilefirstfinance",
+										"com"
+									],
+									"port": "5055",
+									"path": [
+										"WorkflowService",
+										"mobileApp",
+										"{{profileid}}"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								},
+								"description": "Using this service we can fetch the workflow profile id."
 							},
 							"response": []
 						},
