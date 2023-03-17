@@ -2870,7 +2870,7 @@
 										}
 									]
 								},
-								"description": "Using this service we can fetch the profile details."
+								"description": "- Using this service, we can fetch the logged-in user's profile details.\n- Run this service just once since it has a test script defined to turn the **profile id** into a global variable so that other necessary services can utilize it."
 							},
 							"response": []
 						},
