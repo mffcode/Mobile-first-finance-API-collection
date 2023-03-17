@@ -2809,7 +2809,7 @@
 										}
 									]
 								},
-								"description": "Using this service, we can fetch the list of available workflow templates."
+								"description": "- Using this service, we can fetch the list of available **workflow templates**.\n- Using this service we can fetch the **template id** which is necessary to **verify** the **workflow template details**."
 							},
 							"response": []
 						},
