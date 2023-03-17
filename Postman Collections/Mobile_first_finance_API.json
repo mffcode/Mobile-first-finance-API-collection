@@ -959,7 +959,7 @@
 												}
 											]
 										},
-										"description": "Using this service we can create a new workflow."
+										"description": "- Using this service, we can create a new workflow.\n- In order to create a workflow, it requires a workflow template ID. Use the service **Get all workflow templates** to fetch the workflow template id.\n- Set the workflow template id or multiple template id's in the payload based on the preference.\n- Provide a workflow name and click on **Send**."
 									},
 									"response": []
 								},
@@ -2693,7 +2693,8 @@
 										}
 									}
 								},
-								"url": "{{customerURL}}:5055/LoginService/login"
+								"url": "{{customerURL}}:5055/LoginService/login",
+								"description": "- We can access the customer application using this service.\n- Firstly define a new environment variable for the customer URL and make it active.\n- Check out the **Defining environment variables** section for how to define a new environment.\n- Set the environment to the customer URL, and then proceed to the login step using the customer credentials."
 							},
 							"response": []
 						}
