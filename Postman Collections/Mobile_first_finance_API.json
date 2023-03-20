@@ -2718,8 +2718,8 @@
 											"var jsonData = jsonResponse.data;",
 											"console.log(\"jsonData...\"+jsonData.workflow)",
 											"var workflow=jsonData.workflow",
-											"console.log(\"workflowid...\"+workflow[0].workFlowID)",
-											"pm.globals.set(\"workflowid\", workflow[0].workFlowID);"
+											"console.log(\"workflowid...\"+workflow[13].workFlowID)",
+											"pm.globals.set(\"workflowid\", workflow[13].workFlowID);"
 										],
 										"type": "text/javascript"
 									}
