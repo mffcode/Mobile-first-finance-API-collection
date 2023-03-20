@@ -2915,6 +2915,27 @@
 						},
 						{
 							"name": "Get workflow templates based on profileID and workflowID",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "48a767e7-0dab-4881-86e4-91e9c4fc2390",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);",
+											"console.log(\"jsonResponse...\"+jsonResponse)",
+											"var jsonData = jsonResponse.data;",
+											"var workflow=jsonData.workflow",
+											"console.log(\"workflow...\"+jsonData.workflow)",
+											"var workFlowTemplateDetails=workflow.workFlowTemplateDetails",
+											"console.log(\"workFlowTemplateDetails...\"+workflow.workFlowTemplateDetails)",
+											"var workflowProfileID=workflow.workflowProfileID",
+											"console.log(\"workflowprofileid...\"+workflow.workflowProfileID)",
+											"pm.globals.set(\"workflowprofileid\",workflow.workflowProfileID );"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "c149b27f-8dfd-4a14-b3b9-7f0bcdfbd306",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
