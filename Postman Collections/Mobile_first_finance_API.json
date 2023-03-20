@@ -3176,7 +3176,7 @@
 										}
 									]
 								},
-								"description": "- This service is used to perform the repayment.\n- The payload should be specified in the following json format. All the mentioned keys in the payload are mandatory.\n- Include the exact **contract uuid** in the payload and mention the desired notional **value**.\n- Specify the trigger type as **deposit** or **withdraw**, depending on our preferred transaction.\n- Fetch the contract uuid by using the service **View the contracts of a profile**."
+								"description": "- This service is used to perform the repayment.\n- The payload should be specified in the following json format. All the mentioned keys in the payload are mandatory.\n- Include the exact **contract uuid** in the payload and mention the desired notional **value**.\n- Specify the trigger type as **deposit** or **withdraw**, depending on our preferred transaction.\n- Fetch the **contract uuid** by using the service **View the contracts of a profile**."
 							},
 							"response": []
 						},
