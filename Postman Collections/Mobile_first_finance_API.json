@@ -3138,7 +3138,7 @@
 					"name": "Payments",
 					"item": [
 						{
-							"name": "To perform the repayment",
+							"name": "To perform the transaction",
 							"id": "9c1720bd-fbbd-42e2-a1ce-03bcbea0ddd5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
