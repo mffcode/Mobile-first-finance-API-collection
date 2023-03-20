@@ -3017,7 +3017,7 @@
 										}
 									]
 								},
-								"description": "- Using this service we can fetch the **workflow template details** based on **template id** and **workflow profile id**.\n- The **workflowprofileid** will be retrieved and applied to the service from **Get workflow templates based on profileID and workflowID**, and **templateid** which will be retrieved and applied to the service from **Fetch all of the workflow templates**."
+								"description": "- Using this service we can fetch the **workflow template details id** based on **template id** and **workflow profile id**.\n- The **workflowprofileid** will be retrieved and applied to the service from **Get workflow templates based on profileID and workflowID**, and **templateid** which will be retrieved and applied to the service from **Fetch all of the workflow templates**."
 							},
 							"response": []
 						},
