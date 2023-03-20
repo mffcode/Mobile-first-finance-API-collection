@@ -2968,6 +2968,27 @@
 						},
 						{
 							"name": "View the workflow template details of a profile",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "e542b450-80b6-4022-a073-80690d4b2d79",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);",
+											"console.log(\"jsonResponse...\"+jsonResponse)",
+											"var templateDetailsID=jsonResponse[0].templateDetailsID",
+											"console.log(\"templateDetailsID...\"+jsonResponse[0].templateDetailsID)",
+											"pm.globals.set(\"workflowtemplatedetailsid\",jsonResponse[0].templateDetailsID );",
+											"",
+											"",
+											"",
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "7032fbd7-c190-416d-a583-b0372894d256",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
