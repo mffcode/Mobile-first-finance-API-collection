@@ -2990,7 +2990,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"Bank Account Number\": 8563254125,\r\n  \"Bank Name\": \"HSBC\",\r\n  \"Bank branch name\": \"Hyderabad\",\r\n  \"IFSC Code\": \"HSBC000965\"\r\n}",
+									"raw": "{\r\n  \"I Agree the terms and conditions\": \"Yes\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
