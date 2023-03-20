@@ -3126,7 +3126,7 @@
 										}
 									]
 								},
-								"description": "- Using this service we can fetch the list of contracts for a profile.\n- The **linkedprofileid** value, which is mentioned in the service, is mandatory.\n- To fetch the **linkedprofileid**, use the **Fetch the profile details** which is in the **Customer Onboarding** under the **Customer** collection.\n- Note : Only approved profiles will have a **linkedprofileid** generated."
+								"description": "- Using this service we can fetch the list of contracts for a profile.\n- The **linkedprofileid** value, which is mentioned in the service, is mandatory.\n- To fetch the **linkedprofileid**, use the **Fetch the profile details** which is in the **Customer Onboarding** under the **Customer** collection.\n- Note : Only approved profiles will have a **linkedprofileid** generated.\n- Re run the service **Fetch the profile details** again to obtain the **linked profile id** and get it automatically applied to the service."
 							},
 							"response": []
 						}
