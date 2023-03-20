@@ -2986,61 +2986,6 @@
 							"response": []
 						},
 						{
-							"name": "Fetch workflow profile id",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "242a1fdd-6d39-4c1f-8451-14c72901e49d",
-										"exec": [
-											"var jsonResponse = JSON.parse(responseBody);",
-											"console.log(\"jsonResponse...\"+jsonResponse)",
-											"",
-											"var jsonData = jsonResponse.data;",
-											"console.log(\"jsonData...\"+jsonData.workflow)",
-											"",
-											"var workflow=jsonData.workflow",
-											"console.log(\"workflowprofileid...\"+workflow.workflowProfileID)",
-											"pm.globals.set(\"workflowprofileid\", workflow.workflowProfileID);",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "f93a8e60-b8bc-43fe-a381-535de37466a7",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "https://dev.mobilefirstfinance.com:5055/WorkflowService/mobileApp/{{profileid}}?access_token={{custoken}}",
-									"protocol": "https",
-									"host": [
-										"dev",
-										"mobilefirstfinance",
-										"com"
-									],
-									"port": "5055",
-									"path": [
-										"WorkflowService",
-										"mobileApp",
-										"{{profileid}}"
-									],
-									"query": [
-										{
-											"key": "access_token",
-											"value": "{{custoken}}"
-										}
-									]
-								},
-								"description": "- Using this service, we can fetch the **workflow profile id** that is used to access the **workflow template details** of the logged-in user's profile and also it is used to **verify the workflow template details**."
-							},
-							"response": []
-						},
-						{
 							"name": "View the workflow template details of a profile",
 							"id": "7032fbd7-c190-416d-a583-b0372894d256",
 							"protocolProfileBehavior": {
