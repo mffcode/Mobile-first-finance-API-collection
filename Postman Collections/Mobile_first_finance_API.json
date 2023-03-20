@@ -3015,7 +3015,7 @@
 										}
 									]
 								},
-								"description": "- To update workflow template Details based on workflow template details id.\n- Check out the service **Get onboard filter by workflow id** to fetch the **workflow template details id**."
+								"description": "- Using this service, we can update workflow template details based on workflow template details id.\n- Mention the payload according to the workflow template and provide the necessary value.\n- The **workflow template details id** will be retrieved and applied to the service from **View the workflow template details of a profile**."
 							},
 							"response": []
 						}
