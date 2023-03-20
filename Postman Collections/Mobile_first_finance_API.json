@@ -3138,44 +3138,6 @@
 					"name": "Payments",
 					"item": [
 						{
-							"name": "To view the repayment events",
-							"id": "05ec6604-775b-4127-b667-39915fd65a4e",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{customerURL}}:5055/PortfolioService/geteventsBycontractUUID?access_token={{custoken}}&contractUUID={{contractuuid}}&eventType=PI",
-									"host": [
-										"{{customerURL}}"
-									],
-									"port": "5055",
-									"path": [
-										"PortfolioService",
-										"geteventsBycontractUUID"
-									],
-									"query": [
-										{
-											"key": "access_token",
-											"value": "{{custoken}}"
-										},
-										{
-											"key": "contractUUID",
-											"value": "{{contractuuid}}"
-										},
-										{
-											"key": "eventType",
-											"value": "PI"
-										}
-									]
-								},
-								"description": "- This service is used to view the pending repayments of a specific contract.\n- The **contractuuid** value, which is mentioned in the service, is mandatory.\n- To fetch the **contractuuid**, use the **View the contracts of a profile** which is in the **Accounts** under the **Customer** collection."
-							},
-							"response": []
-						},
-						{
 							"name": "To perform the repayment",
 							"id": "9c1720bd-fbbd-42e2-a1ce-03bcbea0ddd5",
 							"protocolProfileBehavior": {
@@ -3214,7 +3176,45 @@
 										}
 									]
 								},
-								"description": "- This service is used to perform the repayment.\n- The payload should be specified in the following json format. It should consist of upcoming repayment events.\n- To find the pending repayment events, use **To view the repayment events** which is directly above to this service."
+								"description": "- This service is used to perform the repayment.\n- The payload should be specified in the following json format. All the mentioned keys in the payload are mandatory.\n- Include the exact **contract uuid** in the payload and mention the desired notional **value**.\n- Specify the trigger type as **deposit** or **withdraw**, depending on our preferred transaction.\n- Fetch the contract uuid by using the service **View the contracts of a profile**."
+							},
+							"response": []
+						},
+						{
+							"name": "To view the repayment events",
+							"id": "05ec6604-775b-4127-b667-39915fd65a4e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{customerURL}}:5055/PortfolioService/geteventsBycontractUUID?access_token={{custoken}}&contractUUID={{contractuuid}}&eventType=PI",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"PortfolioService",
+										"geteventsBycontractUUID"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										},
+										{
+											"key": "contractUUID",
+											"value": "{{contractuuid}}"
+										},
+										{
+											"key": "eventType",
+											"value": "PI"
+										}
+									]
+								},
+								"description": "- This service is used to view the pending repayments of a specific contract.\n- The **contractuuid** value, which is mentioned in the service, is mandatory.\n- To fetch the **contractuuid**, use the **View the contracts of a profile** which is in the **Accounts** under the **Customer** collection."
 							},
 							"response": []
 						}
