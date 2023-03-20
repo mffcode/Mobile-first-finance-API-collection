@@ -2941,7 +2941,41 @@
 										}
 									]
 								},
-								"description": "- After linking a profile to the workflow we can check the workflow templates based on **profileID** and **workflowID**.\n- We must provide the exact **profileID** of a profile that has been linked to a workflow, as well as the **workflowID** in the service.\n- Fetch the **profileID** from **Fetch the profile details** and **workflowID** from **View the list of workflows**."
+								"description": "- After linking a profile to the workflow we can check the workflow templates based on **profileID** and **workflowID**.\n- We must provide the exact **profileID** of a profile that has been linked to a workflow, as well as the **workflowID** in the service.\n- Run the services **Fetch the profile details** and **View the list of workflows** services before using this service so that those id's will automatically get applied in the service call.\n- As a result, we'll get the **workflow profile id**, which is useful for viewing a profile's workflow template details. Run this service just once since it has a test script defined to turn the **workflow profile id** into a global variable so that other necessary services can utilize it."
+							},
+							"response": []
+						},
+						{
+							"name": "View the workflow template details of a profile",
+							"id": "7032fbd7-c190-416d-a583-b0372894d256",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{customerURL}}:5055/WorkflowService/mobileApp/workflowProfileID/{{workflowprofileid}}/templateID/{{templateid}}?access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"WorkflowService",
+										"mobileApp",
+										"workflowProfileID",
+										"{{workflowprofileid}}",
+										"templateID",
+										"{{templateid}}"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								},
+								"description": "- Using this service we can fetch the **workflow template details** based on **template id** and **workflow profile id**."
 							},
 							"response": []
 						},
@@ -2982,40 +3016,6 @@
 									]
 								},
 								"description": "- To update workflow template Details based on workflow template details id.\n- Check out the service **Get onboard filter by workflow id** to fetch the **workflow template details id**."
-							},
-							"response": []
-						},
-						{
-							"name": "View the workflow template details of a profile",
-							"id": "7032fbd7-c190-416d-a583-b0372894d256",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{customerURL}}:5055/WorkflowService/mobileApp/workflowProfileID/{{workflowprofileid}}/templateID/{{templateid}}?access_token={{custoken}}",
-									"host": [
-										"{{customerURL}}"
-									],
-									"port": "5055",
-									"path": [
-										"WorkflowService",
-										"mobileApp",
-										"workflowProfileID",
-										"{{workflowprofileid}}",
-										"templateID",
-										"{{templateid}}"
-									],
-									"query": [
-										{
-											"key": "access_token",
-											"value": "{{custoken}}"
-										}
-									]
-								},
-								"description": "- Using this service we can fetch the **workflow template details** based on **template id** and **workflow profile id**."
 							},
 							"response": []
 						}
