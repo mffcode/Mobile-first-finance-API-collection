@@ -3041,46 +3041,6 @@
 							"response": []
 						},
 						{
-							"name": "To verify workflow template details",
-							"id": "382fe858-643c-4271-9da4-61444facd579",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n  \"workflowTemplateDetails\": [\r\n    {\r\n      \"templateDetailsID\": 1597103,\r\n      \"templateID\": 16,\r\n      \"workflowProfileID\": 1597100,\r\n      \"workflowTemplateDetails\": {\r\n        \"Bank Account Number\": 8563254125,\r\n        \"Bank Name\": \"HSBC\",\r\n        \"Bank branch name\": \"Hyderabad\",\r\n        \"IFSC Code\": \"HSBC000963\"\r\n      }\r\n    }\r\n  ]\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{customerURL}}:5055/WorkflowService/workflowTemplateDetails/verify?access_token={{custoken}}",
-									"host": [
-										"{{customerURL}}"
-									],
-									"port": "5055",
-									"path": [
-										"WorkflowService",
-										"workflowTemplateDetails",
-										"verify"
-									],
-									"query": [
-										{
-											"key": "access_token",
-											"value": "{{custoken}}"
-										}
-									]
-								},
-								"description": "- Using this service, we can verify the workflow template details.\n- To verify the workflow template details, it is necessary to include the **templateDetailsID**, **templateID**, and **workflowProfileID** in the payload along with the workflow template details json.\n- Use the service, **Get onboard filter by workflow id** to fetch the **templateDetailsID**\n- Use the service**, Fetch all the workflow templates** to fetch the **templateID**.\n- Use the service, **Fetch workflow profile id** to fetch the **workflowProfileID.**"
-							},
-							"response": []
-						},
-						{
 							"name": "View the workflow template details of a profile",
 							"id": "7032fbd7-c190-416d-a583-b0372894d256",
 							"protocolProfileBehavior": {
