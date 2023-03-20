@@ -3186,7 +3186,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "[\r\n  {\r\n    \"ContractUUID\": \"3d50c42e-7597-4f98-97fb-494b92765bd1\",\r\n    \"EventID\": \"256d732e-344f-474c-bbde-f45484d44a9c\",\r\n    \"EventTime\": \"2022-05-20T23:59:59\",\r\n    \"EventType\": \"IP\",\r\n    \"Units\": \"INR\",\r\n    \"Value\": 141,\r\n    \"Status\": \"pending\",\r\n    \"DebitPaymentChannelID\": \"bbc39dc8-8dee-4fa4-8f8e-26ceeefceea1\",\r\n    \"CreditPaymentChannelID\": \"7deb30c2-8ccf-4e23-b538-c4a8558d96cd\",\r\n    \"PaymentMethod\": \"billing\",\r\n    \"RemainingAmount\": 141,\r\n    \"ProcessTime\": \"2022-05-20T23:59:59\",\r\n    \"Hierarchy\": \"1497814\"\r\n  },\r\n  {\r\n    \"ContractUUID\": \"3d50c42e-7597-4f98-97fb-494b92765bd1\",\r\n    \"EventID\": \"222febaf-201a-46af-9a1c-b92071907e4d\",\r\n    \"EventTime\": \"2022-05-20T23:59:59\",\r\n    \"EventType\": \"PR\",\r\n    \"Units\": \"INR\",\r\n    \"Value\": 3359,\r\n    \"Status\": \"pending\",\r\n    \"DebitPaymentChannelID\": \"bbc39dc8-8dee-4fa4-8f8e-26ceeefceea1\",\r\n    \"CreditPaymentChannelID\": \"7deb30c2-8ccf-4e23-b538-c4a8558d96cd\",\r\n    \"PaymentMethod\": \"billing\",\r\n    \"RemainingAmount\": 3359,\r\n    \"ProcessTime\": \"2022-05-20T23:59:59\",\r\n    \"Hierarchy\": \"1497814\"\r\n  }\r\n]",
+									"raw": "{\r\n  \"contractUUID\": \"b9340cd6-ee46-44f8-a233-a41b8433d673\",\r\n  \"type\": \"PI\",\r\n  \"value\": 5000,\r\n  \"paymentType\": \"stripe\",\r\n  \"triggerType\": \"deposit\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3194,14 +3194,18 @@
 									}
 								},
 								"url": {
-									"raw": "{{customerURL}}:5055/PortfolioService/savePortfolioRepayment?access_token={{custoken}}",
+									"raw": "https://dev.mobilefirstfinance.com:5055/SolitxService/payment/link?access_token={{custoken}}",
+									"protocol": "https",
 									"host": [
-										"{{customerURL}}"
+										"dev",
+										"mobilefirstfinance",
+										"com"
 									],
 									"port": "5055",
 									"path": [
-										"PortfolioService",
-										"savePortfolioRepayment"
+										"SolitxService",
+										"payment",
+										"link"
 									],
 									"query": [
 										{
