@@ -2909,7 +2909,7 @@
 										}
 									]
 								},
-								"description": "- Using this service we can link a profile to the workflow.\n- For linking the profile to a specific workflow we have to mention both the **profileID** and the **workFlowID** in the payload. Check the below json payload for detail.\n- Click on the **Environment quick look** in the right top corner and navigate to **Globals** to find the generated **profile id** and **workflow id**.\n- **Note** : To fetch the **profileid**, run the service Fetch the profile details and to fetch the **workflowid**, run the service View the list of workflows."
+								"description": "- Using this service we can link a profile to the workflow.\n- For linking the profile to a specific workflow we have to mention both the **profileID** and the **workFlowID** in the payload. Check the below json payload for detail.\n- Click on the **Environment quick look** in the right top corner and navigate to **Globals** to find the generated **profileid** and **workflowid**.\n- **Note** : To fetch the **profileid**, run the service Fetch the profile details and to fetch the **workflowid**, run the service View the list of workflows."
 							},
 							"response": []
 						},
