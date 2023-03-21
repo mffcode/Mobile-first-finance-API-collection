@@ -299,7 +299,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can update an existing user form.\n\n**To update an existing user form, follow the steps below.**\n\n- Set the request as **PUT.**\n- Edit the user form with the essential information that needs to be altered and add it to the payload.\n- Because the **userFormTemplateID** is required in the service to update the user form, retrieve it from the data returned by the **Get all user form** request.\n- Include the **userFormTemplateID** in the service call and then click on **Send**."
+										"description": "Using this service, we can update an existing user form.\n\n**To update an existing user form, follow the steps below.**\n\n- Edit the user form with the essential information that needs to be altered and add it to the payload.\n- Because the **userFormTemplateID** is required in the service to update the user form, retrieve it from the data returned by the **Get all user form** request.\n- Include the **userFormTemplateID** in the service call and then click on **Send**."
 									},
 									"response": []
 								},
