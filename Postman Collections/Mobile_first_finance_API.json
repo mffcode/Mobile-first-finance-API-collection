@@ -2650,7 +2650,7 @@
 									}
 								},
 								"url": "{{customerURL}}:7190/mff/api/createClientUser",
-								"description": "- To complete the customer sign-up process, use the default customer sign-up form below.\n- All of the keys mentioned are required, and most of them are unique.\n- The **FormID** mentioned in the payload belongs to the default user form for customer signup, and it is mandatory to mention.\n- **Identifier** - **enter a unique identifier and the data should be in a varchar.**\n- **User Password - user password should be a 6 digit pin number.**\n- **Date of Birth - enter date of birth in yyyy-mm-dd format.**"
+								"description": "- To complete the customer sign-up process, use the default customer sign-up form below.\n- All of the keys mentioned are required, and most of them are unique.\n- The **FormID** mentioned in the payload belongs to the default user form for customer signup, and it is mandatory to mention.\n- **Identifier** - **enter a unique identifier and the data should be in varchar.**\n- **User Password - user password should be a 6 digit pin number.**\n- **Date of Birth - enter date of birth in yyyy-mm-dd format.**"
 							},
 							"response": []
 						}
