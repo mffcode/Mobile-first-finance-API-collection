@@ -104,7 +104,7 @@
 									"response": []
 								},
 								{
-									"name": "Get all the branches",
+									"name": "Get all the existing branches",
 									"id": "da1d7f38-6466-43ff-896c-d5d7ae955d14",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
