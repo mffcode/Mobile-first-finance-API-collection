@@ -76,7 +76,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"branchName\": \"enter unique branch name\",\r\n  \"branchCode\": \"enter unique branch code\",\r\n  \"parentId\": 1\r\n}",
+											"raw": "{\r\n  \"branchName\": \"enter unique branch name\",\r\n  \"branchCode\": \"enter unique branch code\",\r\n  \"parentId\": 1\r\n}\r\n\r\n",
 											"options": {
 												"raw": {
 													"language": "json"
