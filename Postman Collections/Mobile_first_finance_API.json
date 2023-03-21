@@ -3032,7 +3032,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"I Agree the terms and conditions\": \"Yes\"\r\n}",
+									"raw": "{\r\n  \"I Agree the terms and conditions\": \"Yes\"\r\n}\r\n\r\n// Mention the value \"Yes\" or \"No\"",
 									"options": {
 										"raw": {
 											"language": "json"
