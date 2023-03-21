@@ -3148,7 +3148,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"contractUUID\": \"6a14917e-b75b-49d5-ba16-a922b19b3ea3\",\r\n  \"type\": \"PI\",\r\n  \"value\": 5000,\r\n  \"paymentType\": \"stripe\",\r\n  \"triggerType\": \"deposit\"\r\n}\r\n\r\n// Find the generated contract uuid in the \"Globals\" under the \"Environment quick look\" and mention it in the \"contractUUID\" value.\r\n// Mention the \"type\" as \"PI\" and paymentType as \"stripe\".\r\n// Mention the amount in the \"value.\"\r\n// Mention the \"triggerType\" as either \"deposit\" or \"withdraw\".",
+									"raw": "{\r\n  \"contractUUID\": \"6a14917e-b75b-49d5-ba16-a922b19b3ea3\",\r\n  \"type\": \"PI\",\r\n  \"value\": 5000,\r\n  \"paymentType\": \"stripe\",\r\n  \"triggerType\": \"deposit\"\r\n}\r\n\r\n// Look for the generated contract uuid in the \"Globals\" under the \"Environment quick look\" and mention it in the \"contractUUID\" value.\r\n// Mention the \"type\" as \"PI\" and paymentType as \"stripe\".\r\n// Mention the amount in the \"value.\"\r\n// Mention the \"triggerType\" as either \"deposit\" or \"withdraw\".",
 									"options": {
 										"raw": {
 											"language": "json"
