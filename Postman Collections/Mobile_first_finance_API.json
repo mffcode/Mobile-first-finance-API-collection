@@ -3243,7 +3243,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"cardDetails\": [\r\n    {\r\n      \"contractID\": \"GMF/TS/164628-2\",\r\n      \"contractUUID\": \"c1f85a3b-c2c4-4ebe-a61f-e4603dbdec4d\",\r\n      \"linkedProfileId\": \"d3262ae5-bcfc-4e9b-9acb-00e5b8c97184\",\r\n      \"productName\": \"Current account INR\",\r\n      \"status\": \"apply\"\r\n    }\r\n  ]\r\n}\r\n\r\n// Look for the \"contractid,\" \"contractuuid,\" and \"productname\" in the \"Globals\" section of the \"Environment quick look\" and paste them in their respective values.\r\n// For once run the service \"Fetch the profile details\" under \"Customer onboarding\" to fetch the \"linkedprofileid\" from the \"Globals\" section of the \"Environment quick look\".\r\n// Mention the \"status\" as \"apply\".",
+									"raw": "{\r\n  \"cardDetails\": [\r\n    {\r\n      \"contractID\": \"GMF/TS/164628-2\",\r\n      \"contractUUID\": \"c1f85a3b-c2c4-4ebe-a61f-e4603dbdec4d\",\r\n      \"linkedProfileId\": \"d3262ae5-bcfc-4e9b-9acb-00e5b8c97184\",\r\n      \"productName\": \"Current account INR\",\r\n      \"status\": \"apply\"\r\n    }\r\n  ]\r\n}\r\n\r\n// Look for the \"contractid,\" \"contractuuid,\" and \"productname\" in the \"Globals\" section of the \"Environment quick look\" and paste them in their respective values.\r\n// For once run the service \"Fetch the profile details\" under \"Customer onboarding\" to fetch the \"linkedprofileid\" from the \"Globals\" section of the \"Environment quick look.\"\r\n// Mention the \"status\" as \"apply.\"",
 									"options": {
 										"raw": {
 											"language": "json"
