@@ -228,7 +228,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can view all of the application's existing and newly created user forms.\n\n**To view the user forms, follow the steps below.**\n\n- In the response, you will find the **userFormTemplateID**, which is required to update an existing use form.\n- Run this service just once since it has a test script defined to fetch a specific **userFormTemplateID** and turn the **userFormTemplateID** into a global variable so that other necessary services can utilize it."
+										"description": "Using this service, we can view all of the application's existing and newly created user forms.\n\n- In the response, you will find the **userFormTemplateID**, which is required to update an existing use form.\n    \n\n- Run this service just once since it has a test script defined to fetch a specific **userFormTemplateID** and turn the **userFormTemplateID** into a global variable so that other necessary services can utilize it."
 									},
 									"response": []
 								},
