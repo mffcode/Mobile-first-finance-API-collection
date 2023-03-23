@@ -3224,7 +3224,7 @@
 							"response": []
 						},
 						{
-							"name": "To view the transaction history",
+							"name": "To view the pending events of a specific contract",
 							"id": "05ec6604-775b-4127-b667-39915fd65a4e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
