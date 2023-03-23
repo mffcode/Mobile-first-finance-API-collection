@@ -1036,7 +1036,7 @@
 												}
 											]
 										},
-										"description": "- Using this service we can get a specific workflow based on it's workflow id.\n- Because the **workflowID** is automatically applied in the service call, running this service will result in a specific workflow."
+										"description": "- Using this service we can get a specific workflow based on it's workflow id.\n- Because the **workflowID** is automatically applied in the service, running this service will result in a specific workflow."
 									},
 									"response": []
 								},
