@@ -1006,7 +1006,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can get all the workflows."
+										"description": "- Using this service, we can get all the workflows.\n- Run this service just once since it has a test script defined to fetch a specific **workflowID** and turn the **workflowID** into a global variable so that other necessary services can utilize it."
 									},
 									"response": []
 								},
