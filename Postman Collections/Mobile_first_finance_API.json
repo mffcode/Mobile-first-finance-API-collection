@@ -3147,10 +3147,14 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{backofficeURL}}/PortfolioService/transactionHistory?contractUUID={{contractuuid}}&access_token={{custoken}}&repaymentType=Yes",
+									"raw": "https://dev.mobilefirstfinance.com:5055/PortfolioService/transactionHistory?contractUUID={{contractuuid}}&access_token={{custoken}}&repaymentType=Yes",
+									"protocol": "https",
 									"host": [
-										"{{backofficeURL}}"
+										"dev",
+										"mobilefirstfinance",
+										"com"
 									],
+									"port": "5055",
 									"path": [
 										"PortfolioService",
 										"transactionHistory"
