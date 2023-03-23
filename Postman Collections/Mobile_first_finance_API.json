@@ -264,7 +264,7 @@
 									"response": []
 								},
 								{
-									"name": "Update user  form",
+									"name": "Update user form",
 									"id": "3d7229e8-067a-4882-bb83-c1e306a25421",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
