@@ -661,7 +661,7 @@
 												}
 											]
 										},
-										"description": "- Using this service we can view a user role by it's role id.\n- Because the **roleID** is required in the service to fetch any user role, retrieve it from the data returned by the **Get user roles** request.\n- Include the **roleID** in the service call."
+										"description": "- Using this service we can view a user role by it's role id."
 									},
 									"response": []
 								}
