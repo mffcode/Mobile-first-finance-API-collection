@@ -453,7 +453,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can update the user details of a specific user.\n- Mention the user body in the payload and make the necessary changes.  \n    **Note** : Do the update user details for the one we made."
+										"description": "- Using this service, we can update the user details of a specific user.\n- Mention the user body in the payload and make the necessary changes.  \n    **Note** : Do the update user details for the one we created."
 									},
 									"response": []
 								}
