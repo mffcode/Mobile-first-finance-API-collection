@@ -3397,7 +3397,7 @@
 						}
 					],
 					"id": "06bcd982-bea3-4f8d-a467-d7e4daff528a",
-					"description": "- To conduct a third-party integration services check, use the customer credentials.\n- Check out the **Customer** collection for authorization in detail."
+					"description": "- To conduct a third-party integration services check, use any customer credentials.\n- Check out the **Customer** collection for authorization in detail."
 				},
 				{
 					"name": "Payment links",
