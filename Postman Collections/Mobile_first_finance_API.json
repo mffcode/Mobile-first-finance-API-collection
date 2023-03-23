@@ -3136,6 +3136,42 @@
 								"description": "- Using this service we can fetch the list of contracts for a profile.\n- The **linkedprofileid** value, which is mentioned in the service, is mandatory.\n- To fetch the **linkedprofileid**, use the **Fetch the profile details** which is in the **Customer Onboarding** under the **Customer** collection.\n- Note : Only approved profiles will have a **linkedprofileid** generated.\n- Re run the service **Fetch the profile details** again to obtain the **linked profile id** and get it automatically applied to the service."
 							},
 							"response": []
+						},
+						{
+							"name": "To view the transaction history of a specific contract",
+							"id": "902dfb8b-d4e2-4e3d-b576-6f22b1b7f8aa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{backofficeURL}}/PortfolioService/transactionHistory?contractUUID={{contractuuid}}&access_token={{custoken}}&repaymentType=Yes",
+									"host": [
+										"{{backofficeURL}}"
+									],
+									"path": [
+										"PortfolioService",
+										"transactionHistory"
+									],
+									"query": [
+										{
+											"key": "contractUUID",
+											"value": "{{contractuuid}}"
+										},
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										},
+										{
+											"key": "repaymentType",
+											"value": "Yes"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "f78f8d90-2600-4bce-b423-241ffe18950c",
