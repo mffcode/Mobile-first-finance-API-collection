@@ -1104,7 +1104,8 @@
 													"value": "{{useraccessToken}}"
 												}
 											]
-										}
+										},
+										"description": "- Using this service we can edit a specific workflow based on it's workflow id.\n- Because the **workflowID** will be automatically applied in the service, running this service will edit a workflow.\n-  **Note** : Do the update workflow details for the one we created."
 									},
 									"response": []
 								},
