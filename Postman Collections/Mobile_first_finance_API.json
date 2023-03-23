@@ -1036,7 +1036,7 @@
 												}
 											]
 										},
-										"description": "- Using this service we can get a specific workflow based on it's workflow id.\n- The **workflowID** is required to update an existing workflow, retrieve it from the data returned by the **Get all workflows**."
+										"description": "- Using this service we can get a specific workflow based on it's workflow id."
 									},
 									"response": []
 								},
