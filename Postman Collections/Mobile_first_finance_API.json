@@ -384,7 +384,7 @@
 												}
 											]
 										},
-										"description": "Using this service we can get all the existing users from the application.\n\n**To view the existing users, follow the steps below.**\n\n- Set the request as **GET.**\n- Set the service and click on **Send**.\n- In the response, you will find the **userID**, which is required when updating an existing user details.\n- To utilise the **userID** in further services, make it a global variable."
+										"description": "- Using this service we can get all the existing users.\n- In the response, you will find the **userID**, which is required when updating an existing user details.\n- Run this service just once since it has a test script defined to fetch a specific **userID** and turn the **userID** into a global variable so that other necessary services can utilize it."
 									},
 									"response": []
 								},
