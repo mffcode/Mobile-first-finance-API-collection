@@ -875,7 +875,7 @@
 												}
 											]
 										},
-										"description": "- This service is used to set the **auto verify flag** for a specific workflow template to **true** or **false**.\n- By setting the flag to true or false, you can enable or disable auto-verification for a specific workflow template.\n- **Note** : Because the workflow template id will be applied automatically in the service, running this will update the auto-verify flag for the workflow template we created."
+										"description": "- This service is used to set the **auto verify flag** for a specific workflow template to **true** or **false**.\n- By setting the flag to true or false, you can enable or disable auto-verification for a specific workflow template.\n- **Note** : Because the workflow template id will be applied automatically in the service, running this will update the auto-verify flag for the workflow template we created.\n- Update the flag as either **true** or **false** at the end of the service call."
 									},
 									"response": []
 								},
