@@ -890,7 +890,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"templateFlag\": true\r\n}",
+											"raw": "{\r\n  \"templateFlag\": true\r\n}\r\n\r\n// Mention the \"templateFlag\" either as \"true\" or \"false.\"",
 											"options": {
 												"raw": {
 													"language": "json"
