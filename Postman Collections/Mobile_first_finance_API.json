@@ -3237,7 +3237,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{customerURL}}:5055/PortfolioService/geteventsBycontractUUID?access_token={{custoken}}&contractUUID={{contractuuid}}&eventType=PI",
+									"raw": "{{customerURL}}:5055/PortfolioService/geteventsBycontractUUID?access_token={{custoken}}&contractUUID={{contractuuid}}",
 									"host": [
 										"{{customerURL}}"
 									],
@@ -3257,7 +3257,8 @@
 										},
 										{
 											"key": "eventType",
-											"value": "PI"
+											"value": "PI",
+											"disabled": true
 										}
 									]
 								},
