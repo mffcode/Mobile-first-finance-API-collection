@@ -619,7 +619,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can view all the existing user roles available."
+										"description": "- Using this service, we can view all the existing user roles available.\n- Run this service just once since it has a test script defined to fetch a specific **roleID** and turn the **roleID** into a global variable so that other necessary services can utilize it."
 									},
 									"response": []
 								},
