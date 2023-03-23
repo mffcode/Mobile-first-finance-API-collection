@@ -880,7 +880,7 @@
 									"response": []
 								},
 								{
-									"name": "Update workflow template flag Copy",
+									"name": "Update workflow template flag",
 									"id": "e5a719e3-49e0-4ed0-8708-0a9c06b36ffc",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
