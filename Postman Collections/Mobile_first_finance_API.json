@@ -299,7 +299,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can update an existing user form.\n- Mention the user form that needs to be updated and make the necessary changes.\n- **Note** : Do the update user form details for the one we made."
+										"description": "- Using this service, we can update an existing user form.\n- Mention the user form in the payload and make the necessary changes.\n- **Note** : Do the update user form details for the one we made."
 									},
 									"response": []
 								},
