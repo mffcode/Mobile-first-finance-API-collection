@@ -384,7 +384,7 @@
 												}
 											]
 										},
-										"description": "- Using this service we can get all the existing users.\n- In the response, you will find the **userID**, which is required when updating an existing user details.\n- Run this service just once since it has a test script defined to fetch a specific **userID** and turn the **userID** into a global variable so that other necessary services can utilize it."
+										"description": "- Using this service we can get all the existing users.\n- In the response, you will find the **userID**, which is required when updating an existing user details.\n- Run this service just once, since it has a test script defined to fetch a specific **userID** and turn the **userID** into a global variable so that other necessary services can utilize it."
 									},
 									"response": []
 								},
