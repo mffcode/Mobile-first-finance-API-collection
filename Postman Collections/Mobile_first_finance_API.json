@@ -1273,7 +1273,7 @@
 										}
 									]
 								},
-								"description": "- Using this service we can get a specific profile form based on **profileFormID**.\n- Because the **profileFormID** will be automatically applied in the service, running this service will result in a specific profile form."
+								"description": "- Using this service we can get a specific profile form based on **profileFormID**.\n- Since the **profileFormID** will be automatically applied in the service, running this service will result in a specific profile form."
 							},
 							"response": []
 						},
