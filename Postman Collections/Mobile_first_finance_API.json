@@ -661,7 +661,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can view a user role by it's role id."
+										"description": "- Using this service, we can view a user role by it's role id.\n- Since the **roleID** will be automatically applied in the service, running this service will result in a specific user role."
 									},
 									"response": []
 								}
