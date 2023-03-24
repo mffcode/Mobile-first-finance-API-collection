@@ -1448,7 +1448,7 @@
 										}
 									]
 								},
-								"description": "- Using this service, we can get profile details by it's profile id."
+								"description": "- Using this service, we can get profile details by it's profile id.\n- Since the **profileID** will be automatically applied in the service, running this service will result in a specific profile."
 							},
 							"response": []
 						},
