@@ -1242,7 +1242,7 @@
 										}
 									]
 								},
-								"description": "- Using this service, we can get all the profile forms that exists in the application.\n- Run this service just once since it has a test script defined to fetch a specific **profileFormID** and turn the **profileFormID** into a global variable so that other necessary services can utilize it."
+								"description": "- Using this service, we can get all the profile forms that exists in the application.\n- Run this service just once, since it has a test script defined to fetch a specific **profileFormID** and turn the **profileFormID** into a global variable so that other necessary services can utilize it."
 							},
 							"response": []
 						},
