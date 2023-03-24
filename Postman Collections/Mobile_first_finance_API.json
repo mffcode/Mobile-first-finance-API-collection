@@ -2010,7 +2010,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can update existing workflow template details.\n- Since the **workflowTemplateDetailsID** will be automatically applied in the service, running this service will result in updating a specific workflow template details.\n- Mention the payload and make the necessary changes.\n- **Note** : The payload listed below belongs to the **workflow template** to which the profile got onboarded."
+										"description": "- Using this service, we can update existing workflow template details.\n- Since the **workflowTemplateDetailsID** will be automatically applied in the service, running this service will result in updating a specific workflow template details.\n- **Note** : The payload listed below belongs to the **workflow template** to which the profile got onboarded."
 									},
 									"response": []
 								}
