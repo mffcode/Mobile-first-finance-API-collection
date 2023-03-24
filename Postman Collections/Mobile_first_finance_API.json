@@ -1313,7 +1313,7 @@
 										}
 									]
 								},
-								"description": "- Using this service, we can update existing user form by it's user id."
+								"description": "- Using this service, we can update existing user form by it's user id.\n- Since the **profileFormID** will be automatically applied in the service, running this service will result in updating a specific profile form."
 							},
 							"response": []
 						},
