@@ -489,7 +489,7 @@
 												}
 											]
 										},
-										"description": "Using this service we can fetch the list of user actions available."
+										"description": "- Using this service, we can fetch the list of user actions available."
 									},
 									"response": []
 								}
