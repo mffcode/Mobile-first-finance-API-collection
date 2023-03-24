@@ -1313,7 +1313,7 @@
 										}
 									]
 								},
-								"description": "- Using this service, we can update existing user form by it's user id.\n- Since the **profileFormID** will be automatically applied in the service, running this service will result in updating a specific profile form.\n- Note : The payload listed below belongs to the **profileFormID**, which is fetched automatically by the service. To view that specific profile from details, use the service **Get a profile form by profile form id**."
+								"description": "- Using this service, we can update existing user form by it's user id.\n- Since the **profileFormID** will be automatically applied in the service, running this service will result in updating a specific profile form.\n- **Note** : The payload listed below belongs to the **profileFormID**, which is fetched automatically by the service. To view that specific profile from details, use the service **Get a profile form by profile form id**."
 							},
 							"response": []
 						},
