@@ -2055,7 +2055,7 @@
 												}
 											]
 										},
-										"description": "Using this API we can verify a workflow template."
+										"description": "- Using this service we can verify a specific workflow template."
 									},
 									"response": []
 								}
