@@ -196,7 +196,7 @@
 													"var jsonData = jsonResponse.data;",
 													"console.log(\"jsonData...\"+jsonData.users)",
 													"var users=jsonData.users",
-													"console.log(\"users...\" + users[0].userFormTemplateID)",
+													"console.log(\"userFormTemplateID...\" + users[0].userFormTemplateID)",
 													"pm.globals.set(\"userFormTemplateID\", users[0].userFormTemplateID);",
 													""
 												],
