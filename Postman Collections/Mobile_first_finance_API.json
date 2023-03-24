@@ -489,7 +489,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can fetch the list of user actions available."
+										"description": "- Using this service, we can fetch the list of user actions available.\n- Every action will have an action id, which we must specify when defining a user role."
 									},
 									"response": []
 								}
