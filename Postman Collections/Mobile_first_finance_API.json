@@ -299,7 +299,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can update an existing user form.\n- Mention the user form in the payload and make the necessary changes.\n- Since the **userFormTemplateID** will be automatically applied in the service, running this service will result in updating a specific user form."
+										"description": "- Using this service, we can update an existing user form.\n- Mention the user form in the payload and make the necessary changes.\n- Since the **userFormTemplateID** will be automatically applied in the service, running this service will result in updating a specific user form.\n- Note : Mention the payload according to the user form. Once view the user form details by using this service **Get user form by user form template id**."
 									},
 									"response": []
 								},
