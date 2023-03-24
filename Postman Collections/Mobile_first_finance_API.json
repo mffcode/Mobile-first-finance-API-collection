@@ -1351,7 +1351,7 @@
 										}
 									]
 								},
-								"description": "- Using this service, we can create a new profile.\n- Check out the profile example json in the body below."
+								"description": "- Using this service, we can create a new profile.\n- Check out the profile example json in the body below.\n- From the **Get all the profile forms** response, select any **profile** **form** and set the payload according to the form. For every **profile form** there will be a **profileFormID** and that will be act as **FormID**.  \n    Note: **FormID** is mandatory to create profile."
 							},
 							"response": []
 						},
