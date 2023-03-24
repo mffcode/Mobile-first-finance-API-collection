@@ -1418,7 +1418,7 @@
 										}
 									]
 								},
-								"description": "Using this API we can view all the existing profiles in the application."
+								"description": "- Using this service, we can view all the existing profiles."
 							},
 							"response": []
 						},
