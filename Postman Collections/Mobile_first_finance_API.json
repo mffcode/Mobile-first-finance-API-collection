@@ -1418,7 +1418,7 @@
 										}
 									]
 								},
-								"description": "- Using this service, we can view all the existing profiles."
+								"description": "- Using this service, we can view all the existing profiles.\n- In the response, you will find the **profileID**, which is required when updating an existing profile details.\n- Run this service just once, since it has a test script defined to fetch a specific **profileID** and turn the **profileID** into a global variable so that other necessary services can utilize it."
 							},
 							"response": []
 						},
