@@ -1105,7 +1105,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can edit a specific workflow based on it's workflow id.\n- Since the **workflowID** will be automatically applied in the service, running this service will edit a specific workflow.\n- Note : Mention the payload as per the below example. Once view the workflow by using this service **Get a workflow by workflow id**."
+										"description": "- Using this service, we can edit a specific workflow based on it's workflow id.\n- Since the **workflowID** will be automatically applied in the service, running this service will edit a specific workflow.\n- **Note** : The payload listed below belongs to the **workflowID**, which is fetched automatically by the service. To view that specific workflow details, use the service **Get a workflow by workflow id**."
 									},
 									"response": []
 								},
