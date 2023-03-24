@@ -1487,7 +1487,7 @@
 										}
 									]
 								},
-								"description": "- Using this service, we can update existing profile details."
+								"description": "- Using this service, we can update existing profile details.\n- Mention the profile body in the payload and make the necessary changes.  \n    **Note** : Do the update profile details for the one we created."
 							},
 							"response": []
 						},
