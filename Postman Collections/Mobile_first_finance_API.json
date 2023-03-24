@@ -1351,7 +1351,7 @@
 										}
 									]
 								},
-								"description": "Using this API we can create a new profile."
+								"description": "- Using this service, we can create a new profile."
 							},
 							"response": []
 						},
