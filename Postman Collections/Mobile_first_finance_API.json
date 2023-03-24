@@ -1487,7 +1487,7 @@
 										}
 									]
 								},
-								"description": "Using this API we can update existing profile details."
+								"description": "- Using this service, we can update existing profile details."
 							},
 							"response": []
 						},
