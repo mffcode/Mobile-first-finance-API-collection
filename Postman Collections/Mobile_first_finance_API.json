@@ -259,7 +259,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can fetch a user by using the user form template id."
+										"description": "- Using this service, we can fetch a user by using the user form template id.\n- Because the **userFormTemplateID** will be automatically applied in the service, running this service will result in a specific user form."
 									},
 									"response": []
 								},
@@ -525,7 +525,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can fetch the list of user menus available."
+										"description": "- Using this service, we can fetch the list of user menus available.\n- Every menu will have an menu id, which we must specify when defining a user role."
 									},
 									"response": []
 								}
@@ -1242,7 +1242,7 @@
 										}
 									]
 								},
-								"description": "Using this service we can get all the profile forms that exists in the application."
+								"description": "- Using this service, we can get all the profile forms that exists in the application.\n- Run this service just once since it has a test script defined to fetch a specific **profileFormID** and turn the **profileFormID** into a global variable so that other necessary services can utilize it."
 							},
 							"response": []
 						},
@@ -1272,7 +1272,8 @@
 											"value": "{{useraccessToken}}"
 										}
 									]
-								}
+								},
+								"description": "- Using this service we can get a specific profile form based on **profileFormID**.\n- Because the **profileFormID** will be automatically applied in the service, running this service will result in a specific profile form."
 							},
 							"response": []
 						},
