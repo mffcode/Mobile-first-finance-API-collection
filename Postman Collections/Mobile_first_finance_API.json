@@ -936,7 +936,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"workFlowName\": \"Machinery loan\",\n  \"templateID\": [\n    9,\n    16,\n    907193,\n    93\n  ]\n}",
+											"raw": "{\n  \"workFlowName\": \"Machinery loan\",\n  \"templateID\": [\n    9,\n    16,\n    907193,\n    93\n  ]\n}\n\n// Mention a single or multiple workflow template id's inside the \"templateID\"",
 											"options": {
 												"raw": {
 													"language": "json"
