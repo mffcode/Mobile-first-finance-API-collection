@@ -259,7 +259,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can fetch a user by using the user form template id.\n- Because the **userFormTemplateID** will be automatically applied in the service, running this service will result in a specific user form."
+										"description": "- Using this service, we can fetch a user form by using the user form template id.\n- Since the **userFormTemplateID** will be automatically applied in the service, running this service will result in a specific user form."
 									},
 									"response": []
 								},
