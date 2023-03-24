@@ -1066,7 +1066,7 @@
 												}
 											]
 										},
-										"description": "- using this service, we can get the total count of workflows."
+										"description": "- Using this service, we can get the total count of workflows."
 									},
 									"response": []
 								},
