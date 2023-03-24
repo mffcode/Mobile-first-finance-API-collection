@@ -1448,7 +1448,7 @@
 										}
 									]
 								},
-								"description": "Using this API we can get profile details by it's profile id."
+								"description": "- Using this service, we can get profile details by it's profile id."
 							},
 							"response": []
 						},
