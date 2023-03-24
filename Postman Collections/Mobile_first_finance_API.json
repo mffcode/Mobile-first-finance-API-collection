@@ -1144,7 +1144,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can change the order of the workflow templates within a specific workflow.\n- Since the **workflowID** will be automatically applied in the service, running this service will change the order of the workflow templates within a specific workflow.\n- **Note** : Change the order of the workflow templates for the same workflow we create."
+										"description": "- Using this service, we can change the order of the workflow templates within a specific workflow.\n- Since the **workflowID** will be automatically applied in the service, running this service will change the order of the workflow templates within a specific workflow.\n- **Note** : Change the order of the workflow templates for the same workflow we update. To view that specific workflow details, use the service **Get a workflow by workflow id.**"
 									},
 									"response": []
 								}
