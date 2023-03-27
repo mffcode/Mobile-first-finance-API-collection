@@ -978,7 +978,7 @@
 													"var workflow=jsonData.workflow",
 													"console.log(\"workFlowID...\"+workflow[0].workFlowID)",
 													"console.log(\"workFlowName...\"+workflow[0].workFlowName)",
-													"pm.globals.set(\"workFlowID\", workflow[0].workFlowID);"
+													"pm.environment.set(\"workFlowID\", workflow[0].workFlowID);"
 												],
 												"type": "text/javascript"
 											}
