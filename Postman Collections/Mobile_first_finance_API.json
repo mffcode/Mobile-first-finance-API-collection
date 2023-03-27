@@ -1563,7 +1563,7 @@
 										}
 									]
 								},
-								"description": "Using this API we can get total count of the profiles that exist in the application."
+								"description": "- Using this service we can get total count of the profiles that exist in the application."
 							},
 							"response": []
 						}
