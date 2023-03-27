@@ -1697,48 +1697,6 @@
 							"name": "Link profile to a worflow",
 							"item": [
 								{
-									"name": "Get unlinked profile with identifier",
-									"id": "f5579d98-6407-49af-9a76-207c2f1a1c04",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/unlinkedProfiles/{{workFlowID}}?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&Identifier={{Identifier}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"path": [
-												"WorkflowService",
-												"unlinkedProfiles",
-												"{{workFlowID}}"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												},
-												{
-													"key": "pageNumber",
-													"value": "0"
-												},
-												{
-													"key": "numberOfRecords",
-													"value": "10"
-												},
-												{
-													"key": "Identifier",
-													"value": "{{Identifier}}"
-												}
-											]
-										},
-										"description": "Using this API we can get a specific unlinked profile based on profile identifier."
-									},
-									"response": []
-								},
-								{
 									"name": "Link profile to workflow",
 									"id": "571c3871-5acd-4ebd-bd20-51ab0f641b44",
 									"protocolProfileBehavior": {
