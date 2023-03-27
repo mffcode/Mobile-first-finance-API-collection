@@ -1615,7 +1615,7 @@
 												}
 											]
 										},
-										"description": "Using this API we can get a workflow based on it's workflow id."
+										"description": "- Using this service we can get a workflow based on it's workflow id."
 									},
 									"response": []
 								},
