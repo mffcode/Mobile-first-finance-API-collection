@@ -1904,7 +1904,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"workflowTemplateDetails\": [\r\n    {\r\n      \"templateDetailsID\": 1599781,\r\n      \"templateID\": 16,\r\n      \"workflowProfileID\": 1599776,\r\n      \"workflowTemplateDetails\": {\r\n        \"Bank Account Number\": 85632652,\r\n        \"Bank Name\": \"HSBC\",\r\n        \"Bank branch name\": \"Hyderabad\",\r\n        \"IFSC Code\": \"HSBC000623\"\r\n      }\r\n    }\r\n  ]\r\n}",
+											"raw": "{\r\n  \"workflowTemplateDetails\": [\r\n    {\r\n      \"templateDetailsID\": 1616621,\r\n      \"templateID\": 16,\r\n      \"workflowProfileID\": 1616619,\r\n      \"workflowTemplateDetails\": {\r\n        \"Bank Account Number\": 85632652,\r\n        \"Bank Name\": \"HSBC\",\r\n        \"Bank branch name\": \"Hyderabad\",\r\n        \"IFSC Code\": \"HSBC000623\"\r\n      }\r\n    }\r\n  ]\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
