@@ -1806,51 +1806,6 @@
 							"name": "Update details in workflow",
 							"item": [
 								{
-									"name": "Filter with identifier in workflow template",
-									"id": "92ecbde0-8e99-458a-928e-d4f747a00ecf",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/onboardFilter?workflowId={{workFlowID}}&numberOfRecords=50&pageNumber=0&identifier={{Identifier}}&access_token={{useraccessToken}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"path": [
-												"WorkflowService",
-												"onboardFilter"
-											],
-											"query": [
-												{
-													"key": "workflowId",
-													"value": "{{workFlowID}}"
-												},
-												{
-													"key": "numberOfRecords",
-													"value": "50"
-												},
-												{
-													"key": "pageNumber",
-													"value": "0"
-												},
-												{
-													"key": "identifier",
-													"value": "{{Identifier}}"
-												},
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												}
-											]
-										},
-										"description": "Using this API we can filter a specific linked profile inside a workflow based on the profile identifier."
-									},
-									"response": []
-								},
-								{
 									"name": "Update details in the workflow template",
 									"id": "e547e475-8072-4118-992f-43176f55e194",
 									"protocolProfileBehavior": {
