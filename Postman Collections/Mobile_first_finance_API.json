@@ -1533,7 +1533,7 @@
 										}
 									]
 								},
-								"description": "- Using this service we can filter/search a profile by its profile id"
+								"description": "- Using this service we can filter/search a profile with mobile number.\n- Since the **MobileNumber** will be automatically applied in the service, running this service will result in a specific profile details."
 							},
 							"response": []
 						},
