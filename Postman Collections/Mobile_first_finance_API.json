@@ -1794,7 +1794,8 @@
 													"value": "{{useraccessToken}}"
 												}
 											]
-										}
+										},
+										"description": "- Using this service, we can fetch the **workflowProfileID** which is required to verify a workflow.\n- Run this service just once, since it has a test script defined to fetch a specific **workflowProfileID** and turn the **workflowProfileID** into a environment variable so that we can utilize it while verifying a workflow."
 									},
 									"response": []
 								}
