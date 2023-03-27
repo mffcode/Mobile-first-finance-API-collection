@@ -1371,6 +1371,7 @@
 											"var profiles=jsonData.profiles",
 											"console.log(\"profiles...\"+profiles[0].profileID)",
 											"pm.environment.set(\"profileID\", profiles[0].profileID);",
+											"",
 											"var profileDetails=profiles[0].profileDetails",
 											"console.log(\"profileDetails...\"+profileDetails[\"Mobile Number\"])",
 											"pm.environment.set(\"MobileNumber\", profileDetails[\"Mobile Number\"]);",
