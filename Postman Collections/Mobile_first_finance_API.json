@@ -1740,7 +1740,7 @@
 												}
 											]
 										},
-										"description": "Using this API we can link a profile to the workflow."
+										"description": "- Using this service we can link a profile to the workflow.\n- For linking the profile to a specific workflow we have to mention both the **profileID** and the **workFlowID** in the payload. Check the below example json payload for detail.\n- Click on the Environment quick look in the right top corner and navigate to environment (**backofficeURL**) to find the generated **profileID** and **workFlowID**.\n- **Note** : To fetch the **profileID**, run the service **Get all the profiles** and to fetch the **workFlowID**, run the service **Get all workflows** in the **Workflows** under the **Settings**."
 									},
 									"response": []
 								},
