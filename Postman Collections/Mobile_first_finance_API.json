@@ -1533,7 +1533,7 @@
 										}
 									]
 								},
-								"description": "Using this API we can filter/search a profile by its profile id"
+								"description": "- Using this service we can filter/search a profile by its profile id"
 							},
 							"response": []
 						},
