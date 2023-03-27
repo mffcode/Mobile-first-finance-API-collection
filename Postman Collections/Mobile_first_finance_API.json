@@ -1695,7 +1695,7 @@
 												}
 											]
 										},
-										"description": "Using this API we can perform filter operation in the onboard section."
+										"description": "- For every workflow template there will be a **workflowTemplateDetailsId,** By using this service, we can fetch the **workflowTemplateDetailsId**, which is required to verify a workflow.\n    \n\n- Run this service just once, since it has a test script defined to fetch a specific **workflowTemplateDetailsId** and turn the **workflowTemplateDetailsId** into a environment variable so that other necessary services can utilize it."
 									},
 									"response": []
 								}
