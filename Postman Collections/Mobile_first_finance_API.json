@@ -589,7 +589,7 @@
 													"console.log(\"jsonData...\"+jsonData.users)",
 													"var users=jsonData.users",
 													"console.log(\"users...\" + users[0].roleID)",
-													"pm.globals.set(\"roleID\", users[0].roleID);",
+													"pm.environment.set(\"roleID\", users[0].roleID);",
 													""
 												],
 												"type": "text/javascript"
