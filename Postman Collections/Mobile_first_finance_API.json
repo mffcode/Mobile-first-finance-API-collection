@@ -1856,7 +1856,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"workflowTemplateDetails\": [\r\n    {\r\n      \"templateDetailsID\": 1616621,\r\n      \"templateID\": 16,\r\n      \"workflowProfileID\": 1616619,\r\n      \"workflowTemplateDetails\": {\r\n        \"Bank Account Number\": 85632652,\r\n        \"Bank Name\": \"HSBC\",\r\n        \"Bank branch name\": \"Hyderabad\",\r\n        \"IFSC Code\": \"HSBC000623\"\r\n      }\r\n    }\r\n  ]\r\n}",
+											"raw": "{\r\n  \"workflowTemplateDetails\": [\r\n    {\r\n      \"templateDetailsID\": 1616621,\r\n      \"templateID\": 16,\r\n      \"workflowProfileID\": 1616619,\r\n      \"workflowTemplateDetails\": {\r\n        \"Bank Account Number\": 85632652,\r\n        \"Bank Name\": \"HSBC\",\r\n        \"Bank branch name\": \"Hyderabad\",\r\n        \"IFSC Code\": \"HSBC000623\"\r\n      }\r\n    }\r\n  ]\r\n}\r\n// templateDetailsID : Once you run the service \"Get onboard filter by workflowid\" under \"View a workflow\" in the \"Onboard\" section, you will get the \"templateDetailsID.\" To obtain it, check the environment variables.\r\n// templateID : Once you run the service \"Get all workflow templates\" under \"Workflow template\" in the \"Settings\" section, you will get the \"templateID.\" To obtain it, check the environment variables.\r\n// workflowProfileID : Once you run the service \"Get workflow profile id\" under \"Link profile to a workflow\" in the \"Onboard\" section, you will get the \"workflowProfileID.\" To obtain it, check the environment variables.",
 											"options": {
 												"raw": {
 													"language": "json"
