@@ -2046,7 +2046,7 @@
 							"name": "Bulk Receive",
 							"item": [
 								{
-									"name": "Get IP/PR events by hierarchy",
+									"name": "Get IP/PR events",
 									"id": "5ddde287-6e0a-431d-8c1d-67bb123f0092",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
