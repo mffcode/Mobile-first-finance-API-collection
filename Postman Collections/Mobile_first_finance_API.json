@@ -1835,7 +1835,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can update existing workflow template details.\n- Since the **workflowTemplateDetailsID** will be automatically applied in the service, running this service will result in updating a specific workflow template details.\n- **Note** : The payload listed below belongs to the **workflow template** to which the profile got onboarded."
+										"description": "- Using this service, we can update existing workflow template details.\n- Since the **workflowTemplateDetailsID** will be automatically applied in the service, running this service will result in updating a specific workflow template details.\n- **Note** : (1)The payload listed below belongs to a specific **workflow template** of a specific **workflow** to which the profile got onboarded.\n- (2) Usually there might be multiple workflow templates for every individual workflow. Based on workflow template, we need to update the template details."
 									},
 									"response": []
 								}
@@ -1889,7 +1889,7 @@
 						}
 					],
 					"id": "0e29be9b-5869-46cd-a7ce-8437d87b6073",
-					"description": "Onboard module is used for onboarding a new client. This folder consist of different API which are used for the functionality of the module."
+					"description": "Onboard module is used for onboarding a new client. This folder consist of different services which are used for the functionality of the module."
 				},
 				{
 					"name": "Approve",
