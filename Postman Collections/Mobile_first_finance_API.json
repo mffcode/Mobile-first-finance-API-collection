@@ -1895,50 +1895,6 @@
 					"name": "Approve",
 					"item": [
 						{
-							"name": "Revert back a profile from approval",
-							"item": [
-								{
-									"name": "Revert back a profile from approval to onboard",
-									"id": "5a367884-c254-47c0-b5d5-d29594908b34",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "PUT",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n  \"workflowProfileID\": 1599796,\r\n  \"profileID\": \"468f3a71-ddf8-4fb2-985c-68cb9843bafb\",\r\n  \"workflowID\": \"1496367\"\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/workflowReversal?access_token={{useraccessToken}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"path": [
-												"WorkflowService",
-												"workflowReversal"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												}
-											]
-										},
-										"description": "Using this API we can revert a profile from \"Approve client\" module to \"Onboard\"."
-									},
-									"response": []
-								}
-							],
-							"id": "9f7c3287-9537-4c35-8c8d-5522b9c6bd56"
-						},
-						{
 							"name": "Approve a profile",
 							"item": [
 								{
