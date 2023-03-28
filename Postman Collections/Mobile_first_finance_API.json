@@ -1895,41 +1895,6 @@
 					"name": "Approve",
 					"item": [
 						{
-							"name": "View non approved profile details",
-							"item": [
-								{
-									"name": "Get workflow template details by workflow profile id",
-									"id": "4ad76b5d-35e5-43eb-829f-49278211b5df",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/templateDetailsByworkflowProfileId/{{workflowProfileID}}?access_token={{useraccessToken}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"path": [
-												"WorkflowService",
-												"templateDetailsByworkflowProfileId",
-												"{{workflowProfileID}}"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												}
-											]
-										}
-									},
-									"response": []
-								}
-							],
-							"id": "f1b7f1db-a442-44f2-91c9-9c18598f120a"
-						},
-						{
 							"name": "Revert back a profile from approval",
 							"item": [
 								{
