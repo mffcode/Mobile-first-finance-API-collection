@@ -2089,7 +2089,8 @@
 													"value": "No"
 												}
 											]
-										}
+										},
+										"description": "- Using this service, we can get the pending **IP/PR** events which are yet to be receive.\n- In the service params there are filters like **pageNumber**, **numberOfRecords**, **Hierarchy** and **repaymentType**. Using these filters, we can retrieve the required data, such as a group of IP/PR events in 10 pages and 50 records etc."
 									},
 									"response": []
 								},
