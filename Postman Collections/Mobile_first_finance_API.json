@@ -1998,59 +1998,6 @@
 									"response": []
 								},
 								{
-									"name": "Get IED events by identifier",
-									"id": "f800081b-ffcc-4645-973e-71ff40dd3663",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{backofficeURL}}/PortfolioService/bulkReceiveAndDeals?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&identifier={{Identifier}}&eventType=IED&=",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"path": [
-												"PortfolioService",
-												"bulkReceiveAndDeals"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												},
-												{
-													"key": "pageNumber",
-													"value": "0"
-												},
-												{
-													"key": "numberOfRecords",
-													"value": "10"
-												},
-												{
-													"key": "Hierarchy",
-													"value": "",
-													"disabled": true
-												},
-												{
-													"key": "identifier",
-													"value": "{{Identifier}}"
-												},
-												{
-													"key": "eventType",
-													"value": "IED"
-												},
-												{
-													"key": "",
-													"value": ""
-												}
-											]
-										}
-									},
-									"response": []
-								},
-								{
 									"name": "Disburse IED event",
 									"id": "0f8dd5db-8e65-474e-91ce-4865945bd86e",
 									"protocolProfileBehavior": {
