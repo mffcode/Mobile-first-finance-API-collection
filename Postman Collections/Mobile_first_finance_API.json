@@ -2055,7 +2055,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}/PortfolioService/bulkReceiveAndDeals?=&access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=20&Hierarchy={{Hierarchy}}",
+											"raw": "{{backofficeURL}}/PortfolioService/bulkReceiveAndDeals?&access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=20&Hierarchy=1&repaymentType=No",
 											"host": [
 												"{{backofficeURL}}"
 											],
@@ -2065,8 +2065,8 @@
 											],
 											"query": [
 												{
-													"key": "",
-													"value": ""
+													"key": null,
+													"value": null
 												},
 												{
 													"key": "access_token",
@@ -2082,7 +2082,11 @@
 												},
 												{
 													"key": "Hierarchy",
-													"value": "{{Hierarchy}}"
+													"value": "1"
+												},
+												{
+													"key": "repaymentType",
+													"value": "No"
 												}
 											]
 										}
