@@ -2090,54 +2090,6 @@
 									"response": []
 								},
 								{
-									"name": "Get IP/PR events by identifier",
-									"id": "f44430d6-4f55-4177-96af-3e026c39e6e1",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{backofficeURL}}/PortfolioService/bulkReceiveAndDeals?=&access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=20&Hierarchy={{Hierarchy}}&identifier={{Identifier}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"path": [
-												"PortfolioService",
-												"bulkReceiveAndDeals"
-											],
-											"query": [
-												{
-													"key": "",
-													"value": ""
-												},
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												},
-												{
-													"key": "pageNumber",
-													"value": "0"
-												},
-												{
-													"key": "numberOfRecords",
-													"value": "20"
-												},
-												{
-													"key": "Hierarchy",
-													"value": "{{Hierarchy}}"
-												},
-												{
-													"key": "identifier",
-													"value": "{{Identifier}}"
-												}
-											]
-										}
-									},
-									"response": []
-								},
-								{
 									"name": "Repay IP/PR event",
 									"id": "227f51ae-8828-4b47-af3e-d453b4069878",
 									"protocolProfileBehavior": {
