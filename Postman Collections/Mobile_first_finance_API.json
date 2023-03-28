@@ -2032,7 +2032,7 @@
 												}
 											]
 										},
-										"description": "- Using this service we can disburse a pending event (IED/FP)."
+										"description": "- Using this service we can disburse a pending event (IED/FP).\n- Check the below example payload for detail."
 									},
 									"response": []
 								}
