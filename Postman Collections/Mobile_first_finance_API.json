@@ -2174,7 +2174,8 @@
 													"value": "{{useraccessToken}}"
 												}
 											]
-										}
+										},
+										"description": "- Using this service, we can fetch the events IED/FP & IP/PR yet to be approved."
 									},
 									"response": []
 								}
