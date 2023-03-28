@@ -2177,50 +2177,6 @@
 										}
 									},
 									"response": []
-								},
-								{
-									"name": "Get the payment events by identifier",
-									"id": "f0025da9-68f8-4fd6-bea7-a31675ed2ebd",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{backofficeURL}}/PortfolioService/receiptApproval?=&numberOfRecords=10&pageNumber=0&identifier={{Identifier}}&access_token={{useraccessToken}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"path": [
-												"PortfolioService",
-												"receiptApproval"
-											],
-											"query": [
-												{
-													"key": "",
-													"value": ""
-												},
-												{
-													"key": "numberOfRecords",
-													"value": "10"
-												},
-												{
-													"key": "pageNumber",
-													"value": "0"
-												},
-												{
-													"key": "identifier",
-													"value": "{{Identifier}}"
-												},
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												}
-											]
-										}
-									},
-									"response": []
 								}
 							],
 							"id": "2b03081d-4a08-4cd0-9b2a-27748da3d927"
