@@ -2127,7 +2127,8 @@
 													"value": "{{useraccessToken}}"
 												}
 											]
-										}
+										},
+										"description": "- Using this service we can repay a pending IP/PR event .\n- Check the below example payload for detail."
 									},
 									"response": []
 								}
