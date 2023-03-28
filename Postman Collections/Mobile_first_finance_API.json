@@ -1895,58 +1895,6 @@
 					"name": "Approve",
 					"item": [
 						{
-							"name": "Filter a non approved profile with identifier",
-							"item": [
-								{
-									"name": "Filter a non approved profile with identifier",
-									"id": "1afeef7c-04e7-44d5-b4d2-650f76724d76",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{backofficeURL}}/ProfileService/searchprofileWithApproval?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&approved=No",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"path": [
-												"ProfileService",
-												"searchprofileWithApproval"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												},
-												{
-													"key": "pageNumber",
-													"value": "0"
-												},
-												{
-													"key": "numberOfRecords",
-													"value": "10"
-												},
-												{
-													"key": "approved",
-													"value": "No"
-												},
-												{
-													"key": "identifier",
-													"value": "{{Identifier}}",
-													"disabled": true
-												}
-											]
-										},
-										"description": "- Using this service, we can filter/search a non approved profile."
-									},
-									"response": []
-								}
-							],
-							"id": "7c695512-fde7-4570-adfc-4647663f9b97"
-						},
-						{
 							"name": "View non approved profile details",
 							"item": [
 								{
