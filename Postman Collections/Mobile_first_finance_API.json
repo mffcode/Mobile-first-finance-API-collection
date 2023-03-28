@@ -1939,7 +1939,7 @@
 												}
 											]
 										},
-										"description": "Using this API we can filter/search a non approved profile."
+										"description": "- Using this service, we can filter/search a non approved profile."
 									},
 									"response": []
 								}
