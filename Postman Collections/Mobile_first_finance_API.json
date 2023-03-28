@@ -1880,7 +1880,7 @@
 												}
 											]
 										},
-										"description": "- Using this service we can verify a specific workflow template."
+										"description": "- Using this service, we can verify a specific workflow template."
 									},
 									"response": []
 								}
