@@ -1958,7 +1958,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}/PortfolioService/bulkReceiveAndDeals?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&eventType=IED&=",
+											"raw": "{{backofficeURL}}/PortfolioService/bulkReceiveAndDeals?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=1&eventType=IED&=",
 											"host": [
 												"{{backofficeURL}}"
 											],
@@ -1977,7 +1977,7 @@
 												},
 												{
 													"key": "numberOfRecords",
-													"value": "10"
+													"value": "1"
 												},
 												{
 													"key": "Hierarchy",
