@@ -1994,7 +1994,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can get the pending events which are yet to be disbursed.\n- In the service params there are filters like **pageNumber**, **numberOfRecords** and **eventType**.\n- Using these filters, we can retrieve the required data, such as a group of IED/FP type events in 10 pages and 50 records."
+										"description": "- Using this service, we can get the pending events which are yet to be disbursed.\n- In the service params there are filters like **pageNumber**, **numberOfRecords** and **eventType**.\n- Using these filters, we can retrieve the required data, such as a group of **IED**(loan amount)/**FP**(Fee) type events in 10 pages and 50 records."
 									},
 									"response": []
 								},
