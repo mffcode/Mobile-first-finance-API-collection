@@ -1835,7 +1835,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can update existing workflow template details.\n- Since the **workflowTemplateDetailsID** will be automatically applied in the service, running this service will result in updating a specific workflow template details.\n- **Note** : (1)The payload listed below belongs to a specific **workflow template** of a specific **workflow** to which the profile got onboarded.\n- (2) Usually there might be multiple workflow templates for every individual workflow. Based on workflow template, we need to update the template details."
+										"description": "- Using this service, we can update existing workflow template details.\n- Since the **workflowTemplateDetailsID** will be automatically applied in the service, running this service will result in updating a specific workflow template details.\n- **Note** : (1)The payload listed below belongs to a specific **workflow template** of a specific **workflow** to which the profile got onboarded.\n- (2) Usually there might be multiple workflow templates for every individual workflow. Based on workflow template, we need to pass the template details in the payload."
 									},
 									"response": []
 								}
