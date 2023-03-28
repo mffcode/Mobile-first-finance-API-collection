@@ -1958,7 +1958,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}/PortfolioService/bulkReceiveAndDeals?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=1&eventType=IED&=",
+											"raw": "{{backofficeURL}}/PortfolioService/bulkReceiveAndDeals?&access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=1&Hierarchy=1&repaymentType=No&eventType=IED",
 											"host": [
 												"{{backofficeURL}}"
 											],
@@ -1967,6 +1967,10 @@
 												"bulkReceiveAndDeals"
 											],
 											"query": [
+												{
+													"key": null,
+													"value": null
+												},
 												{
 													"key": "access_token",
 													"value": "{{useraccessToken}}"
@@ -1981,16 +1985,15 @@
 												},
 												{
 													"key": "Hierarchy",
-													"value": "",
-													"disabled": true
+													"value": "1"
+												},
+												{
+													"key": "repaymentType",
+													"value": "No"
 												},
 												{
 													"key": "eventType",
 													"value": "IED"
-												},
-												{
-													"key": "",
-													"value": ""
 												}
 											]
 										},
