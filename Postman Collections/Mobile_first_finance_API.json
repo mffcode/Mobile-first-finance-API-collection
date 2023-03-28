@@ -1949,7 +1949,7 @@
 							"name": "Bulk Deals",
 							"item": [
 								{
-									"name": "Get pending IED events",
+									"name": "Get IED events",
 									"id": "e6496c2d-3c31-4675-9def-ab8ec81c3a00",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
