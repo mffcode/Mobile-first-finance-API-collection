@@ -2960,7 +2960,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{customerURL}}:5055/ThirdpartyService/notifications?access_token={{customerToken}}",
+									"raw": "{{customerURL}}:5055/ThirdpartyService/notifications?access_token={{custoken}}",
 									"host": [
 										"{{customerURL}}"
 									],
@@ -2972,7 +2972,7 @@
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{customerToken}}"
+											"value": "{{custoken}}"
 										}
 									]
 								}
