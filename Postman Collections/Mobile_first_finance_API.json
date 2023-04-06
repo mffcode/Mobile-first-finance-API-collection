@@ -2949,7 +2949,40 @@
 				},
 				{
 					"name": "Notifications",
-					"item": [],
+					"item": [
+						{
+							"name": "Get notifications",
+							"id": "128222ff-7f37-4f1d-b8e8-646f24f629e4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://dev.mobilefirstfinance.com:5055/ThirdpartyService/notifications?access_token={{customerToken}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"mobilefirstfinance",
+										"com"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"notifications"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{customerToken}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
 					"id": "837c2b9c-4430-4a43-8a7e-17b2ec8b0b48"
 				}
 			],
