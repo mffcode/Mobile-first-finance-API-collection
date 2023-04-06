@@ -2948,7 +2948,7 @@
 					"description": "Consist of services which are used to\n\ni) Apply for a card\n\nii) To view the cards which are associated to a profile\n\niii) To block an active card"
 				},
 				{
-					"name": "New Folder",
+					"name": "Notifications",
 					"item": [],
 					"id": "837c2b9c-4430-4a43-8a7e-17b2ec8b0b48"
 				}
