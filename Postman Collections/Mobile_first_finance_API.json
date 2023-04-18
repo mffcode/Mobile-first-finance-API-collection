@@ -1155,7 +1155,48 @@
 						},
 						{
 							"name": "Audit trial",
-							"item": [],
+							"item": [
+								{
+									"name": "View the audit trial with audit ID",
+									"id": "054d8f3c-fd51-429a-9b9d-b922eb40793f",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}/ProfileService/getAuditData?pageNumber=0&numberOfRecords=10&auditId=155308&access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"path": [
+												"ProfileService",
+												"getAuditData"
+											],
+											"query": [
+												{
+													"key": "pageNumber",
+													"value": "0"
+												},
+												{
+													"key": "numberOfRecords",
+													"value": "10"
+												},
+												{
+													"key": "auditId",
+													"value": "155308"
+												},
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
 							"id": "857049c4-529d-4cfb-80f4-c3e94a24f5bc"
 						}
 					],
