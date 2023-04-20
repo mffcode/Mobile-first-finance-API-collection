@@ -4798,6 +4798,43 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Link client to a workflow",
+							"id": "310e8072-2102-4c4e-9281-6edd97ff3b62",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"profileDetails\": [\n    {\n      \"profileID\": \"b9c13f64-4f4e-4959-a46a-e3b81a7c3497\"\n   \n    }\n  ],\n  \"workFlowID\": 1537895\n}\n//Look for the \"profileid\" & \"workflowid\" in the \"Globals\" under the \"Environment quick look.\"",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{clientmobileappURL}}/WorkflowService/workflowToProfiles?access_token={{clienttoken}}",
+									"host": [
+										"{{clientmobileappURL}}"
+									],
+									"path": [
+										"WorkflowService",
+										"workflowToProfiles"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{clienttoken}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "3dacd57c-073f-4ee1-9bc7-d16e7cce6ed8"
