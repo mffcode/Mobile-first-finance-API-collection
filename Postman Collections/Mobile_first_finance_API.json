@@ -4835,6 +4835,35 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "To fetch the onboarded workflow details",
+							"id": "98409784-2e4c-4e81-adc0-1eb2d5dfb9ea",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{clientmobileappURL}}/WorkflowService/mobileApp/b9c13f64-4f4e-4959-a46a-e3b81a7c3497?access_token={{clienttoken}}",
+									"host": [
+										"{{clientmobileappURL}}"
+									],
+									"path": [
+										"WorkflowService",
+										"mobileApp",
+										"b9c13f64-4f4e-4959-a46a-e3b81a7c3497"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{clienttoken}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "3dacd57c-073f-4ee1-9bc7-d16e7cce6ed8"
