@@ -4614,7 +4614,7 @@
 							"name": "Login with mobile number",
 							"item": [
 								{
-									"name": "Send OTP to mobile number",
+									"name": "Send OTP",
 									"id": "c05bb72d-9233-4449-bbd4-6090792e470c",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
