@@ -2275,7 +2275,7 @@
 			"name": "Client web app",
 			"item": [
 				{
-					"name": "Customer signup",
+					"name": "Client signup",
 					"item": [
 						{
 							"name": "Signing up a new client",
