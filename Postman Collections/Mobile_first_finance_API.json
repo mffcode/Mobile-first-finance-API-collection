@@ -2362,7 +2362,7 @@
 					"description": "This service is used to perform customer authentication."
 				},
 				{
-					"name": "Client Onboarding",
+					"name": "Client onboarding",
 					"item": [
 						{
 							"name": "View the list of workflows",
