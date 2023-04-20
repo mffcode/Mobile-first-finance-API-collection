@@ -4718,7 +4718,48 @@
 				},
 				{
 					"name": "Client onboarding",
-					"item": [],
+					"item": [
+						{
+							"name": "Fetch all the available workflows",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "bfd76119-a562-4fd8-9013-abd20bee4aeb",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "3c1978b5-d640-4697-9834-4c36b0c8b74b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{clientmobileappURL}}/WorkflowService/workflows?access_token={{clienttoken}}",
+									"host": [
+										"{{clientmobileappURL}}"
+									],
+									"path": [
+										"WorkflowService",
+										"workflows"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{clienttoken}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
 					"id": "3dacd57c-073f-4ee1-9bc7-d16e7cce6ed8"
 				}
 			],
