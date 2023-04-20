@@ -4612,35 +4612,70 @@
 					"item": [
 						{
 							"name": "Login with mobile number",
-							"item": [],
+							"item": [
+								{
+									"name": "Login with mobile number",
+									"id": "c05bb72d-9233-4449-bbd4-6090792e470c",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://dev.mobilefirstfinance.com:5055/LoginService/verify/phoneNumber?phoneNumber=+919392256334",
+											"protocol": "https",
+											"host": [
+												"dev",
+												"mobilefirstfinance",
+												"com"
+											],
+											"port": "5055",
+											"path": [
+												"LoginService",
+												"verify",
+												"phoneNumber"
+											],
+											"query": [
+												{
+													"key": "phoneNumber",
+													"value": "+919392256334"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
 							"id": "0ef87a63-e8f1-4dee-aa8d-869688a6b5dc"
 						},
 						{
 							"name": "Login with username and password",
-							"item": [],
+							"item": [
+								{
+									"name": "Login with username and password",
+									"id": "82e87cbf-9cc1-4754-89fc-54130b891620",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"rootUser\": \"enter sandbox rootuser\",\n  \"userName\": \"enter sandbox username\",\n  \"password\": \"enter sandbox password\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{clientmobileappURL}}/LoginService/login"
+									},
+									"response": []
+								}
+							],
 							"id": "0ac09714-0d15-46c5-8939-c12dc740aae5"
-						},
-						{
-							"name": "Login with username and password",
-							"id": "82e87cbf-9cc1-4754-89fc-54130b891620",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n  \"rootUser\": \"enter sandbox rootuser\",\n  \"userName\": \"enter sandbox username\",\n  \"password\": \"enter sandbox password\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{clientmobileappURL}}/LoginService/login"
-							},
-							"response": []
 						}
 					],
 					"id": "f1e94e9e-80dd-4b6d-af9c-4ccbb1ac8269"
