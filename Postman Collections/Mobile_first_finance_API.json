@@ -4611,7 +4611,7 @@
 					"name": "Authorization",
 					"item": [
 						{
-							"name": "Login with client credentials",
+							"name": "Login with username and password",
 							"id": "82e87cbf-9cc1-4754-89fc-54130b891620",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
