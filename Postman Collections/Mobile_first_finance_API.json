@@ -4609,7 +4609,30 @@
 				},
 				{
 					"name": "Authorization",
-					"item": [],
+					"item": [
+						{
+							"name": "Login with client credentials",
+							"id": "82e87cbf-9cc1-4754-89fc-54130b891620",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"rootUser\": \"enter sandbox rootuser\",\n  \"userName\": \"enter sandbox username\",\n  \"password\": \"enter sandbox password\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{clientmobileappURL}}/LoginService/login"
+							},
+							"response": []
+						}
+					],
 					"id": "f1e94e9e-80dd-4b6d-af9c-4ccbb1ac8269"
 				}
 			],
