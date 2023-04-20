@@ -2321,7 +2321,7 @@
 					"name": "Authorization",
 					"item": [
 						{
-							"name": "Login with customer credentials",
+							"name": "Login with client credentials",
 							"event": [
 								{
 									"listen": "test",
