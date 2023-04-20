@@ -4567,7 +4567,21 @@
 			"item": [
 				{
 					"name": "Client sign up",
-					"item": [],
+					"item": [
+						{
+							"name": "Get client sign up form",
+							"id": "b02e8aed-ba8f-4411-801d-615fe297a6da",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{customerURL}}:7190/mff/api/clientUserform/Customer"
+							},
+							"response": []
+						}
+					],
 					"id": "8571d921-aef9-4995-ac87-fed070a7c910"
 				}
 			],
