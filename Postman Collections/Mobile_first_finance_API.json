@@ -4645,6 +4645,28 @@
 										}
 									},
 									"response": []
+								},
+								{
+									"name": "Verify OTP",
+									"id": "ba9da0d2-36b7-4ca5-94be-15c740822079",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"mobileNumber\": \"+919392256334\",\n  \"otp\": \"240505\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://dev.mobilefirstfinance.com:5055/LoginService/login"
+									},
+									"response": []
 								}
 							],
 							"id": "0ef87a63-e8f1-4dee-aa8d-869688a6b5dc"
