@@ -2349,7 +2349,7 @@
 					"description": "This service is used to perform customer authentication."
 				},
 				{
-					"name": "Customer Onboarding",
+					"name": "Client Onboarding",
 					"item": [
 						{
 							"name": "View the list of workflows",
