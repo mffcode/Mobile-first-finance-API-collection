@@ -4548,6 +4548,11 @@
 			],
 			"id": "437f7d30-09df-4e3f-ae64-247883eedab7",
 			"description": "Secure 3rd party API integrations enable communication between the core system and capabilities with external eco-system partners."
+		},
+		{
+			"name": "New Folder",
+			"item": [],
+			"id": "75dff1e7-c925-4adb-a916-1b492df7844e"
 		}
 	]
 }
