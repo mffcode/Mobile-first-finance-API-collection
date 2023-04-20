@@ -4616,6 +4616,11 @@
 							"id": "0ef87a63-e8f1-4dee-aa8d-869688a6b5dc"
 						},
 						{
+							"name": "New Folder",
+							"item": [],
+							"id": "0ac09714-0d15-46c5-8939-c12dc740aae5"
+						},
+						{
 							"name": "Login with username and password",
 							"id": "82e87cbf-9cc1-4754-89fc-54130b891620",
 							"protocolProfileBehavior": {
