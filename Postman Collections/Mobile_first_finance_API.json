@@ -4676,6 +4676,20 @@
 							"item": [
 								{
 									"name": "Login with username and password",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "910c4114-43ad-4437-a45d-01e406bb3e3e",
+												"exec": [
+													"var jsonData = JSON.parse(responseBody);",
+													"var jsonValue = jsonData.body;",
+													"pm.globals.set(\"clienttoken\", jsonValue.access_token);"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
 									"id": "82e87cbf-9cc1-4754-89fc-54130b891620",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -4685,7 +4699,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"rootUser\": \"enter sandbox rootuser\",\n  \"userName\": \"enter sandbox username\",\n  \"password\": \"enter sandbox password\"\n}",
+											"raw": "{\n  \"rootUser\": \"DEV\",\n  \"userName\": \"Zack\",\n  \"password\": \"000000\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
