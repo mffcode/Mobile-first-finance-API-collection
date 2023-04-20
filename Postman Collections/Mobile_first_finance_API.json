@@ -2272,7 +2272,7 @@
 			"description": "Back-office API enable admin configurations and back-office support."
 		},
 		{
-			"name": "Customer",
+			"name": "Client web app",
 			"item": [
 				{
 					"name": "Customer signup",
