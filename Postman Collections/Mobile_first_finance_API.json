@@ -2278,6 +2278,11 @@
 					"name": "Client sign up",
 					"item": [
 						{
+							"name": "New Folder",
+							"item": [],
+							"id": "ceda454a-1294-4f19-9fed-02bc11e5e7d3"
+						},
+						{
 							"name": "Get client sign up form",
 							"id": "0cfc491e-e95d-4c56-8aa8-e8df2df5eca6",
 							"protocolProfileBehavior": {
