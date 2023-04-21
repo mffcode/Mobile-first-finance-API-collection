@@ -4864,6 +4864,42 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Get workflow templates based on workflow profile id and template id",
+							"id": "736e314b-b457-42f2-bf97-8dec6236fc75",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://dev.mobilefirstfinance.com:5055/WorkflowService/mobileApp/workflowProfileID/1626134/templateID/9?access_token={{clienttoken}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"mobilefirstfinance",
+										"com"
+									],
+									"port": "5055",
+									"path": [
+										"WorkflowService",
+										"mobileApp",
+										"workflowProfileID",
+										"1626134",
+										"templateID",
+										"9"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{clienttoken}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "3dacd57c-073f-4ee1-9bc7-d16e7cce6ed8"
