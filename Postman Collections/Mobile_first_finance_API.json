@@ -4851,6 +4851,11 @@
 											"console.log(\"workflow...\"+jsonData.workflow)",
 											"var workFlowTemplateDetails=workflow.workFlowTemplateDetails",
 											"console.log(\"workFlowTemplateDetails...\"+workflow.workFlowTemplateDetails)",
+											"",
+											"",
+											"",
+											"",
+											"",
 											"var workflowProfileID=workflow.workflowProfileID",
 											"console.log(\"mobileworkflowprofileid...\"+workflow.workflowProfileID)",
 											"pm.globals.set(\"mobileworkflowprofileid\",workflow.workflowProfileID );"
