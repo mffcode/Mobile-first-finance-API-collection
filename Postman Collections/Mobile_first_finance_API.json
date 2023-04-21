@@ -2301,22 +2301,31 @@
 										"url": "{{customerURL}}:7190/mff/api/userValidation"
 									},
 									"response": []
+								},
+								{
+									"name": "Email Id validation",
+									"id": "b1b861b3-52af-4f14-b3c0-e2c7d40e3486",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Email\": \"provide a valid email id\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{customerURL}}:7190/mff/api/userValidation"
+									},
+									"response": []
 								}
 							],
 							"id": "ceda454a-1294-4f19-9fed-02bc11e5e7d3"
-						},
-						{
-							"name": "Get client sign up form",
-							"id": "0cfc491e-e95d-4c56-8aa8-e8df2df5eca6",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "{{customerURL}}:7190/mff/api/clientUserform/Customer"
-							},
-							"response": []
 						},
 						{
 							"name": "Signing up a new client",
@@ -2338,6 +2347,19 @@
 								},
 								"url": "{{customerURL}}:7190/mff/api/createClientUser",
 								"description": "- To complete the customer sign-up process, use the default customer sign-up form below.\n- All of the keys mentioned are required, and most of them are unique.\n- The **FormID** mentioned in the payload belongs to the default user form for customer signup, and it is mandatory to mention.\n- **Identifier** - **enter a unique identifier and the data should be in varchar.**\n- **User Password - user password should be a 6 digit pin number.**\n- **Date of Birth - enter date of birth in yyyy-mm-dd format.**"
+							},
+							"response": []
+						},
+						{
+							"name": "Get client sign up form",
+							"id": "0cfc491e-e95d-4c56-8aa8-e8df2df5eca6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{customerURL}}:7190/mff/api/clientUserform/Customer"
 							},
 							"response": []
 						}
