@@ -4838,6 +4838,27 @@
 						},
 						{
 							"name": "To fetch the onboarded workflow details",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "a173fd87-be4a-4299-a6b7-cdc5df2cf385",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);",
+											"console.log(\"jsonResponse...\"+jsonResponse)",
+											"var jsonData = jsonResponse.data;",
+											"var workflow=jsonData.workflow",
+											"console.log(\"workflow...\"+jsonData.workflow)",
+											"var workFlowTemplateDetails=workflow.workFlowTemplateDetails",
+											"console.log(\"workFlowTemplateDetails...\"+workflow.workFlowTemplateDetails)",
+											"var workflowProfileID=workflow.workflowProfileID",
+											"console.log(\"mobileworkflowprofileid...\"+workflow.workflowProfileID)",
+											"pm.globals.set(\"mobileworkflowprofileid\",workflow.workflowProfileID );"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "98409784-2e4c-4e81-adc0-1eb2d5dfb9ea",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
