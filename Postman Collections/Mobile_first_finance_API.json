@@ -2279,7 +2279,30 @@
 					"item": [
 						{
 							"name": "Mobile number and Email validation",
-							"item": [],
+							"item": [
+								{
+									"name": "Mobile number validation",
+									"id": "87991568-429c-4e15-97cf-6e6e9d248391",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Mobile Number\": \"Provide a valid mobile number\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{customerURL}}:7190/mff/api/userValidation"
+									},
+									"response": []
+								}
+							],
 							"id": "ceda454a-1294-4f19-9fed-02bc11e5e7d3"
 						},
 						{
