@@ -2708,6 +2708,90 @@
 								"description": "- Using this service, we can update workflow template details based on workflow template details id.\n- Mention the payload according to the workflow template and provide the necessary value.\n- The **workflow template details id** will be retrieved and applied to the service from **View the workflow template details of a profile**."
 							},
 							"response": []
+						},
+						{
+							"name": "View the workflow template details of profile",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "0269c867-7a9f-46fb-89d9-f8c5ec8e8f36",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);",
+											"console.log(\"jsonResponse...\"+jsonResponse)",
+											"var jsonData = jsonResponse.data;",
+											"",
+											"var workflow=jsonData.workflow",
+											"console.log(\"workflow...\"+jsonData.workflow)",
+											"",
+											"var num=workflow[\"1595354\"]",
+											"console.log(\"num...\"+workflow[\"1595354\"])",
+											"",
+											"var numdata = num[0].detailsID",
+											"console.log(\"clientwebtemplatedetailsid...\"+num[0].detailsID)",
+											"pm.globals.set(\"clientwebtemplatedetailsid\",num[0].detailsID );",
+											"",
+											"",
+											"",
+											"",
+											"",
+											"// var templateid=workflow[39].templateID",
+											"// console.log(\"templateid...\"+workflow[39].templateID)",
+											"// pm.globals.set(\"templateid\",workflow[39].templateID );",
+											"",
+											"",
+											"",
+											"",
+											"",
+											"",
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "aaf278ff-6993-45dd-a507-5bf216a829f1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{customerURL}}:5055/WorkflowService/workflow/workflowTemplateDetails/{{workflowid}}/No?&numberOfRecords=10&pageNumber=0&access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"WorkflowService",
+										"workflow",
+										"workflowTemplateDetails",
+										"{{workflowid}}",
+										"No"
+									],
+									"query": [
+										{
+											"key": null,
+											"value": null
+										},
+										{
+											"key": "numberOfRecords",
+											"value": "10"
+										},
+										{
+											"key": "pageNumber",
+											"value": "0"
+										},
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "f069129c-e4de-41bc-9a33-414e67ee51d5",
