@@ -2549,8 +2549,8 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://dev.mobilefirstfinance.com:5055/ProfileService/profiles?pageNumber=0&numberOfRecords=10&access_token={{custoken}}",
-									"protocol": "https",
+									"raw": "{{customerURL}}https://dev.mobilefirstfinance.com:5055/ProfileService/profiles?pageNumber=0&numberOfRecords=10&access_token={{custoken}}",
+									"protocol": "{{customerURL}}https",
 									"host": [
 										"dev",
 										"mobilefirstfinance",
