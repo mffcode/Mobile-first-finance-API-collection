@@ -2681,7 +2681,7 @@
 											"console.log(\"jsonResponse...\"+jsonResponse)",
 											"var templateDetailsID=jsonResponse[0].templateDetailsID",
 											"console.log(\"templateDetailsID...\"+jsonResponse[0].templateDetailsID)",
-											"pm.globals.set(\"workflowtemplatedetailsid\",jsonResponse[0].templateDetailsID );",
+											"// pm.globals.set(\"workflowtemplatedetailsid\",jsonResponse[0].templateDetailsID );",
 											"",
 											"",
 											"",
