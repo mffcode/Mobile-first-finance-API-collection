@@ -2670,46 +2670,6 @@
 							"response": []
 						},
 						{
-							"name": "To save the details in workflow template",
-							"id": "bba6507d-3561-4693-961d-029e7fbfe12d",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n  \"I Agree the terms and conditions\": \"Yes\"\r\n}\r\n\r\n// Mention the value as \"Yes\" or \"No.\"",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{customerURL}}:5055/WorkflowService/workflowTemplateDetails/{{clientwebtemplatedetailsid}}?access_token={{custoken}}",
-									"host": [
-										"{{customerURL}}"
-									],
-									"port": "5055",
-									"path": [
-										"WorkflowService",
-										"workflowTemplateDetails",
-										"{{clientwebtemplatedetailsid}}"
-									],
-									"query": [
-										{
-											"key": "access_token",
-											"value": "{{custoken}}"
-										}
-									]
-								},
-								"description": "- Using this service, we can update workflow template details based on workflow template details id.\n- Mention the payload according to the workflow template and provide the necessary value.\n- The **workflow template details id** will be retrieved and applied to the service from **View the workflow template details of a profile**."
-							},
-							"response": []
-						},
-						{
 							"name": "View the workflow template details of profile",
 							"event": [
 								{
@@ -2790,6 +2750,46 @@
 										}
 									]
 								}
+							},
+							"response": []
+						},
+						{
+							"name": "To save the details in workflow template",
+							"id": "bba6507d-3561-4693-961d-029e7fbfe12d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"I Agree the terms and conditions\": \"Yes\"\r\n}\r\n\r\n// Mention the value as \"Yes\" or \"No.\"",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{customerURL}}:5055/WorkflowService/workflowTemplateDetails/{{clientwebtemplatedetailsid}}?access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"WorkflowService",
+										"workflowTemplateDetails",
+										"{{clientwebtemplatedetailsid}}"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								},
+								"description": "- Using this service, we can update workflow template details based on workflow template details id.\n- Mention the payload according to the workflow template and provide the necessary value.\n- The **workflow template details id** will be retrieved and applied to the service from **View the workflow template details of a profile**."
 							},
 							"response": []
 						}
@@ -2924,7 +2924,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"contractUUID\": \"6a14917e-b75b-49d5-ba16-a922b19b3ea3\",\r\n  \"type\": \"PI\",\r\n  \"value\": 5000,\r\n  \"paymentType\": \"stripe\",\r\n  \"triggerType\": \"deposit\"\r\n}\r\n\r\n// Look for the generated contractuuid in the \"Globals\" under the \"Environment quick look\" and mention it in the \"contractUUID\" value.\r\n// Mention the \"type\" as \"PI\" and the \"paymentType\" as \"stripe.\"\r\n// Mention the amount in the \"value.\"\r\n// Mention the \"triggerType\" as either \"deposit\" or \"withdraw.\"",
+									"raw": "{\r\n  \"contractUUID\": \"e530245a-e18f-4f4a-8197-d945b3e2eef6\",\r\n  \"type\": \"PI\",\r\n  \"value\": 5000,\r\n  \"paymentType\": \"stripe\",\r\n  \"triggerType\": \"deposit\"\r\n}\r\n\r\n// Look for the generated contractuuid in the \"Globals\" under the \"Environment quick look\" and mention it in the \"contractUUID\" value.\r\n// Mention the \"type\" as \"PI\" and the \"paymentType\" as \"stripe.\"\r\n// Mention the amount in the \"value.\"\r\n// Mention the \"triggerType\" as either \"deposit\" or \"withdraw.\"",
 									"options": {
 										"raw": {
 											"language": "json"
