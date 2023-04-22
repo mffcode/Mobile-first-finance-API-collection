@@ -2499,12 +2499,9 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://dev.mobilefirstfinance.com:5055/WorkflowService/workflowTemplates?access_token={{custoken}}",
-									"protocol": "https",
+									"raw": "{{customerURL}}:5055/WorkflowService/workflowTemplates?access_token={{custoken}}",
 									"host": [
-										"dev",
-										"mobilefirstfinance",
-										"com"
+										"{{customerURL}}"
 									],
 									"port": "5055",
 									"path": [
