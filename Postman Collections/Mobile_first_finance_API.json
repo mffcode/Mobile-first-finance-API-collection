@@ -2670,61 +2670,6 @@
 							"response": []
 						},
 						{
-							"name": "View the workflow template details of a profile",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "e542b450-80b6-4022-a073-80690d4b2d79",
-										"exec": [
-											"var jsonResponse = JSON.parse(responseBody);",
-											"console.log(\"jsonResponse...\"+jsonResponse)",
-											"var templateDetailsID=jsonResponse[0].templateDetailsID",
-											"console.log(\"templateDetailsID...\"+jsonResponse[0].templateDetailsID)",
-											"// pm.globals.set(\"workflowtemplatedetailsid\",jsonResponse[0].templateDetailsID );",
-											"",
-											"",
-											"",
-											"",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "7032fbd7-c190-416d-a583-b0372894d256",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{customerURL}}:5055/WorkflowService/mobileApp/workflowProfileID/{{workflowprofileid}}/templateID/{{templateid}}?access_token={{custoken}}",
-									"host": [
-										"{{customerURL}}"
-									],
-									"port": "5055",
-									"path": [
-										"WorkflowService",
-										"mobileApp",
-										"workflowProfileID",
-										"{{workflowprofileid}}",
-										"templateID",
-										"{{templateid}}"
-									],
-									"query": [
-										{
-											"key": "access_token",
-											"value": "{{custoken}}"
-										}
-									]
-								},
-								"description": "- Using this service we can fetch the **workflow template details id** based on **template id** and **workflow profile id**.\n- The **workflowprofileid** will be retrieved and applied to the service from **Get workflow templates based on profileID and workflowID**, and **templateid** which will be retrieved and applied to the service from **Fetch all of the workflow templates**."
-							},
-							"response": []
-						},
-						{
 							"name": "To save the details in workflow template",
 							"id": "bba6507d-3561-4693-961d-029e7fbfe12d",
 							"protocolProfileBehavior": {
