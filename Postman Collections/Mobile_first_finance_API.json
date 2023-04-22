@@ -4983,6 +4983,61 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Fetch all the workflow templates",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "7da9760f-cb50-4435-b6d5-4c5cdeddb587",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);",
+											"console.log(\"jsonResponse...\"+jsonResponse)",
+											"var jsonData = jsonResponse.data;",
+											"var workflow=jsonData.workflow",
+											"console.log(\"workflow...\"+jsonData.workflow)",
+											"var templateid=workflow[39].templateID",
+											"console.log(\"mobileappworkflowtemplateid...\"+workflow[39].templateID)",
+											"pm.globals.set(\"mobileappworkflowtemplateid\",workflow[39].templateID );",
+											"",
+											"",
+											"",
+											"",
+											"",
+											"",
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "79dbecf1-4f9f-4dfa-960e-22c53603abc4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{clientmobileappURL}}/WorkflowService/workflowTemplates?access_token={{clienttoken}}",
+									"host": [
+										"{{clientmobileappURL}}"
+									],
+									"path": [
+										"WorkflowService",
+										"workflowTemplates"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{clienttoken}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "3dacd57c-073f-4ee1-9bc7-d16e7cce6ed8"
