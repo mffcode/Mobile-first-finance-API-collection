@@ -4777,7 +4777,13 @@
 									"script": {
 										"id": "bfd76119-a562-4fd8-9013-abd20bee4aeb",
 										"exec": [
-											""
+											"var jsonResponse = JSON.parse(responseBody);",
+											"console.log(\"jsonResponse...\"+jsonResponse)",
+											"var jsonData = jsonResponse.data;",
+											"console.log(\"jsonData...\"+jsonData.workflow)",
+											"var workflow=jsonData.workflow",
+											"console.log(\"mobileappworkflowid...\"+workflow[13].workFlowID)",
+											"pm.globals.set(\"mobileappworkflowid\", workflow[13].workFlowID);"
 										],
 										"type": "text/javascript"
 									}
