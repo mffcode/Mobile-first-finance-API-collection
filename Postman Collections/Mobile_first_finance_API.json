@@ -5057,26 +5057,34 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://dev.mobilefirstfinance.com:5055/WorkflowService/mobileApp/workflowProfileID/{{mobileworkflowprofileid}}/templateID/9?access_token={{clientmobiletoken}}",
-									"protocol": "https",
+									"raw": "{{clientmobileappURL}}:5055/WorkflowService/workflow/workflowTemplateDetails/{{mobileappworkflowid}}/No?&numberOfRecords=10&pageNumber=0&access_token={{custoken}}",
 									"host": [
-										"dev",
-										"mobilefirstfinance",
-										"com"
+										"{{clientmobileappURL}}"
 									],
 									"port": "5055",
 									"path": [
 										"WorkflowService",
-										"mobileApp",
-										"workflowProfileID",
-										"{{mobileworkflowprofileid}}",
-										"templateID",
-										"9"
+										"workflow",
+										"workflowTemplateDetails",
+										"{{mobileappworkflowid}}",
+										"No"
 									],
 									"query": [
 										{
+											"key": null,
+											"value": null
+										},
+										{
+											"key": "numberOfRecords",
+											"value": "10"
+										},
+										{
+											"key": "pageNumber",
+											"value": "0"
+										},
+										{
 											"key": "access_token",
-											"value": "{{clientmobiletoken}}"
+											"value": "{{custoken}}"
 										}
 									]
 								}
