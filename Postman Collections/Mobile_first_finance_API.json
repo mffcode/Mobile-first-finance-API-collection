@@ -5130,6 +5130,45 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "To save the details in the workflow template",
+							"id": "6794939e-b4d1-4050-86a1-5aca648e6488",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"I Agree the terms and conditions\": \"Yes\"\r\n}\r\n\r\n// Mention the value as \"Yes\" or \"No.\"",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{clientmobileappURL}}:5055/WorkflowService/workflowTemplateDetails/{{clientmobiletemplatedetailsid}}?access_token={{clientmobiletoken}}",
+									"host": [
+										"{{clientmobileappURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"WorkflowService",
+										"workflowTemplateDetails",
+										"{{clientmobiletemplatedetailsid}}"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{clientmobiletoken}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "3dacd57c-073f-4ee1-9bc7-d16e7cce6ed8"
