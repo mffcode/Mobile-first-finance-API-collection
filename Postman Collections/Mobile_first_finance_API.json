@@ -4876,10 +4876,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{clientmobileappURL}}/WorkflowService/workflowTemplates?access_token={{clientmobiletoken}}",
+									"raw": "{{clientmobileappURL}}:5055/WorkflowService/workflowTemplates?access_token={{clientmobiletoken}}",
 									"host": [
 										"{{clientmobileappURL}}"
 									],
+									"port": "5055",
 									"path": [
 										"WorkflowService",
 										"workflowTemplates"
