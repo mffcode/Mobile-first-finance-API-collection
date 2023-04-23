@@ -5056,7 +5056,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://dev.mobilefirstfinance.com:5055/WorkflowService/mobileApp/workflowProfileID/{{mobileworkflowprofileid}}/templateID/9?access_token={{clienttoken}}",
+									"raw": "https://dev.mobilefirstfinance.com:5055/WorkflowService/mobileApp/workflowProfileID/{{mobileworkflowprofileid}}/templateID/9?access_token={{clientmobiletoken}}",
 									"protocol": "https",
 									"host": [
 										"dev",
@@ -5075,7 +5075,7 @@
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{clienttoken}}"
+											"value": "{{clientmobiletoken}}"
 										}
 									]
 								}
