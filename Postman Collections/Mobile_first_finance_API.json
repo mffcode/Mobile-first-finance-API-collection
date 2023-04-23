@@ -4779,7 +4779,7 @@
 												}
 											}
 										},
-										"url": "{{clientmobileappURL}}/LoginService/login"
+										"url": "{{clientmobileappURL}}:5055/LoginService/login"
 									},
 									"response": []
 								}
