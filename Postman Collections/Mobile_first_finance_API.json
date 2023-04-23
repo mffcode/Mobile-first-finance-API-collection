@@ -4757,7 +4757,7 @@
 												"exec": [
 													"var jsonData = JSON.parse(responseBody);",
 													"var jsonValue = jsonData.body;",
-													"pm.globals.set(\"clienttoken\", jsonValue.access_token);"
+													"pm.globals.set(\"clientmobiletoken\", jsonValue.access_token);"
 												],
 												"type": "text/javascript"
 											}
@@ -4772,7 +4772,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"rootUser\": \"enter sandbox rootuser\",\n  \"userName\": \"enter sandbox username\",\n  \"password\": \"enter sandbox password\"\n}",
+											"raw": "{\n  \"rootUser\": \"DEV\",\n  \"userName\": \"Mitchell\",\n  \"password\": \"000000\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
