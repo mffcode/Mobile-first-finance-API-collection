@@ -5027,10 +5027,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{clientmobileappURL}}/WorkflowService/mobileApp/b9c13f64-4f4e-4959-a46a-e3b81a7c3497?access_token={{clientmobiletoken}}",
+									"raw": "{{clientmobileappURL}}:5055/WorkflowService/mobileApp/b9c13f64-4f4e-4959-a46a-e3b81a7c3497?access_token={{clientmobiletoken}}",
 									"host": [
 										"{{clientmobileappURL}}"
 									],
+									"port": "5055",
 									"path": [
 										"WorkflowService",
 										"mobileApp",
