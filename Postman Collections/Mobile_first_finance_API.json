@@ -5097,7 +5097,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{clientmobileappURL}}:5055/WorkflowService/workflow/workflowTemplateDetails/{{mobileappworkflowid}}/No?&numberOfRecords=10&pageNumber=0&access_token={{custoken}}",
+									"raw": "{{clientmobileappURL}}:5055/WorkflowService/workflow/workflowTemplateDetails/{{mobileappworkflowid}}/No?&numberOfRecords=10&pageNumber=0&access_token={{clientmobiletoken}}",
 									"host": [
 										"{{clientmobileappURL}}"
 									],
@@ -5124,7 +5124,7 @@
 										},
 										{
 											"key": "access_token",
-											"value": "{{custoken}}"
+											"value": "{{clientmobiletoken}}"
 										}
 									]
 								}
