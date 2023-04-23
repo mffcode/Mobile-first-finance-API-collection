@@ -5049,6 +5049,46 @@
 						},
 						{
 							"name": "Get workflow templates based on workflow profile id and template id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "02a36253-01ff-46fb-885d-5cea45404ebd",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);\r",
+											"console.log(\"jsonResponse...\"+jsonResponse)\r",
+											"var jsonData = jsonResponse.data;\r",
+											"\r",
+											"var workflow=jsonData.workflow\r",
+											"console.log(\"workflow...\"+jsonData.workflow)\r",
+											"\r",
+											"var num=workflow[\"1595354\"]\r",
+											"console.log(\"num...\"+workflow[\"1595354\"])\r",
+											"\r",
+											"var numdata = num[0].detailsID\r",
+											"console.log(\"clientmobiletemplatedetailsid...\"+num[0].detailsID)\r",
+											"pm.globals.set(\"clientmobiletemplatedetailsid\",num[0].detailsID );\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"// var templateid=workflow[39].templateID\r",
+											"// console.log(\"templateid...\"+workflow[39].templateID)\r",
+											"// pm.globals.set(\"templateid\",workflow[39].templateID );\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "736e314b-b457-42f2-bf97-8dec6236fc75",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
