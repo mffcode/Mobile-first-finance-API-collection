@@ -4820,7 +4820,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{clientmobileappURL}}/WorkflowService/workflows?access_token={{clienttoken}}",
+									"raw": "{{clientmobileappURL}}/WorkflowService/workflows?access_token={{clientmobiletoken}}",
 									"host": [
 										"{{clientmobileappURL}}"
 									],
@@ -4831,7 +4831,7 @@
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{clienttoken}}"
+											"value": "{{clientmobiletoken}}"
 										}
 									]
 								}
