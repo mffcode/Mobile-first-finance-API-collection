@@ -4923,7 +4923,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://dev.mobilefirstfinance.com:5055/ProfileService/profiles?pageNumber=0&numberOfRecords=10&access_token={{clienttoken}}",
+									"raw": "https://dev.mobilefirstfinance.com:5055/ProfileService/profiles?pageNumber=0&numberOfRecords=10&access_token={{clientmobiletoken}}",
 									"protocol": "https",
 									"host": [
 										"dev",
@@ -4946,7 +4946,7 @@
 										},
 										{
 											"key": "access_token",
-											"value": "{{clienttoken}}"
+											"value": "{{clientmobiletoken}}"
 										}
 									]
 								}
