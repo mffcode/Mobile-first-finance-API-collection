@@ -5241,6 +5241,45 @@
 							"response": []
 						},
 						{
+							"name": "To perform the transaction",
+							"id": "1138ffa7-db41-4029-9a21-06e471ddf755",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"contractUUID\": \"118270d6-70f4-4038-9fab-ac8c9895b662\",\n  \"type\": \"PI\",\n  \"value\": 5000,\n  \"paymentType\": \"stripe\",\n  \"triggerType\": \"deposit\"\n}\n\n// Look for the generated contractuuid in the \"Globals\" under the \"Environment quick look\" and mention it in the \"contractUUID\" value.\n// Mention the \"type\" as \"PI\" and the \"paymentType\" as \"stripe.\"\n// Mention the amount in the \"value.\"\n// Mention the \"triggerType\" as either \"deposit\" or \"withdraw.\"",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{clientmobileappURL}}:5055/SolitxService/payment/link?access_token={{clientmobiletoken}}",
+									"host": [
+										"{{clientmobileappURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"SolitxService",
+										"payment",
+										"link"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{clientmobiletoken}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "To view the transaction history",
 							"id": "27c905b7-e1ef-4097-b399-e5ddf56f8d83",
 							"protocolProfileBehavior": {
@@ -5278,38 +5317,32 @@
 							"response": []
 						},
 						{
-							"name": "To perform the transaction",
-							"id": "1138ffa7-db41-4029-9a21-06e471ddf755",
+							"name": "To view the pending events of contract",
+							"id": "1a9899ad-9cf7-41d8-ac71-d5c482c88d50",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "POST",
+								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n  \"contractUUID\": \"118270d6-70f4-4038-9fab-ac8c9895b662\",\n  \"type\": \"PI\",\n  \"value\": 5000,\n  \"paymentType\": \"stripe\",\n  \"triggerType\": \"deposit\"\n}\n\n// Look for the generated contractuuid in the \"Globals\" under the \"Environment quick look\" and mention it in the \"contractUUID\" value.\n// Mention the \"type\" as \"PI\" and the \"paymentType\" as \"stripe.\"\n// Mention the amount in the \"value.\"\n// Mention the \"triggerType\" as either \"deposit\" or \"withdraw.\"",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
 								"url": {
-									"raw": "{{clientmobileappURL}}:5055/SolitxService/payment/link?access_token={{clientmobiletoken}}",
+									"raw": "{{clientmobileappURL}}:5055/PortfolioService/geteventsBycontractUUID?access_token={{clientmobiletoken}}&contractUUID={{mobilecontractuuid}}",
 									"host": [
 										"{{clientmobileappURL}}"
 									],
 									"port": "5055",
 									"path": [
-										"SolitxService",
-										"payment",
-										"link"
+										"PortfolioService",
+										"geteventsBycontractUUID"
 									],
 									"query": [
 										{
 											"key": "access_token",
 											"value": "{{clientmobiletoken}}"
+										},
+										{
+											"key": "contractUUID",
+											"value": "{{mobilecontractuuid}}"
 										}
 									]
 								}
