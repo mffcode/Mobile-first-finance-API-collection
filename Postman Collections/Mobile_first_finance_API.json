@@ -5392,6 +5392,39 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "To view the cards associated with profile",
+							"id": "4e623912-54a3-46b7-9780-dbaeb9ad489b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{clientmobileappURL}}:5055/ThirdpartyService/cards?access_token={{clientmobiletoken}}&status=active",
+									"host": [
+										"{{clientmobileappURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"cards"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{clientmobiletoken}}"
+										},
+										{
+											"key": "status",
+											"value": "active"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "bd19b024-5ca5-4ba3-950c-a30a8ec30e07"
