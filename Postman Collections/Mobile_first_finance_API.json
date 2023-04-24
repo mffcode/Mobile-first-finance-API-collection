@@ -4674,7 +4674,8 @@
 							"response": []
 						}
 					],
-					"id": "8571d921-aef9-4995-ac87-fed070a7c910"
+					"id": "8571d921-aef9-4995-ac87-fed070a7c910",
+					"description": "- This service is used to register a new client.\n- Firstly define a new environment variable for the mobile app URL and make it active.\n- Check out the Defining environment variables section for how to define a new environment.\n- Set the environment to the mobile app URL, and then proceed to the signup step."
 				},
 				{
 					"name": "Authorization",
