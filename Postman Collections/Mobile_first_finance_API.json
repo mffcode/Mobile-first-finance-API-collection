@@ -5348,6 +5348,47 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "To view the contract terms",
+							"id": "f44d067d-2f2a-4da0-819e-81796967adac",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{clientmobileappURL}}:5055/PortfolioService/getcontractsBycontractUUID?contractUUID={{mobilecontractuuid}}&access_token={{clientmobiletoken}}&pageNumber=0&numberOfRecords=10",
+									"host": [
+										"{{clientmobileappURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"PortfolioService",
+										"getcontractsBycontractUUID"
+									],
+									"query": [
+										{
+											"key": "contractUUID",
+											"value": "{{mobilecontractuuid}}"
+										},
+										{
+											"key": "access_token",
+											"value": "{{clientmobiletoken}}"
+										},
+										{
+											"key": "pageNumber",
+											"value": "0"
+										},
+										{
+											"key": "numberOfRecords",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "4722b014-b557-432a-80f2-38496dccc229"
@@ -5463,7 +5504,13 @@
 								}
 							},
 							"response": []
-						},
+						}
+					],
+					"id": "bd19b024-5ca5-4ba3-950c-a30a8ec30e07"
+				},
+				{
+					"name": "Check balance",
+					"item": [
 						{
 							"name": "To check the balance",
 							"id": "fc1b8a0b-deb4-4eb6-aae1-fa3701566eb9",
@@ -5498,11 +5545,6 @@
 							"response": []
 						}
 					],
-					"id": "bd19b024-5ca5-4ba3-950c-a30a8ec30e07"
-				},
-				{
-					"name": "Check balance",
-					"item": [],
 					"id": "1017dd8d-4d66-4203-8122-a6ab3b696755"
 				}
 			],
