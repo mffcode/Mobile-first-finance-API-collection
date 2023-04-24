@@ -350,8 +350,8 @@
 													"var jsonData = jsonResponse.data;",
 													"console.log(\"jsonData...\"+jsonData.users)",
 													"var users=jsonData.users",
-													"console.log(\"Get a user id...\"+users[0].userID)",
-													"pm.environment.set(\"userID\", users[0].userID);"
+													"console.log(\"Get a user id...\"+users[985].userID)",
+													"pm.environment.set(\"userID\", users[985].userID);"
 												],
 												"type": "text/javascript"
 											}
