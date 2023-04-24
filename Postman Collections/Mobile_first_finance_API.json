@@ -5023,7 +5023,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{clientmobileappURL}}:5055/WorkflowService/mobileApp/b9c13f64-4f4e-4959-a46a-e3b81a7c3497?access_token={{clientmobiletoken}}",
+									"raw": "{{clientmobileappURL}}:5055/WorkflowService/mobileApp/{{mobileappprofileid}}?access_token={{clientmobiletoken}}",
 									"host": [
 										"{{clientmobileappURL}}"
 									],
@@ -5031,7 +5031,7 @@
 									"path": [
 										"WorkflowService",
 										"mobileApp",
-										"b9c13f64-4f4e-4959-a46a-e3b81a7c3497"
+										"{{mobileappprofileid}}"
 									],
 									"query": [
 										{
