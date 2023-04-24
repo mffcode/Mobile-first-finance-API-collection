@@ -5239,6 +5239,43 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "To view the transaction history",
+							"id": "27c905b7-e1ef-4097-b399-e5ddf56f8d83",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{clientmobileappURL}}:5055/PortfolioService/transactionHistory?contractUUID={{mobilecontractuuid}}&access_token={{clientmobiletoken}}&repaymentType=Yes",
+									"host": [
+										"{{clientmobileappURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"PortfolioService",
+										"transactionHistory"
+									],
+									"query": [
+										{
+											"key": "contractUUID",
+											"value": "{{mobilecontractuuid}}"
+										},
+										{
+											"key": "access_token",
+											"value": "{{clientmobiletoken}}"
+										},
+										{
+											"key": "repaymentType",
+											"value": "Yes"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "4722b014-b557-432a-80f2-38496dccc229"
