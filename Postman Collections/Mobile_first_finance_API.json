@@ -5282,13 +5282,7 @@
 				},
 				{
 					"name": "New Folder",
-					"item": [
-						{
-							"name": "New Folder",
-							"item": [],
-							"id": "237bdf3c-02e5-49f3-8b76-38cc566a8774"
-						}
-					],
+					"item": [],
 					"id": "dc8a7df7-21ae-4e91-b973-c10f36c72919"
 				}
 			],
