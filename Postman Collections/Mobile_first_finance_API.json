@@ -113,14 +113,10 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "https://dev.mobilefirstfinance.com:5055/BranchService/branches/treeLevel?access_token={{useraccessToken}}",
-											"protocol": "https",
+											"raw": "{{backofficeURL}}/BranchService/branches/treeLevel?access_token={{useraccessToken}}",
 											"host": [
-												"dev",
-												"mobilefirstfinance",
-												"com"
+												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"BranchService",
 												"branches",
