@@ -5463,6 +5463,39 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "To check the balance",
+							"id": "fc1b8a0b-deb4-4eb6-aae1-fa3701566eb9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{clientmobileappURL}}:5055/PortfolioService/Contracts?linkedProfileId={{mobileapplinkedprofileid}}&access_token={{clientmobiletoken}}",
+									"host": [
+										"{{clientmobileappURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"PortfolioService",
+										"Contracts"
+									],
+									"query": [
+										{
+											"key": "linkedProfileId",
+											"value": "{{mobileapplinkedprofileid}}"
+										},
+										{
+											"key": "access_token",
+											"value": "{{clientmobiletoken}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "bd19b024-5ca5-4ba3-950c-a30a8ec30e07"
