@@ -5354,7 +5354,46 @@
 				},
 				{
 					"name": "Cards",
-					"item": [],
+					"item": [
+						{
+							"name": "Apply for a card",
+							"id": "a8afdc0d-e9b6-4323-a7fa-c6be3402fff6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"cardDetails\": [\n    {\n      \"contractID\": \"GMF/165479-1\",\n      \"contractUUID\": \"6aacb8f5-ec6e-4144-9fe8-cc150f3496b5\",\n      \"linkedProfileId\": \"05597611-2dc9-41ee-ac9f-30111317ec58\",\n      \"productName\": \"Go savings\",\n      \"status\": \"apply\"\n    }\n  ]\n}\n\n// Look for the \"contractid,\" \"contractuuid,\" and \"productname\" in the \"Globals\" section of the \"Environment quick look\" and paste them in their respective values.\n// For once run the service \"Fetch the profile details\" under \"Customer onboarding\" to fetch the \"linkedprofileid\" from the \"Globals\" section of the \"Environment quick look.\"\n// Mention the \"status\" as \"apply.\"",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{clientmobileappURL}}:5055/ThirdpartyService/applyCard?access_token={{clientmobiletoken}}",
+									"host": [
+										"{{clientmobileappURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"applyCard"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{clientmobiletoken}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
 					"id": "bd19b024-5ca5-4ba3-950c-a30a8ec30e07"
 				}
 			],
