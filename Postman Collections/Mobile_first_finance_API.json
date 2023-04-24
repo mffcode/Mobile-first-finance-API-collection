@@ -1543,7 +1543,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"FormID\": \"20\",\n  \"National ID\": \"Update national id\",\n  \"Name\": \"Update profile name\",\n  \"Gender\": \"Update gender\",\n  \"Latitude\": \"\",\n  \"Longitude\": \"\",\n  \"Mobile Number\": 9452102,\n  \"Date of Birth\": \"1989-03-09\",\n  \"Hierarchy\": 1,\n  \"branchId\": \"\"\n}\n// Update the existing mobile number\n// Update the \"Date of Birth\" in yyyy-mm-dd format\n",
+									"raw": "{\n  \"FormID\": \"20\",\n  \"National ID\": \"Update national id\",\n  \"Name\": \"Update profile name\",\n  \"Gender\": \"Update gender\",\n  \"Latitude\": \"\",\n  \"Longitude\": \"\",\n  \"Mobile Number\": 9452102,\n  \"Date of Birth\": \"Update DOB\",\n  \"Hierarchy\": 1,\n  \"branchId\": \"\"\n}\n// Update the required details of the profile.\n",
 									"options": {
 										"raw": {
 											"language": "json"
