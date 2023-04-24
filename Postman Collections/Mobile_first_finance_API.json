@@ -5425,6 +5425,44 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Block a card",
+							"id": "1528b4a4-4ea3-4de8-8b96-03fb39f69fe4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"cardDetails\": [\n    {\n      \"contractUUID\": \"6aacb8f5-ec6e-4144-9fe8-cc150f3496b5\",\n      \"status\": \"block\"\n    }\n  ]\n}\n\n// Look for the contractuuid in \"Globals,\" which is under the Environment quick look.\n// Mention the status as \"block\".",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{clientmobileappURL}}:5055/ThirdpartyService/cardStatus?access_token={{clientmobiletoken}}",
+									"host": [
+										"{{clientmobileappURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"cardStatus"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{clientmobiletoken}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "bd19b024-5ca5-4ba3-950c-a30a8ec30e07"
