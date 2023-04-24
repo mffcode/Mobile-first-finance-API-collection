@@ -5174,6 +5174,41 @@
 					"item": [
 						{
 							"name": "To view the contracts",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "e2173295-b2f0-401e-bfd2-d85372c17aad",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);",
+											"console.log(\"jsonResponse...\"+jsonResponse)",
+											"var jsonData = jsonResponse.data;",
+											"var portfolio=jsonData.portfolio",
+											"console.log(\"portfolio...\"+jsonData.portfolio)",
+											"var contractuuid=portfolio[0].contractUUID",
+											"console.log(\"mobilecontractuuid...\"+portfolio[0].contractUUID)",
+											"pm.globals.set(\"mobilecontractuuid\", portfolio[0].contractUUID);",
+											"console.log(\"mobileproductname...\"+portfolio[0].productName)",
+											"console.log(\"mobilecontractid...\"+portfolio[0].contractID)",
+											"pm.globals.set(\"mobileproductname\", portfolio[0].productName);",
+											"pm.globals.set(\"mobilecontractid\", portfolio[0].contractID);",
+											"",
+											"",
+											"",
+											"",
+											"",
+											"",
+											"",
+											"",
+											"",
+											"",
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "b78dff09-6a0b-4461-bbee-7d18b4237ffd",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
