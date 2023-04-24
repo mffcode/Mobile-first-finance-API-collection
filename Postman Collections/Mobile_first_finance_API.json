@@ -5171,7 +5171,41 @@
 				},
 				{
 					"name": "Accounts",
-					"item": [],
+					"item": [
+						{
+							"name": "To view the contracts",
+							"id": "b78dff09-6a0b-4461-bbee-7d18b4237ffd",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{clientmobileappURL}}:5055/PortfolioService/Contracts?linkedProfileId={{mobileapplinkedprofileid}}&access_token={{clientmobiletoken}}",
+									"host": [
+										"{{clientmobileappURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"PortfolioService",
+										"Contracts"
+									],
+									"query": [
+										{
+											"key": "linkedProfileId",
+											"value": "{{mobileapplinkedprofileid}}"
+										},
+										{
+											"key": "access_token",
+											"value": "{{clientmobiletoken}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
 					"id": "4722b014-b557-432a-80f2-38496dccc229"
 				}
 			],
