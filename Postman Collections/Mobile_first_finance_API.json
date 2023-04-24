@@ -4646,7 +4646,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{customerURL}}:7190/mff/api/clientUserform/Customer"
+								"url": "{{clientmobileappURL}}:7190/mff/api/clientUserform/Customer"
 							},
 							"response": []
 						},
