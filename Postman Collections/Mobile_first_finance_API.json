@@ -1205,7 +1205,8 @@
 													"value": "{{useraccessToken}}"
 												}
 											]
-										}
+										},
+										"description": "- Using this service we can fetch the audit trial data"
 									},
 									"response": []
 								},
