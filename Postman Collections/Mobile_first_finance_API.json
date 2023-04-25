@@ -1990,7 +1990,7 @@
 						}
 					],
 					"id": "0e29be9b-5869-46cd-a7ce-8437d87b6073",
-					"description": "Onboard module is used for onboarding a new client. This folder consist of different services which are used for the functionality of the module."
+					"description": "- Onboard module is used for onboarding a new client. This folder consist of different services which are used for the functionality of the module."
 				},
 				{
 					"name": "Approve",
