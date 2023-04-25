@@ -5176,7 +5176,8 @@
 											"value": "{{clientmobiletoken}}"
 										}
 									]
-								}
+								},
+								"description": "- Using this service we can fetch the onboarded workflow details"
 							},
 							"response": []
 						},
