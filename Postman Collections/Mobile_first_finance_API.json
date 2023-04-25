@@ -3029,7 +3029,8 @@
 											"value": "Yes"
 										}
 									]
-								}
+								},
+								"description": "- Using this service we can fetch the transaction history"
 							},
 							"response": []
 						}
