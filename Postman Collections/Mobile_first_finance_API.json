@@ -5378,7 +5378,8 @@
 											"value": "{{clientmobiletoken}}"
 										}
 									]
-								}
+								},
+								"description": "- Using this service we can fetch the list of contracts for a profile.\n- Note : Only approved profiles will have a linkedprofileid generated.\n- Re run the service **Fetch the profile details** again to obtain the linked profile id and get it automatically applied to the service."
 							},
 							"response": []
 						},
