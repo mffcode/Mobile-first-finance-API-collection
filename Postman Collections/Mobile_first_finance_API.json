@@ -2288,7 +2288,7 @@
 					"name": "Document storage",
 					"item": [
 						{
-							"name": "To view the personal documents of a specific profile",
+							"name": "To view the personal documents for a specific profile",
 							"id": "412dad75-c601-41b5-927b-90d089116cca",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
