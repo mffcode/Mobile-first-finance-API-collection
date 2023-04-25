@@ -2347,7 +2347,7 @@
 										}
 									]
 								},
-								"description": "- Using this service we can view the business documents of a specific profile."
+								"description": "- Using this service, we can view the business documents of a specific profile."
 							},
 							"response": []
 						},
