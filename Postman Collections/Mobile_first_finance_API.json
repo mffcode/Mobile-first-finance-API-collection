@@ -5693,7 +5693,8 @@
 											"value": "{{clientmobiletoken}}"
 										}
 									]
-								}
+								},
+								"description": "- Using this service we can check the balance of a contract."
 							},
 							"response": []
 						}
