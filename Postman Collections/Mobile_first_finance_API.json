@@ -2297,14 +2297,14 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{backofficeURL}}/ProfileService/files/{{profileID}}/personal?access_token={{useraccessToken}}",
+									"raw": "{{backofficeURL}}/ProfileService/files/{{documentsprofileID}}/personal?access_token={{useraccessToken}}",
 									"host": [
 										"{{backofficeURL}}"
 									],
 									"path": [
 										"ProfileService",
 										"files",
-										"{{profileID}}",
+										"{{documentsprofileID}}",
 										"personal"
 									],
 									"query": [
