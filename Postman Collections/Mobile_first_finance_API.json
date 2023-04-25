@@ -3034,7 +3034,8 @@
 							"response": []
 						}
 					],
-					"id": "f78f8d90-2600-4bce-b423-241ffe18950c"
+					"id": "f78f8d90-2600-4bce-b423-241ffe18950c",
+					"description": "- This folder consists of services that are used to view the contracts and their transaction histories."
 				},
 				{
 					"name": "Payments",
