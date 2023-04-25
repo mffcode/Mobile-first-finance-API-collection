@@ -5491,7 +5491,8 @@
 											"value": "{{mobilecontractuuid}}"
 										}
 									]
-								}
+								},
+								"description": "- Using this service we can view the pending repayments of contract."
 							},
 							"response": []
 						},
