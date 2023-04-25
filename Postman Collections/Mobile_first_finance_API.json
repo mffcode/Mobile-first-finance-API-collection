@@ -1154,6 +1154,27 @@
 							"item": [
 								{
 									"name": "Get all the audit trial data",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "a1f31935-abd5-4462-bb2a-5d2ce902826e",
+												"exec": [
+													"var jsonResponse = JSON.parse(responseBody);",
+													"console.log(\"jsonResponse...\"+jsonResponse)",
+													"",
+													"var id = jsonResponse[0].id;",
+													"console.log(\"auditID...\"+jsonResponse[0].id)",
+													"pm.globals.set(\"auditID\", jsonResponse[0].id);",
+													"",
+													"",
+													"",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
 									"id": "8620122e-a4ed-43d6-8ea6-2020fd5d9265",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
