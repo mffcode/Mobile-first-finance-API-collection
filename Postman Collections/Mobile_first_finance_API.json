@@ -1247,7 +1247,7 @@
 												}
 											]
 										},
-										"description": "- Using this service we can fetch the audit trial data with a specific audit id"
+										"description": "- Using this service we can fetch the audit trial data with a specific audit id."
 									},
 									"response": []
 								}
