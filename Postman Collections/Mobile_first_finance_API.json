@@ -5118,7 +5118,8 @@
 											"value": "{{clientmobiletoken}}"
 										}
 									]
-								}
+								},
+								"description": "- Using this service we can link a profile to the workflow.\n- For linking the profile to a specific workflow we have to mention both the profileID and the workFlowID in the payload. Check the below json payload for detail.\n- Click on the Environment quick look in the right top corner and navigate to Globals to find the generated **mobileappprofileid** and **mobileappworkflowid**.\n- Note : To fetch the **mobileappprofileid**, run the service **Fetch the profile details** and to fetch the **mobileappworkflowid**, run the service **Fetch all the available workflows**."
 							},
 							"response": []
 						},
