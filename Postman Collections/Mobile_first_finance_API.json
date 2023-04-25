@@ -4912,7 +4912,7 @@
 								}
 							],
 							"id": "0ac09714-0d15-46c5-8939-c12dc740aae5",
-							"description": "- Using this service, we can gain access to the customer application. Include in the payload the freshly created customer credentials.\n- Note : The Identifier that we provide in the signup form will act as the userName in the login form."
+							"description": "- Using this service, we can gain access to the customer application. Include in the payload the freshly created customer credentials.\n- Note : The Identifier that we provide in the signup form will act as the username in the login form."
 						}
 					],
 					"id": "f1e94e9e-80dd-4b6d-af9c-4ccbb1ac8269",
