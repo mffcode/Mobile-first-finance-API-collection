@@ -3036,7 +3036,7 @@
 										}
 									]
 								},
-								"description": "- Using this service we can fetch the transaction history"
+								"description": "- Using this service, we can fetch the transaction history"
 							},
 							"response": []
 						}
