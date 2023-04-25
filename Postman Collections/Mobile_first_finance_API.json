@@ -5652,7 +5652,8 @@
 											"value": "{{clientmobiletoken}}"
 										}
 									]
-								}
+								},
+								"description": "- This service is used to block the active cards.\n- In the payload, mention the contractUUID of a contract for which the active card is associated and mention the status as **block**.\n- Use **To view the contracts** for fetching the contractUUID.\n- **Note** : The contract should consist an active card in order to use this service."
 							},
 							"response": []
 						}
