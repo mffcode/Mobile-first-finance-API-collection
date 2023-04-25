@@ -5698,7 +5698,8 @@
 							"response": []
 						}
 					],
-					"id": "1017dd8d-4d66-4203-8122-a6ab3b696755"
+					"id": "1017dd8d-4d66-4203-8122-a6ab3b696755",
+					"description": "- This folder consist of the service which is used to check the balance."
 				}
 			],
 			"id": "75dff1e7-c925-4adb-a916-1b492df7844e",
