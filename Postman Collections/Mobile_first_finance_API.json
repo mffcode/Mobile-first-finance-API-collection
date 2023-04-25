@@ -2286,7 +2286,38 @@
 				},
 				{
 					"name": "Document storage",
-					"item": [],
+					"item": [
+						{
+							"name": "To view the personal documents of a specific profile",
+							"id": "412dad75-c601-41b5-927b-90d089116cca",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{backofficeURL}}/ProfileService/files/{{profileID}}/personal?access_token={{useraccessToken}}",
+									"host": [
+										"{{backofficeURL}}"
+									],
+									"path": [
+										"ProfileService",
+										"files",
+										"{{profileID}}",
+										"personal"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{useraccessToken}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
 					"id": "eec2dfeb-95d9-4b25-aba1-3aede2c5d8fe"
 				}
 			],
