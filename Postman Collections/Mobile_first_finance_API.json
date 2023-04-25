@@ -2327,14 +2327,14 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{backofficeURL}}/ProfileService/files/{{profileID}}/business?access_token={{useraccessToken}}",
+									"raw": "{{backofficeURL}}/ProfileService/files/{{documentsprofileID}}/business?access_token={{useraccessToken}}",
 									"host": [
 										"{{backofficeURL}}"
 									],
 									"path": [
 										"ProfileService",
 										"files",
-										"{{profileID}}",
+										"{{documentsprofileID}}",
 										"business"
 									],
 									"query": [
