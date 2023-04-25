@@ -4964,7 +4964,8 @@
 											"value": "{{clientmobiletoken}}"
 										}
 									]
-								}
+								},
+								"description": "- Using this service, we can fetch the list of available workflows.\n- Run this service just once since it has a test script defined to fetch a specific workflow and turn the workflow id into a global variable so that other necessary services can utilize it."
 							},
 							"response": []
 						},
