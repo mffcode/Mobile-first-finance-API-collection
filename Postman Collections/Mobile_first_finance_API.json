@@ -2316,6 +2316,36 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "To view the specific documents of a specific profile",
+							"id": "f6deef37-d07b-4a36-8fac-884405d5acff",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{backofficeURL}}/ProfileService/files/{{profileID}}/business?access_token={{useraccessToken}}",
+									"host": [
+										"{{backofficeURL}}"
+									],
+									"path": [
+										"ProfileService",
+										"files",
+										"{{profileID}}",
+										"business"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{useraccessToken}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "eec2dfeb-95d9-4b25-aba1-3aede2c5d8fe"
