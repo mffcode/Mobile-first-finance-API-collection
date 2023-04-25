@@ -527,7 +527,7 @@
 								}
 							],
 							"id": "508ec0d2-1960-48fd-b2e6-d2de33f97736",
-							"description": "User menus are the list of menus that used to make a user role."
+							"description": "- User menus are the list of menus that used to make a user role."
 						},
 						{
 							"name": "User roles",
