@@ -5579,7 +5579,8 @@
 											"value": "{{clientmobiletoken}}"
 										}
 									]
-								}
+								},
+								"description": "- This service is used to apply for a new card..\n- All the keys mentioned in the json are mandatory.\n- To find the contractID, contractUUID and productName use the service **To view the contracts**.\n- To find the linkedProfileId use the service **Fetch the profile details**.\n- Mention the status key as apply."
 							},
 							"response": []
 						},
