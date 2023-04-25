@@ -5533,7 +5533,8 @@
 							"response": []
 						}
 					],
-					"id": "4722b014-b557-432a-80f2-38496dccc229"
+					"id": "4722b014-b557-432a-80f2-38496dccc229",
+					"description": "- This folder consists of services that are used to view the contracts and their transaction histories."
 				},
 				{
 					"name": "Cards",
