@@ -5183,7 +5183,7 @@
 							"response": []
 						},
 						{
-							"name": "Get workflow templates based on workflow profile id and template id",
+							"name": "Get workflow templates based on workflow profile id",
 							"event": [
 								{
 									"listen": "test",
