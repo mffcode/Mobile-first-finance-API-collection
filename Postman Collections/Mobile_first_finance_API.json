@@ -5021,7 +5021,8 @@
 											"value": "{{clientmobiletoken}}"
 										}
 									]
-								}
+								},
+								"description": "- Using this service, we can fetch the list of available workflow templates.\n- Using this service we can fetch the template id which is necessary to verify the workflow template details.\n- Run this service just once since it has a test script defined to fetch a specific workflow template id and turn the template id into a global variable so that other necessary services can utilize it."
 							},
 							"response": []
 						},
