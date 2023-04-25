@@ -5533,7 +5533,8 @@
 											"value": "10"
 										}
 									]
-								}
+								},
+								"description": "- Using this service we can view the terms of a contract."
 							},
 							"response": []
 						}
