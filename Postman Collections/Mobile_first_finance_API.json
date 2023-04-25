@@ -1219,7 +1219,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}/ProfileService/getAuditData?pageNumber=0&numberOfRecords=10&auditId=155308&access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/ProfileService/getAuditData?pageNumber=0&numberOfRecords=10&auditId={{auditID}}&access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
@@ -1238,7 +1238,7 @@
 												},
 												{
 													"key": "auditId",
-													"value": "155308"
+													"value": "{{auditID}}"
 												},
 												{
 													"key": "access_token",
