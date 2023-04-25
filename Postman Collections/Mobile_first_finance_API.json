@@ -5457,7 +5457,8 @@
 											"value": "Yes"
 										}
 									]
-								}
+								},
+								"description": "- Using this service we can view the transaction history."
 							},
 							"response": []
 						},
