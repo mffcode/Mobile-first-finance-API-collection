@@ -2390,7 +2390,8 @@
 											"value": "{{useraccessToken}}"
 										}
 									]
-								}
+								},
+								"description": "- Using this service, we can view the contract documents for a specific profile."
 							},
 							"response": []
 						}
