@@ -3128,7 +3128,7 @@
 						}
 					],
 					"id": "5ec60a32-c529-42b4-a933-78d38e392b15",
-					"description": "Consist of services which are used to view and perform the repayments."
+					"description": "- Consist of services which are used to view and perform the repayments."
 				},
 				{
 					"name": "Cards",
