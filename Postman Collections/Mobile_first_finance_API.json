@@ -2541,7 +2541,7 @@
 						}
 					],
 					"id": "c8609cd7-0735-47fe-a715-d87d095eca66",
-					"description": "This service is used to perform customer authentication."
+					"description": "- This service is used to perform customer authentication."
 				},
 				{
 					"name": "Client onboarding",
