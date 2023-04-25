@@ -1468,7 +1468,7 @@
 											"var jsonData = jsonResponse.data;",
 											"console.log(\"jsonData...\"+jsonData.profiles)",
 											"var profiles=jsonData.profiles",
-											"console.log(\"profiles...\"+profiles[0].profileID)",
+											"console.log(\"profileID...\"+profiles[0].profileID)",
 											"pm.environment.set(\"profileID\", profiles[0].profileID);",
 											"",
 											"var profileDetails=profiles[0].profileDetails",
