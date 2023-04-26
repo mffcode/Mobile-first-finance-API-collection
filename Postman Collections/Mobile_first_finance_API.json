@@ -4883,57 +4883,6 @@
 							"name": "Mobile number and Email Id validation",
 							"item": [
 								{
-									"name": "Mobile number validation",
-									"item": [
-										{
-											"name": "Send OTP",
-											"id": "969f1ff4-f6ac-413b-a708-9800e7ec5c4c",
-											"protocolProfileBehavior": {
-												"disableBodyPruning": true
-											},
-											"request": {
-												"method": "POST",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n  \"Mobile Number\": \"Provide a valid mobile number\"\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": "{{clientmobileappURL}}:7190/mff/api/userValidation"
-											},
-											"response": []
-										},
-										{
-											"name": "Verify OTP",
-											"id": "520d9596-e339-418e-bdf8-86e9e97e21ec",
-											"protocolProfileBehavior": {
-												"disableBodyPruning": true
-											},
-											"request": {
-												"method": "POST",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\r\n  \"To\": \"Enter provided mobile number for validation\",\r\n  \"Code\": \"Enter the OTP sent to the mobile number\"\r\n}",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": "{{customerURL}}:5055/ThirdpartyService/twilio/verifyOtp",
-												"description": "- The OTP that we receive via mobile number should be included in the **Code** value."
-											},
-											"response": []
-										}
-									],
-									"id": "f517c55d-7651-4ab8-a690-7bf37b89e512"
-								},
-								{
 									"name": "Email ID validation",
 									"item": [
 										{
