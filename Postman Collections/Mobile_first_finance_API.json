@@ -4985,12 +4985,9 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "https://dev.mobilefirstfinance.com:5055/LoginService/verify/phoneNumber?phoneNumber=+919392256334",
-											"protocol": "https",
+											"raw": "{{clientmobileappURL}}:5055/LoginService/verify/phoneNumber?phoneNumber=+919392256334",
 											"host": [
-												"dev",
-												"mobilefirstfinance",
-												"com"
+												"{{clientmobileappURL}}"
 											],
 											"port": "5055",
 											"path": [
