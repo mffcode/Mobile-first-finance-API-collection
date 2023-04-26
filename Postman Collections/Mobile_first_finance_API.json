@@ -3255,7 +3255,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{customerURL}}:5055/ProfileService/files/{{documentsprofileID}}/personal?access_token={{useraccessToken}}",
+									"raw": "{{customerURL}}:5055/ProfileService/files/{{documentsprofileID}}/personal?access_token={{custoken}}",
 									"host": [
 										"{{customerURL}}"
 									],
@@ -3269,7 +3269,7 @@
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{useraccessToken}}"
+											"value": "{{custoken}}"
 										}
 									]
 								},
