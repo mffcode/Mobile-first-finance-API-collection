@@ -4939,7 +4939,7 @@
 									"id": "cbc4ce53-6c02-4bdf-bee2-79e41cdb8e26"
 								},
 								{
-									"name": "Email Id validation",
+									"name": "Send OTP",
 									"id": "893f5404-6db4-40aa-93dc-877c9e5e2cdc",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
