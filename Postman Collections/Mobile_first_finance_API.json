@@ -4969,7 +4969,7 @@
 												"header": [],
 												"body": {
 													"mode": "raw",
-													"raw": "{\r\n  \"To\": \"abc123@gmail.com\",\r\n  \"Code\": \"467195\"\r\n}",
+													"raw": "{\r\n  \"To\": \"Enter provided email id for validation\",\r\n  \"Code\": \"Enter the OTP sent to the email id\"\r\n}",
 													"options": {
 														"raw": {
 															"language": "json"
