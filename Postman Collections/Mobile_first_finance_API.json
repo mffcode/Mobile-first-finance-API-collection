@@ -4880,6 +4880,11 @@
 					"name": "Client sign up",
 					"item": [
 						{
+							"name": "New Folder",
+							"item": [],
+							"id": "73a8ba35-160e-4dd9-be33-bad070e6df4b"
+						},
+						{
 							"name": "Get client sign up form",
 							"id": "b02e8aed-ba8f-4411-801d-615fe297a6da",
 							"protocolProfileBehavior": {
