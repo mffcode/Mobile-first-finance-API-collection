@@ -3306,6 +3306,50 @@
 								"description": "- Using this service, we can view the business documents of a specific profile."
 							},
 							"response": []
+						},
+						{
+							"name": "To view the contract documents for a specific profile",
+							"id": "2c47fe14-01b3-4a05-a1bb-15419c2dae27",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n  \"cf95a44d-7c6a-40cd-bde9-ebe40c5c7604\",\n  \"aaf596cb-66b5-423d-b2cc-17339684621b\",\n  \"55628a44-e666-430d-b2d3-0cf7d2edcfab\",\n  \"41568864-d369-4ba6-8469-d41a1af76ff3\",\n  \"45351f8c-4bb6-4501-a9b4-e87348a5add5\"\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dev.mobilefirstfinance.com:5055/ProfileService/productTemplate/{{documentsprofileID}}/contracts?access_token={{useraccessToken}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"mobilefirstfinance",
+										"com"
+									],
+									"port": "5055",
+									"path": [
+										"ProfileService",
+										"productTemplate",
+										"{{documentsprofileID}}",
+										"contracts"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{useraccessToken}}"
+										}
+									]
+								},
+								"description": "- Using this service, we can view the contract documents for a specific profile."
+							},
+							"response": []
 						}
 					],
 					"id": "f470c7cf-f2d2-4be1-8381-bb147312cabc"
