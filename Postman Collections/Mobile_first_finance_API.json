@@ -3243,6 +3243,43 @@
 					"description": "Consist of services which are used to\n\ni) Apply for a card\n\nii) To view the cards which are associated to a profile\n\niii) To block an active card"
 				},
 				{
+					"name": "Document storage",
+					"item": [
+						{
+							"name": "To view the personal documents for a specific profile",
+							"id": "dfb94863-d8a7-43fa-a888-f1365be8d6a2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{backofficeURL}}/ProfileService/files/{{documentsprofileID}}/personal?access_token={{useraccessToken}}",
+									"host": [
+										"{{backofficeURL}}"
+									],
+									"path": [
+										"ProfileService",
+										"files",
+										"{{documentsprofileID}}",
+										"personal"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{useraccessToken}}"
+										}
+									]
+								},
+								"description": "- Using this service, we can view the personal documents of a specific profile."
+							},
+							"response": []
+						}
+					],
+					"id": "f470c7cf-f2d2-4be1-8381-bb147312cabc"
+				},
+				{
 					"name": "Notifications",
 					"item": [
 						{
@@ -3276,11 +3313,6 @@
 						}
 					],
 					"id": "837c2b9c-4430-4a43-8a7e-17b2ec8b0b48"
-				},
-				{
-					"name": "Document storage",
-					"item": [],
-					"id": "f470c7cf-f2d2-4be1-8381-bb147312cabc"
 				}
 			],
 			"id": "68603238-16c6-420d-85d8-095f24172e26",
