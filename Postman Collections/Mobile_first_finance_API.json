@@ -3003,8 +3003,8 @@
 							"response": []
 						},
 						{
-							"name": "To view the transaction history of a specific contract",
-							"id": "902dfb8b-d4e2-4e3d-b576-6f22b1b7f8aa",
+							"name": "To view the pending events of a specific contract",
+							"id": "05ec6604-775b-4127-b667-39915fd65a4e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3012,41 +3012,35 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{customerURL}}:5055/PortfolioService/transactionHistory?contractUUID={{contractuuid}}&access_token={{custoken}}&repaymentType=Yes",
+									"raw": "{{customerURL}}:5055/PortfolioService/geteventsBycontractUUID?access_token={{custoken}}&contractUUID={{contractuuid}}",
 									"host": [
 										"{{customerURL}}"
 									],
 									"port": "5055",
 									"path": [
 										"PortfolioService",
-										"transactionHistory"
+										"geteventsBycontractUUID"
 									],
 									"query": [
-										{
-											"key": "contractUUID",
-											"value": "{{contractuuid}}"
-										},
 										{
 											"key": "access_token",
 											"value": "{{custoken}}"
 										},
 										{
-											"key": "repaymentType",
-											"value": "Yes"
+											"key": "contractUUID",
+											"value": "{{contractuuid}}"
+										},
+										{
+											"key": "eventType",
+											"value": "PI",
+											"disabled": true
 										}
 									]
 								},
-								"description": "- Using this service, we can fetch the transaction history"
+								"description": "- This service is used to view the transaction history of a specific contract.\n- The **contractuuid** value, which is mentioned in the service, is mandatory. It will automatically get applied to the service call once we run the service, **View the contracts of a profile**."
 							},
 							"response": []
-						}
-					],
-					"id": "f78f8d90-2600-4bce-b423-241ffe18950c",
-					"description": "- This folder consists of services that are used to view the contracts and their transaction histories."
-				},
-				{
-					"name": "Payments",
-					"item": [
+						},
 						{
 							"name": "To perform the transaction",
 							"id": "9c1720bd-fbbd-42e2-a1ce-03bcbea0ddd5",
@@ -3088,8 +3082,8 @@
 							"response": []
 						},
 						{
-							"name": "To view the pending events of a specific contract",
-							"id": "05ec6604-775b-4127-b667-39915fd65a4e",
+							"name": "To view the transaction history of a specific contract",
+							"id": "902dfb8b-d4e2-4e3d-b576-6f22b1b7f8aa",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -3097,38 +3091,37 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{customerURL}}:5055/PortfolioService/geteventsBycontractUUID?access_token={{custoken}}&contractUUID={{contractuuid}}",
+									"raw": "{{customerURL}}:5055/PortfolioService/transactionHistory?contractUUID={{contractuuid}}&access_token={{custoken}}&repaymentType=Yes",
 									"host": [
 										"{{customerURL}}"
 									],
 									"port": "5055",
 									"path": [
 										"PortfolioService",
-										"geteventsBycontractUUID"
+										"transactionHistory"
 									],
 									"query": [
-										{
-											"key": "access_token",
-											"value": "{{custoken}}"
-										},
 										{
 											"key": "contractUUID",
 											"value": "{{contractuuid}}"
 										},
 										{
-											"key": "eventType",
-											"value": "PI",
-											"disabled": true
+											"key": "access_token",
+											"value": "{{custoken}}"
+										},
+										{
+											"key": "repaymentType",
+											"value": "Yes"
 										}
 									]
 								},
-								"description": "- This service is used to view the transaction history of a specific contract.\n- The **contractuuid** value, which is mentioned in the service, is mandatory. It will automatically get applied to the service call once we run the service, **View the contracts of a profile**."
+								"description": "- Using this service, we can fetch the transaction history"
 							},
 							"response": []
 						}
 					],
-					"id": "5ec60a32-c529-42b4-a933-78d38e392b15",
-					"description": "- Consist of services which are used to view and perform the repayments."
+					"id": "f78f8d90-2600-4bce-b423-241ffe18950c",
+					"description": "- This folder consists of services that are used to view the contracts and their transaction histories."
 				},
 				{
 					"name": "Cards",
