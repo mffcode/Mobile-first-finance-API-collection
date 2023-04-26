@@ -2410,7 +2410,7 @@
 					"name": "Client sign up",
 					"item": [
 						{
-							"name": "Mobile number and Email validation",
+							"name": "Mobile number and Email id validation",
 							"item": [
 								{
 									"name": "Mobile number validation",
