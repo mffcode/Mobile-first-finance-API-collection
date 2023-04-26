@@ -4935,30 +4935,54 @@
 								},
 								{
 									"name": "Email ID validation",
-									"item": [],
-									"id": "cbc4ce53-6c02-4bdf-bee2-79e41cdb8e26"
-								},
-								{
-									"name": "Send OTP",
-									"id": "893f5404-6db4-40aa-93dc-877c9e5e2cdc",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n  \"Email\": \"provide a valid email id\"\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
+									"item": [
+										{
+											"name": "Send OTP",
+											"id": "893f5404-6db4-40aa-93dc-877c9e5e2cdc",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"Email\": \"provide a valid email id\"\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": "{{clientmobileappURL}}:7190/mff/api/userValidation"
+											},
+											"response": []
 										},
-										"url": "{{clientmobileappURL}}:7190/mff/api/userValidation"
-									},
-									"response": []
+										{
+											"name": "Verify OTP",
+											"id": "bb72a6cf-17ad-4ae3-96c8-6920e70ac4b0",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"To\": \"abc123@gmail.com\",\r\n  \"Code\": \"467195\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": "{{customerURL}}:5055/ThirdpartyService/twilio/verifyOtp",
+												"description": "- The OTP that we receive via email should be included in the **Code** value."
+											},
+											"response": []
+										}
+									],
+									"id": "cbc4ce53-6c02-4bdf-bee2-79e41cdb8e26"
 								}
 							],
 							"id": "73a8ba35-160e-4dd9-be33-bad070e6df4b"
