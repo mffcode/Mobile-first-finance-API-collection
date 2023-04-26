@@ -4880,7 +4880,7 @@
 					"name": "Client sign up",
 					"item": [
 						{
-							"name": "Mobile number and Email id validation",
+							"name": "Mobile number and Email Id validation",
 							"item": [
 								{
 									"name": "Mobile number validation",
