@@ -3328,7 +3328,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{customerURL}}:5055/ProfileService/productTemplate/{{documentsprofileID}}/contracts?access_token={{useraccessToken}}",
+									"raw": "{{customerURL}}:5055/ProfileService/productTemplate/{{documentsprofileID}}/contracts?access_token={{custoken}}",
 									"host": [
 										"{{customerURL}}"
 									],
@@ -3342,7 +3342,7 @@
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{useraccessToken}}"
+											"value": "{{custoken}}"
 										}
 									]
 								},
