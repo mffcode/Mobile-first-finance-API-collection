@@ -3275,6 +3275,37 @@
 								"description": "- Using this service, we can view the personal documents of a specific profile."
 							},
 							"response": []
+						},
+						{
+							"name": "To view the business documents for a specific profile",
+							"id": "7040956f-d129-4b4b-82f1-49e9b4a5a2de",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{backofficeURL}}/ProfileService/files/{{documentsprofileID}}/business?access_token={{useraccessToken}}",
+									"host": [
+										"{{backofficeURL}}"
+									],
+									"path": [
+										"ProfileService",
+										"files",
+										"{{documentsprofileID}}",
+										"business"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{useraccessToken}}"
+										}
+									]
+								},
+								"description": "- Using this service, we can view the business documents of a specific profile."
+							},
+							"response": []
 						}
 					],
 					"id": "f470c7cf-f2d2-4be1-8381-bb147312cabc"
