@@ -4881,7 +4881,30 @@
 					"item": [
 						{
 							"name": "Mobile number and Email id validation",
-							"item": [],
+							"item": [
+								{
+									"name": "Mobile number validation",
+									"id": "969f1ff4-f6ac-413b-a708-9800e7ec5c4c",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Mobile Number\": \"Provide a valid mobile number\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{customerURL}}:7190/mff/api/userValidation"
+									},
+									"response": []
+								}
+							],
 							"id": "73a8ba35-160e-4dd9-be33-bad070e6df4b"
 						},
 						{
