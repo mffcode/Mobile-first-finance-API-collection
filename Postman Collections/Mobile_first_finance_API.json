@@ -3287,10 +3287,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{backofficeURL}}/ProfileService/files/{{documentsprofileID}}/business?access_token={{useraccessToken}}",
+									"raw": "{{customerURL}}:5055/ProfileService/files/{{documentsprofileID}}/business?access_token={{useraccessToken}}",
 									"host": [
-										"{{backofficeURL}}"
+										"{{customerURL}}"
 									],
+									"port": "5055",
 									"path": [
 										"ProfileService",
 										"files",
