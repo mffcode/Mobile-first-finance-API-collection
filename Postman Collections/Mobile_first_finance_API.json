@@ -4893,14 +4893,14 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"Mobile Number\": \"Provide a valid mobile number\"\n}",
+											"raw": "{\n  \"Mobile Number\": \"9392256334\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
 												}
 											}
 										},
-										"url": "{{customerURL}}:7190/mff/api/userValidation"
+										"url": "{{clientmobileappURL}}:7190/mff/api/userValidation"
 									},
 									"response": []
 								},
