@@ -4922,7 +4922,7 @@
 												}
 											}
 										},
-										"url": "{{customerURL}}:7190/mff/api/userValidation"
+										"url": "{{clientmobileappURL}}:7190/mff/api/userValidation"
 									},
 									"response": []
 								}
