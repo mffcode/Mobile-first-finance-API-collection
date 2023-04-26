@@ -4906,6 +4906,29 @@
 												"url": "{{clientmobileappURL}}:7190/mff/api/userValidation"
 											},
 											"response": []
+										},
+										{
+											"name": "Verify OTP",
+											"id": "520d9596-e339-418e-bdf8-86e9e97e21ec",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n  \"To\": \"+919392256334\",\r\n  \"Code\": \"718817\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": "{{customerURL}}:5055/ThirdpartyService/twilio/verifyOtp",
+												"description": "- The OTP that we receive via mobile number should be included in the **Code** value."
+											},
+											"response": []
 										}
 									],
 									"id": "f517c55d-7651-4ab8-a690-7bf37b89e512"
