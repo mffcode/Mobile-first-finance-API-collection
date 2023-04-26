@@ -4918,7 +4918,7 @@
 												"header": [],
 												"body": {
 													"mode": "raw",
-													"raw": "{\r\n  \"To\": \"Enter provided mobile number for validation.\",\r\n  \"Code\": \"Enter the OTP sent to the mobile number.\"\r\n}",
+													"raw": "{\r\n  \"To\": \"Enter provided mobile number for validation\",\r\n  \"Code\": \"Enter the OTP sent to the mobile number\"\r\n}",
 													"options": {
 														"raw": {
 															"language": "json"
