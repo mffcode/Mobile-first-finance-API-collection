@@ -1999,7 +1999,7 @@
 							"name": "Approve a profile",
 							"item": [
 								{
-									"name": "Get the non approved and approved profiles",
+									"name": "Get the non approved and approved profiles using filter",
 									"id": "aafe19dd-c03e-4920-8ef2-86739d2d1191",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
