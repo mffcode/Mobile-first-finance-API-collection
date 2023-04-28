@@ -2035,6 +2035,46 @@
 										"description": "- Using this service, we can approve a profile."
 									},
 									"response": []
+								},
+								{
+									"name": "Get the non approved profiles",
+									"id": "aafe19dd-c03e-4920-8ef2-86739d2d1191",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{backofficeURL}}/ProfileService/searchprofileWithApproval?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&approved=No",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"path": [
+												"ProfileService",
+												"searchprofileWithApproval"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												},
+												{
+													"key": "pageNumber",
+													"value": "0"
+												},
+												{
+													"key": "numberOfRecords",
+													"value": "10"
+												},
+												{
+													"key": "approved",
+													"value": "No"
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "b083ddf7-f0b7-4499-a96b-3c92390fbd83"
