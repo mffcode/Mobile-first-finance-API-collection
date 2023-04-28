@@ -1999,45 +1999,7 @@
 							"name": "Approve a profile",
 							"item": [
 								{
-									"name": "Approve a profile",
-									"id": "025ab793-cde9-4a07-bfd7-dbb4b6d5acbe",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "PUT",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n  \"ApprovedProfiles\": [\r\n    {\r\n      \"workflowProfileID\": 1599801,\r\n      \"workflowID\": \"1496367\",\r\n      \"profileID\": \"b675bb20-4f29-4682-aab5-9e065823bc13\",\r\n      \"Approved\": \"No\"\r\n    }\r\n  ]\r\n}\r\n\r\n// workflowProfileID : Once you run the service \"Get workflow profile id\" under \"Link profile to a workflow\" in the \"Onboard\" section, you will get the \"workflowProfileID.\" To obtain it, check the environment variables.\r\n\r\n// workflowID : Once you run the service \"Get all workflows\" under \"Workflows\" in the \"Settings\" section, you will get the \"workflowID.\" To obtain it, check the environment variables.\r\n\r\n// profileID : Once you run the service \"Get all the profiles\" under \"Profile\" section, you will get the \"profileID.\" To obtain it, check the environment variables.\r\n\r\n// Approved : Mention the approved value as \"NO\"",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{backofficeURL}}/ProfileService/editApprovalProfiles?access_token={{useraccessToken}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"path": [
-												"ProfileService",
-												"editApprovalProfiles"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												}
-											]
-										},
-										"description": "- Using this service, we can approve a profile."
-									},
-									"response": []
-								},
-								{
-									"name": "Get the non approved profiles",
+									"name": "Get the non approved and approved profiles",
 									"id": "aafe19dd-c03e-4920-8ef2-86739d2d1191",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -2073,6 +2035,44 @@
 												}
 											]
 										}
+									},
+									"response": []
+								},
+								{
+									"name": "Approve a profile",
+									"id": "025ab793-cde9-4a07-bfd7-dbb4b6d5acbe",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"ApprovedProfiles\": [\r\n    {\r\n      \"workflowProfileID\": 1599801,\r\n      \"workflowID\": \"1496367\",\r\n      \"profileID\": \"b675bb20-4f29-4682-aab5-9e065823bc13\",\r\n      \"Approved\": \"No\"\r\n    }\r\n  ]\r\n}\r\n\r\n// workflowProfileID : Once you run the service \"Get workflow profile id\" under \"Link profile to a workflow\" in the \"Onboard\" section, you will get the \"workflowProfileID.\" To obtain it, check the environment variables.\r\n\r\n// workflowID : Once you run the service \"Get all workflows\" under \"Workflows\" in the \"Settings\" section, you will get the \"workflowID.\" To obtain it, check the environment variables.\r\n\r\n// profileID : Once you run the service \"Get all the profiles\" under \"Profile\" section, you will get the \"profileID.\" To obtain it, check the environment variables.\r\n\r\n// Approved : Mention the approved value as \"NO\"",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}/ProfileService/editApprovalProfiles?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"path": [
+												"ProfileService",
+												"editApprovalProfiles"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										},
+										"description": "- Using this service, we can approve a profile."
 									},
 									"response": []
 								}
