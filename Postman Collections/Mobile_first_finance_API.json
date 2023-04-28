@@ -1038,7 +1038,7 @@
 									"response": []
 								},
 								{
-									"name": "Get  workflows count",
+									"name": "Get the count of onboarded profiles",
 									"id": "9b248aef-1f9f-4c93-9e0e-dfed84f47aa0",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
