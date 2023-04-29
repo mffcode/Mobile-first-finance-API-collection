@@ -4869,6 +4869,42 @@
 							"response": []
 						},
 						{
+							"name": "Get contract with profile id",
+							"id": "090eff4b-44b4-4c22-8a17-4283b82b0b85",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://dev.solitx.io:5050/ContractService/contracts?profileId=4fb45435-d896-4f0a-a68a-ab6548a3f5de&access_token={{solitxaccessToken}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"solitx",
+										"io"
+									],
+									"port": "5050",
+									"path": [
+										"ContractService",
+										"contracts"
+									],
+									"query": [
+										{
+											"key": "profileId",
+											"value": "4fb45435-d896-4f0a-a68a-ab6548a3f5de"
+										},
+										{
+											"key": "access_token",
+											"value": "{{solitxaccessToken}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Process event",
 							"id": "baeb76d3-4d21-400b-824d-3c18c65fad54",
 							"protocolProfileBehavior": {
@@ -4907,8 +4943,8 @@
 							"response": []
 						},
 						{
-							"name": "Get contract with profile id",
-							"id": "090eff4b-44b4-4c22-8a17-4283b82b0b85",
+							"name": "Get events of contract with profile id",
+							"id": "d8d823c5-18ef-4eae-a3c2-7135a4eb75db",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4916,7 +4952,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://dev.solitx.io:5050/ContractService/contracts?profileId=4fb45435-d896-4f0a-a68a-ab6548a3f5de&access_token={{solitxaccessToken}}",
+									"raw": "https://dev.solitx.io:5050/BusinessEventService/contractEvents?profileId=4fb45435-d896-4f0a-a68a-ab6548a3f5de&eventType=PI,FP&access_token={{solitxaccessToken}}",
 									"protocol": "https",
 									"host": [
 										"dev",
@@ -4925,13 +4961,17 @@
 									],
 									"port": "5050",
 									"path": [
-										"ContractService",
-										"contracts"
+										"BusinessEventService",
+										"contractEvents"
 									],
 									"query": [
 										{
 											"key": "profileId",
 											"value": "4fb45435-d896-4f0a-a68a-ab6548a3f5de"
+										},
+										{
+											"key": "eventType",
+											"value": "PI,FP"
 										},
 										{
 											"key": "access_token",
