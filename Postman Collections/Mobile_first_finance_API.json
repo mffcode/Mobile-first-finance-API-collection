@@ -4905,6 +4905,42 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Get contract with profile id",
+							"id": "090eff4b-44b4-4c22-8a17-4283b82b0b85",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://dev.solitx.io:5050/ContractService/contracts?profileId=4fb45435-d896-4f0a-a68a-ab6548a3f5de&access_token={{solitxaccessToken}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"solitx",
+										"io"
+									],
+									"port": "5050",
+									"path": [
+										"ContractService",
+										"contracts"
+									],
+									"query": [
+										{
+											"key": "profileId",
+											"value": "4fb45435-d896-4f0a-a68a-ab6548a3f5de"
+										},
+										{
+											"key": "access_token",
+											"value": "{{solitxaccessToken}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "4eca449c-433f-4116-aa77-3d1bd5aaca3d"
