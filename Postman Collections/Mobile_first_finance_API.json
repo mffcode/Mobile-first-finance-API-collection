@@ -4820,6 +4820,46 @@
 							"response": []
 						},
 						{
+							"name": "Get events of contract with profile id",
+							"id": "d8d823c5-18ef-4eae-a3c2-7135a4eb75db",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://dev.solitx.io:5050/BusinessEventService/contractEvents?profileId=4fb45435-d896-4f0a-a68a-ab6548a3f5de&eventType=PI,FP&access_token={{solitxaccessToken}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"solitx",
+										"io"
+									],
+									"port": "5050",
+									"path": [
+										"BusinessEventService",
+										"contractEvents"
+									],
+									"query": [
+										{
+											"key": "profileId",
+											"value": "4fb45435-d896-4f0a-a68a-ab6548a3f5de"
+										},
+										{
+											"key": "eventType",
+											"value": "PI,FP"
+										},
+										{
+											"key": "access_token",
+											"value": "{{solitxaccessToken}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Get contracts",
 							"id": "d074be59-d354-421e-8d8b-24fc9e83a1dd",
 							"protocolProfileBehavior": {
@@ -4943,8 +4983,8 @@
 							"response": []
 						},
 						{
-							"name": "Get events of contract with profile id",
-							"id": "d8d823c5-18ef-4eae-a3c2-7135a4eb75db",
+							"name": "Get events of contract with contract uuid",
+							"id": "9f3daf6f-213b-4f8d-9662-b6242087a6be",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -4952,7 +4992,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://dev.solitx.io:5050/BusinessEventService/contractEvents?profileId=4fb45435-d896-4f0a-a68a-ab6548a3f5de&eventType=PI,FP&access_token={{solitxaccessToken}}",
+									"raw": "https://dev.solitx.io:5050/BusinessEventService/events?contractUUID=ae0607f4-c401-420c-81e6-e7d255d6dc1d&access_token={{solitxaccessToken}}",
 									"protocol": "https",
 									"host": [
 										"dev",
@@ -4962,16 +5002,12 @@
 									"port": "5050",
 									"path": [
 										"BusinessEventService",
-										"contractEvents"
+										"events"
 									],
 									"query": [
 										{
-											"key": "profileId",
-											"value": "4fb45435-d896-4f0a-a68a-ab6548a3f5de"
-										},
-										{
-											"key": "eventType",
-											"value": "PI,FP"
+											"key": "contractUUID",
+											"value": "ae0607f4-c401-420c-81e6-e7d255d6dc1d"
 										},
 										{
 											"key": "access_token",
