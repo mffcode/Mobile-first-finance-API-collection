@@ -1604,7 +1604,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{backofficeURL}}/ProfileService/searchProfiles?&mobileNumber={{MobileNumber}}&access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10",
+									"raw": "{{backofficeURL}}/ProfileService/searchProfiles?mobileNumber={{MobileNumber}}&access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10",
 									"host": [
 										"{{backofficeURL}}"
 									],
@@ -1614,8 +1614,9 @@
 									],
 									"query": [
 										{
-											"key": null,
-											"value": null
+											"key": "name",
+											"value": "Jason",
+											"disabled": true
 										},
 										{
 											"key": "mobileNumber",
@@ -4860,6 +4861,42 @@
 							"response": []
 						},
 						{
+							"name": "Get events of contract with contract uuid",
+							"id": "9f3daf6f-213b-4f8d-9662-b6242087a6be",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://dev.solitx.io:5050/BusinessEventService/events?contractUUID=ae0607f4-c401-420c-81e6-e7d255d6dc1d&access_token={{solitxaccessToken}}",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"solitx",
+										"io"
+									],
+									"port": "5050",
+									"path": [
+										"BusinessEventService",
+										"events"
+									],
+									"query": [
+										{
+											"key": "contractUUID",
+											"value": "ae0607f4-c401-420c-81e6-e7d255d6dc1d"
+										},
+										{
+											"key": "access_token",
+											"value": "{{solitxaccessToken}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Get contracts",
 							"id": "d074be59-d354-421e-8d8b-24fc9e83a1dd",
 							"protocolProfileBehavior": {
@@ -4973,42 +5010,6 @@
 										"process"
 									],
 									"query": [
-										{
-											"key": "access_token",
-											"value": "{{solitxaccessToken}}"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get events of contract with contract uuid",
-							"id": "9f3daf6f-213b-4f8d-9662-b6242087a6be",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "https://dev.solitx.io:5050/BusinessEventService/events?contractUUID=ae0607f4-c401-420c-81e6-e7d255d6dc1d&access_token={{solitxaccessToken}}",
-									"protocol": "https",
-									"host": [
-										"dev",
-										"solitx",
-										"io"
-									],
-									"port": "5050",
-									"path": [
-										"BusinessEventService",
-										"events"
-									],
-									"query": [
-										{
-											"key": "contractUUID",
-											"value": "ae0607f4-c401-420c-81e6-e7d255d6dc1d"
-										},
 										{
 											"key": "access_token",
 											"value": "{{solitxaccessToken}}"
