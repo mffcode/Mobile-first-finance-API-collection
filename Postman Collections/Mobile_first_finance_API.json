@@ -2082,7 +2082,7 @@
 						}
 					],
 					"id": "233ffe8a-525f-40f0-86c3-8b3be8597e10",
-					"description": "- Approve client is a module which allows us to approve a profile after completion of onboard verification."
+					"description": "Approve client is a module which allows us to approve a profile after completion of onboard verification."
 				},
 				{
 					"name": "Payments",
