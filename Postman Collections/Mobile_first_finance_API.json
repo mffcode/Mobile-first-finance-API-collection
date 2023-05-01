@@ -3285,7 +3285,7 @@
 						}
 					],
 					"id": "c9b7139a-ea7e-458a-b068-36f38760f867",
-					"description": "Consist of services which are used to\n\ni) Apply for a card\n\nii) To view the cards which are associated to a profile\n\niii) To block an active card"
+					"description": "Consist of services that are used to\n\ni) Apply for a card\n\nii) To view the cards which are associated to a profile\n\niii) To block an active card"
 				},
 				{
 					"name": "Document storage",
