@@ -2498,7 +2498,8 @@
 									"response": []
 								}
 							],
-							"id": "ceda454a-1294-4f19-9fed-02bc11e5e7d3"
+							"id": "ceda454a-1294-4f19-9fed-02bc11e5e7d3",
+							"description": "This folder consists of services that are used to validate the mobile number and email ID of the customer."
 						},
 						{
 							"name": "Get client sign up form",
