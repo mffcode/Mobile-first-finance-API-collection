@@ -1872,14 +1872,10 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "https://dev.mobilefirstfinance.com:5055/WorkflowService/mobileApp/{{profileID}}?access_token={{useraccessToken}}",
-											"protocol": "https",
+											"raw": "{{backofficeURL}}/WorkflowService/mobileApp/{{profileID}}?access_token={{useraccessToken}}",
 											"host": [
-												"dev",
-												"mobilefirstfinance",
-												"com"
+												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"mobileApp",
