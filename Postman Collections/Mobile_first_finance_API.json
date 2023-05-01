@@ -916,7 +916,7 @@
 								}
 							],
 							"id": "a1c75df5-d7a2-4377-8fd8-dd5f4eafeb5b",
-							"description": "- Consist of services that are used to configure workflow template features like auto verify flag and workflow template flag."
+							"description": "Consist of services that are used to configure workflow template features like auto verify flag and workflow template flag."
 						},
 						{
 							"name": "Workflows",
