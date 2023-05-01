@@ -2407,14 +2407,10 @@
 									}
 								},
 								"url": {
-									"raw": "https://dev.mobilefirstfinance.com:5055/ProfileService/productTemplate/{{documentsprofileID}}/contracts?access_token={{useraccessToken}}",
-									"protocol": "https",
+									"raw": "{{backofficeURL}}/ProfileService/productTemplate/{{documentsprofileID}}/contracts?access_token={{useraccessToken}}",
 									"host": [
-										"dev",
-										"mobilefirstfinance",
-										"com"
+										"{{backofficeURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ProfileService",
 										"productTemplate",
