@@ -3896,7 +3896,8 @@
 													"value": "{{customerToken}}"
 												}
 											]
-										}
+										},
+										"description": "- In the JSON body, a valid Aadhaar ID should be mentioned."
 									},
 									"response": []
 								}
