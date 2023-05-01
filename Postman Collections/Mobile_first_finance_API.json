@@ -2513,7 +2513,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "{{customerURL}}:7190/mff/api/clientUserform/Customer",
-								"description": "- Using this service, we can fetch the sign-up form that is used for customer registration."
+								"description": "- Using this service, we can fetch the sign-up form that is used for client registration."
 							},
 							"response": []
 						},
