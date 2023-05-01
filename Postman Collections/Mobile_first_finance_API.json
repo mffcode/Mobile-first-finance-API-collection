@@ -2494,7 +2494,8 @@
 												}
 											}
 										},
-										"url": "{{customerURL}}:7190/mff/api/userValidation"
+										"url": "{{customerURL}}:7190/mff/api/userValidation",
+										"description": "- Using this service, we can validate the email ID."
 									},
 									"response": []
 								}
