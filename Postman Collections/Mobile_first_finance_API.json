@@ -2965,7 +2965,7 @@
 						}
 					],
 					"id": "f069129c-e4de-41bc-9a33-414e67ee51d5",
-					"description": "- Consist of a list of services that are used for client onboarding."
+					"description": "Consist of a list of services that are used for client onboarding."
 				},
 				{
 					"name": "Accounts",
