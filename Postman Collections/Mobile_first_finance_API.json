@@ -663,7 +663,7 @@
 								}
 							],
 							"id": "33edc31e-0bea-461e-87b7-70bb2b276dfa",
-							"description": "- User roles are the set of actions that an user is expected to perform."
+							"description": "User roles are the set of actions that an user is expected to perform."
 						},
 						{
 							"name": "Workflow template",
