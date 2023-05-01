@@ -491,7 +491,7 @@
 								}
 							],
 							"id": "14031378-615e-421f-ad03-e848a50873b0",
-							"description": "- User actions are the list of permissions that used to make a user role."
+							"description": "User actions are the list of permissions that used to make a user role."
 						},
 						{
 							"name": "User menus",
