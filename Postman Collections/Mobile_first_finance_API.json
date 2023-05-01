@@ -3906,7 +3906,7 @@
 						}
 					],
 					"id": "1b0f5ef8-df0e-4fdd-9709-d015b723e4eb",
-					"description": "- This folder contains services that are used to validate a customer's email, mobile number, bank account, PAN card details, and Aadhaar details."
+					"description": "This folder contains services that are used to validate a customer's email, mobile number, bank account, PAN card details, and Aadhaar details."
 				},
 				{
 					"name": "Bank statement analyzer",
