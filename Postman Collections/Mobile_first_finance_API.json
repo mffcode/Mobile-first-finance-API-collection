@@ -3389,7 +3389,7 @@
 						}
 					],
 					"id": "f470c7cf-f2d2-4be1-8381-bb147312cabc",
-					"description": "- This folder consists of services that are used to fetch the personal, business, and contract documents of a specific client."
+					"description": "This folder consists of services that are used to fetch the personal, business, and contract documents of a specific client."
 				},
 				{
 					"name": "Notifications",
