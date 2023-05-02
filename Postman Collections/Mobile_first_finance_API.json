@@ -521,7 +521,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can fetch the list of user menus available.\n- Every menu will have an menu id, which we must specify when defining a user role."
+										"description": "Using this service, we can fetch all the available user menus."
 									},
 									"response": []
 								}
