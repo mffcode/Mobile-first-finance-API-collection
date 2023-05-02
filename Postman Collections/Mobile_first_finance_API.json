@@ -135,7 +135,7 @@
 								}
 							],
 							"id": "ee788e15-b1ac-41c6-9058-190d7917d7fd",
-							"description": "In an enterprise setup, an organisation would have specific branches from where operations are carried out. Such branches would then demand access to a specific set of users to access information about the branch and the clientele/customer info within this specific branch.\n\nBranch services enable to link and provide access to such information waterfall within the users of a specific branch."
+							"description": "- In an enterprise setup, an organisation would have specific branches from where operations are carried out. Such branches would then demand access to a specific set of users to access information about the branch and the clientele/customer info within this specific branch.\n- Branch services enable to link and provide access to such information waterfall within the users of a specific branch."
 						},
 						{
 							"name": "Users",
