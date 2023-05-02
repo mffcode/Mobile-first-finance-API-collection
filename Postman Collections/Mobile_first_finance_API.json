@@ -129,7 +129,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can fetch all the available branches."
+										"description": "- Using this service, we can fetch all the available branches."
 									},
 									"response": []
 								}
