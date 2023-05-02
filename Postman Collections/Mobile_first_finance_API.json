@@ -380,7 +380,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can fetch all the available users."
+										"description": "- Using this service, we can fetch all the available users."
 									},
 									"response": []
 								},
