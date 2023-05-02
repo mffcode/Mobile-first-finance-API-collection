@@ -410,7 +410,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can fetch a user by user ID."
+										"description": "- Using this service, we can fetch a user by user ID."
 									},
 									"response": []
 								},
