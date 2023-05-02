@@ -4434,7 +4434,8 @@
 											"value": "{{solitxaccessToken}}"
 										}
 									]
-								}
+								},
+								"description": "- Using this service, we can create a new profile."
 							},
 							"response": []
 						},
