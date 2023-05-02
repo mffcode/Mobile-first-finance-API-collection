@@ -5139,7 +5139,8 @@
 												}
 											}
 										},
-										"url": "{{clientmobileappURL}}:5055/LoginService/login"
+										"url": "{{clientmobileappURL}}:5055/LoginService/login",
+										"description": "- Using this service, we can perform OTP verification that is received on a mobile number."
 									},
 									"response": []
 								}
