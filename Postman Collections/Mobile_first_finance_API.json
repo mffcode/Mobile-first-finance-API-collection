@@ -4701,7 +4701,7 @@
 										}
 									]
 								},
-								"description": "Include \"ContractUUID\" which we got in response from create contract."
+								"description": "- Using this service, we can compute an existing contract that has not yet been executed."
 							},
 							"response": []
 						},
