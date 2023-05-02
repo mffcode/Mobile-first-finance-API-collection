@@ -410,7 +410,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can get a specific user by its user id.\n- Since the **userID** will be automatically applied in the service, running this service will result in a specific user."
+										"description": "Using this service, we can fetch a user by user ID."
 									},
 									"response": []
 								},
