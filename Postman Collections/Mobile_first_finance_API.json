@@ -933,14 +933,14 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/workflowTemplates/1492934?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/WorkflowService/workflowTemplates/{{workflowTemplateID}}?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
 											"path": [
 												"WorkflowService",
 												"workflowTemplates",
-												"1492934"
+												"{{workflowTemplateID}}"
 											],
 											"query": [
 												{
