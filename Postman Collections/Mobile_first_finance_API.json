@@ -779,7 +779,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can get workflow template by its workflow template id.\n- Since the **workflowTemplateID** will be automatically applied in the service, running this service will result in a specific workflow template."
+										"description": "Using this service, we can fetch a workflow template by workflow template ID."
 									},
 									"response": []
 								},
