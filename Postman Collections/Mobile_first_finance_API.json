@@ -4793,12 +4793,9 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://dev.solitx.io:5050/BusinessEventService/contractEvents?profileId=4fb45435-d896-4f0a-a68a-ab6548a3f5de&eventType=PI,FP&access_token={{solitxaccessToken}}",
-									"protocol": "https",
+									"raw": "{{solitxURL}}:5050/BusinessEventService/contractEvents?profileId=4fb45435-d896-4f0a-a68a-ab6548a3f5de&eventType=PI,FP&access_token={{solitxaccessToken}}",
 									"host": [
-										"dev",
-										"solitx",
-										"io"
+										"{{solitxURL}}"
 									],
 									"port": "5050",
 									"path": [
