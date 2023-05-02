@@ -779,7 +779,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can fetch a workflow template by workflow template ID."
+										"description": "- Using this service, we can fetch a workflow template by workflow template ID."
 									},
 									"response": []
 								},
