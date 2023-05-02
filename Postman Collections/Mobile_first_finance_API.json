@@ -5035,7 +5035,8 @@
 												}
 											}
 										},
-										"url": "{{clientmobileappURL}}:7190/mff/api/userValidation"
+										"url": "{{clientmobileappURL}}:7190/mff/api/userValidation",
+										"description": "- Using this service, we can validate an email ID, whether it is an existing one or a new one."
 									},
 									"response": []
 								}
