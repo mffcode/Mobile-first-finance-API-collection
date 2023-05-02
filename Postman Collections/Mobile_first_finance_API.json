@@ -829,45 +829,6 @@
 							"name": "Configure workflow template",
 							"item": [
 								{
-									"name": "Update workflow template flag",
-									"id": "e5a719e3-49e0-4ed0-8708-0a9c06b36ffc",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "PUT",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n  \"templateFlag\": true\r\n}\r\n\r\n// Mention the \"templateFlag\" either as \"true\" or \"false.\"",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/updateworkflowTemplateflag/{{workflowTemplateID}}?access_token={{useraccessToken}}",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"path": [
-												"WorkflowService",
-												"updateworkflowTemplateflag",
-												"{{workflowTemplateID}}"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												}
-											]
-										},
-										"description": "- This service is used to set the flag for a specific workflow template to true or false. This service allows us to enable or disable external access for a specific workflow template.\n- By setting the flag to true or false, you can enable or disable workflow template external access.\n- **Note** : Since the workflow template id will be applied automatically in the service, running this will update the flag for the workflow template we created."
-									},
-									"response": []
-								},
-								{
 									"name": "Update auto-verify and external access flags",
 									"id": "0349ae0e-0d4b-49cb-b524-950a154becc9",
 									"protocolProfileBehavior": {
