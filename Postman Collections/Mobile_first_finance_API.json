@@ -333,7 +333,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can create a new user.\n- Check out the user example json in the body below.\n- From the **Get all user form** response, select any user form and set the payload according to the form. For every user form there will be a **userFormTemplateID** and that will be act as **FormID.**\n- **Note: FormID** is mandatory to create user."
+										"description": "Using this service, we can create a new user."
 									},
 									"response": []
 								},
