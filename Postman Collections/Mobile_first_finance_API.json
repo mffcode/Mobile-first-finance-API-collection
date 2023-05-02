@@ -51,7 +51,7 @@
 									}
 								},
 								"url": "{{backofficeURL}}/LoginService/login",
-								"description": "Using this service, we can login to the application."
+								"description": "- Using this service, we can login to the application."
 							},
 							"response": []
 						}
