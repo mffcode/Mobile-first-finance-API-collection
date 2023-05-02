@@ -749,7 +749,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can fetch all the available workflow templates."
+										"description": "- Using this service, we can fetch all the available workflow templates."
 									},
 									"response": []
 								},
@@ -779,7 +779,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can fetch a workflow template by workflow template ID."
+										"description": "- Using this service, we can fetch a workflow template by workflow template ID."
 									},
 									"response": []
 								},
@@ -818,7 +818,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can update an existing workflow template."
+										"description": "- Using this service, we can update an existing workflow template."
 									},
 									"response": []
 								}
@@ -871,7 +871,7 @@
 												}
 											]
 										},
-										"description": "- This service is used to set the **auto verify flag** for a specific workflow template to **true** or **false**.\n- By setting the flag to true or false, you can enable or disable auto-verification for a specific workflow template.\n- **Note** : Since the **workflowTemplateID** will be applied automatically in the service, running this will update the auto-verify flag for the workflow template we created.\n- Mention the flag as either **true** or **false** at the end of the service call."
+										"description": "Using this service, we can update the auto-verify flag for a specific workflow template to either true or false."
 									},
 									"response": []
 								},
