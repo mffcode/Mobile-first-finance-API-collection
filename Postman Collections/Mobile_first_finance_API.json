@@ -4973,7 +4973,8 @@
 											"value": "{{solitxaccessToken}}"
 										}
 									]
-								}
+								},
+								"description": "- Using this service, we can perform transactions like IED (notional amount), IP (interest amount), PR (principal amount), and FP (fee amount)."
 							},
 							"response": []
 						}
