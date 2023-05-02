@@ -485,7 +485,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can fetch all the available user actions."
+										"description": "- Using this service, we can fetch all the available user actions."
 									},
 									"response": []
 								}
