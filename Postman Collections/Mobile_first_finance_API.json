@@ -4831,12 +4831,9 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://dev.solitx.io:5050/BusinessEventService/events?contractUUID=ae0607f4-c401-420c-81e6-e7d255d6dc1d&access_token={{solitxaccessToken}}",
-									"protocol": "https",
+									"raw": "{{solitxURL}}:5050/BusinessEventService/events?contractUUID=ae0607f4-c401-420c-81e6-e7d255d6dc1d&access_token={{solitxaccessToken}}",
 									"host": [
-										"dev",
-										"solitx",
-										"io"
+										"{{solitxURL}}"
 									],
 									"port": "5050",
 									"path": [
