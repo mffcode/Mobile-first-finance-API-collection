@@ -4816,7 +4816,8 @@
 											"value": "{{solitxaccessToken}}"
 										}
 									]
-								}
+								},
+								"description": "- Using this service, we can fetch the events of a contract by profile ID."
 							},
 							"response": []
 						},
