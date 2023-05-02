@@ -5183,7 +5183,8 @@
 												}
 											}
 										},
-										"url": "{{clientmobileappURL}}:5055/LoginService/login"
+										"url": "{{clientmobileappURL}}:5055/LoginService/login",
+										"description": "- Using this service, we can get access to the application with a user name and password."
 									},
 									"response": []
 								}
