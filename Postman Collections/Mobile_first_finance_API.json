@@ -449,7 +449,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can update an existing user."
+										"description": "- Using this service, we can update an existing user."
 									},
 									"response": []
 								}
