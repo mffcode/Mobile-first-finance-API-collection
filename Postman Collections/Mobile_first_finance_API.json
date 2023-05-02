@@ -449,7 +449,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can update the user details of a specific user.\n- Since the **userID** will be automatically applied in the service, running this service will result in updating a specific user details.\n- Mention the user body in the payload and make the necessary changes.\n- **Note** : The payload listed below belongs to the **userID**, which is fetched automatically by the service. To view that specific user's details, use the service **Get a user by user id**."
+										"description": "Using this service, we can update an existing user."
 									},
 									"response": []
 								}
