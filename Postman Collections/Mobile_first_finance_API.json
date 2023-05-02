@@ -333,7 +333,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can create a new user."
+										"description": "- Using this service, we can create a new user."
 									},
 									"response": []
 								},
