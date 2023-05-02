@@ -567,7 +567,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can create a user role with a set of user actions and user menus attached to it.\n- Check out the user role example json in the body below.\n- The role name can be anything you want.\n- Use the service **Get all the user actions** and pick any action id to set the **userActionID.**\n- Use the service **Get all the user menus** and pick any action id to set the **menuItemsID.**"
+										"description": "Using this service, we can create a new user role."
 									},
 									"response": []
 								},
