@@ -913,6 +913,44 @@
 										"description": "- This service is used to set the flag for a specific workflow template to true or false. This service allows us to enable or disable external access for a specific workflow template.\n- By setting the flag to true or false, you can enable or disable workflow template external access.\n- **Note** : Since the workflow template id will be applied automatically in the service, running this will update the flag for the workflow template we created."
 									},
 									"response": []
+								},
+								{
+									"name": "Update auto-verify and external access flags",
+									"id": "0349ae0e-0d4b-49cb-b524-950a154becc9",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Form Header\": [],\n  \"Form Body\": [\n    {\n      \"Type\": \"Image\",\n      \"Value\": \"\",\n      \"Label\": \"Offering Memorandum\"\n    },\n    {\n      \"Type\": \"Image\",\n      \"Value\": \"\",\n      \"Label\": \"Information Memorandum\"\n    },\n    {\n      \"Type\": \"Image\",\n      \"Value\": \"\",\n      \"Label\": \"Prospectus\"\n    },\n    {\n      \"Type\": \"Image\",\n      \"Value\": \"\",\n      \"Label\": \"Private Placement Memorandum (PPM)\"\n    },\n    {\n      \"Type\": \"Image\",\n      \"Value\": \"\",\n      \"Label\": \"Supplement(s)\"\n    },\n    {\n      \"Type\": \"Image\",\n      \"Value\": \"\",\n      \"Label\": \"Loan Agreement, Credit Agreement\"\n    },\n    {\n      \"Type\": \"Image\",\n      \"Value\": \"\",\n      \"Label\": \"S-1 Statement or Registration Statement\"\n    },\n    {\n      \"Type\": \"Image\",\n      \"Value\": \"\",\n      \"Label\": \"IPO Document\"\n    },\n    {\n      \"Type\": \"Image\",\n      \"Value\": \"\",\n      \"Label\": \"Term Sheet\"\n    },\n    {\n      \"Type\": \"Image\",\n      \"Value\": \"\",\n      \"Label\": \"Other relevant offering document\"\n    }\n  ],\n  \"Label\": \"Section 4 Documents\",\n  \"Description\": \"\",\n  \"autoVerify\": true,\n  \"externalAccess\": true,\n  \"templateActiveStatus\": 0\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{backofficeURL}}/WorkflowService/workflowTemplates/1492934?access_token={{useraccessToken}}",
+											"host": [
+												"{{backofficeURL}}"
+											],
+											"path": [
+												"WorkflowService",
+												"workflowTemplates",
+												"1492934"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "a1c75df5-d7a2-4377-8fd8-dd5f4eafeb5b",
