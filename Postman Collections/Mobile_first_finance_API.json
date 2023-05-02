@@ -871,7 +871,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can update the auto-verify flag for a specific workflow template to either true or false."
+										"description": "- Using this service, we can update the auto-verify flag for a specific workflow template to either true or false."
 									},
 									"response": []
 								},
