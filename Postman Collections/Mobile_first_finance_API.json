@@ -749,7 +749,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can fetch all the available workflow templates."
+										"description": "Using this service, we can fetch all the available workflow templates."
 									},
 									"response": []
 								},
@@ -779,7 +779,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can fetch a workflow template by workflow template ID."
+										"description": "Using this service, we can fetch a workflow template by workflow template ID."
 									},
 									"response": []
 								},
@@ -818,7 +818,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can update an existing workflow template."
+										"description": "Using this service, we can update an existing workflow template."
 									},
 									"response": []
 								}
