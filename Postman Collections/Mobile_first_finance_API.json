@@ -4480,7 +4480,8 @@
 											"value": "{{solitxaccessToken}}"
 										}
 									]
-								}
+								},
+								"description": "- Using this service, we can fetch a specific profile by identifier."
 							},
 							"response": []
 						},
