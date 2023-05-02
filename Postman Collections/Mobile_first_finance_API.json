@@ -1985,7 +1985,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can fetch the non-approved and approved profiles using a filter."
+										"description": "- Using this service, we can fetch the non-approved and approved profiles using a filter."
 									},
 									"response": []
 								},
