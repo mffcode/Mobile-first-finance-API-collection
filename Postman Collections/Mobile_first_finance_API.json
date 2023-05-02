@@ -4778,7 +4778,8 @@
 											"value": "{{solitxaccessToken}}"
 										}
 									]
-								}
+								},
+								"description": "Using this service, we can fetch the events for a specific contract."
 							},
 							"response": []
 						},
