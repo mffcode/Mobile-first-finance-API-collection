@@ -521,7 +521,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can fetch all the available user menus."
+										"description": "- Using this service, we can fetch all the available user menus."
 									},
 									"response": []
 								}
