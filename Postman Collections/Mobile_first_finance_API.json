@@ -5132,7 +5132,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"mobileNumber\": \"+919392256334\",\n  \"otp\": \"240505\"\n}",
+											"raw": "{\n  \"mobileNumber\": \"Enter mobile number with country code.\",\n  \"otp\": \"Enter 6-digit OTP sent to mobile number.\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
