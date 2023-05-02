@@ -818,7 +818,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can update an existing workflow template."
+										"description": "- Using this service, we can update an existing workflow template."
 									},
 									"response": []
 								}
