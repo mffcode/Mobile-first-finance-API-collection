@@ -702,7 +702,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can create a new workflow template.\n- Check the below json body for the example workflow template.\n- We can include the label names as per our choice and set the data types to them."
+										"description": "Using this service, we can create a new workflow template."
 									},
 									"response": []
 								},
