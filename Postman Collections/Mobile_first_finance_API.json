@@ -749,7 +749,7 @@
 												}
 											]
 										},
-										"description": "- Using this service, we can get all the existing workflow templates.\n- Run this service just once, since it has a test script defined to fetch a specific **workflowTemplateID** and turn the **workflowTemplateID** into a global variable so that other necessary services can utilize it."
+										"description": "Using this service, we can fetch all the available workflow templates."
 									},
 									"response": []
 								},
