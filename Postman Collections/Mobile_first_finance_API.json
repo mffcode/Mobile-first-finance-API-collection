@@ -3373,7 +3373,8 @@
 											"value": "{{custoken}}"
 										}
 									]
-								}
+								},
+								"description": "- Using this service, we can fetch the notifications that were received for a specific client."
 							},
 							"response": []
 						}
