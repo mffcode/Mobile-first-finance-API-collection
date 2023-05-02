@@ -4900,7 +4900,8 @@
 											"disabled": true
 										}
 									]
-								}
+								},
+								"description": "- Using this service, we can fetch all the available contracts associated with a specific **productUUID**."
 							},
 							"response": []
 						},
