@@ -4934,7 +4934,8 @@
 											"value": "{{solitxaccessToken}}"
 										}
 									]
-								}
+								},
+								"description": "- Using this service, we can fetch contract details for a specific profile using the profile ID."
 							},
 							"response": []
 						},
