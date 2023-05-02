@@ -5116,7 +5116,8 @@
 													"value": "+919392256334"
 												}
 											]
-										}
+										},
+										"description": "- Using this service, we can send an OTP to a specific mobile number to perform 2FA."
 									},
 									"response": []
 								},
