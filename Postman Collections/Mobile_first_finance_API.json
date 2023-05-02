@@ -4744,7 +4744,8 @@
 											"value": "{{contractUUID}}"
 										}
 									]
-								}
+								},
+								"description": "- Using this service, we can execute a contract."
 							},
 							"response": []
 						},
