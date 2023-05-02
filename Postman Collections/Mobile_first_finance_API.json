@@ -863,7 +863,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can update auto-verify and external access flags for a specific workflow template."
+										"description": "Using this service, we can update auto-verify and external access flags to either true or false for a specific workflow template."
 									},
 									"response": []
 								}
