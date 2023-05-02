@@ -3425,7 +3425,8 @@
 										}
 									}
 								},
-								"url": "{{customerURL}}:5055/LoginService/login"
+								"url": "{{customerURL}}:5055/LoginService/login",
+								"description": "- Using this service, we can access the application."
 							},
 							"response": []
 						}
