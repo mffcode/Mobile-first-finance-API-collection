@@ -702,7 +702,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can create a new workflow template."
+										"description": "- Using this service, we can create a new workflow template."
 									},
 									"response": []
 								},
@@ -749,7 +749,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can fetch all the available workflow templates."
+										"description": "- Using this service, we can fetch all the available workflow templates."
 									},
 									"response": []
 								},
