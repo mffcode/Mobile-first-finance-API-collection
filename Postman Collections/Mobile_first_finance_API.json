@@ -5052,7 +5052,8 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{clientmobileappURL}}:7190/mff/api/clientUserform/Customer"
+								"url": "{{clientmobileappURL}}:7190/mff/api/clientUserform/Customer",
+								"description": "- Using this service, we can fetch the client sign-up form."
 							},
 							"response": []
 						},
