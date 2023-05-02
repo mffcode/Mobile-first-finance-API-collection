@@ -4521,7 +4521,8 @@
 											"value": "{{solitxaccessToken}}"
 										}
 									]
-								}
+								},
+								"description": "- Using this service, we can create a new payment channel for root user."
 							},
 							"response": []
 						},
