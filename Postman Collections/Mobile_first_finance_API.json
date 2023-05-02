@@ -829,53 +829,6 @@
 							"name": "Configure workflow template",
 							"item": [
 								{
-									"name": "Update auto verify flag",
-									"id": "dbbdd4f1-20f3-4701-bd5d-21ba1ef50f8f",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "PUT",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/autoVerify/template?access_token={{useraccessToken}}&templateId={{workflowTemplateID}}&flag=true",
-											"host": [
-												"{{backofficeURL}}"
-											],
-											"path": [
-												"WorkflowService",
-												"autoVerify",
-												"template"
-											],
-											"query": [
-												{
-													"key": "access_token",
-													"value": "{{useraccessToken}}"
-												},
-												{
-													"key": "templateId",
-													"value": "{{workflowTemplateID}}"
-												},
-												{
-													"key": "flag",
-													"value": "true"
-												}
-											]
-										},
-										"description": "- Using this service, we can update the auto-verify flag for a specific workflow template to either true or false."
-									},
-									"response": []
-								},
-								{
 									"name": "Update workflow template flag",
 									"id": "e5a719e3-49e0-4ed0-8708-0a9c06b36ffc",
 									"protocolProfileBehavior": {
