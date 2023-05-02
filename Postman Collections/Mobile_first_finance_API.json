@@ -99,7 +99,7 @@
 												}
 											]
 										},
-										"description": "- This service will create a root branch. Mandatory fields which are required is branch name, branch code and parent id.\n- Based on the parent id, you can add a new branch under the existing one, creating a branch hierarchy that resembles a tree."
+										"description": "Using this service, we can create a new branch."
 									},
 									"response": []
 								},
