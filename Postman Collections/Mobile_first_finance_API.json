@@ -224,7 +224,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can get all the available user forms."
+										"description": "- Using this service, we can get all the available user forms."
 									},
 									"response": []
 								},
