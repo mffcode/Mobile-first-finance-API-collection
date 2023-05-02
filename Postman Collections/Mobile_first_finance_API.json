@@ -4779,7 +4779,7 @@
 										}
 									]
 								},
-								"description": "Using this service, we can fetch the events for a specific contract."
+								"description": "- Using this service, we can fetch the events for a specific contract."
 							},
 							"response": []
 						},
