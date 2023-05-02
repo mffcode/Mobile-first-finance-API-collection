@@ -615,7 +615,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can fetch all the available user roles."
+										"description": "- Using this service, we can fetch all the available user roles."
 									},
 									"response": []
 								},
