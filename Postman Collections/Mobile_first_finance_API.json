@@ -657,7 +657,7 @@
 												}
 											]
 										},
-										"description": "Using this service, we can fetch a user role by role id."
+										"description": "- Using this service, we can fetch a user role by role id."
 									},
 									"response": []
 								}
