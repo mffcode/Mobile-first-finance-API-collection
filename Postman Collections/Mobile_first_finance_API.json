@@ -913,10 +913,11 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/workflows?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}:5055/WorkflowService/workflows?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
+											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"workflows"
