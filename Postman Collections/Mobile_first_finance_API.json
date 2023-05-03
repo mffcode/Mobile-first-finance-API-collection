@@ -5371,6 +5371,44 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Process event",
+							"id": "292653b7-f8aa-499b-a6ed-acafd37426fb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n  {\n    \"EventID\": \"{{eventID}}\",\n    \"Value\": {{value}},\n    \"ProcessTime\": \"{{processTime}}\"\n  }\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{solitxURL}}:5050/TransactionsService/process?access_token={{at}}",
+									"host": [
+										"{{solitxURL}}"
+									],
+									"port": "5050",
+									"path": [
+										"TransactionsService",
+										"process"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{at}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "4eca449c-433f-4116-aa77-3d1bd5aaca3d"
