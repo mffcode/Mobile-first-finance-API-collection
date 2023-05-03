@@ -4700,7 +4700,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{solitxURL}}:5050/ProfilesService/profiles?identifier=Davis john&access_token={{solitxaccessToken}}",
+									"raw": "{{solitxURL}}:5050/ProfilesService/profiles?identifier={{identifier}}&access_token={{at}}",
 									"host": [
 										"{{solitxURL}}"
 									],
@@ -4712,11 +4712,11 @@
 									"query": [
 										{
 											"key": "identifier",
-											"value": "Davis john"
+											"value": "{{identifier}}"
 										},
 										{
 											"key": "access_token",
-											"value": "{{solitxaccessToken}}"
+											"value": "{{at}}"
 										}
 									]
 								},
@@ -4743,7 +4743,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{solitxURL}}:5050/PaymentServices/payments/channel/new?access_token={{solitxaccessToken}}",
+									"raw": "{{solitxURL}}:5050/PaymentServices/payments/channel/new?access_token={{at}}",
 									"host": [
 										"{{solitxURL}}"
 									],
@@ -4757,7 +4757,7 @@
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{solitxaccessToken}}"
+											"value": "{{at}}"
 										}
 									]
 								},
