@@ -5244,40 +5244,6 @@
 							"response": []
 						},
 						{
-							"name": "Get events of contract with contract uuid",
-							"id": "9f3daf6f-213b-4f8d-9662-b6242087a6be",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{solitxURL}}:5050/BusinessEventService/events?contractUUID=ae0607f4-c401-420c-81e6-e7d255d6dc1d&access_token={{solitxaccessToken}}",
-									"host": [
-										"{{solitxURL}}"
-									],
-									"port": "5050",
-									"path": [
-										"BusinessEventService",
-										"events"
-									],
-									"query": [
-										{
-											"key": "contractUUID",
-											"value": "ae0607f4-c401-420c-81e6-e7d255d6dc1d"
-										},
-										{
-											"key": "access_token",
-											"value": "{{solitxaccessToken}}"
-										}
-									]
-								},
-								"description": "- Using this service, we can fetch the events of a contract by **contractUUID**."
-							},
-							"response": []
-						},
-						{
 							"name": "Get contract with profile id",
 							"id": "090eff4b-44b4-4c22-8a17-4283b82b0b85",
 							"protocolProfileBehavior": {
