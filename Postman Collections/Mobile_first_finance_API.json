@@ -2583,7 +2583,7 @@
 										}
 									}
 								},
-								"url": "https://backoffice.mobilefirstfinance.com:5055/UserService/userValidation"
+								"url": "{{customerURL}}:5055/UserService/userValidation"
 							},
 							"response": []
 						},
