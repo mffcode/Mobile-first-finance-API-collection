@@ -5298,6 +5298,58 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Update contract",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "80aefec4-582a-4959-89eb-ef58f2df54b7",
+										"exec": [
+											"var jsonData = JSON.parse(responseBody);",
+											"console.log(jsonData.contractUUID);",
+											"//pm.globals.set(\"contractUUID\",jsonData[0].contractUUID);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "d262c240-9059-4989-9f4a-534eaeda236e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n  {\n    \"ContractUUID\": \"{{contractUUID}}\",\n    \"ProductID\": \"1\",\n    \"Terms\": [\n      {\n        \"LegalEntityIDCounterparty\": \"{{profileID}}\",\n        \"ContractStatus\": \"PreDeal\",\n        \"ContractID\": \"{{contractID}}\"\n      }\n    ],\n    \"PaymentDetails\": {\n      \"CounterpartyPaymentChannelID\": \"{{paymentChannelID}}\"\n    }\n  }\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{solitxURL}}:5050/ContractService/contracts?access_token={{at}}",
+									"host": [
+										"{{solitxURL}}"
+									],
+									"port": "5050",
+									"path": [
+										"ContractService",
+										"contracts"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{at}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "4eca449c-433f-4116-aa77-3d1bd5aaca3d"
