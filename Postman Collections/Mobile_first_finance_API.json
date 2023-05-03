@@ -5253,6 +5253,39 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Get product with id",
+							"id": "75391e64-00be-4586-9245-ffffb3a5eccd",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{solitxURL}}:5050/ProductService/products?productID={{productID}}&access_token={{at}}",
+									"host": [
+										"{{solitxURL}}"
+									],
+									"port": "5050",
+									"path": [
+										"ProductService",
+										"products"
+									],
+									"query": [
+										{
+											"key": "productID",
+											"value": "{{productID}}"
+										},
+										{
+											"key": "access_token",
+											"value": "{{at}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "4eca449c-433f-4116-aa77-3d1bd5aaca3d"
