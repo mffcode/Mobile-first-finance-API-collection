@@ -1758,10 +1758,11 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/onboardFilter?numberOfRecords=50&pageNumber=0&access_token={{useraccessToken}}&workflowId={{workFlowID}}",
+											"raw": "{{backofficeURL}}:5055/WorkflowService/onboardFilter?numberOfRecords=50&pageNumber=0&access_token={{useraccessToken}}&workflowId={{workFlowID}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
+											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"onboardFilter"
