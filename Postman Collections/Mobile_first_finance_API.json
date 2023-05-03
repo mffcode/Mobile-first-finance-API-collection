@@ -4561,7 +4561,7 @@
 										"exec": [
 											"var jsonData = JSON.parse(responseBody);",
 											"console.log(jsonData.access_token);",
-											"pm.globals.set(\"solitxaccessToken\",jsonData.access_token);",
+											"pm.environment.set(\"at\",jsonData.access_token);",
 											"",
 											""
 										],
@@ -4700,7 +4700,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{solitxURL}}:5050/ProfilesService/profiles?identifier=Davis john&access_token={{solitxaccessToken}}",
+									"raw": "{{solitxURL}}:5050/ProfilesService/profiles?identifier={{identifier}}&access_token={{at}}",
 									"host": [
 										"{{solitxURL}}"
 									],
@@ -4712,11 +4712,11 @@
 									"query": [
 										{
 											"key": "identifier",
-											"value": "Davis john"
+											"value": "{{identifier}}"
 										},
 										{
 											"key": "access_token",
-											"value": "{{solitxaccessToken}}"
+											"value": "{{at}}"
 										}
 									]
 								},
