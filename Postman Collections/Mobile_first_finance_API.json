@@ -5215,6 +5215,44 @@
 								"description": "- Using this service, we can perform transactions like IED (notional amount), IP (interest amount), PR (principal amount), and FP (fee amount)."
 							},
 							"response": []
+						},
+						{
+							"name": "Create product",
+							"id": "a828fc37-e70a-4108-b797-ca8ec8b308ee",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"Selection\": {\n    \"Department\": \"DeptB\",\n    \"ProfitCenter\": \"A\"\n  },\n  \"ProductIdentifier\": \"StraightBond\",\n  \"Terms\": [\n    {\n      \"DayCountConvention\": \"30E/360\",\n      \"CycleOfInterestPayment\": \"(value:Varchar)\",\n      \"StatusDate\": \"(value:TimeStamp)\",\n      \"InitialExchangeDate\": \"(value:TimeStamp)\",\n      \"NominalInterestRate\": \"(value:Real)\",\n      \"NotionalPrincipal\": \"(value:Real)\",\n      \"PremiumDiscountAtIED\": \"(value:Real)\",\n      \"InitialIssueSize\": \"(value:Real)\",\n      \"MaxIssueSize\": \"(value:Real)\",\n      \"ContractDealDate\": \"(value='ACTUS.InitialExchangeDate'- 'Period.1D')\",\n      \"ContractID\": \"(value='System.UUID')\",\n      \"MaturityDate\": \"(value:TimeStamp)\",\n      \"redemptionFixingDate\": \"(value='ACTUS.MaturityDate')\",\n      \"redemptionPaymentDate\": \"(value='ACTUS.MaturityDate'+'Period.5D')\",\n      \"endDate\": \"(value='ACTUS.MaturityDate')\",\n      \"LegalEntityIDRecordCreator\": \"(value='System.RootUserProfileID')\",\n      \"LegalEntityIDCounterparty\": \"(value:ProfileID)\",\n      \"CycleAnchorDateOfInterestPayment\": \"(value:TimeStamp)\",\n      \"RoundingConvention\": \"1\",\n      \"Calender\": \"MondayToFriday\",\n      \"BusinessDayConvention\": \"CSMF\",\n      \"Currency\": \"EUR\",\n      \"ContractType\": \"PAM\",\n      \"ContractRole\": \"RPA\"\n    }\n  ],\n  \"PaymentDetails\": {\n    \"RecordCreatorPaymentChannelID\": \"39f16465-ab89-4fc6-b50b-50413b8e0193\",\n    \"PaymentMethod\": \"billing\",\n    \"CounterpartyPaymentChannelID\": \"(value:PaymentChannelID)\"\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{solitxURL}}:5050/ProductService/products?access_token={{at}}",
+									"host": [
+										"{{solitxURL}}"
+									],
+									"port": "5050",
+									"path": [
+										"ProductService",
+										"products"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{at}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "4eca449c-433f-4116-aa77-3d1bd5aaca3d"
