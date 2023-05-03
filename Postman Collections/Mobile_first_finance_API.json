@@ -4917,7 +4917,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{solitxURL}}:5050/ContractService/contracts/compute?access_token={{solitxaccessToken}}&contractUUID={{contractUUID}}",
+									"raw": "{{solitxURL}}:5050/ContractService/contracts/compute?access_token={{at}}&contractUUID={{contractUUID}}",
 									"host": [
 										"{{solitxURL}}"
 									],
@@ -4930,7 +4930,7 @@
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{solitxaccessToken}}"
+											"value": "{{at}}"
 										},
 										{
 											"key": "contractUUID",
