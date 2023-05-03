@@ -3528,7 +3528,7 @@
 											"var jsonData = JSON.parse(responseBody);\r",
 											"var jsonValue = jsonData.body;\r",
 											"console.log(\"customerToken...\"+jsonValue.access_token)\r",
-											"pm.globals.set(\"customerToken\", jsonValue.access_token);"
+											"pm.environment.set(\"customerToken\", jsonValue.access_token);"
 										],
 										"type": "text/javascript"
 									}
