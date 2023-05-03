@@ -4634,7 +4634,8 @@
 										"exec": [
 											"var jsonData = JSON.parse(responseBody);",
 											"console.log(jsonData.profileID);",
-											"pm.environment.set(\"ProfileID\",jsonData.profileID);"
+											"pm.environment.set(\"profileID\",jsonData.profileID);",
+											"pm.environment.set(\"identifier\",jsonData.identifier);"
 										],
 										"type": "text/javascript"
 									}
@@ -4649,7 +4650,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"FormID\": \"1\",\n    \"Identifier\": \"Stephen\",\n    \"Date of birth\": \"1990-02-01\",\n    \"Name\": \"Nathan Harvey\"\n}",
+									"raw": "{\n    \"FormID\": \"1\",\n    \"Identifier\": \"Leone\",\n    \"Date of birth\": \"1990-02-01\",\n    \"Name\": \"Nathan Harvey\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4657,7 +4658,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{solitxURL}}:5050/ProfilesService/profiles?access_token={{solitxaccessToken}}",
+									"raw": "{{solitxURL}}:5050/ProfilesService/profiles?access_token={{at}}",
 									"host": [
 										"{{solitxURL}}"
 									],
@@ -4669,7 +4670,7 @@
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{solitxaccessToken}}"
+											"value": "{{at}}"
 										}
 									]
 								},
