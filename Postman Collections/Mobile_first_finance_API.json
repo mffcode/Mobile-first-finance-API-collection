@@ -2783,7 +2783,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"profileDetails\": [\r\n    {\r\n      \"profileID\": \"{{profileid}}\"\r\n   \r\n    }\r\n  ],\r\n  \"workFlowID\": {{workflowid}}\r\n}\r\n//Look for the \"profileid\" & \"workflowid\" in the \"Globals\" under the \"Environment quick look.\"",
+									"raw": "{\r\n  \"profileDetails\": [\r\n    {\r\n      \"profileID\": \"{{profileid}}\"\r\n   \r\n    }\r\n  ],\r\n  \"workFlowID\": {{workflowid}}\r\n}\r\n//Look for the \"profileid\" & \"workflowid\" inside the \"Environment\" under the \"Environment quick look.\"",
 									"options": {
 										"raw": {
 											"language": "json"
