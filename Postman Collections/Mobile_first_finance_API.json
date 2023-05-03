@@ -3271,7 +3271,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"cardDetails\": [\r\n    {\r\n      \"contractUUID\": \"8cb6b3c1-942e-4e9f-acd2-4f44c334b852\",\r\n      \"status\": \"block\"\r\n    }\r\n  ]\r\n}\r\n\r\n// Look for the contractuuid in \"Globals,\" which is under the Environment quick look.\r\n// Mention the status as \"block\".",
+									"raw": "{\r\n  \"cardDetails\": [\r\n    {\r\n      \"contractUUID\": \"{{contractuuid}}\",\r\n      \"status\": \"block\"\r\n    }\r\n  ]\r\n}\r\n\r\n// Look for the contractuuid inside the \"Environment,\" which is under the Environment quick look.\r\n// Mention the status as \"block\".",
 									"options": {
 										"raw": {
 											"language": "json"
