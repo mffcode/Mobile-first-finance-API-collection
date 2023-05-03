@@ -78,7 +78,7 @@
 							"response": []
 						},
 						{
-							"name": "2FA Copy",
+							"name": "2FA",
 							"event": [
 								{
 									"listen": "test",
