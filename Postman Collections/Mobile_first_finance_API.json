@@ -5244,40 +5244,6 @@
 							"response": []
 						},
 						{
-							"name": "Get contract with profile id",
-							"id": "090eff4b-44b4-4c22-8a17-4283b82b0b85",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{solitxURL}}:5050/ContractService/contracts?profileId=4fb45435-d896-4f0a-a68a-ab6548a3f5de&access_token={{solitxaccessToken}}",
-									"host": [
-										"{{solitxURL}}"
-									],
-									"port": "5050",
-									"path": [
-										"ContractService",
-										"contracts"
-									],
-									"query": [
-										{
-											"key": "profileId",
-											"value": "4fb45435-d896-4f0a-a68a-ab6548a3f5de"
-										},
-										{
-											"key": "access_token",
-											"value": "{{solitxaccessToken}}"
-										}
-									]
-								},
-								"description": "- Using this service, we can fetch contract details for a specific profile using the profile ID."
-							},
-							"response": []
-						},
-						{
 							"name": "Process event",
 							"id": "baeb76d3-4d21-400b-824d-3c18c65fad54",
 							"protocolProfileBehavior": {
