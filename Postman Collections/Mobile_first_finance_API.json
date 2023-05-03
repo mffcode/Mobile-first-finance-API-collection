@@ -3348,7 +3348,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{customerURL}}:5055/ProfileService/files/{{documentsprofileID}}/business?access_token={{custoken}}",
+									"raw": "{{customerURL}}:5055/ProfileService/files/{{profileid}}/business?access_token={{custoken}}",
 									"host": [
 										"{{customerURL}}"
 									],
@@ -3356,7 +3356,7 @@
 									"path": [
 										"ProfileService",
 										"files",
-										"{{documentsprofileID}}",
+										"{{profileid}}",
 										"business"
 									],
 									"query": [
