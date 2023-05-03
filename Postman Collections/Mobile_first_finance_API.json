@@ -3188,6 +3188,64 @@
 					"name": "Cards",
 					"item": [
 						{
+							"name": "Fetch the profile details",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "3fed4e18-6eb8-4802-ae5d-f311d41aecad",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);",
+											"console.log(\"jsonResponse...\"+jsonResponse)",
+											"var jsonData = jsonResponse.data;",
+											"console.log(\"jsonData...\"+jsonData.profiles)",
+											"var profiles=jsonData.profiles",
+											"console.log(\"profiles...\"+profiles[0].profileID)",
+											"pm.environment.set(\"profileid\", profiles[0].profileID);",
+											"console.log(\"linkedprofileid...\"+profiles[0].linkedProfileID)",
+											"pm.environment.set(\"linkedprofileid\", profiles[0].linkedProfileID);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "4f69df49-2c4e-47f5-a416-f88e3a06df58",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{customerURL}}:5055/ProfileService/profiles?pageNumber=0&numberOfRecords=10&access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"ProfileService",
+										"profiles"
+									],
+									"query": [
+										{
+											"key": "pageNumber",
+											"value": "0"
+										},
+										{
+											"key": "numberOfRecords",
+											"value": "10"
+										},
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								},
+								"description": "- Using this service, we can fetch the logged-in user's profile details.\n- Run this service just once since it has a test script defined to turn the **profile id** into a global variable so that other necessary services can utilize it."
+							},
+							"response": []
+						},
+						{
 							"name": "Apply for a card",
 							"id": "ee41e136-29d8-4ee1-a314-73f64480a893",
 							"protocolProfileBehavior": {
