@@ -5094,6 +5094,20 @@
 						},
 						{
 							"name": "Get contracts",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f406da37-5d8e-4373-9830-3af5ed4e69c6",
+										"exec": [
+											"var jsonData = JSON.parse(responseBody);",
+											"console.log(\"ContractID is \" + jsonData[0].terms.Terms[0].ContractID);",
+											"pm.environment.set(\"contractID\",jsonData[0].terms.Terms[0].ContractID);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "d074be59-d354-421e-8d8b-24fc9e83a1dd",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -5111,30 +5125,29 @@
 									}
 								},
 								"url": {
-									"raw": "{{solitxURL}}:5050/ContractService/profile/contracts/?productUUID=119&access_token={{solitxaccessToken}}",
+									"raw": "{{solitxURL}}:5050/ContractService/contracts/?access_token={{at}}&contractUUID={{contractUUID}}",
 									"host": [
 										"{{solitxURL}}"
 									],
 									"port": "5050",
 									"path": [
 										"ContractService",
-										"profile",
 										"contracts",
 										""
 									],
 									"query": [
 										{
-											"key": "productUUID",
-											"value": "119"
-										},
-										{
-											"key": "access_token",
-											"value": "{{solitxaccessToken}}"
-										},
-										{
 											"key": "contractUUID",
 											"value": "77c9c714-291f-4daf-b1bd-c24f21c29e50",
 											"disabled": true
+										},
+										{
+											"key": "access_token",
+											"value": "{{at}}"
+										},
+										{
+											"key": "contractUUID",
+											"value": "{{contractUUID}}"
 										}
 									]
 								},
