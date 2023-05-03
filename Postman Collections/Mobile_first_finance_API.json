@@ -4854,9 +4854,8 @@
 										"id": "e1b08b7f-81c4-43cc-9792-2711275b080e",
 										"exec": [
 											"var jsonData = JSON.parse(responseBody);",
-											"var jsonData =jsonData[0];",
 											"console.log(jsonData.contractUUID);",
-											"pm.globals.set(\"contractUUID\",jsonData.contractUUID);"
+											"pm.environment.set(\"contractUUID\",jsonData[0].contractUUID);"
 										],
 										"type": "text/javascript"
 									}
@@ -4871,7 +4870,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "[\n    {\n        \"ProductID\": \"119\",\n        \"Terms\": [\n            {\n                \"NextPrincipalRedemptionPayment\": \"3800\",\n                \"InitialExchangeDate\": \"2022-08-01T06:30:00.000Z\",\n                \"NominalInterestRate\": 0.21,\n                \"Tenure\": \"12M\",\n                \"NotionalPrincipal\": \"38000\",\n                \"ContractStatus\": \"PreDeal\",\n                \"LegalEntityIDCounterparty\": \"e6ab9993-6c9b-4d65-af96-130b09160846\"\n            }\n        ],\n        \"PaymentDetails\": {\n            \"CounterpartyPaymentChannelID\": \"74593863-6695-4811-8d0e-49098372cb10\"\n        }\n    }\n]",
+									"raw": "[\n    {\n        \"ProductID\": \"1\",\n        \"Terms\": [\n            {\n                \"ProductIdentifier\": \"1\",\n                \"InitialExchangeDate\": \"2023-05-02T06:30:00.000Z\",\n                \"LegalEntityIDCounterparty\": \"{{profileID}}\",\n                \"ContractStatus\": \"PreDeal\"\n            }\n        ],\n        \"PaymentDetails\": {\n            \"CounterpartyPaymentChannelID\": \"{{paymentChannelID}}\"\n        }\n    }\n]",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4879,7 +4878,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{solitxURL}}:5050/ContractService/contracts?access_token={{solitxaccessToken}}",
+									"raw": "{{solitxURL}}:5050/ContractService/contracts?access_token={{at}}",
 									"host": [
 										"{{solitxURL}}"
 									],
@@ -4891,7 +4890,7 @@
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{solitxaccessToken}}"
+											"value": "{{at}}"
 										}
 									]
 								},
