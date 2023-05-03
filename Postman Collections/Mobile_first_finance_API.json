@@ -1866,10 +1866,11 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/mobileApp/{{profileID}}?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}:5055/WorkflowService/mobileApp/{{profileID}}?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
+											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"mobileApp",
