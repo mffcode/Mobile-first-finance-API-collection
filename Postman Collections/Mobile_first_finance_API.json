@@ -2640,7 +2640,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"email\": \"mukesh.adla@odedtech.com\",\r\n  \"otp\": \"449760\"\r\n}",
+									"raw": "{\r\n  \"email\": \"Enter email ID\",\r\n  \"otp\": \"Enter 6-digit OTP sent to email ID\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
