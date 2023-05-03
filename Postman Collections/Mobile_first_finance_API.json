@@ -2784,6 +2784,8 @@
 											"var profiles=jsonData.profiles",
 											"console.log(\"profileid...\"+profiles[0].profileID)",
 											"pm.environment.set(\"profileid\", profiles[0].profileID);",
+											"console.log(\"linkedprofileid...\"+profiles[0].linkedProfileID)",
+											"pm.environment.set(\"linkedprofileid\", profiles[0].linkedProfileID);",
 											""
 										],
 										"type": "text/javascript"
