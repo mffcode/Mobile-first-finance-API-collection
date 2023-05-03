@@ -2575,7 +2575,7 @@
 										"exec": [
 											"var jsonData = JSON.parse(responseBody);\r",
 											"var jsonValue = jsonData.body;\r",
-											"pm.globals.set(\"custoken\", jsonValue.access_token);"
+											"pm.environment.set(\"custoken\", jsonValue.access_token);"
 										],
 										"type": "text/javascript"
 									}
