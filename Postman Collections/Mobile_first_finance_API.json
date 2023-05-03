@@ -1593,10 +1593,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{backofficeURL}}/ProfileService/searchProfiles?mobileNumber={{MobileNumber}}&access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10",
+									"raw": "{{backofficeURL}}:5055/ProfileService/searchProfiles?mobileNumber={{MobileNumber}}&access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10",
 									"host": [
 										"{{backofficeURL}}"
 									],
+									"port": "5055",
 									"path": [
 										"ProfileService",
 										"searchProfiles"
