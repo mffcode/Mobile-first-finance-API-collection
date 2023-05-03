@@ -1815,10 +1815,11 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/workflowToProfiles?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowToProfiles?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
+											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"workflowToProfiles"
