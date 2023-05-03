@@ -2254,10 +2254,11 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}/PortfolioService/savePortfolioRepayment?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}:5055/PortfolioService/savePortfolioRepayment?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
+											"port": "5055",
 											"path": [
 												"PortfolioService",
 												"savePortfolioRepayment"
