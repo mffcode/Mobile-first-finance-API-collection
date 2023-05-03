@@ -2601,7 +2601,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"rootUser\": \"gofintech\",\n  \"userName\": \"gofintech\",\n  \"password\": \"qe5PwQ3qeG&743\"\n}",
+									"raw": "{\n  \"rootUser\": \"enter sandbox rootuser\",\n  \"userName\": \"enter sandbox username\",\n  \"password\": \"enter sandbox password\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
