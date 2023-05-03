@@ -4986,6 +4986,121 @@
 							"response": []
 						},
 						{
+							"name": "Get contracts",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f406da37-5d8e-4373-9830-3af5ed4e69c6",
+										"exec": [
+											"var jsonData = JSON.parse(responseBody);",
+											"console.log(\"ContractID is \" + jsonData[0].terms.Terms[0].ContractID);",
+											"pm.environment.set(\"contractID\",jsonData[0].terms.Terms[0].ContractID);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "d074be59-d354-421e-8d8b-24fc9e83a1dd",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{solitxURL}}:5050/ContractService/contracts/?access_token={{at}}&contractUUID={{contractUUID}}",
+									"host": [
+										"{{solitxURL}}"
+									],
+									"port": "5050",
+									"path": [
+										"ContractService",
+										"contracts",
+										""
+									],
+									"query": [
+										{
+											"key": "contractUUID",
+											"value": "77c9c714-291f-4daf-b1bd-c24f21c29e50",
+											"disabled": true
+										},
+										{
+											"key": "access_token",
+											"value": "{{at}}"
+										},
+										{
+											"key": "contractUUID",
+											"value": "{{contractUUID}}"
+										}
+									]
+								},
+								"description": "- Using this service, we can fetch all the available contracts associated with a specific **productUUID**."
+							},
+							"response": []
+						},
+						{
+							"name": "Update contract",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "80aefec4-582a-4959-89eb-ef58f2df54b7",
+										"exec": [
+											"var jsonData = JSON.parse(responseBody);",
+											"console.log(jsonData.contractUUID);",
+											"//pm.globals.set(\"contractUUID\",jsonData[0].contractUUID);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "d262c240-9059-4989-9f4a-534eaeda236e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n  {\n    \"ContractUUID\": \"{{contractUUID}}\",\n    \"ProductID\": \"1\",\n    \"Terms\": [\n      {\n        \"LegalEntityIDCounterparty\": \"{{profileID}}\",\n        \"ContractStatus\": \"PreDeal\",\n        \"ContractID\": \"{{contractID}}\"\n      }\n    ],\n    \"PaymentDetails\": {\n      \"CounterpartyPaymentChannelID\": \"{{paymentChannelID}}\"\n    }\n  }\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{solitxURL}}:5050/ContractService/contracts?access_token={{at}}",
+									"host": [
+										"{{solitxURL}}"
+									],
+									"port": "5050",
+									"path": [
+										"ContractService",
+										"contracts"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{at}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Compute contract",
 							"id": "2195f7b3-73f5-473b-a542-d8fc39f8b1b3",
 							"protocolProfileBehavior": {
@@ -5129,44 +5244,6 @@
 							"response": []
 						},
 						{
-							"name": "Get events of contract with profile id",
-							"id": "d8d823c5-18ef-4eae-a3c2-7135a4eb75db",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{solitxURL}}:5050/BusinessEventService/contractEvents?profileId=4fb45435-d896-4f0a-a68a-ab6548a3f5de&eventType=PI,FP&access_token={{solitxaccessToken}}",
-									"host": [
-										"{{solitxURL}}"
-									],
-									"port": "5050",
-									"path": [
-										"BusinessEventService",
-										"contractEvents"
-									],
-									"query": [
-										{
-											"key": "profileId",
-											"value": "4fb45435-d896-4f0a-a68a-ab6548a3f5de"
-										},
-										{
-											"key": "eventType",
-											"value": "PI,FP"
-										},
-										{
-											"key": "access_token",
-											"value": "{{solitxaccessToken}}"
-										}
-									]
-								},
-								"description": "- Using this service, we can fetch the events of a contract by profile ID."
-							},
-							"response": []
-						},
-						{
 							"name": "Get events of contract with contract uuid",
 							"id": "9f3daf6f-213b-4f8d-9662-b6242087a6be",
 							"protocolProfileBehavior": {
@@ -5197,69 +5274,6 @@
 									]
 								},
 								"description": "- Using this service, we can fetch the events of a contract by **contractUUID**."
-							},
-							"response": []
-						},
-						{
-							"name": "Get contracts",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "f406da37-5d8e-4373-9830-3af5ed4e69c6",
-										"exec": [
-											"var jsonData = JSON.parse(responseBody);",
-											"console.log(\"ContractID is \" + jsonData[0].terms.Terms[0].ContractID);",
-											"pm.environment.set(\"contractID\",jsonData[0].terms.Terms[0].ContractID);"
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "d074be59-d354-421e-8d8b-24fc9e83a1dd",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{solitxURL}}:5050/ContractService/contracts/?access_token={{at}}&contractUUID={{contractUUID}}",
-									"host": [
-										"{{solitxURL}}"
-									],
-									"port": "5050",
-									"path": [
-										"ContractService",
-										"contracts",
-										""
-									],
-									"query": [
-										{
-											"key": "contractUUID",
-											"value": "77c9c714-291f-4daf-b1bd-c24f21c29e50",
-											"disabled": true
-										},
-										{
-											"key": "access_token",
-											"value": "{{at}}"
-										},
-										{
-											"key": "contractUUID",
-											"value": "{{contractUUID}}"
-										}
-									]
-								},
-								"description": "- Using this service, we can fetch all the available contracts associated with a specific **productUUID**."
 							},
 							"response": []
 						},
@@ -5333,58 +5347,6 @@
 									]
 								},
 								"description": "- Using this service, we can perform transactions like IED (notional amount), IP (interest amount), PR (principal amount), and FP (fee amount)."
-							},
-							"response": []
-						},
-						{
-							"name": "Update contract",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "80aefec4-582a-4959-89eb-ef58f2df54b7",
-										"exec": [
-											"var jsonData = JSON.parse(responseBody);",
-											"console.log(jsonData.contractUUID);",
-											"//pm.globals.set(\"contractUUID\",jsonData[0].contractUUID);"
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "d262c240-9059-4989-9f4a-534eaeda236e",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "[\n  {\n    \"ContractUUID\": \"{{contractUUID}}\",\n    \"ProductID\": \"1\",\n    \"Terms\": [\n      {\n        \"LegalEntityIDCounterparty\": \"{{profileID}}\",\n        \"ContractStatus\": \"PreDeal\",\n        \"ContractID\": \"{{contractID}}\"\n      }\n    ],\n    \"PaymentDetails\": {\n      \"CounterpartyPaymentChannelID\": \"{{paymentChannelID}}\"\n    }\n  }\n]",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{solitxURL}}:5050/ContractService/contracts?access_token={{at}}",
-									"host": [
-										"{{solitxURL}}"
-									],
-									"port": "5050",
-									"path": [
-										"ContractService",
-										"contracts"
-									],
-									"query": [
-										{
-											"key": "access_token",
-											"value": "{{at}}"
-										}
-									]
-								}
 							},
 							"response": []
 						},
