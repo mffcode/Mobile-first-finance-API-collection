@@ -2672,7 +2672,7 @@
 											"console.log(\"workflow...\"+jsonData.workflow)",
 											"var templateid=workflow[39].templateID",
 											"console.log(\"templateid...\"+workflow[39].templateID)",
-											"pm.globals.set(\"templateid\",workflow[39].templateID );",
+											"pm.environment.set(\"templateid\",workflow[39].templateID );",
 											"",
 											"",
 											"",
