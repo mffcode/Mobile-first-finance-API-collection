@@ -2505,6 +2505,24 @@
 						},
 						{
 							"name": "Get client sign up form",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "9f82ba7c-ac33-4082-bd7f-29bc6d04bbd3",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);",
+											"console.log(\"jsonResponse...\"+jsonResponse)",
+											"var userFormTemplateID = jsonResponse.userFormTemplateID;",
+											"console.log(\"userformTemplateID...\"+jsonResponse.userFormTemplateID)",
+											"pm.environment.set(\"userformTemplateID\",jsonResponse.userFormTemplateID );",
+											"",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "0cfc491e-e95d-4c56-8aa8-e8df2df5eca6",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
