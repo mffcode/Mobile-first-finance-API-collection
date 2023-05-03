@@ -4129,7 +4129,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{highmarkURL}}/highmark/getHighmarkVerification/1495806",
+								"url": "{{customerURL}}:8686/highmark/getHighmarkVerification/1495806",
 								"description": "- Mention the **detailsID** at the end of the service."
 							},
 							"response": []
