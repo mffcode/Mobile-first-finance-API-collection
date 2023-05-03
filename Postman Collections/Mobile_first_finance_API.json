@@ -4006,7 +4006,7 @@
 											"console.log(\"jsonData...\"+jsonData.referenceId)",
 											"var referenceId=jsonData.referenceId",
 											"console.log(\"referenceId...\"+jsonData.referenceId)",
-											"pm.globals.set(\"referenceId\", jsonData.referenceId);"
+											"pm.environment.set(\"referenceId\", jsonData.referenceId);"
 										],
 										"type": "text/javascript"
 									}
