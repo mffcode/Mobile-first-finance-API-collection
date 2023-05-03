@@ -2588,7 +2588,7 @@
 							"response": []
 						},
 						{
-							"name": "Login with client credentials",
+							"name": "2FA",
 							"event": [
 								{
 									"listen": "test",
