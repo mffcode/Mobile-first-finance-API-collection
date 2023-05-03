@@ -1382,10 +1382,11 @@
 									}
 								},
 								"url": {
-									"raw": "{{backofficeURL}}/ProfileService/profiles/forms/{{profileFormID}}?access_token={{useraccessToken}}",
+									"raw": "{{backofficeURL}}:5055/ProfileService/profiles/forms/{{profileFormID}}?access_token={{useraccessToken}}",
 									"host": [
 										"{{backofficeURL}}"
 									],
+									"port": "5055",
 									"path": [
 										"ProfileService",
 										"profiles",
