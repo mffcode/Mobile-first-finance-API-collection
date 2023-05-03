@@ -3056,6 +3056,46 @@
 								"description": "- Using this service, we can update workflow template details based on workflow template details id.\n- Mention the payload according to the workflow template and provide the necessary value.\n- The **workflow template details id** will be retrieved and applied to the service from **View the workflow template details of a profile**."
 							},
 							"response": []
+						},
+						{
+							"name": "To save the details in next workflow template",
+							"id": "c4e74319-b177-4ad3-b971-52ccadf48fbe",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"Upgrade to pro\": \"Yes\"\r\n}\r\n// Mention the value as \"Yes\" or \"No.\"",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{customerURL}}:5055/WorkflowService/workflowTemplateDetails/{{clientwebtemplatedetailsid0}}?access_token={{custoken}}",
+									"host": [
+										"{{customerURL}}"
+									],
+									"port": "5055",
+									"path": [
+										"WorkflowService",
+										"workflowTemplateDetails",
+										"{{clientwebtemplatedetailsid0}}"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{custoken}}"
+										}
+									]
+								},
+								"description": "- Using this service, we can update workflow template details based on workflow template details id.\n- Mention the payload according to the workflow template and provide the necessary value.\n- The **workflow template details id** will be retrieved and applied to the service from **View the workflow template details of a profile**."
+							},
+							"response": []
 						}
 					],
 					"id": "f069129c-e4de-41bc-9a33-414e67ee51d5",
