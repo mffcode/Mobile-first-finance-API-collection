@@ -4838,7 +4838,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{solitxURL}}:5050/PaymentServices/payments/channel/profiles/{{ProfileID}}?access_token={{solitxaccessToken}}",
+									"raw": "{{solitxURL}}:5050/PaymentServices/payments/channel/profiles/{{profileID}}?access_token={{at}}",
 									"host": [
 										"{{solitxURL}}"
 									],
@@ -4848,12 +4848,12 @@
 										"payments",
 										"channel",
 										"profiles",
-										"{{ProfileID}}"
+										"{{profileID}}"
 									],
 									"query": [
 										{
 											"key": "access_token",
-											"value": "{{solitxaccessToken}}"
+											"value": "{{at}}"
 										}
 									]
 								},
