@@ -2728,9 +2728,9 @@
 											"console.log(\"jsonData...\"+jsonData.profiles)",
 											"var profiles=jsonData.profiles",
 											"console.log(\"profiles...\"+profiles[0].profileID)",
-											"pm.globals.set(\"profileid\", profiles[0].profileID);",
+											"pm.environment.set(\"profileid\", profiles[0].profileID);",
 											"console.log(\"linkedprofileid...\"+profiles[0].linkedProfileID)",
-											"pm.globals.set(\"linkedprofileid\", profiles[0].linkedProfileID);"
+											"pm.environment.set(\"linkedprofileid\", profiles[0].linkedProfileID);"
 										],
 										"type": "text/javascript"
 									}
