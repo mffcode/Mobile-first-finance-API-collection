@@ -2566,6 +2566,28 @@
 					"name": "Authorization",
 					"item": [
 						{
+							"name": "Login with client credentialss",
+							"id": "67acfc92-b2f6-4505-ac38-92a15c83fdce",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"rootUser\": \"gofintech\",\n  \"userName\": \"gofintech\",\n  \"password\": \"qe5PwQ3qeG&743\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://backoffice.mobilefirstfinance.com:5055/UserService/userValidation"
+							},
+							"response": []
+						},
+						{
 							"name": "Login with client credentials",
 							"event": [
 								{
@@ -2599,28 +2621,6 @@
 								},
 								"url": "{{customerURL}}:5055/LoginService/login",
 								"description": "- Using this service, we can gain access to the customer application. Include in the payload the freshly created customer credentials.\n- Note : The **Identifier** that we provide in the signup form will act as the **userName** in the login form."
-							},
-							"response": []
-						},
-						{
-							"name": "2 Factor Authentication",
-							"id": "67acfc92-b2f6-4505-ac38-92a15c83fdce",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n  \"rootUser\": \"gofintech\",\n  \"userName\": \"gofintech\",\n  \"password\": \"qe5PwQ3qeG&743\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "https://backoffice.mobilefirstfinance.com:5055/UserService/userValidation"
 							},
 							"response": []
 						}
