@@ -2671,9 +2671,9 @@
 											"console.log(\"jsonResponse...\"+jsonResponse)",
 											"var jsonData = jsonResponse.data;",
 											"console.log(\"jsonData...\"+jsonData.workflow)",
-											"var workflow=jsonData.workflow",
-											"// console.log(\"workflowid...\"+workflow[13].workFlowID)",
-											"// pm.environment.set(\"workflowid\", workflow[13].workFlowID);"
+											"var workflow=jsonData.workflow[0].workFlowID",
+											"console.log(\"workflowid...\"+jsonData.workflow[0].workFlowID)",
+											"pm.environment.set(\"workflowid\", jsonData.workflow[0].workFlowID);"
 										],
 										"type": "text/javascript"
 									}
