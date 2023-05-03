@@ -5245,45 +5245,6 @@
 						},
 						{
 							"name": "Process event",
-							"id": "baeb76d3-4d21-400b-824d-3c18c65fad54",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "[\n    {\n        \"EventID\": \"e36ce214-62df-4f11-8b3e-5c41f57aecea\",\n        \"Value\": -38000.0,\n        \"ProcessTime\": \"2022-08-01T23:59:59\"\n    }\n]",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{solitxURL}}:5050/TransactionsService/process?access_token={{solitxaccessToken}}",
-									"host": [
-										"{{solitxURL}}"
-									],
-									"port": "5050",
-									"path": [
-										"TransactionsService",
-										"process"
-									],
-									"query": [
-										{
-											"key": "access_token",
-											"value": "{{solitxaccessToken}}"
-										}
-									]
-								},
-								"description": "- Using this service, we can perform transactions like IED (notional amount), IP (interest amount), PR (principal amount), and FP (fee amount)."
-							},
-							"response": []
-						},
-						{
-							"name": "Process event",
 							"id": "292653b7-f8aa-499b-a6ed-acafd37426fb",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
