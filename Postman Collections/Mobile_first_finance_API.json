@@ -1200,10 +1200,11 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}/ProfileService/getAuditData?pageNumber=0&numberOfRecords=10&auditId={{auditID}}&access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}:5055/ProfileService/getAuditData?pageNumber=0&numberOfRecords=10&auditId={{auditID}}&access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
+											"port": "5055",
 											"path": [
 												"ProfileService",
 												"getAuditData"
