@@ -3660,7 +3660,7 @@
 											"var jsonData = JSON.parse(responseBody);",
 											"var jsonValue = jsonData;",
 											"console.log(\"envelopeID...\"+jsonValue.envelopeId)",
-											"pm.globals.set(\"envelopeID\", jsonValue.envelopeId);"
+											"pm.environment.set(\"envelopeID\", jsonValue.envelopeId);"
 										],
 										"type": "text/javascript"
 									}
