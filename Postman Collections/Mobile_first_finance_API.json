@@ -480,10 +480,11 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}/UserService/actions?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}:5055/UserService/actions?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
+											"port": "5055",
 											"path": [
 												"UserService",
 												"actions"
