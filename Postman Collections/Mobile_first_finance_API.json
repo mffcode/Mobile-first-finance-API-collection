@@ -3381,7 +3381,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "[\n  \"cf95a44d-7c6a-40cd-bde9-ebe40c5c7604\",\n  \"aaf596cb-66b5-423d-b2cc-17339684621b\",\n  \"55628a44-e666-430d-b2d3-0cf7d2edcfab\",\n  \"41568864-d369-4ba6-8469-d41a1af76ff3\",\n  \"45351f8c-4bb6-4501-a9b4-e87348a5add5\"\n]",
+									"raw": "[\n  \"{{contractuuid}}\"\n]",
 									"options": {
 										"raw": {
 											"language": "json"
