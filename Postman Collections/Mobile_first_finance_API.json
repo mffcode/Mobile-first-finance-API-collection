@@ -2590,7 +2590,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"rootUser\": \"enter sandbox rootuser\",\r\n  \"userName\": \"enter sandbox username\",\r\n  \"password\": \"enter sandbox password\"\r\n}",
+									"raw": "{\r\n  \"email\": \"mukesh.adla@odedtech.com\",\r\n  \"otp\": \"186626\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
