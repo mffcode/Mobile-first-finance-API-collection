@@ -54,6 +54,68 @@
 								"description": "- Using this service, we can login to the application."
 							},
 							"response": []
+						},
+						{
+							"name": "Login with client credentials",
+							"id": "75c7785e-4a37-46eb-afb5-2508dc3566d6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"rootUser\": \"gofintech\",\n  \"userName\": \"gofintech\",\n  \"password\": \"qe5PwQ3qeG&743\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{customerURL}}:5055/UserService/userValidation"
+							},
+							"response": []
+						},
+						{
+							"name": "2FA Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "cd42723b-c160-4cf7-bb41-79b932cc6e96",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);\r",
+											"console.log(\"jsonResponse...\"+jsonResponse)\r",
+											"//var jsonData = jsonResponse.data;\r",
+											"var access_token=jsonResponse.access_token\r",
+											"console.log(\"access_token...\"+jsonResponse.access_token)\r",
+											"pm.environment.set(\"custoken\", jsonResponse.access_token);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "4d1ecd8d-69e8-4e26-88a6-8c795067cf93",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"mukesh.adla@odedtech.com\",\r\n  \"otp\": \"449760\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{customerURL}}:5055/LoginService/login",
+								"description": "- Using this service, we can gain access to the customer application. Include in the payload the freshly created customer credentials.\n- Note : The **Identifier** that we provide in the signup form will act as the **userName** in the login form."
+							},
+							"response": []
 						}
 					],
 					"id": "17f01589-3053-41de-97c7-0dc82b273e62",
