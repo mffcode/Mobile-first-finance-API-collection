@@ -90,7 +90,7 @@
 											"//var jsonData = jsonResponse.data;\r",
 											"var access_token=jsonResponse.access_token\r",
 											"console.log(\"access_token...\"+jsonResponse.access_token)\r",
-											"pm.environment.set(\"custoken\", jsonResponse.access_token);"
+											"pm.environment.set(\"useraccessToken\", jsonResponse.access_token);"
 										],
 										"type": "text/javascript"
 									}
