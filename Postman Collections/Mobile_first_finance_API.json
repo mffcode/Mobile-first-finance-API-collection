@@ -1423,10 +1423,11 @@
 									}
 								},
 								"url": {
-									"raw": "{{backofficeURL}}/ProfileService/profiles?access_token={{useraccessToken}}",
+									"raw": "{{backofficeURL}}:5055/ProfileService/profiles?access_token={{useraccessToken}}",
 									"host": [
 										"{{backofficeURL}}"
 									],
+									"port": "5055",
 									"path": [
 										"ProfileService",
 										"profiles"
