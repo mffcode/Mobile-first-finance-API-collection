@@ -2414,10 +2414,11 @@
 									}
 								},
 								"url": {
-									"raw": "{{backofficeURL}}/ProfileService/productTemplate/{{documentsprofileID}}/contracts?access_token={{useraccessToken}}",
+									"raw": "{{backofficeURL}}:5055/ProfileService/productTemplate/{{documentsprofileID}}/contracts?access_token={{useraccessToken}}",
 									"host": [
 										"{{backofficeURL}}"
 									],
+									"port": "5055",
 									"path": [
 										"ProfileService",
 										"productTemplate",
