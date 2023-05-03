@@ -2828,7 +2828,7 @@
 											"console.log(\"workFlowTemplateDetails...\"+workflow.workFlowTemplateDetails)",
 											"var workflowProfileID=workflow.workflowProfileID",
 											"console.log(\"workflowprofileid...\"+workflow.workflowProfileID)",
-											"pm.globals.set(\"workflowprofileid\",workflow.workflowProfileID );"
+											"pm.environment.set(\"workflowprofileid\",workflow.workflowProfileID );"
 										],
 										"type": "text/javascript"
 									}
