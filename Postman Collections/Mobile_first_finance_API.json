@@ -4767,6 +4767,21 @@
 						},
 						{
 							"name": "Create profile payment-channel",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "4a72e385-e25b-4fa0-8ea2-88e5d4a4bc1f",
+										"exec": [
+											"var jsonData = JSON.parse(responseBody);",
+											"console.log(jsonData.paymentChannelID);",
+											"pm.environment.set(\"paymentChannelID\",jsonData.paymentChannelID);",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "660764af-e50e-4d8a-a712-c564687c30be",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -4784,7 +4799,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{solitxURL}}:5050/PaymentServices/payments/channel/profiles/{{ProfileID}}/new?access_token={{solitxaccessToken}}",
+									"raw": "{{solitxURL}}:5050/PaymentServices/payments/channel/profiles/{{profileID}}/new?access_token={{at}}",
 									"host": [
 										"{{solitxURL}}"
 									],
@@ -4794,7 +4809,7 @@
 										"payments",
 										"channel",
 										"profiles",
-										"{{ProfileID}}",
+										"{{profileID}}",
 										"new"
 									],
 									"query": [
@@ -4805,7 +4820,7 @@
 										},
 										{
 											"key": "access_token",
-											"value": "{{solitxaccessToken}}"
+											"value": "{{at}}"
 										}
 									]
 								},
