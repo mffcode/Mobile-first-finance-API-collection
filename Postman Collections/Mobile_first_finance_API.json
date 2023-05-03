@@ -2647,8 +2647,8 @@
 											"var jsonData = jsonResponse.data;",
 											"console.log(\"jsonData...\"+jsonData.workflow)",
 											"var workflow=jsonData.workflow",
-											"console.log(\"workflowid...\"+workflow[13].workFlowID)",
-											"pm.environment.set(\"workflowid\", workflow[13].workFlowID);"
+											"// console.log(\"workflowid...\"+workflow[13].workFlowID)",
+											"// pm.environment.set(\"workflowid\", workflow[13].workFlowID);"
 										],
 										"type": "text/javascript"
 									}
