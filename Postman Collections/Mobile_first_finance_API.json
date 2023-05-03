@@ -1912,10 +1912,11 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}/WorkflowService/workflowTemplateDetails/{{workflowTemplateDetailsID}}?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowTemplateDetails/{{workflowTemplateDetailsID}}?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
+											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"workflowTemplateDetails",
