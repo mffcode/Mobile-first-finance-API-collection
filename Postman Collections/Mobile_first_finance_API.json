@@ -3835,7 +3835,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"To\": \"+919392256334\",\r\n  \"Code\": \"718817\"\r\n}",
+											"raw": "{\r\n  \"To\": \"Enter the mobile number with country code\",\r\n  \"Code\": \"Enter 6-digit OTP sent to mobile number\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
