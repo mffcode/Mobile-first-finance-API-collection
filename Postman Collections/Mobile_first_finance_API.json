@@ -5130,7 +5130,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"Mobile Number\": \"Provide a valid mobile number\"\n}",
+											"raw": "{\n  \"Mobile Number\": \"Enter a valid mobile number with country code\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
