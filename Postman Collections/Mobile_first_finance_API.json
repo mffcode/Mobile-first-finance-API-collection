@@ -4988,6 +4988,27 @@
 						},
 						{
 							"name": "Get events of contract",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "1b6b96f0-f251-4fe6-8880-6cf82ca9649e",
+										"exec": [
+											"var jsonData = JSON.parse(responseBody);",
+											"console.log(\"eventID is \" + jsonData[0].eventID);",
+											"console.log(\"date is \" + jsonData[0].date);",
+											"",
+											"console.log(\"Value is \" + jsonData[0].eventBody.Transaction.NominalValue);",
+											"",
+											"pm.environment.set(\"eventID\",jsonData[0].eventID);",
+											"pm.environment.set(\"processTime\",jsonData[0].date);",
+											"",
+											"pm.environment.set(\"value\",jsonData[0].eventBody.Transaction.NominalValue);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "c1bbdd85-b55b-48c0-a088-647101ea79ba",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -4996,7 +5017,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{solitxURL}}:5050/BusinessEventService/events?contractUUID={{contractUUID}}&access_token={{solitxaccessToken}}",
+									"raw": "{{solitxURL}}:5050/BusinessEventService/events?contractUUID={{contractUUID}}&access_token={{at}}",
 									"host": [
 										"{{solitxURL}}"
 									],
@@ -5012,7 +5033,7 @@
 										},
 										{
 											"key": "access_token",
-											"value": "{{solitxaccessToken}}"
+											"value": "{{at}}"
 										}
 									]
 								},
