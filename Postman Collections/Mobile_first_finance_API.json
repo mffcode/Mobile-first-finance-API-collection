@@ -19,43 +19,6 @@
 					"name": "Authorization",
 					"item": [
 						{
-							"name": "login",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "d42f6f77-592a-4b04-8db0-b4667397db98",
-										"exec": [
-											"// var jsonData = JSON.parse(responseBody);\r",
-											"// var jsonValue = jsonData.body;\r",
-											"// pm.globals.set(\"useraccessToken\", jsonValue.access_token);"
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "6776c999-0f7e-493c-abc6-634f72c8a900",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"rootUser\": \"gofintech\",\r\n    \"userName\": \"gofintech\",\r\n    \"password\": \"NFQDyPdb$521\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{backofficeURL}}:5055/LoginService/login",
-								"description": "- Using this service, we can login to the application."
-							},
-							"response": []
-						},
-						{
 							"name": "Login with client credentials",
 							"id": "75c7785e-4a37-46eb-afb5-2508dc3566d6",
 							"protocolProfileBehavior": {
