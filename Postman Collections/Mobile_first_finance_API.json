@@ -2655,7 +2655,7 @@
 						}
 					],
 					"id": "c8609cd7-0735-47fe-a715-d87d095eca66",
-					"description": "This service is used to perform customer authentication."
+					"description": "Two-factor authentication is the basis for application access. Two services are contained in this folder, one of which will send an OTP to the email ID using login credentials, and the other will verify the OTP that was sent to the email ID."
 				},
 				{
 					"name": "Client onboarding",
