@@ -4662,7 +4662,7 @@
 										}
 									]
 								},
-								"description": "The Authorization Service has a single endpoint that requires the user to provide login credentials. When you are authenticated, you will get a JSON Web Token (JWT) that is your authorization key to access every other endpoint."
+								"description": "- The Authorization Service has a single endpoint that requires the user to provide login credentials. When you are authenticated, you will get a JSON Web Token (JWT) that is your authorization key to access every other endpoint."
 							},
 							"response": []
 						},
