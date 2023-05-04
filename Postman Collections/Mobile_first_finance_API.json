@@ -4762,7 +4762,7 @@
 										}
 									]
 								},
-								"description": "The endpoint returns data based on the profile identifier provided as a parameter."
+								"description": "- The endpoint returns data based on the profile identifier provided as a parameter."
 							},
 							"response": []
 						},
