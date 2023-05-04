@@ -4594,6 +4594,76 @@
 					"name": "SolitX corebanking integration",
 					"item": [
 						{
+							"name": "Authorization",
+							"item": [
+								{
+									"name": "Login with client credentials",
+									"id": "bde36c80-b681-4f58-91bd-9c4e12f2aabf",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"rootUser\": \"enter sandbox rootuser\",\n  \"userName\": \"enter sandbox username\",\n  \"password\": \"enter sandbox password\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{backofficeURL}}:5055/UserService/userValidation",
+										"description": "- Using this service, we can initiate an OTP to the email ID by performing a login with credentials."
+									},
+									"response": []
+								},
+								{
+									"name": "2FA",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "cd42723b-c160-4cf7-bb41-79b932cc6e96",
+												"exec": [
+													"var jsonResponse = JSON.parse(responseBody);\r",
+													"console.log(\"jsonResponse...\"+jsonResponse)\r",
+													"//var jsonData = jsonResponse.data;\r",
+													"var access_token=jsonResponse.access_token\r",
+													"console.log(\"access_token...\"+jsonResponse.access_token)\r",
+													"pm.environment.set(\"useraccessToken\", jsonResponse.access_token);"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"id": "0ec387f9-8262-4cf2-a3dc-9fb1fa23bbcc",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"email\": \"Enter email ID\",\r\n  \"otp\": \"Enter 6-digit OTP sent to email ID\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{customerURL}}:5055/LoginService/login",
+										"description": "- Using this service, we can verify the 6-digit OTP that was received at the email ID as part of two-factor authentication."
+									},
+									"response": []
+								}
+							],
+							"id": "8aad3568-7a69-4044-851f-e93abc5a07ea",
+							"description": "Two-factor authentication is the basis for application access. Two services are contained in this folder, one of which will send an OTP to the email ID using login credentials, and the other will verify the OTP that was sent to the email ID."
+						},
+						{
 							"name": "Login",
 							"event": [
 								{
