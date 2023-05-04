@@ -5185,7 +5185,7 @@
 										}
 									]
 								},
-								"description": "- Using this service, we can compute an existing contract that has not yet been executed."
+								"description": "- The endpoint returns expected cashflows based on the contractUUID provided as a parameter. If expected cashflows are matching with the requirement then user can execute contract or else user can update the contract again."
 							},
 							"response": []
 						},
