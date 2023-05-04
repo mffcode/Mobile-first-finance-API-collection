@@ -4716,7 +4716,7 @@
 										}
 									]
 								},
-								"description": "- The endpoint is used for creating a profile ,In general it represents client and other counterparties."
+								"description": "The endpoint is used for creating a profile ,In general it represents client and other counterparties."
 							},
 							"response": []
 						},
