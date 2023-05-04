@@ -4594,84 +4594,77 @@
 					"name": "SolitX corebanking integration",
 					"item": [
 						{
-							"name": "Authorization",
-							"item": [
+							"name": "Login",
+							"event": [
 								{
-									"name": "Login",
-									"event": [
-										{
-											"listen": "test",
-											"script": {
-												"id": "60ead33d-2871-421b-a6d8-f8edf100e6ff",
-												"exec": [
-													"var jsonData = JSON.parse(responseBody);",
-													"console.log(jsonData.access_token);",
-													"pm.environment.set(\"at\",jsonData.access_token);",
-													"",
-													""
-												],
-												"type": "text/javascript"
-											}
-										}
-									],
-									"id": "8219ed29-7415-48ec-a8c9-f906358dd506",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"auth": {
-											"type": "basic",
-											"basic": {
-												"username": "web-app"
-											}
-										},
-										"method": "POST",
-										"header": [
-											{
-												"key": "Content-Type",
-												"name": "Content-Type",
-												"type": "text",
-												"value": "application/json"
-											},
-											{
-												"key": "grant_type",
-												"type": "text",
-												"value": "password"
-											}
+									"listen": "test",
+									"script": {
+										"id": "60ead33d-2871-421b-a6d8-f8edf100e6ff",
+										"exec": [
+											"var jsonData = JSON.parse(responseBody);",
+											"console.log(jsonData.access_token);",
+											"pm.environment.set(\"at\",jsonData.access_token);",
+											"",
+											""
 										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"rootUser\": \"enter sandbox rootuser\",\n    \"userName\": \"enter sandbox username\",\n    \"password\": \"enter sandbox password\"\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{solitxURL}}:6055/login",
-											"host": [
-												"{{solitxURL}}"
-											],
-											"port": "6055",
-											"path": [
-												"login"
-											],
-											"query": [
-												{
-													"key": "",
-													"value": "",
-													"disabled": true
-												}
-											]
-										},
-										"description": "- Using this service, we can access the application."
-									},
-									"response": []
+										"type": "text/javascript"
+									}
 								}
 							],
-							"id": "8aad3568-7a69-4044-851f-e93abc5a07ea",
-							"description": "Two-factor authentication is the basis for application access. Two services are contained in this folder, one of which will send an OTP to the email ID using login credentials, and the other will verify the OTP that was sent to the email ID."
+							"id": "8219ed29-7415-48ec-a8c9-f906358dd506",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": {
+										"username": "web-app"
+									}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "grant_type",
+										"type": "text",
+										"value": "password"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"rootUser\": \"enter sandbox rootuser\",\n    \"userName\": \"enter sandbox username\",\n    \"password\": \"enter sandbox password\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{solitxURL}}:6055/login",
+									"host": [
+										"{{solitxURL}}"
+									],
+									"port": "6055",
+									"path": [
+										"login"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								},
+								"description": "- Using this service, we can access the application."
+							},
+							"response": []
 						},
 						{
 							"name": "Create profile",
