@@ -3669,6 +3669,46 @@
 								"description": "- Using this service, we can initiate an OTP to the email ID by performing a login with credentials."
 							},
 							"response": []
+						},
+						{
+							"name": "2FA",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "cd42723b-c160-4cf7-bb41-79b932cc6e96",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);\r",
+											"console.log(\"jsonResponse...\"+jsonResponse)\r",
+											"//var jsonData = jsonResponse.data;\r",
+											"var access_token=jsonResponse.access_token\r",
+											"console.log(\"access_token...\"+jsonResponse.access_token)\r",
+											"pm.environment.set(\"custoken\", jsonResponse.access_token);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "66e65491-5e05-47c5-bdfb-206b08641301",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"Enter email ID\",\r\n  \"otp\": \"Enter 6-digit OTP sent to email ID\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{customerURL}}:5055/LoginService/login",
+								"description": "- Using this service, we can verify the 6-digit OTP that was received at the email ID as part of two-factor authentication."
+							},
+							"response": []
 						}
 					],
 					"id": "06bcd982-bea3-4f8d-a467-d7e4daff528a",
