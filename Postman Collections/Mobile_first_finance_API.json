@@ -4899,7 +4899,7 @@
 										}
 									]
 								},
-								"description": "- Using this service, we can fetch the payment channel for a specific profile."
+								"description": "- The endpoint returns all payments linked to a profile ,here profile ID is provided as a parameter."
 							},
 							"response": []
 						},
