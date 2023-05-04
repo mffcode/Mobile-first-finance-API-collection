@@ -4803,7 +4803,7 @@
 										}
 									]
 								},
-								"description": "- Using this service, we can create a new payment channel for root user."
+								"description": "- The end point allows us to create a payment channel for the root user."
 							},
 							"response": []
 						},
