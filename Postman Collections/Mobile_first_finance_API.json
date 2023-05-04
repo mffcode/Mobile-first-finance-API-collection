@@ -4668,46 +4668,6 @@
 										"description": "- Using this service, we can access the application."
 									},
 									"response": []
-								},
-								{
-									"name": "2FA",
-									"event": [
-										{
-											"listen": "test",
-											"script": {
-												"id": "cd42723b-c160-4cf7-bb41-79b932cc6e96",
-												"exec": [
-													"var jsonResponse = JSON.parse(responseBody);\r",
-													"console.log(\"jsonResponse...\"+jsonResponse)\r",
-													"//var jsonData = jsonResponse.data;\r",
-													"var access_token=jsonResponse.access_token\r",
-													"console.log(\"access_token...\"+jsonResponse.access_token)\r",
-													"pm.environment.set(\"useraccessToken\", jsonResponse.access_token);"
-												],
-												"type": "text/javascript"
-											}
-										}
-									],
-									"id": "0ec387f9-8262-4cf2-a3dc-9fb1fa23bbcc",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n  \"email\": \"Enter email ID\",\r\n  \"otp\": \"Enter 6-digit OTP sent to email ID\"\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": "{{customerURL}}:5055/LoginService/login",
-										"description": "- Using this service, we can verify the 6-digit OTP that was received at the email ID as part of two-factor authentication."
-									},
-									"response": []
 								}
 							],
 							"id": "8aad3568-7a69-4044-851f-e93abc5a07ea",
