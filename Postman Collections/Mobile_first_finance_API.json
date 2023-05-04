@@ -4762,7 +4762,7 @@
 										}
 									]
 								},
-								"description": "- Using this service, we can fetch a specific profile by identifier."
+								"description": "The endpoint returns data based on the profile identifier provided as a parameter."
 							},
 							"response": []
 						},
