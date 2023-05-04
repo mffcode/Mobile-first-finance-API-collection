@@ -5322,7 +5322,8 @@
 											"value": "{{at}}"
 										}
 									]
-								}
+								},
+								"description": "- The endpoints will process the events only after all validations are passed , if passed event status get updated with \"processed\" and a new transaction event is stored in transaction table and also update the contract accordingly.\n- EventID,Value and ProcessTime are mandatory fields required for processing the event."
 							},
 							"response": []
 						}
