@@ -5229,7 +5229,7 @@
 										}
 									]
 								},
-								"description": "- Using this service, we can execute a contract."
+								"description": "The endpoint returns cashflows based on the contractUUID provided as a parameter. When a contract gets executed the ContractStatus will change from ''PreDeal' to 'performant'.\n\nEach cashflow or event JSON consists of\n\n- event time\n- execution type  \n    - Transaction: events that trigger a transaction\n    - ContractUpdate: events that trigger a (contract) state update\n- status  \n    - A business event can be in status \"scheduled\", \"pending\", or \"processed\"\n- event type  \n    - IP\n    - PR\n    - IED\n    - MD etc\n- event body (JSON)  \n    \n    - For ContractUpdate-type events, the following EventBody is created:  \n        {  \n        ContractID: \\[ Varchar \\],  \n        Terms: \\[ To update specific contract attribute in terms\\]  \n        }\n    - For transaction-type events, the following EventBody is created  \n        {  \n        \"Value\": \\[ event value \\],  \n        \"Units\": \\[ event currency \\],  \n        \"DebitPaymentMethodID\":\\[ payment channel Id of used for debit-side transaction \\]  \n        \"CreditPaymentMethodID\":\\[ payment channel Id of used for credit-side transaction \\]\n\n}"
 							},
 							"response": []
 						},
