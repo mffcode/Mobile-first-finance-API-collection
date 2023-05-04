@@ -4716,7 +4716,7 @@
 										}
 									]
 								},
-								"description": "- Using this service, we can create a new profile."
+								"description": "- The endpoint is used for creating a profile ,In general it represents client and other counterparties."
 							},
 							"response": []
 						},
