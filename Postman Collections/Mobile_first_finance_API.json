@@ -4866,7 +4866,7 @@
 										}
 									]
 								},
-								"description": "- Using this service, we can create a payment channel for a specific profile."
+								"description": "- The endpoint allows adding new and managing existing payments to profile."
 							},
 							"response": []
 						},
