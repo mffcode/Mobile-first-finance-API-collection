@@ -5140,7 +5140,8 @@
 											"value": "{{at}}"
 										}
 									]
-								}
+								},
+								"description": "- The endpoint update the existing contract.Contract will be updated only if valid data is provided in terms and payment details.\n- Only contract with status='PreDeal' can be updated."
 							},
 							"response": []
 						},
