@@ -77,7 +77,7 @@
 									}
 								},
 								"url": "{{customerURL}}:5055/LoginService/login",
-								"description": "- Using this service, we can gain access to the customer application. Include in the payload the freshly created customer credentials.\n- Note : The **Identifier** that we provide in the signup form will act as the **userName** in the login form."
+								"description": "- Using this service, we can verify the 6-digit OTP that was received at the email ID as part of two-factor authentication."
 							},
 							"response": []
 						}
