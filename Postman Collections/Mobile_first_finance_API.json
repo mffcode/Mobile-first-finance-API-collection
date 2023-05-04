@@ -2609,7 +2609,8 @@
 										}
 									}
 								},
-								"url": "{{customerURL}}:5055/UserService/userValidation"
+								"url": "{{customerURL}}:5055/UserService/userValidation",
+								"description": "- Using this service, we can initiate an OTP to the email ID by performing a login with credentials."
 							},
 							"response": []
 						},
