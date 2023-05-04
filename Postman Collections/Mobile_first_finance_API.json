@@ -5025,7 +5025,7 @@
 										}
 									]
 								},
-								"description": "- Using this service, we can create a new contract."
+								"description": "Creates a new contract based on the product JSON.Contract will be created only if valid data is provided in terms and payment details.\n\nUpon creation of new contract the initial contract schedule is computed according to the contract logic, respective events are stored in the BusinessEvents table. For newly created contract ContractStatus gets updated with 'PreDeal'. ContractStatus which describes the status of executed and \"running\" contracts during their lifecycle.\n\nBelow are the ContractStatus used based on the contract lifecycle:\n\n• **performant** : The contract is active and execution of terms proceeds as agreed.\n\n• **Delinquent** : The contract is active and execution of certain terms is delayed by more than the ACTUS GracePeriod.\n\n• **Default** : The contract is active and execution of certain terms is delayed by more than the ACTUS DelinquencyPeriod."
 							},
 							"response": []
 						},
