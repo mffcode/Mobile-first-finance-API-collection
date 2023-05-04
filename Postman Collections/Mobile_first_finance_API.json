@@ -3672,7 +3672,7 @@
 						}
 					],
 					"id": "06bcd982-bea3-4f8d-a467-d7e4daff528a",
-					"description": "- To conduct a third-party integration services check, use any customer credentials.\n- Check out the **Customer** collection for authorization in detail."
+					"description": "- Two-factor authentication is the basis for application access. Two services are contained in this folder, one of which will send an OTP to the email ID using login credentials, and the other will verify the OTP that was sent to the email ID.\n- To conduct a third-party integration services check, use any customer credentials."
 				},
 				{
 					"name": "Payment links",
