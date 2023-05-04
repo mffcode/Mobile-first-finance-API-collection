@@ -5284,7 +5284,7 @@
 										}
 									]
 								},
-								"description": "- Using this service, we can fetch the events for a specific contract."
+								"description": "- The endpoint returns cashflows based on the contractUUID provided as a parameter."
 							},
 							"response": []
 						},
