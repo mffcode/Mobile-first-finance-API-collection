@@ -4937,7 +4937,8 @@
 											"value": "{{at}}"
 										}
 									]
-								}
+								},
+								"description": "- A product is a “typed” or “named” template of an ACTUS contract. The product name  \n    is an identifier which is unique within every company. The contract is  \n    described in terms of one or multiple ACTUS contract templates. For each  \n    attribute of a template, according to the ACTUS data dictionary, a template  \n    defines a fixed value or leaves the value open to be entered (possibly with  \n    restrictions) by the contract creator.\n- A product is a JSON data structure with four fields:\n- ProductIdentifier\n- PaymentDetails\n- Terms\n- Selection, where ProductIdentifier defines a unique identifier of the product, PaymentDetails contains mandatory parameters on the payment channels of the two parties involved and the payment method used for settling payments, Terms is a set of ACTUS contract templates constituting the terms of the contracts (including amendments such as custom fee schedules or collaterals, etc.) and Selection possibly containing additional parameters used for querying contracts in analytical or accounting functions (not contractual terms)."
 							},
 							"response": []
 						},
