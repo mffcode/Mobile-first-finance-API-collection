@@ -3666,7 +3666,7 @@
 									}
 								},
 								"url": "{{customerURL}}:5055/LoginService/login",
-								"description": "- Using this service, we can access the application."
+								"description": "- Using this service, we can initiate an OTP to the email ID by performing a login with credentials."
 							},
 							"response": []
 						}
