@@ -82,7 +82,7 @@
 						}
 					],
 					"id": "17f01589-3053-41de-97c7-0dc82b273e62",
-					"description": "The login service and its payload are located in this folder. It explains how we can access the application.\n\nSet the environment before including the login service and payload."
+					"description": "Two-factor authentication is the basis for application access. Two services are contained in this folder, one of which will send an OTP to the email ID using login credentials, and the other will verify the OTP that was sent to the email ID."
 				},
 				{
 					"name": "Settings",
