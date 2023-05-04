@@ -5088,7 +5088,7 @@
 										}
 									]
 								},
-								"description": "- Using this service, we can fetch all the available contracts associated with a specific **productUUID**."
+								"description": "- The endpoint returns contract information based on the contractUUID provided as a parameter.\n- Here we can filter with any terms in the contract ex : contractType=\"PAM\" or StatusDate=\"2022-12-31T23:59:59\""
 							},
 							"response": []
 						},
