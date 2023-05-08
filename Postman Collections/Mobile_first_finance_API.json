@@ -1443,7 +1443,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"FormID\": \"20\",\n  \"National ID\": \"Enter a unique national id\",\n  \"Name\": \"Enter profile name\",\n  \"Gender\": \"Mention the gender\",\n  \"Latitude\": \"\",\n  \"Longitude\": \"\",\n  \"Mobile Number\": 9136525478,\n  \"Date of Birth\": \"YYYY-MM-DD\",\n  \"Hierarchy\": 1,\n  \"branchId\": \"\"\n}\n// Provide a unique mobile number\n// Enter the \"Date of Birth\" in yyyy-mm-dd format\n// Since the profile will be created under the root branch, mention the hierarchy as 1.\n// Leave the Latitude, Longitude and branchId as empty hence, they are not mandatory to provide in the profile creation.",
+									"raw": "{\n  \"FormID\": \"{{profileFormID}}\",\n  \"Name\": \"Henry Calvin\",\n  \"National ID\": \"INHB98765\",\n  \"Address\": \"\",\n  \"Country\": \"Switzerland\",\n  \"Corporate Email\": \"henrycalvin@gmail.com\",\n  \"Mobile Number\": \"+416256785\",\n  \"Hierarchy\": \"\"\n}\n\n// Since the profile will be created under the root branch, mention the hierarchy as 1.\n",
 									"options": {
 										"raw": {
 											"language": "json"
