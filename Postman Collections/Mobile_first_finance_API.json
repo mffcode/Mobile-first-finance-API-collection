@@ -1443,7 +1443,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"FormID\": \"{{profileFormID}}\",\n  \"Name\": \"Henry Calvin\",\n  \"National ID\": \"INHB98765\",\n  \"Address\": \"\",\n  \"Country\": \"Switzerland\",\n  \"Corporate Email\": \"henrycalvin@gmail.com\",\n  \"Mobile Number\": \"+416256785\",\n  \"Hierarchy\": \"\"\n}\n\n// Since the profile will be created under the root branch, mention the hierarchy as 1.\n",
+									"raw": "{\n  \"FormID\": \"{{profileFormID}}\",\n  \"Name\": \"Enter name\",\n  \"National ID\": \"Enter national ID\",\n  \"Address\": \"\",\n  \"Country\": \"Enter country name\",\n  \"Corporate Email\": \"Enter a valid email ID\",\n  \"Mobile Number\": \"Enter a valid mobile number with country code\",\n  \"Hierarchy\": \"\"\n}\n\n// Since the profile will be created under the root branch, mention the hierarchy as 1.\n",
 									"options": {
 										"raw": {
 											"language": "json"
