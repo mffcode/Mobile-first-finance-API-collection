@@ -1582,7 +1582,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"FormID\": \"20\",\n  \"National ID\": \"Update national id\",\n  \"Name\": \"Update profile name\",\n  \"Gender\": \"Update gender\",\n  \"Latitude\": \"\",\n  \"Longitude\": \"\",\n  \"Mobile Number\": 9452102,\n  \"Date of Birth\": \"Update DOB\",\n  \"Hierarchy\": 1,\n  \"branchId\": \"\"\n}\n// Update the required details of the profile.\n",
+									"raw": "{\n  \"FormID\": \"{{profileFormID}}\",\n  \"Name\": \"Enter name\",\n  \"National ID\": \"Enter national ID\",\n  \"Address\": \"\",\n  \"Country\": \"Enter country name\",\n  \"Corporate Email\": \"Enter a valid email ID\",\n  \"Mobile Number\": \"Enter a valid mobile number with country code\",\n  \"Hierarchy\": \"\"\n}\n\n// Update the required details of the profile.\n\n",
 									"options": {
 										"raw": {
 											"language": "json"
