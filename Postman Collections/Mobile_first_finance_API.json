@@ -71,7 +71,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"email\": \"ashwanth.rao@ariadne.swiss\",\r\n  \"otp\": \"248611\"\r\n}",
+									"raw": "{\r\n  \"email\": \"Enter email ID\",\r\n  \"otp\": \"Enter 6-digit OTP sent to email ID\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
