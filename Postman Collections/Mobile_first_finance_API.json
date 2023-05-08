@@ -1323,7 +1323,7 @@
 											"var jsonData = jsonResponse.data;",
 											"console.log(\"jsonData...\"+jsonData.profileForms)",
 											"var profileForms=jsonData.profileForms",
-											"console.log(\"users...\"+profileForms[0].profileFormID)",
+											"console.log(\"profileFormID...\"+profileForms[0].profileFormID)",
 											"pm.environment.set(\"profileFormID\", profileForms[0].profileFormID);"
 										],
 										"type": "text/javascript"
