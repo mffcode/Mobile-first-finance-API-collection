@@ -1612,53 +1612,6 @@
 							"response": []
 						},
 						{
-							"name": "Search profile",
-							"id": "1a412a91-9fb2-49a7-9d0b-8222da4ace7b",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{backofficeURL}}:5055/ProfileService/searchProfiles?mobileNumber={{MobileNumber}}&access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10",
-									"host": [
-										"{{backofficeURL}}"
-									],
-									"port": "5055",
-									"path": [
-										"ProfileService",
-										"searchProfiles"
-									],
-									"query": [
-										{
-											"key": "name",
-											"value": "Jason",
-											"disabled": true
-										},
-										{
-											"key": "mobileNumber",
-											"value": "{{MobileNumber}}"
-										},
-										{
-											"key": "access_token",
-											"value": "{{useraccessToken}}"
-										},
-										{
-											"key": "pageNumber",
-											"value": "0"
-										},
-										{
-											"key": "numberOfRecords",
-											"value": "10"
-										}
-									]
-								},
-								"description": "- Using this service we can filter/search a profile with mobile number.\n- Since the **MobileNumber** will be automatically applied in the service, running this service will result in a specific profile details."
-							},
-							"response": []
-						},
-						{
 							"name": "Get profiles count",
 							"id": "bc0c58b1-d78d-49fe-9102-438a6b5fe10e",
 							"protocolProfileBehavior": {
