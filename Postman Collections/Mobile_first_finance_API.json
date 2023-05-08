@@ -223,7 +223,7 @@
 													"var jsonData = jsonResponse.data;",
 													"console.log(\"jsonData...\"+jsonData.users)",
 													"var users=jsonData.users",
-													"console.log(\"userFormTemplateID...\" + users[0].userFormTemplateID)",
+													"console.log(\"userFormTemplateID...\" + users[1].userFormTemplateID)",
 													"pm.environment.set(\"userFormTemplateID\", users[0].userFormTemplateID);",
 													""
 												],
