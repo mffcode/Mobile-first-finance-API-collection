@@ -344,7 +344,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"FormID\": \"{{userFormTemplateID}}\",\n  \"Identifier\": \"Mathews\",\n  \"User Password\": \"00000\",\n  \"First Name\": \"Hosea\",\n  \"Last Name\": \"Mathews\",\n  \"Email\": \"hoseamathews@gmail.com\",\n  \"Mobile Number\": \"+418152365\"\n}",
+											"raw": "{\n  \"FormID\": \"{{userFormTemplateID}}\",\n  \"Identifier\": \"Enter a unique identifier\",\n  \"User Password\": \"Enter a 6-digit password\",\n  \"First Name\": \"Enter first name\",\n  \"Last Name\": \"Enter last name\",\n  \"Email\": \"Enter a valid email ID\",\n  \"Mobile Number\": \"Enter a valid mobile number with a country code\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
