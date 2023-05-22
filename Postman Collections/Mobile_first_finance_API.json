@@ -5287,7 +5287,362 @@
 				},
 				{
 					"name": "Metaco",
-					"item": [],
+					"item": [
+						{
+							"name": "Create metaco account",
+							"id": "e0bbfa8a-9ed8-4db9-9453-ccdbd8f38e62",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"alias\":\"b287d6bd-d712-4382-baf8-57ac2b14cc40\",\n    \"accountId\":\"0be7fdb2-6e95-4622-8c00-8c946a4cd3fb\",\n    \"ledgerId\":\"polygon-testnet-mumbai\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://uat.mobilefirstfinance.com:5055/ThirdpartyService/metaco/createAccount?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODQ3NjQxNDEsInVzZXJfbmFtZSI6ImMwNGJjMGUzLTRjMGUtNDhjMS05ZDVlLTg4OTkzOTZjMzg0NyxVU0VSLDQ4MTBmZGQwLTA2YjctNDE3Yy1iOWE5LTlkZWJhYzNhZWY4Yiw1MDU1LHVhdC5tb2JpbGVmaXJzdGZpbmFuY2UuY29tIiwiYXV0aG9yaXRpZXMiOlsiUFJPVklERV9VU0VSUyIsIkdFVF9XT1JLRkxPVyIsIlBST1ZJREVfUFJPRklMRSIsIkVESVRfQVBQUk9WQUxfUFJPRklMRVMiLCJQUk9WSURFX1ZJU0lCTEVfUk9PVFVTRVJTIiwiUFJPVklERV9WRVJJRklFRF9URU1QQVRFX0RFVEFJTFNfQllfV09SS0ZMT1ciLCJMSU5LX1BST0ZJTEUiLCJDUkVBVEVfV09SS0ZMT1dfVEVNUExBVEVfREVUQUlMUyIsIkdFVF9NRU5VX1JPTEUiLCJDSEFOR0VfVVNFUl9QQVNTV09SRCIsIkFQUFJPVkVEX1BST0ZJTEVTIiwiVVBEQVRFSU5HX1BST0ZJTEUiLCJHRVRfVU5fTElOS0VEX1BST0ZJTEVTIiwiT05CT0FSRF9GSUxURVIiLCJVUERBVEVfQ09OVFJBQ1RfRkxBRyIsIkdFVF9FVkVOVFNfQllfQ09OVFJBQ1RVVUlEIiwiVVBEQVRFX1dPUktGTE9XX1RFTVBMQVRFX0RFVEFJTFMiLCJBVFRBQ0hfV09SS0ZMT1dfVE9fUFJPRklMRSIsIlBST1ZJREVfUFJPRklMRV9CWV9JRCIsIlBST1ZJREVfVVNFUl9ERVRBSUxTIiwiSElFUkFSQ0hZX1NFQVJDSCIsIlZFUklGWV9TQVZFX1dPUktGTE9XX1RFTVBMQVRFX0RFVEFJTFMiLCJTVFJJUEUiLCJET0NVX1NJR04iLCJGT1JHT1RfVVNFUl9QQVNTV09SRCIsIldPUktGTE9XX0NPVU5UIiwiUFJPVklERV9QUk9GSUxFX0ZPUk0iLCJHRVRfV09SS0ZMT1dfQllfSUQiLCJHRVRfV09SS0ZMT1dfVEVNUExBVEVfQllfSUQiLCJHRVRfV09SS0ZMT1dfVEVNUExBVEVfREVUQUlMU19CWV9URU1QTEFURV9ERVRBSUxTX0lEIiwiUFJPVklERV9VUExPQURFRF9GSUxFUyIsIlVQREFURV9URU1QTEFURV9GTEFHIiwiR0VUX1dPUktGTE9XX1RFTVBMQVRFUyIsIkdFVF9XT1JLRkxPV19URU1QTEFURV9ERVRBSUxTX0JZX1dPUktGTE9XX1BST0ZJTEVfSUQiLCJVUExPQURfTVVMVElQTEVfRklMRVMiLCJTRVRVIiwiTU9CSUxFX0FQUCIsIlBST1ZJREVfUFJPRklMRV9GT1JNX0JZX0lEIiwiRE9XTkxPQURfVVBMT0FEX0ZJTEUiLCJaT09QIiwiQVRUQUNIX0xJTktFRF9VU0VSX1RPX1BPUlRGT0xJTyIsIlBST1ZJREVfQlJBTkNIX0JZX0JSQU5DSF9MRVZFTCJdLCJqdGkiOiIwODFjYmUyOC0wNGRhLTQ0N2ItOWQxYi04MjY5N2YyY2MzOTAiLCJjbGllbnRfaWQiOiJ3ZWItYXBwIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl19.K1XVNLWZ3HvwAY_9YbuNkXvSSCflaCORPduvFG-MD7eG36Ko67xZiYzoH6NS-gCz37tFXDEHF_EpXrhziT0rjLg-8EbmFXBMlB_gLBzi8KUI5qSdH9yJIocd2jUxzt45HgzXLC0zHl5ptN008OrVPnbuKTHf8RMM_nFD_PpdFVYuxUM7W_uFd7GVCOnuZU-JMjCZ3QXEAAbFAB8G7Iai90NGtZ7G-aDIF-9wc6OVQyfJkPlkS9Ln-ZIwSdXBgUZ7gUYWxJwgVlYgVEqx18Yew9mX9YUPNjLcpsHt0ir2tJFm9IzIc2kemVBg_HOL0nqcBxkubqSNn-UHYe7TQu_gdA",
+									"protocol": "https",
+									"host": [
+										"uat",
+										"mobilefirstfinance",
+										"com"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"metaco",
+										"createAccount"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODQ3NjQxNDEsInVzZXJfbmFtZSI6ImMwNGJjMGUzLTRjMGUtNDhjMS05ZDVlLTg4OTkzOTZjMzg0NyxVU0VSLDQ4MTBmZGQwLTA2YjctNDE3Yy1iOWE5LTlkZWJhYzNhZWY4Yiw1MDU1LHVhdC5tb2JpbGVmaXJzdGZpbmFuY2UuY29tIiwiYXV0aG9yaXRpZXMiOlsiUFJPVklERV9VU0VSUyIsIkdFVF9XT1JLRkxPVyIsIlBST1ZJREVfUFJPRklMRSIsIkVESVRfQVBQUk9WQUxfUFJPRklMRVMiLCJQUk9WSURFX1ZJU0lCTEVfUk9PVFVTRVJTIiwiUFJPVklERV9WRVJJRklFRF9URU1QQVRFX0RFVEFJTFNfQllfV09SS0ZMT1ciLCJMSU5LX1BST0ZJTEUiLCJDUkVBVEVfV09SS0ZMT1dfVEVNUExBVEVfREVUQUlMUyIsIkdFVF9NRU5VX1JPTEUiLCJDSEFOR0VfVVNFUl9QQVNTV09SRCIsIkFQUFJPVkVEX1BST0ZJTEVTIiwiVVBEQVRFSU5HX1BST0ZJTEUiLCJHRVRfVU5fTElOS0VEX1BST0ZJTEVTIiwiT05CT0FSRF9GSUxURVIiLCJVUERBVEVfQ09OVFJBQ1RfRkxBRyIsIkdFVF9FVkVOVFNfQllfQ09OVFJBQ1RVVUlEIiwiVVBEQVRFX1dPUktGTE9XX1RFTVBMQVRFX0RFVEFJTFMiLCJBVFRBQ0hfV09SS0ZMT1dfVE9fUFJPRklMRSIsIlBST1ZJREVfUFJPRklMRV9CWV9JRCIsIlBST1ZJREVfVVNFUl9ERVRBSUxTIiwiSElFUkFSQ0hZX1NFQVJDSCIsIlZFUklGWV9TQVZFX1dPUktGTE9XX1RFTVBMQVRFX0RFVEFJTFMiLCJTVFJJUEUiLCJET0NVX1NJR04iLCJGT1JHT1RfVVNFUl9QQVNTV09SRCIsIldPUktGTE9XX0NPVU5UIiwiUFJPVklERV9QUk9GSUxFX0ZPUk0iLCJHRVRfV09SS0ZMT1dfQllfSUQiLCJHRVRfV09SS0ZMT1dfVEVNUExBVEVfQllfSUQiLCJHRVRfV09SS0ZMT1dfVEVNUExBVEVfREVUQUlMU19CWV9URU1QTEFURV9ERVRBSUxTX0lEIiwiUFJPVklERV9VUExPQURFRF9GSUxFUyIsIlVQREFURV9URU1QTEFURV9GTEFHIiwiR0VUX1dPUktGTE9XX1RFTVBMQVRFUyIsIkdFVF9XT1JLRkxPV19URU1QTEFURV9ERVRBSUxTX0JZX1dPUktGTE9XX1BST0ZJTEVfSUQiLCJVUExPQURfTVVMVElQTEVfRklMRVMiLCJTRVRVIiwiTU9CSUxFX0FQUCIsIlBST1ZJREVfUFJPRklMRV9GT1JNX0JZX0lEIiwiRE9XTkxPQURfVVBMT0FEX0ZJTEUiLCJaT09QIiwiQVRUQUNIX0xJTktFRF9VU0VSX1RPX1BPUlRGT0xJTyIsIlBST1ZJREVfQlJBTkNIX0JZX0JSQU5DSF9MRVZFTCJdLCJqdGkiOiIwODFjYmUyOC0wNGRhLTQ0N2ItOWQxYi04MjY5N2YyY2MzOTAiLCJjbGllbnRfaWQiOiJ3ZWItYXBwIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl19.K1XVNLWZ3HvwAY_9YbuNkXvSSCflaCORPduvFG-MD7eG36Ko67xZiYzoH6NS-gCz37tFXDEHF_EpXrhziT0rjLg-8EbmFXBMlB_gLBzi8KUI5qSdH9yJIocd2jUxzt45HgzXLC0zHl5ptN008OrVPnbuKTHf8RMM_nFD_PpdFVYuxUM7W_uFd7GVCOnuZU-JMjCZ3QXEAAbFAB8G7Iai90NGtZ7G-aDIF-9wc6OVQyfJkPlkS9Ln-ZIwSdXBgUZ7gUYWxJwgVlYgVEqx18Yew9mX9YUPNjLcpsHt0ir2tJFm9IzIc2kemVBg_HOL0nqcBxkubqSNn-UHYe7TQu_gdA"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get account details and balance",
+							"id": "591d1ffa-a91f-4565-9b05-d78992bf192b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://uat.mobilefirstfinance.com:5055/ThirdpartyService/metaco/account/balance/c9f1bb19-1d65-46a4-898b-6046f2e1bc4c?access_token={{token}}",
+									"protocol": "https",
+									"host": [
+										"uat",
+										"mobilefirstfinance",
+										"com"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"metaco",
+										"account",
+										"balance",
+										"c9f1bb19-1d65-46a4-898b-6046f2e1bc4c"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Retrieve account address",
+							"id": "1e835ef4-fcb2-47e9-9982-5bb924081929",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://uat.mobilefirstfinance.com:5055/ThirdpartyService/metaco/accounts/c9f1bb19-1d65-46a4-898b-6046f2e1bc4c/addresses?access_token={{token}}",
+									"protocol": "https",
+									"host": [
+										"uat",
+										"mobilefirstfinance",
+										"com"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"metaco",
+										"accounts",
+										"c9f1bb19-1d65-46a4-898b-6046f2e1bc4c",
+										"addresses"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Transfer funds to endpoint",
+							"id": "1e750d3a-c759-4f27-a84e-f7e0320cda95",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"source\" : \"dc1023f1-91bc-4fed-80a0-ab840598fde5\",\n  \"destination\" : \"6b4d29bb-d17b-4ba9-beb7-be3b2411316c\",\n  \"destinationType\" : \"Endpoint\",\n  \"amount\" : \"0.1\",\n  \"feeType\" : \"Medium\",\n  \"maxFee\" : \"20%\"  \n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://uat.mobilefirstfinance.com:5055/ThirdpartyService/metaco/transaction?access_token={{token}}",
+									"protocol": "https",
+									"host": [
+										"uat",
+										"mobilefirstfinance",
+										"com"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"metaco",
+										"transaction"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Transer funds to address",
+							"id": "dbc06e28-61b4-424e-8e8f-55d244deb32f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"source\" : \"dc1023f1-91bc-4fed-80a0-ab840598fde5\",\n  \"destination\" : \"0xD395C28F3436F2585EEe7aC5Bf52563e8f9099Dc\",\n  \"destinationType\" : \"Address\",\n  \"amount\" : \"0.1\",\n  \"feeType\" : \"Medium\",\n  \"maxFee\" : \"20%\"  \n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://uat.mobilefirstfinance.com:5055/ThirdpartyService/metaco/transaction?access_token={{token}}",
+									"protocol": "https",
+									"host": [
+										"uat",
+										"mobilefirstfinance",
+										"com"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"metaco",
+										"transaction"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Transfer funds to accountId",
+							"id": "779bc22e-cd37-4000-abd3-c7a91ed68850",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"source\" : \"dc1023f1-91bc-4fed-80a0-ab840598fde5\",\n  \"destination\" : \"3274ac72-d3a4-403a-ab2b-8b48b3dc5b1f\",\n  \"destinationType\" : \"Account\",\n  \"amount\" : \"0.1\",\n  \"feeType\" : \"Medium\",\n  \"maxFee\" : \"20%\"  \n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://uat.mobilefirstfinance.com:5055/ThirdpartyService/metaco/transaction?access_token={{token}}",
+									"protocol": "https",
+									"host": [
+										"uat",
+										"mobilefirstfinance",
+										"com"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"metaco",
+										"transaction"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Release quarantine funds",
+							"id": "9ba5cad3-a78f-4371-9171-500281e571c3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"accountId\" : \"dc1023f1-91bc-4fed-80a0-ab840598fde5\",\n    \"transferIds\" : [\"946dbb1d-0ab0-4349-9d27-1f5e009f1160\"]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://uat.mobilefirstfinance.com:5055/ThirdpartyService/releaseFunds?access_token={{token}}",
+									"protocol": "https",
+									"host": [
+										"uat",
+										"mobilefirstfinance",
+										"com"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"releaseFunds"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get estimated fees",
+							"id": "cca80406-fe87-487e-a3ec-8a0a8d9f3272",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://uat.mobilefirstfinance.com:5055/ThirdpartyService/metaco/estimatedFee?access_token={{token}}",
+									"protocol": "https",
+									"host": [
+										"uat",
+										"mobilefirstfinance",
+										"com"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"metaco",
+										"estimatedFee"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{token}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get transactions statement of account",
+							"id": "a728657c-3ff1-4b8f-a8e3-fa58c9fafcf0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://uat.mobilefirstfinance.com:5055/ThirdpartyService/metaco/transactions/911465f2-c713-4a4d-a63e-3832515f3001/statement?access_token={{token}}&limit=20",
+									"protocol": "https",
+									"host": [
+										"uat",
+										"mobilefirstfinance",
+										"com"
+									],
+									"port": "5055",
+									"path": [
+										"ThirdpartyService",
+										"metaco",
+										"transactions",
+										"911465f2-c713-4a4d-a63e-3832515f3001",
+										"statement"
+									],
+									"query": [
+										{
+											"key": "access_token",
+											"value": "{{token}}"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
 					"id": "44b4b7da-dc14-4748-bf32-6c940ec70a0c"
 				}
 			],
