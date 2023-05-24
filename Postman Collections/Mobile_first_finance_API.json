@@ -5489,7 +5489,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"source\": \"872b7a35-3c1f-485e-b7cf-729b356ac4ef\",\n  \"destination\": \"0x8a4f4fc1a89f53ba985477fafb1ec14dfa40c789\", //Wallet ID \n  \"destinationType\": \"Address\",\n  \"amount\": \"0.01\",\n  \"fees\": \"0.0002\"\n}",
+									"raw": "{\n  \"source\": \"872b7a35-3c1f-485e-b7cf-729b356ac4ef\", // Account ID\n  \"destination\": \"0x8a4f4fc1a89f53ba985477fafb1ec14dfa40c789\", //Wallet ID \n  \"destinationType\": \"Address\",\n  \"amount\": \"0.01\",\n  \"fees\": \"0.0002\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
