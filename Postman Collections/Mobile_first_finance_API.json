@@ -5447,7 +5447,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"source\": \"872b7a35-3c1f-485e-b7cf-729b356ac4ef\",\n  \"destination\": \"f9877c17-001d-438c-8f7b-69b110b9d72c\",\n  \"destinationType\": \"Account\",\n  \"amount\": \"0.01\",\n  \"fees\": \"0.0002\"\n}",
+									"raw": "{\n  \"source\": \"872b7a35-3c1f-485e-b7cf-729b356ac4ef\", // Account ID\n  \"destination\": \"f9877c17-001d-438c-8f7b-69b110b9d72c\", // Account ID\n  \"destinationType\": \"Account\",\n  \"amount\": \"0.01\",\n  \"fees\": \"0.0002\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
