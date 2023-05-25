@@ -5531,7 +5531,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"source\" : \"872b7a35-3c1f-485e-b7cf-729b356ac4ef\",\n  \"destination\" : \"6b4d29bb-d17b-4ba9-beb7-be3b2411316c\",\n  \"destinationType\": \"Endpoint\",\n  \"amount\": \"0.01\",\n  \"fees\": \"0.0002\" \n}",
+									"raw": "{\n  \"source\" : \"872b7a35-3c1f-485e-b7cf-729b356ac4ef\",  // Account ID\n  \"destination\" : \"6b4d29bb-d17b-4ba9-beb7-be3b2411316c\", // Get the end point form harmonize\n  \"destinationType\": \"Endpoint\",\n  \"amount\": \"0.01\",\n  \"fees\": \"0.0002\" \n}",
 									"options": {
 										"raw": {
 											"language": "json"
