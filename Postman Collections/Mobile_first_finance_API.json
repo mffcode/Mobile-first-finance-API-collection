@@ -2583,7 +2583,7 @@
 											"console.log(\"data...\"+jsonData)\r",
 											"\r",
 											"var access_token=data.access_token\r",
-											"console.log(\"access_token...\"+jaccess_token)\r",
+											"console.log(\"access_token...\"+access_token)\r",
 											"// pm.environment.set(\"custoken\", jsonResponse.access_token);"
 										],
 										"type": "text/javascript"
