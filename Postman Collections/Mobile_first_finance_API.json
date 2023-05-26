@@ -2584,7 +2584,7 @@
 											"\r",
 											"var access_token=jsonData.access_token\r",
 											"console.log(\"access_token...\"+access_token)\r",
-											"// pm.environment.set(\"custoken\", jsonResponse.access_token);"
+											"pm.environment.set(\"custoken\", access_token);"
 										],
 										"type": "text/javascript"
 									}
@@ -2599,7 +2599,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"email\": \"sudhesh.mudra@odedtech.com\",\r\n  \"otp\": \"313523\"\r\n}",
+									"raw": "{\r\n  \"email\": \"sudhesh.mudra@odedtech.com\",\r\n  \"otp\": \"835517\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
