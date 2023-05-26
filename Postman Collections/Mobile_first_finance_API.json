@@ -2582,8 +2582,8 @@
 											"var jsonData = jsonResponse.data;\r",
 											"console.log(\"data...\"+jsonData)\r",
 											"\r",
-											"// var access_token=jsonResponse.access_token\r",
-											"// console.log(\"access_token...\"+jsonResponse.access_token)\r",
+											"var access_token=data.access_token\r",
+											"console.log(\"access_token...\"+jaccess_token)\r",
 											"// pm.environment.set(\"custoken\", jsonResponse.access_token);"
 										],
 										"type": "text/javascript"
@@ -2599,7 +2599,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"email\": \"sudhesh.mudra@odedtech.com\",\r\n  \"otp\": \"785940\"\r\n}",
+									"raw": "{\r\n  \"email\": \"sudhesh.mudra@odedtech.com\",\r\n  \"otp\": \"436395\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
