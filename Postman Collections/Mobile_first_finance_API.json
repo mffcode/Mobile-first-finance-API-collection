@@ -71,14 +71,14 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"email\": \"Enter email ID\",\r\n  \"otp\": \"Enter 6-digit OTP sent to email ID\"\r\n}",
+									"raw": "{\r\n  \"email\": \"sirigineni.akhil@odedtech.com\",\r\n  \"otp\": \"010311\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{backofficeURL}}:5055/LoginService/login",
+								"url": "https://uat.mobilefirstfinance.com:5055/LoginService/login",
 								"description": "- Using this service, we can verify the 6-digit OTP that was received at the email ID as part of two-factor authentication."
 							},
 							"response": []
