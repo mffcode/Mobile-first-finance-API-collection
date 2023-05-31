@@ -29,14 +29,14 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"rootUser\": \"enter sandbox rootuser\",\n  \"userName\": \"enter sandbox username\",\n  \"password\": \"enter sandbox password\"\n}",
+									"raw": "{\n  \"rootUser\": \"TEST\",\n  \"userName\": \"TEST\",\n  \"password\": \"rootpassword@uat\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{backofficeURL}}:5055/UserService/userValidation",
+								"url": "https://uat.mobilefirstfinance.com:5055/UserService/userValidation",
 								"description": "- Using this service, we can initiate an OTP to the email ID by performing a login with credentials."
 							},
 							"response": []
