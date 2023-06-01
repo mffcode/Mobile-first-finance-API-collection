@@ -5291,7 +5291,7 @@
 					"name": "Crypto custody",
 					"item": [
 						{
-							"name": "Create metaco account",
+							"name": "Create crypto account",
 							"id": "e0bbfa8a-9ed8-4db9-9453-ccdbd8f38e62",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
