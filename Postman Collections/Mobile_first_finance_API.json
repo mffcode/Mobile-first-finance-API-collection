@@ -2557,7 +2557,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"rootUser\": \"TEST\",\n  \"userName\": \"Richard\",\n  \"password\": \"123456\"\n}",
+									"raw": "{\n  \"rootUser\": \"TEST\",\n  \"userName\": \"Thomas\",\n  \"password\": \"000000\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
