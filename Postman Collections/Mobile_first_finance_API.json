@@ -5901,7 +5901,7 @@
 													"",
 													" pm.environment.set(\"clientmobiletoken\", datavalue.access_token);",
 													"",
-													"//var jsonData = ResponseBody;"
+													""
 												],
 												"type": "text/javascript"
 											}
@@ -5916,7 +5916,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"rootUser\": \"TEST\",\n  \"userName\": \"Arnold\",\n  \"password\": \"000000\"\n}",
+											"raw": "{\n  \"rootUser\": \"enter sandbox rootuser\",\n  \"userName\": \"enter sandbox username\",\n  \"password\": \"enter sandbox password\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
