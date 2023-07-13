@@ -5894,9 +5894,14 @@
 											"script": {
 												"id": "910c4114-43ad-4437-a45d-01e406bb3e3e",
 												"exec": [
-													"var jsonData = JSON.parse(responseBody);",
-													"var jsonValue = jsonData.body;",
-													"pm.globals.set(\"clientmobiletoken\", jsonValue.access_token);"
+													"  var jsonData = JSON.parse(responseBody);",
+													"  console.log(jsonData)",
+													"  var datavalue = jsonData.data;",
+													"  console.log(\"accessToken is.....\"+datavalue.access_token)",
+													"",
+													" pm.environment.set(\"clientmobiletoken\", datavalue.access_token);",
+													"",
+													"//var jsonData = ResponseBody;"
 												],
 												"type": "text/javascript"
 											}
@@ -5911,7 +5916,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"rootUser\": \"enter sandbox rootuser\",\n  \"userName\": \"enter sandbox username\",\n  \"password\": \"enter sandbox password\"\n}",
+											"raw": "{\n  \"rootUser\": \"TEST\",\n  \"userName\": \"Arnold\",\n  \"password\": \"000000\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
