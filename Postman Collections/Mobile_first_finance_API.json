@@ -5803,7 +5803,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"Domicile\": \"enter domicile\",\r\n  \"Identifier\": \"enter a unique identifier\",\r\n  \"User Password\": \"enter a 6 digit pin\",\r\n  \"National ID\": \"enter a valid national id\",\r\n  \"First Name\": \"enter first name\",\r\n  \"Last Name\": \"enter last name\",\r\n  \"Date of Birth\": \"yyyy-mm-dd\",\r\n  \"Mobile Number\": \"enter a valid mobile number\",\r\n  \"Email\": \"enter a valid email id\",\r\n  \"FormID\": {{userformtemplateID}}\r\n}",
+									"raw": "{\r\n  \"Is your age above 18\": \"Yes\",   \r\n  \"FATCA Declaration\": \"Not a US resident\", \r\n  \"Domicile\": \"enter domicile\",\r\n  \"Identifier\": \"enter a unique identifier\",\r\n  \"User Password\": \"enter a 6 digit pin\",\r\n  \"National ID\": \"enter a valid national id\",\r\n  \"First Name\": \"enter first name\",\r\n  \"Last Name\": \"enter last name\",\r\n  \"Date of Birth\": \"yyyy-mm-dd\",\r\n  \"Mobile Number\": \"enter a valid mobile number\",\r\n  \"Email\": \"enter a valid email id\",\r\n  \"Data protection declaration\": \"I agree\",\r\n  \"Hierarchy\": null,\r\n  \"FormID\":  {{userformtemplateID}}\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
