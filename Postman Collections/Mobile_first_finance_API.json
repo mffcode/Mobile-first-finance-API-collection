@@ -6164,7 +6164,7 @@
 											"",
 											"var workflowProfileID=workflow.workflowProfileID",
 											"console.log(\"mobileworkflowprofileid...\"+workflow.workflowProfileID)",
-											"pm.globals.set(\"mobileworkflowprofileid\",workflow.workflowProfileID );"
+											"pm.environment.set(\"mobileworkflowprofileid\",workflow.workflowProfileID );"
 										],
 										"type": "text/javascript"
 									}
