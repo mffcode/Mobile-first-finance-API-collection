@@ -6301,7 +6301,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{clientmobileappURL}}:5055/WorkflowService/workflowTemplateDetails/22204?access_token={{clientmobiletoken}}",
+									"raw": "{{clientmobileappURL}}:5055/WorkflowService/workflowTemplateDetails/{{clientmobiletemplatedetailsid}}?access_token={{clientmobiletoken}}",
 									"host": [
 										"{{clientmobileappURL}}"
 									],
@@ -6309,7 +6309,7 @@
 									"path": [
 										"WorkflowService",
 										"workflowTemplateDetails",
-										"22204"
+										"{{clientmobiletemplatedetailsid}}"
 									],
 									"query": [
 										{
