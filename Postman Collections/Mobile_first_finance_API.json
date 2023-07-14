@@ -6058,9 +6058,9 @@
 											"console.log(\"jsonData...\"+jsonData.profiles)",
 											"var profiles=jsonData.profiles",
 											"console.log(\"mobileappprofileid...\"+profiles[0].profileID)",
-											"pm.globals.set(\"mobileappprofileid\", profiles[0].profileID);",
+											"pm.environment.set(\"mobileappprofileid\", profiles[0].profileID);",
 											"console.log(\"mobileapplinkedprofileid...\"+profiles[0].linkedProfileID)",
-											"pm.globals.set(\"mobileapplinkedprofileid\", profiles[0].linkedProfileID);"
+											"pm.environment.set(\"mobileapplinkedprofileid\", profiles[0].linkedProfileID);"
 										],
 										"type": "text/javascript"
 									}
