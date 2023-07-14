@@ -5952,8 +5952,8 @@
 											"var jsonData = jsonResponse.data;",
 											"console.log(\"jsonData...\"+jsonData.workflow)",
 											"var workflow=jsonData.workflow",
-											"console.log(\"mobileappworkflowid...\"+workflow[13].workFlowID)",
-											"pm.globals.set(\"mobileappworkflowid\", workflow[13].workFlowID);"
+											"console.log(\"mobileappworkflowid...\"+workflow[0].workFlowID)",
+											"pm.environment.set(\"mobileappworkflowid\", workflow[0].workFlowID);"
 										],
 										"type": "text/javascript"
 									}
