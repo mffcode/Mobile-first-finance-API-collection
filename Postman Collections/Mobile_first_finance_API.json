@@ -2547,7 +2547,7 @@
 					"name": "Authorization",
 					"item": [
 						{
-							"name": "New Folder",
+							"name": "2FA",
 							"item": [],
 							"id": "d473436a-951a-4a04-9e36-c12b93360242"
 						},
