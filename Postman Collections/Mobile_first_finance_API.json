@@ -2547,6 +2547,11 @@
 					"name": "Authorization",
 					"item": [
 						{
+							"name": "New Folder",
+							"item": [],
+							"id": "d473436a-951a-4a04-9e36-c12b93360242"
+						},
+						{
 							"name": "Login with client credentials",
 							"id": "67acfc92-b2f6-4505-ac38-92a15c83fdce",
 							"protocolProfileBehavior": {
