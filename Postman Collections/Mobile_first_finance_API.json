@@ -2420,6 +2420,11 @@
 					],
 					"id": "eec2dfeb-95d9-4b25-aba1-3aede2c5d8fe",
 					"description": "This folder consist of services which are used to view the personal, business and contract documents of a specific profile."
+				},
+				{
+					"name": "New Folder",
+					"item": [],
+					"id": "63a33531-f798-4538-8f6a-89baa4d29aac"
 				}
 			],
 			"id": "0160a252-9171-4fbc-92aa-7363fda045e9",
