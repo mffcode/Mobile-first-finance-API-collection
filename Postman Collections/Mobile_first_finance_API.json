@@ -104,7 +104,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"Old Password\": \"Enter old password\",\n  \"New Password\": \"Enter new password\",\n  \"Confirm Password\": \"Confirm new password\"\n}",
+											"raw": "{\n  \"Old Password\": \"Enter old password\",\n  \"New Password\": \"Enter new password\",\n  \"Confirm Password\": \"Confirm new password\"\n}\n\n//Change password instructions :\n// digit must occur at least once.\n// lower case alphabet must occur at least once.\n// upper case alphabet must occur at least once.\n// special character case must occur at least once.\n// at least 8 character and at most 20 character",
 											"options": {
 												"raw": {
 													"language": "json"
