@@ -139,7 +139,49 @@
 						},
 						{
 							"name": "User",
-							"item": [],
+							"item": [
+								{
+									"name": "Change user password",
+									"id": "7ef4ed81-18f4-4354-ba19-2544807f7deb",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Old Password\": \"Enter old password\",\n  \"New Password\": \"Enter new password\",\n  \"Confirm Password\": \"Confirm new password\"\n}\n\n//Change password instructions :\n// digit must occur at least once.\n// lower case alphabet must occur at least once.\n// upper case alphabet must occur at least once.\n// special character case must occur at least once.\n// at least 8 character and at most 20 character",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://uat.mobilefirstfinance.com:5055/UserService/changeUserPassword?access_token={{useraccessToken}}",
+											"protocol": "https",
+											"host": [
+												"uat",
+												"mobilefirstfinance",
+												"com"
+											],
+											"port": "5055",
+											"path": [
+												"UserService",
+												"changeUserPassword"
+											],
+											"query": [
+												{
+													"key": "access_token",
+													"value": "{{useraccessToken}}"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
 							"id": "3e6a752b-a857-4a04-b41b-ef73318b5904"
 						}
 					],
