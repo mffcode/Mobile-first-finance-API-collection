@@ -20,6 +20,25 @@
 					"item": [
 						{
 							"name": "Login with client credentials",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "eb930bc3-a6ab-49df-a460-5cfb19f21667",
+										"exec": [
+											"var jsonResponse = JSON.parse(responseBody);",
+											"console.log(\"jsonResponse...\"+jsonResponse)",
+											"var jsonData = jsonResponse.data;",
+											"console.log(\"jsonData...\"+jsonResponse.data)",
+											"",
+											" var access_token=jsonData.access_token",
+											"console.log(\"access_token...\"+jsonData.access_token)",
+											"pm.environment.set(\"useraccessToken\", jsonData.access_token);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "75c7785e-4a37-46eb-afb5-2508dc3566d6",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
