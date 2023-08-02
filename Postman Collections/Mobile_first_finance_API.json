@@ -2425,7 +2425,7 @@
 					"name": "Change password",
 					"item": [
 						{
-							"name": "New Folder",
+							"name": "Root",
 							"item": [],
 							"id": "212c5c65-68d7-4f10-937e-5c04d34850ec"
 						}
