@@ -3978,14 +3978,14 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"To\": \"Enter the email ID\",\r\n  \"Code\": \"Enter 6-digit OTP sent to email ID\"\r\n}",
+											"raw": "{\r\n  \"To\": \"anil.samala@odedtech.com\",\r\n  \"Code\": \"541247\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
 												}
 											}
 										},
-										"url": "{{customerURL}}:5055/ThirdpartyService/twilio/verifyOtp",
+										"url": "{{backofficeURL}}/ThirdpartyService/twilio/verifyOtp",
 										"description": "- The OTP that we receive via email should be included in the **Code** value."
 									},
 									"response": []
