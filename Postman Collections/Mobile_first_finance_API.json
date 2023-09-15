@@ -3688,7 +3688,7 @@
 											"var jsonData = JSON.parse(responseBody);\r",
 											"var jsonValue = jsonData.body;\r",
 											"console.log(\"customerToken...\"+jsonValue.access_token)\r",
-											"pm.environment.set(\"customerToken\", jsonValue.access_token);"
+											"//pm.environment.set(\"customerToken\", jsonValue.access_token);"
 										],
 										"type": "text/javascript"
 									}
@@ -3703,14 +3703,14 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"rootUser\": \"enter sandbox rootuser\",\r\n    \"userName\": \"enter sandbox username\",\r\n    \"password\": \"enter sandbox password\"\r\n}",
+									"raw": "{\r\n    \"rootUser\": \"TEST\",\r\n    \"userName\": \"John\",\r\n    \"password\": \"222222\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{customerURL}}:5055/LoginService/login",
+								"url": "{{customerURL}}/LoginService/login",
 								"description": "- Using this service, we can initiate an OTP to the email ID by performing a login with credentials."
 							},
 							"response": []
