@@ -4235,11 +4235,10 @@
 									]
 								},
 								"url": {
-									"raw": "{{customerURL}}:5055/ThirdpartyService/upload/bankStatement?access_token={{customerToken}}",
+									"raw": "{{backofficeURL}}/ThirdpartyService/upload/bankStatement?access_token={{customerToken}}",
 									"host": [
-										"{{customerURL}}"
+										"{{backofficeURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ThirdpartyService",
 										"upload",
