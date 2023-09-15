@@ -3700,14 +3700,14 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"rootUser\": \"TEST\",\r\n    \"userName\": \"John\",\r\n    \"password\": \"222222\"\r\n}",
+									"raw": "{\r\n    \"rootUser\": \"TEST\",\r\n    \"userName\": \"Bruce\",\r\n    \"password\": \"000000\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{customerURL}}/LoginService/login",
+								"url": "{{customerURL}}/UserService/userValidation",
 								"description": "- Using this service, we can initiate an OTP to the email ID by performing a login with credentials."
 							},
 							"response": []
