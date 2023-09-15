@@ -1177,7 +1177,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"workflowName\": \"Microfinance loans\",\r\n  \"description\": \"Microfinance is a form of financial service which provides small loans and other financial services to poor and low-income households.\",\r\n  \"picture\": \"\",\r\n  \"productUUID\": \"\",\r\n  \"autoApproval\": \"No\",\r\n  \"autoDisburse\": \"No\"\r\n}\r\n\r\n// Mention any workflow name in the \"workflowName\" value\r\n// Mention workflow description in the \"description\" value.\r\n// Set the \"autoApproval\" either as Yes or No.\r\n// Set the \"autoDisbursement\" either as Yes or No.",
+											"raw": "{\r\n  \"workflowName\": \"Digital Onboarding\",\r\n  \"description\": \"Digital application for onboarding\",\r\n  \"picture\": \"\",\r\n  \"productUUID\": \"\",\r\n  \"autoApproval\": \"No\",\r\n  \"autoDisburse\": \"No\"\r\n}\r\n\r\n// Mention any workflow name in the \"workflowName\" value\r\n// Mention workflow description in the \"description\" value.\r\n// Set the \"autoApproval\" either as Yes or No.\r\n// Set the \"autoDisbursement\" either as Yes or No.",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -1185,11 +1185,10 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/updateworkflowName/{{workFlowID}}?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/WorkflowService/updateworkflowName/{{workFlowID}}?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"updateworkflowName",
