@@ -647,11 +647,10 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}:5055/UserService/menu?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/UserService/menu?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"UserService",
 												"menu"
