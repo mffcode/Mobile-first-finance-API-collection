@@ -2264,11 +2264,10 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}:5055/PortfolioService/bulkReceiveAndDeals?&access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&Hierarchy=1&repaymentType=No",
+											"raw": "{{backofficeURL}}/PortfolioService/bulkReceiveAndDeals?&access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&Hierarchy=2&repaymentType=No",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"PortfolioService",
 												"bulkReceiveAndDeals"
@@ -2292,7 +2291,7 @@
 												},
 												{
 													"key": "Hierarchy",
-													"value": "1"
+													"value": "2"
 												},
 												{
 													"key": "repaymentType",
