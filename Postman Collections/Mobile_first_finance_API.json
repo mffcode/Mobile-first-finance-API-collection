@@ -2578,7 +2578,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{customerURL}}:7190/mff/api/clientUserform/Customer",
+								"url": "{{customeURLvalidation}}/mff/api/clientUserform/Customer",
 								"description": "- Using this service, we can fetch the sign-up form that is used for client registration."
 							},
 							"response": []
