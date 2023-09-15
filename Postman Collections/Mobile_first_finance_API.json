@@ -2116,7 +2116,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"ApprovedProfiles\": [\r\n    {\r\n      \"workflowProfileID\": 1599801,\r\n      \"workflowID\": \"1496367\",\r\n      \"profileID\": \"b675bb20-4f29-4682-aab5-9e065823bc13\",\r\n      \"Approved\": \"No\"\r\n    }\r\n  ]\r\n}\r\n\r\n// workflowProfileID : Once you run the service \"Get workflow profile id\" under \"Link profile to a workflow\" in the \"Onboard\" section, you will get the \"workflowProfileID.\" To obtain it, check the environment variables.\r\n\r\n// workflowID : Once you run the service \"Get all workflows\" under \"Workflows\" in the \"Settings\" section, you will get the \"workflowID.\" To obtain it, check the environment variables.\r\n\r\n// profileID : Once you run the service \"Get all the profiles\" under \"Profile\" section, you will get the \"profileID.\" To obtain it, check the environment variables.\r\n\r\n// Approved : Mention the approved value as \"NO\"",
+											"raw": "{\r\n  \"ApprovedProfiles\": [\r\n    {\r\n      \"workflowProfileID\": 32492,\r\n      \"workflowID\": \"1847\",\r\n      \"profileID\": \"aa660c84-5a2c-4c39-b1f9-a587a3d84cd3\",\r\n      \"Approved\": \"No\"\r\n    }\r\n  ]\r\n}\r\n\r\n// workflowProfileID : Once you run the service \"Get workflow profile id\" under \"Link profile to a workflow\" in the \"Onboard\" section, you will get the \"workflowProfileID.\" To obtain it, check the environment variables.\r\n\r\n// workflowID : Once you run the service \"Get all workflows\" under \"Workflows\" in the \"Settings\" section, you will get the \"workflowID.\" To obtain it, check the environment variables.\r\n\r\n// profileID : Once you run the service \"Get all the profiles\" under \"Profile\" section, you will get the \"profileID.\" To obtain it, check the environment variables.\r\n\r\n// Approved : Mention the approved value as \"NO\"",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -2124,11 +2124,10 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}:5055/ProfileService/editApprovalProfiles?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/ProfileService/editApprovalProfiles?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"ProfileService",
 												"editApprovalProfiles"
