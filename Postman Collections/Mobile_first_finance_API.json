@@ -3685,7 +3685,7 @@
 											"\r",
 											" var access_token=jsonData.access_token\r",
 											"console.log(\"access_token...\"+jsonData.access_token)\r",
-											"pm.environment.set(\"customerURL\", jsonData.access_token);"
+											"pm.environment.set(\"customerToken\", jsonData.access_token);"
 										],
 										"type": "text/javascript"
 									}
