@@ -4067,9 +4067,9 @@
 											}
 										},
 										"url": {
-											"raw": "{{}}/ThirdpartyService/bankAccountVerification?access_token={{customerToken}}",
+											"raw": "{{backofficeURL}}/ThirdpartyService/bankAccountVerification?access_token={{customerToken}}",
 											"host": [
-												"{{}}"
+												"{{backofficeURL}}"
 											],
 											"path": [
 												"ThirdpartyService",
