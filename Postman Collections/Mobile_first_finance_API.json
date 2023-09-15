@@ -3955,14 +3955,14 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"To\": \"Enter a valid email ID\",\r\n  \"Channel\": \"email\"\r\n}",
+											"raw": "{\r\n  \"To\": \"anil.samala@odedtech.com\",\r\n  \"Channel\": \"email\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
 												}
 											}
 										},
-										"url": "{{customerURL}}:5055/ThirdpartyService/twilio/sendOtp",
+										"url": "{{backofficeURL}}/ThirdpartyService/twilio/sendOtp",
 										"description": "- In the json body, include a valid email address."
 									},
 									"response": []
