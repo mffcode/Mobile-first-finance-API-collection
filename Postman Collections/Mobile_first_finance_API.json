@@ -1592,11 +1592,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{backofficeURL}}:5055/ProfileService/profiles?pageNumber=0&numberOfRecords=10&access_token={{useraccessToken}}",
+									"raw": "{{backofficeURL}}/ProfileService/profiles?pageNumber=0&numberOfRecords=10&access_token={{useraccessToken}}",
 									"host": [
 										"{{backofficeURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ProfileService",
 										"profiles"
@@ -1630,11 +1629,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{backofficeURL}}:5055/ProfileService/profiles/{{profileID}}?access_token={{useraccessToken}}",
+									"raw": "{{backofficeURL}}/ProfileService/profiles/{{profileID}}?access_token={{useraccessToken}}",
 									"host": [
 										"{{backofficeURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ProfileService",
 										"profiles",
