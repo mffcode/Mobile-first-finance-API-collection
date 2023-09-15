@@ -4265,11 +4265,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{customerURL}}:5055/ThirdpartyService/generateReportUrl?access_token={{customerToken}}&referenceId={{referenceID}}",
+									"raw": "{{customerURL}}/ThirdpartyService/generateReportUrl?access_token={{customerToken}}&referenceId={{referenceID}}",
 									"host": [
 										"{{customerURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ThirdpartyService",
 										"generateReportUrl"
