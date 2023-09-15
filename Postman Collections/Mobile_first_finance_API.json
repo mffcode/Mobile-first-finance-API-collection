@@ -3817,11 +3817,10 @@
 									}
 								},
 								"url": {
-									"raw": "{{customerURL}}:5055/ThirdpartyService/paymentLink?access_token={{customerToken}}",
+									"raw": "{{customerURL}}/ThirdpartyService/paymentLink?access_token={{customerToken}}",
 									"host": [
 										"{{customerURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ThirdpartyService",
 										"paymentLink"
