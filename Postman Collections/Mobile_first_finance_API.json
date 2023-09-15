@@ -2512,14 +2512,14 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"Mobile Number\": \"Provide a valid mobile number with country code\"\n}",
+											"raw": "{\n  \"Mobile Number\": \"+919948929918\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
 												}
 											}
 										},
-										"url": "{{customerURL}}:7190/mff/api/userValidation",
+										"url": "{{customeURLvalidation}}/mff/api/userValidation",
 										"description": "- Using this service, we can validate the mobile number."
 									},
 									"response": []
