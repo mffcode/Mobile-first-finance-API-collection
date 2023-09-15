@@ -4007,14 +4007,14 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"To\": \"Enter the mobile number with country code\",\r\n  \"Channel\": \"sms\"\r\n}",
+											"raw": "{\r\n  \"To\": \"+918874547550\",\r\n  \"Channel\": \"sms\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
 												}
 											}
 										},
-										"url": "{{customerURL}}:5055/ThirdpartyService/twilio/sendOtp",
+										"url": "{{backofficeURL}}/ThirdpartyService/twilio/sendOtp",
 										"description": "- In the json body, include a valid mobile number."
 									},
 									"response": []
