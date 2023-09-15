@@ -1817,11 +1817,10 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/onboardFilter?numberOfRecords=50&pageNumber=0&access_token={{useraccessToken}}&workflowId={{workFlowID}}",
+											"raw": "{{backofficeURL}}/WorkflowService/onboardFilter?numberOfRecords=50&pageNumber=0&access_token={{useraccessToken}}&workflowId={{workFlowID}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"onboardFilter"
@@ -1866,7 +1865,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"profileDetails\": [\n    {\n      \"profileID\": \"87c85ee9-0ddc-487e-9d5c-a3d0a7641318\"\n    }\n  ],\n  \"workFlowID\": {{workFlowID}}\n}",
+											"raw": "{\n  \"profileDetails\": [\n    {\n      \"profileID\": \"372c87ac-fc55-4007-95bb-428b9f0f2d7c\"\n    }\n  ],\n  \"workFlowID\": {{workFlowID}}\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -1924,11 +1923,10 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/mobileApp/{{profileID}}?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/WorkflowService/mobileApp/{{profileID}}?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"mobileApp",
