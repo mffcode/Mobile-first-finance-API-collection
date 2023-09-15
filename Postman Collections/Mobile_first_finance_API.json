@@ -4030,14 +4030,14 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"To\": \"Enter the mobile number with country code\",\r\n  \"Code\": \"Enter 6-digit OTP sent to mobile number\"\r\n}",
+											"raw": "{\r\n  \"To\": \"+919574874487\",\r\n  \"Code\": \"251142\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
 												}
 											}
 										},
-										"url": "{{customerURL}}:5055/ThirdpartyService/twilio/verifyOtp",
+										"url": "{{customerURL}}/ThirdpartyService/twilio/verifyOtp",
 										"description": "- The OTP that we receive via mobile number should be included in the **Code** value."
 									},
 									"response": []
