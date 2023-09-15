@@ -90,7 +90,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"email\": \"sirigineni.akhil@odedtech.com\",\r\n  \"otp\": \"672652\"\r\n}",
+									"raw": "{\r\n  \"email\": \"Enter a valid email ID\",\r\n  \"otp\": \"Enter the OTP that received to email\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
