@@ -937,7 +937,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"Form Header\": [],\n  \"Label\": \"Credit Score\",\n  \"Form Body\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"My Bank\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Pay Status\"\n    },\n    {\n      \"Type\": \"Number\",\n      \"Value\": \"\",\n      \"Label\": \"Credit Number\"\n    }\n  ],\n  \"Description\": \"A prediction of your credit behavior, such as how likely you are to pay a loan back on time, based on information from your credit reports\"\n}",
+											"raw": "{\n  \"Form Header\": [\n    {\n      \"Type\": \"Phone\",\n      \"Value\": \"\",\n      \"Label\": \"Phone Number\"\n    }\n  ],\n  \"Form Body\": [\n    {\n      \"Type\": \"Hidden\",\n      \"Value\": \"\",\n      \"Label\": \"Result\"\n    }\n  ],\n  \"Label\": \"Social Profiling\",\n  \"Description\": \"\",\n  \"autoVerify\": false,\n  \"externalAccess\": false,\n  \"templateActiveStatus\": 1\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -945,11 +945,10 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowTemplates/{{workflowTemplateID}}?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/WorkflowService/workflowTemplates/{{workflowTemplateID}}?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"workflowTemplates",
