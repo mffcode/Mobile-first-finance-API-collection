@@ -982,7 +982,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"Form Header\": [\n    {\n      \"Type\": \"List\",\n      \"Value\": [\n        \"Yes\",\n        \"No\"\n      ],\n      \"Label\": \"I consent\"\n    }\n  ],\n  \"Form Body\": [],\n  \"Label\": \"Crypto custody terms \",\n  \"Description\": \"Crypto custody is a secure, off-chain storage solution that protects crypto wallet funds or holdings from theft or loss.\\n\\nAs part of its AML (anti-money laundering), CTF (counter-terrorism financing) and other regulatory duties, we need to monitor incoming and outgoing crypto transactions and - if necessary - reject transactions or report cases to authorities in case of reasonable suspicion.\",\n  \"autoVerify\": true,\n  \"externalAccess\": true,\n  \"templateActiveStatus\": 0\n}\n\n\n// Provide the workflow template in the body based on the workflow template ID.\n",
+											"raw": "{\n  \"Form Header\": [\n    {\n      \"Type\": \"List\",\n      \"Value\": [\n        \"Yes\",\n        \"No\"\n      ],\n      \"Label\": \"I consent\"\n    }\n  ],\n  \"Form Body\": [],\n  \"Label\": \"Crypto custody terms\",\n  \"Description\": \"Crypto custody is a secure, off-chain storage solution that protects crypto wallet funds or holdings from theft or loss.\\n\\nAs part of its AML (anti-money laundering), CTF (counter-terrorism financing) and other regulatory duties, we need to monitor incoming and outgoing crypto transactions and - if necessary - reject transactions or report cases to authorities in case of reasonable suspicion.\",\n  \"autoVerify\": true,\n  \"externalAccess\": true,\n  \"templateActiveStatus\": 0\n}\n\n\n// Provide the workflow template in the body based on the workflow template ID.\n",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -990,11 +990,10 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowTemplates/{{workflowTemplateID}}?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/WorkflowService/workflowTemplates/{{workflowTemplateID}}?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"workflowTemplates",
