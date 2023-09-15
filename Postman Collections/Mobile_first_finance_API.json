@@ -1880,7 +1880,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"profileDetails\": [\n    {\n      \"profileID\": \"87c85ee9-0ddc-487e-9d5c-a3d0a7641318\"\n    }\n  ],\n  \"workFlowID\": \"2224\"\n}",
+											"raw": "{\n  \"profileDetails\": [\n    {\n      \"profileID\": \"87c85ee9-0ddc-487e-9d5c-a3d0a7641318\"\n    }\n  ],\n  \"workFlowID\": {{workFlowID}}\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -1888,11 +1888,10 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowToProfiles?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/WorkflowService/workflowToProfiles?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"workflowToProfiles"
