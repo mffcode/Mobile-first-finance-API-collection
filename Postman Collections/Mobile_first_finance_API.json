@@ -1069,9 +1069,9 @@
 													"var jsonData = jsonResponse.data;",
 													"console.log(\"jsonData...\"+jsonData.workflow)",
 													"var workflow=jsonData.workflow",
-													"console.log(\"workFlowID...\"+workflow[0].workFlowID)",
-													"console.log(\"workFlowName...\"+workflow[0].workFlowName)",
-													"pm.environment.set(\"workFlowID\", workflow[0].workFlowID);"
+													"console.log(\"workFlowID...\"+workflow[1].workFlowID)",
+													"console.log(\"workFlowName...\"+workflow[1].workFlowName)",
+													"pm.environment.set(\"workFlowID\", workflow[1].workFlowID);"
 												],
 												"type": "text/javascript"
 											}
@@ -1085,11 +1085,10 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/workflows?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/WorkflowService/workflows?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"workflows"
