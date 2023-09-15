@@ -2074,11 +2074,10 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}:5055/ProfileService/searchprofileWithApproval?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&approved=No",
+											"raw": "{{backofficeURL}}/ProfileService/searchprofileWithApproval?access_token={{useraccessToken}}&pageNumber=0&numberOfRecords=10&approved=No",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"ProfileService",
 												"searchprofileWithApproval"
