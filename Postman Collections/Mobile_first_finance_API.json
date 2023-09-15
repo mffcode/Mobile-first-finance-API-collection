@@ -4067,11 +4067,10 @@
 											}
 										},
 										"url": {
-											"raw": "{{customerURL}}:5055/ThirdpartyService/bankAccountVerification?access_token={{customerToken}}",
+											"raw": "{{}}/ThirdpartyService/bankAccountVerification?access_token={{customerToken}}",
 											"host": [
-												"{{customerURL}}"
+												"{{}}"
 											],
-											"port": "5055",
 											"path": [
 												"ThirdpartyService",
 												"bankAccountVerification"
