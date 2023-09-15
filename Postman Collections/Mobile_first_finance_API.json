@@ -97,7 +97,7 @@
 										}
 									}
 								},
-								"url": "https://uat.mobilefirstfinance.com:5055/LoginService/login",
+								"url": "{{backofficeURL}}/LoginService/login",
 								"description": "- Using this service, we can verify the 6-digit OTP that was received at the email ID as part of two-factor authentication."
 							},
 							"response": []
