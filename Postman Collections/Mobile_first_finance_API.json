@@ -418,11 +418,10 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}:5055/UserService/users/forms/{{userFormTemplateID}}?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/UserService/users/forms/{{userFormTemplateID}}?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"UserService",
 												"users",
