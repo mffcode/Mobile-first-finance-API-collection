@@ -1924,11 +1924,10 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/mobileApp/{{profileID}}?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/WorkflowService/mobileApp/{{profileID}}?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"mobileApp",
@@ -1970,11 +1969,10 @@
 											}
 										},
 										"url": {
-											"raw": "{{backofficeURL}}:5055/WorkflowService/workflowTemplateDetails/{{workflowTemplateDetailsID}}?access_token={{useraccessToken}}",
+											"raw": "{{backofficeURL}}/WorkflowService/workflowTemplateDetails/{{workflowTemplateDetailsID}}?access_token={{useraccessToken}}",
 											"host": [
 												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"WorkflowService",
 												"workflowTemplateDetails",
