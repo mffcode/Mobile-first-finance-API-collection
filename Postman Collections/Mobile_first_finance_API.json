@@ -1422,11 +1422,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{backofficeURL}}:5055/ProfileService/profiles/forms?access_token={{useraccessToken}}",
+									"raw": "{{backofficeURL}}/ProfileService/profiles/forms?access_token={{useraccessToken}}",
 									"host": [
 										"{{backofficeURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ProfileService",
 										"profiles",
@@ -1453,11 +1452,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{backofficeURL}}:5055/ProfileService/profiles/forms/{{profileFormID}}?access_token={{useraccessToken}}",
+									"raw": "{{backofficeURL}}/ProfileService/profiles/forms/{{profileFormID}}?access_token={{useraccessToken}}",
 									"host": [
 										"{{backofficeURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ProfileService",
 										"profiles",
@@ -1486,7 +1484,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"Form Header\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"Customer registration form\",\n      \"Label\": \"Form Label\"\n    }\n  ],\n  \"Form Body\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"National ID\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Full Name\"\n    },\n    {\n      \"Type\": \"List\",\n      \"Value\": [\n        \"Male\",\n        \"Female\"\n      ],\n      \"Label\": \"Gender\"\n    },\n    {\n      \"Type\": \"Branch\",\n      \"Value\": \"L0\",\n      \"Label\": \"Hierarchy\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Latitude\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Longitude\"\n    },\n    {\n      \"Type\": \"Phone\",\n      \"Value\": \"\",\n      \"Label\": \"Mobile Number\"\n    },\n    {\n      \"Type\": \"Date\",\n      \"Value\": \"\",\n      \"Label\": \"Date of Birth\"\n    }\n  ]\n}",
+									"raw": "{\n  \"Form Header\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"Customer registration form\",\n      \"Label\": \"Form Label\"\n    }\n  ],\n  \"Form Body\": [\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"National ID\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Name\"\n    },\n    {\n      \"Type\": \"List\",\n      \"Value\": [\n        \"Male\",\n        \"Female\"\n      ],\n      \"Label\": \"Gender\"\n    },\n    {\n      \"Type\": \"Branch\",\n      \"Value\": \"L0\",\n      \"Label\": \"Hierarchy\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Latitude\"\n    },\n    {\n      \"Type\": \"Varchar\",\n      \"Value\": \"\",\n      \"Label\": \"Longitude\"\n    },\n    {\n      \"Type\": \"Phone\",\n      \"Value\": \"\",\n      \"Label\": \"Mobile Number\"\n    },\n    {\n      \"Type\": \"Date\",\n      \"Value\": \"\",\n      \"Label\": \"Date of Birth\"\n    }\n  ]\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1494,11 +1492,10 @@
 									}
 								},
 								"url": {
-									"raw": "{{backofficeURL}}:5055/ProfileService/profiles/forms/{{profileFormID}}?access_token={{useraccessToken}}",
+									"raw": "{{backofficeURL}}/ProfileService/profiles/forms/{{profileFormID}}?access_token={{useraccessToken}}",
 									"host": [
 										"{{backofficeURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ProfileService",
 										"profiles",
@@ -1535,11 +1532,10 @@
 									}
 								},
 								"url": {
-									"raw": "{{backofficeURL}}:5055/ProfileService/profiles?access_token={{useraccessToken}}",
+									"raw": "{{backofficeURL}}/ProfileService/profiles?access_token={{useraccessToken}}",
 									"host": [
 										"{{backofficeURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ProfileService",
 										"profiles"
@@ -1596,11 +1592,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{backofficeURL}}:5055/ProfileService/profiles?pageNumber=0&numberOfRecords=10&access_token={{useraccessToken}}",
+									"raw": "{{backofficeURL}}/ProfileService/profiles?pageNumber=0&numberOfRecords=10&access_token={{useraccessToken}}",
 									"host": [
 										"{{backofficeURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ProfileService",
 										"profiles"
@@ -1634,11 +1629,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{backofficeURL}}:5055/ProfileService/profiles/{{profileID}}?access_token={{useraccessToken}}",
+									"raw": "{{backofficeURL}}/ProfileService/profiles/{{profileID}}?access_token={{useraccessToken}}",
 									"host": [
 										"{{backofficeURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ProfileService",
 										"profiles",
@@ -2607,7 +2601,7 @@
 										}
 									}
 								},
-								"url": "{{customerURL}}:7190/mff/api/createClientUser",
+								"url": "{{customeURLvalidation}}/mff/api/createClientUser",
 								"description": "- To complete the customer sign-up process, use the default customer sign-up form below.\n- All of the keys mentioned are required, and most of them are unique.\n- The **FormID** mentioned in the payload belongs to the default user form for customer signup, and it is mandatory to mention.\n- **Identifier** - **enter a unique identifier and the data should be in varchar.**\n- **User Password - user password should be a 6 digit pin number.**\n- **Date of Birth - enter date of birth in yyyy-mm-dd format.**"
 							},
 							"response": []
