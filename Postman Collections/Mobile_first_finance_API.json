@@ -2713,11 +2713,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{customerURL}}:5055/WorkflowService/workflows?access_token={{custoken}}",
+									"raw": "{{customerURL}}/WorkflowService/workflows?access_token={{custoken}}",
 									"host": [
 										"{{customerURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"WorkflowService",
 										"workflows"
