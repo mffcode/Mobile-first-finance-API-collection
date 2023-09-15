@@ -3685,10 +3685,10 @@
 									"script": {
 										"id": "43da47a1-991c-47fa-a8ac-f0bf8d8b5be2",
 										"exec": [
-											"var jsonData = JSON.parse(responseBody);\r",
+											"/*var jsonData = JSON.parse(responseBody);\r",
 											"var jsonValue = jsonData.body;\r",
 											"console.log(\"customerToken...\"+jsonValue.access_token)\r",
-											"pm.environment.set(\"customerToken\", jsonValue.access_token);"
+											"pm.environment.set(\"customerToken\", jsonValue.access_token);*/"
 										],
 										"type": "text/javascript"
 									}
