@@ -1629,11 +1629,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{backofficeURL}}:5055/ProfileService/profiles/{{profileID}}?access_token={{useraccessToken}}",
+									"raw": "{{backofficeURL}}/ProfileService/profiles/{{profileID}}?access_token={{useraccessToken}}",
 									"host": [
 										"{{backofficeURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"ProfileService",
 										"profiles",
@@ -2513,14 +2512,14 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"Mobile Number\": \"Provide a valid mobile number with country code\"\n}",
+											"raw": "{\n  \"Mobile Number\": \"+919948929918\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
 												}
 											}
 										},
-										"url": "{{customerURL}}:7190/mff/api/userValidation",
+										"url": "{{customeURLvalidation}}/mff/api/userValidation",
 										"description": "- Using this service, we can validate the mobile number."
 									},
 									"response": []
@@ -2536,14 +2535,14 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"Email\": \"provide a valid email id\"\n}",
+											"raw": "{\n  \"Email\": \"henry@gmail.com\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
 												}
 											}
 										},
-										"url": "{{customerURL}}:7190/mff/api/userValidation",
+										"url": "{{customeURLvalidation}}/mff/api/userValidation",
 										"description": "- Using this service, we can validate the email ID."
 									},
 									"response": []
@@ -2579,7 +2578,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{customerURL}}:7190/mff/api/clientUserform/Customer",
+								"url": "{{customeURLvalidation}}/mff/api/clientUserform/Customer",
 								"description": "- Using this service, we can fetch the sign-up form that is used for client registration."
 							},
 							"response": []
@@ -2602,7 +2601,7 @@
 										}
 									}
 								},
-								"url": "{{customerURL}}:7190/mff/api/createClientUser",
+								"url": "{{customeURLvalidation}}/mff/api/createClientUser",
 								"description": "- To complete the customer sign-up process, use the default customer sign-up form below.\n- All of the keys mentioned are required, and most of them are unique.\n- The **FormID** mentioned in the payload belongs to the default user form for customer signup, and it is mandatory to mention.\n- **Identifier** - **enter a unique identifier and the data should be in varchar.**\n- **User Password - user password should be a 6 digit pin number.**\n- **Date of Birth - enter date of birth in yyyy-mm-dd format.**"
 							},
 							"response": []
@@ -2714,11 +2713,10 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{customerURL}}:5055/WorkflowService/workflows?access_token={{custoken}}",
+									"raw": "{{customerURL}}/WorkflowService/workflows?access_token={{custoken}}",
 									"host": [
 										"{{customerURL}}"
 									],
-									"port": "5055",
 									"path": [
 										"WorkflowService",
 										"workflows"
@@ -4142,11 +4140,10 @@
 											}
 										},
 										"url": {
-											"raw": "{{customerURL}}:5055/ThirdpartyService/aadhaarVerification?access_token={{customerToken}}",
+											"raw": "{{backofficeURL}}/ThirdpartyService/aadhaarVerification?access_token={{customerToken}}",
 											"host": [
-												"{{customerURL}}"
+												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"ThirdpartyService",
 												"aadhaarVerification"
