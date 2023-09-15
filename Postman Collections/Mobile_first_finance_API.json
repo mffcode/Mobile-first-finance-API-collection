@@ -2535,14 +2535,14 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"Email\": \"provide a valid email id\"\n}",
+											"raw": "{\n  \"Email\": \"henry@gmail.com\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
 												}
 											}
 										},
-										"url": "{{customerURL}}:7190/mff/api/userValidation",
+										"url": "{{customeURLvalidation}}/mff/api/userValidation",
 										"description": "- Using this service, we can validate the email ID."
 									},
 									"response": []
