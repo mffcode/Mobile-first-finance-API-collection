@@ -3732,7 +3732,7 @@
 										}
 									}
 								},
-								"url": "{{customerURL}}:5055/LoginService/login",
+								"url": "{{customerURL}}/LoginService/login",
 								"description": "- Using this service, we can verify the 6-digit OTP that was received at the email ID as part of two-factor authentication."
 							},
 							"response": []
