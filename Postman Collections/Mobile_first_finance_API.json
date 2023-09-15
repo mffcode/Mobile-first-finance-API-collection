@@ -174,14 +174,10 @@
 											}
 										},
 										"url": {
-											"raw": "https://uat.mobilefirstfinance.com:5055/UserService/changeUserPassword?access_token={{useraccessToken}}",
-											"protocol": "https",
+											"raw": "{{backofficeURL}}/UserService/changeUserPassword?access_token={{useraccessToken}}",
 											"host": [
-												"uat",
-												"mobilefirstfinance",
-												"com"
+												"{{backofficeURL}}"
 											],
-											"port": "5055",
 											"path": [
 												"UserService",
 												"changeUserPassword"
