@@ -48,7 +48,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"rootUser\": \"Enter sandbox username\",\n  \"userName\": \"Enter sandox username\",\n  \"password\": \"Enter sandbox password\"\n}",
+									"raw": "{\n  \"rootUser\": \"TEST\",\n  \"userName\": \"TEST\",\n  \"password\": \"rootpassword@uat\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
